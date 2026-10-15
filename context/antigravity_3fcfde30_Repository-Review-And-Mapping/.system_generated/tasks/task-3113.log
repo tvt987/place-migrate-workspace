@@ -1,0 +1,20 @@
+From https://bitbucket.org/concung/cci-store-location-web
+ * branch            staging    -> FETCH_HEAD
+   3bbb9e3..439f160  staging    -> origin/staging
+Switched to and reset branch 'staging'
+M	02_target/Makefile
+M	Makefile
+Your branch is up to date with 'origin/staging'.
+Merge made by the 'ort' strategy.
+ 02_target/CoC.Web.Place/Startup.cs                 | 26 ++++++++++
+ .../Views/Home/_ModalRoutePlace.cshtml             |  2 +-
+ .../CoC.Web.Place/Views/Shared/_Layout.cshtml      |  5 +-
+ ...FUNC-004-case-insensitive-static-files-linux.md | 55 ++++++++++++++++++++++
+ .../Configs/StaticFileCasingTests.cs               | 47 ++++++++++++++++++
+ tests/reports/test-report-20260930-141547.md       | 29 ++++++++++++
+ 6 files changed, 160 insertions(+), 4 deletions(-)
+ create mode 100644 04_critical_change/test-report-20260930-141547/TC-FUNC-004-case-insensitive-static-files-linux.md
+ create mode 100644 tests/Unit/CoC.Web.Place.Unit.Tests/Configs/StaticFileCasingTests.cs
+ create mode 100644 tests/reports/test-report-20260930-141547.md
+To https://bitbucket.org/concung/cci-store-location-web.git
+   439f160..a04870d  staging -> staging

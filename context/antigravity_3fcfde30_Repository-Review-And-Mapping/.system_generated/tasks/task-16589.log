@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (491 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.4s)
+  ok 2 [e2e] › e2e\output-orders-create-multi\output-orders-create-multi.e2e.spec.ts:30:7 › TC-SCM-337-001 — form loads [LOAD] › mở form Tạo mới phiếu xuất sử dụng nội bộ / xử lý [LOAD] (2.9s)
+  ok 3 [e2e] › e2e\output-orders-create-multi\output-orders-create-multi.e2e.spec.ts:91:9 › TC-SCM-337-002 — form validation blocks write [VALIDATION] › validation: Tạo mới phiếu xuất sử dụng nội bộ / xử lý thiếu dữ liệu / chặn ghi [VALIDATION] (2.7s)
+  -  4 [e2e] › e2e\output-orders-create-multi\output-orders-create-multi.e2e.spec.ts:132:7 › TC-SCM-337-003 — save for real [FLOW] › lưu Tạo mới phiếu xuất sử dụng nội bộ / xử lý thật [FLOW]
+  ok 5 [e2e] › e2e\output-orders-create-multi\output-orders-create-multi.e2e.spec.ts:172:7 › TC-SCM-337-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 6 [e2e] › e2e\output-orders-create-multi\output-orders-create-multi.e2e.spec.ts:192:7 › TC-SCM-337-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrders [FLOW] (3.8s)
+
+  1 skipped
+  5 passed (18.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-203844.json

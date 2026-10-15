@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (478 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.2s)
+  ok  2 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:28:7 › TC-SCM-93-001 — Index loads [LOAD] › LOAD /OutputSaleCardPays [LOAD] (5.1s)
+  ok  3 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:53:7 › TC-SCM-93-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleCardPays/Search` [FLOW] (4.9s)
+  ok  4 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:73:7 › TC-SCM-93-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputSaleCardPays [AUTH] (2.5s)
+  ok  5 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:86:7 › TC-SCM-93-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.8s)
+  ok  6 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:103:7 › TC-SCM-93-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (5.4s)
+  -   7 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:133:7 › TC-SCM-93-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:163:7 › TC-SCM-93-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (5.0s)
+  -   9 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:188:7 › TC-SCM-93-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:224:7 › TC-SCM-93-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.6s)
+  ok 11 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:237:7 › TC-SCM-93-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (5.5s)
+  -  12 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:265:7 › TC-SCM-93-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:311:7 › TC-SCM-93-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 14 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:346:7 › TC-SCM-93-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (4.8s)
+  -  15 [e2e] › e2e\output-sale-card-pays\output-sale-card-pays.e2e.spec.ts:369:7 › TC-SCM-93-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+
+  5 skipped
+  10 passed (1.2m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-205108.json

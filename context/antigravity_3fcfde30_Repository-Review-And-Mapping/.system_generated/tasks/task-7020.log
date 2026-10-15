@@ -1,0 +1,213 @@
+
+Running 14 tests using 1 worker
+
+✅ reuse .auth/token.json (589 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.5s)
+  ok  2 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:26:7 › TC-SCM-94-001 — Index loads [LOAD] › LOAD /OutputSaleCharities [LOAD] (5.5s)
+  ok  3 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:51:7 › TC-SCM-94-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleCharities/Search` [FLOW] (5.2s)
+  ok  4 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:70:7 › TC-SCM-94-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputSaleCharities [AUTH] (1.5s)
+  ok  5 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:83:7 › TC-SCM-94-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (5.3s)
+  x   6 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:100:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (6.3s)
+  x   7 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:130:7 › TC-SCM-94-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] (1.6m)
+  ok  8 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:160:7 › TC-SCM-94-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (5.3s)
+  -   9 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:185:7 › TC-SCM-94-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  x  10 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:221:7 › TC-SCM-94-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (5.5s)
+  x  11 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:234:7 › TC-SCM-94-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (6.8s)
+  -  12 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:262:7 › TC-SCM-94-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:308:7 › TC-SCM-94-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 14 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:343:7 › TC-SCM-94-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (5.3s)
+
+
+  1) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:100:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))
+    Expected: visible
+    Error: strict mode violation: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText')) resolved to 3 elements:
+        1) <div class="boxText">Lỗi hệ thống</div> aka getByText('Lỗi hệ thống').first()
+        2) <div class="boxText">Lỗi hệ thống</div> aka getByText('Lỗi hệ thống').nth(1)
+        3) <div class="boxText">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))
+
+
+      116 |     const res = await mod.search(data.screen.searchEndpoint);
+      117 |     if (res.alerted) {
+    > 118 |       await expect(mod.ui.alertText().or(mod.ui.alertWarning())).toBeVisible();
+          |                                                                  ^
+      119 |       return;
+      120 |     }
+      121 |     expect(res.response).not.toBeNull();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:118:66
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:130:7 › TC-SCM-94-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+        - locator resolved to <button ng-click="PnSearch.btnSearch.OnClick();" class="btn cc-btn-style cc-btn-color-violet">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        167 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\output-sale-charities.module.ts:56
+
+      54 |       .then(() => true)
+      55 |       .catch(() => false);
+    > 56 |     await this.ui.searchButton().click();
+         |                                  ^
+      57 |     const alerted = await alertP;
+      58 |     if (alerted) {
+      59 |       return { response: null, codeStep: null, alerted: true };
+        at OutputSaleCharitiesModule.search (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\output-sale-charities.module.ts:56:34)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:145:27
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--38146-nation-nếu-có-dữ-liệu-EDGE--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--38146-nation-nếu-có-dữ-liệu-EDGE--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--38146-nation-nếu-có-dữ-liệu-EDGE--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--38146-nation-nếu-có-dữ-liệu-EDGE--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--38146-nation-nếu-có-dữ-liệu-EDGE--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:221:7 › TC-SCM-94-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] 
+
+    Error: origin không tự Search khi mở Index
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      226 |
+      227 |     await mod.open(data.screen.route, data.screen.searchEndpoint);
+    > 228 |     expect(mod.searchesDuringLoad, 'origin không tự Search khi mở Index').toBe(0);
+          |                                                                           ^
+      229 |     await expect(mod.ui.content()).toBeVisible({ timeout: 30000 });
+      230 |   });
+      231 | });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:228:75
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--41909--no-auto-search-Index-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--41909--no-auto-search-Index-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--41909--no-auto-search-Index-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--41909--no-auto-search-Index-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--41909--no-auto-search-Index-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:234:7 › TC-SCM-94-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))
+    Expected: visible
+    Error: strict mode violation: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText')) resolved to 3 elements:
+        1) <div class="boxText">Lỗi hệ thống</div> aka getByText('Lỗi hệ thống').first()
+        2) <div class="boxText">Lỗi hệ thống</div> aka getByText('Lỗi hệ thống').nth(1)
+        3) <div class="boxText">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))
+
+
+      250 |     const res = await mod.search(data.screen.searchEndpoint, data.deepKeywordMiss.input.keyword);
+      251 |     if (res.alerted) {
+    > 252 |       await expect(mod.ui.alertText().or(mod.ui.alertWarning())).toBeVisible();
+          |                                                                  ^
+      253 |       return;
+      254 |     }
+      255 |     const rows = await mod.ui.dataRows().count();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:252:66
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:100:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:130:7 › TC-SCM-94-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] 
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:221:7 › TC-SCM-94-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] 
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:234:7 › TC-SCM-94-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] 
+  3 skipped
+  7 passed (2.8m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261009-101723.json

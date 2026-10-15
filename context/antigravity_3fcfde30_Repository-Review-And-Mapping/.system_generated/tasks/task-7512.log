@@ -1,0 +1,37 @@
+From https://bitbucket.org/concung/cci-store-location-web
+ * branch            dev        -> FETCH_HEAD
+   0af141b..0a93b0b  dev        -> origin/dev
+Updating b60967a..0a93b0b
+Fast-forward
+ .gitignore                                         |   8 +-
+ 01_origin/CoC.Web.Place/Web.config                 |   2 +-
+ 01_origin/CoC.Web.Place/appSetting.config          |  16 +-
+ 02_target/CoC.Web.Place/Config/AppConfig.cs        |  64 ++-
+ .../Controllers/AccountsController.cs              |  14 +-
+ .../CoC.Web.Place/Properties/launchSettings.json   |  20 +
+ 02_target/CoC.Web.Place/appsettings.json           |  90 ++--
+ 02_target/CoC.Web.Place/cci.core.json              |  14 +-
+ 02_target/Makefile                                 |   3 +-
+ 03_qa/.env                                         |  32 ++
+ 03_qa/.env.example                                 |  11 +
+ 03_qa/.gitignore                                   |   1 +
+ 03_qa/scripts/upload_to_portal.py                  |  43 +-
+ 03_qa/utils/json-reporter.ts                       |   2 +
+ 04_critical_change/04_config_doi3_stg_clean.md     |  98 ++++
+ 04_critical_change/05_returnurl_same_origin.md     |  23 +
+ Makefile                                           |  46 +-
+ app.config                                         | 346 --------------
+ app.uat.config                                     | 124 -----
+ scripts/apply-env-config.py                        | 518 ---------------------
+ scripts/run-origin.ps1                             |  29 +-
+ scripts/vscode-ports.ps1                           |  41 +-
+ tests/.env                                         |   2 +
+ 23 files changed, 391 insertions(+), 1156 deletions(-)
+ create mode 100644 02_target/CoC.Web.Place/Properties/launchSettings.json
+ create mode 100644 03_qa/.env
+ create mode 100644 04_critical_change/04_config_doi3_stg_clean.md
+ create mode 100644 04_critical_change/05_returnurl_same_origin.md
+ delete mode 100644 app.config
+ delete mode 100644 app.uat.config
+ delete mode 100644 scripts/apply-env-config.py
+ create mode 100644 tests/.env

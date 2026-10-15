@@ -1,0 +1,218 @@
+{
+  "total_regressions": 128,
+  "stg10_status_counts": {
+    "skipped": 67,
+    "failed": 11,
+    "timedOut": 41,
+    "passed": 9
+  },
+  "stg4_status_counts": {
+    "passed": 45,
+    "timedOut": 42,
+    "skipped": 30,
+    "failed": 11
+  },
+  "failed_cases_count": 11,
+  "timedout_cases_count": 41,
+  "skipped_cases_count": 67,
+  "failed_cases": [
+    {
+      "key": "confirm-s-cs | TC-SCM-35-005 | STATE sau Search — grid hoặc empty/alert [STATE]",
+      "stg4": "skipped",
+      "stg10": "failed",
+      "error": "Error: expect(received).not.toBeNull()\n\nReceived: null"
+    },
+    {
+      "key": "output-sale-charities | TC-SCM-94-005 | STATE sau Search — grid hoặc empty/alert [STATE]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))\nExpected: visible\nError: strict mode violation: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText')) resolved to 3 elements:\n    1) <div class=\"boxText\">Lỗi hệ thống</div> aka getByText('Lỗi hệ thống').first()\n    2) <div class=\"boxText\">Lỗi hệ thống</div> aka getByText('Lỗi hệ thống').nth(1)\n    3) <div class=\"boxText\">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô')\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))\n"
+    },
+    {
+      "key": "output-sale-lucky-draw-reward-points | TC-SCM-121-002 | FLOW Search `/OutputSaleLuckyDrawRewardPoints/Search` [FLOW]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 500\nReceived:   504"
+    },
+    {
+      "key": "output-types | TC-SCM-135-001 | LOAD /OutputTypes [LOAD]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false"
+    },
+    {
+      "key": "popup-memberships | TC-SCM-156-001 | LOAD /PopupMemberships [LOAD]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false"
+    },
+    {
+      "key": "product-category-g-ms | TC-SCM-173-002 | FLOW Search `/ProductCategoryGMs/Search` [FLOW]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 500\nReceived:   500"
+    },
+    {
+      "key": "product-category-weights | TC-SCM-174-002 | FLOW Search `/ProductCategoryWeights/Search` [FLOW]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 500\nReceived:   500"
+    },
+    {
+      "key": "product-g-ms | TC-SCM-189-002 | FLOW Search `/ProductGMs/Search` [FLOW]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 500\nReceived:   500"
+    },
+    {
+      "key": "purchase-orders | TC-SCM-232-001 | LOAD /PurchaseOrders [LOAD]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false"
+    },
+    {
+      "key": "purchase-orders | TC-SCM-232-002 | FLOW Search `/PurchaseOrders/Search` [FLOW]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n"
+    },
+    {
+      "key": "trial-product-customers | TC-SCM-273-002 | FLOW Search `/TrialProductCustomers/Search` [FLOW]",
+      "stg4": "passed",
+      "stg10": "failed",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n"
+    }
+  ],
+  "timedout_sample": [
+    {
+      "key": "confirm-s-cs | TC-SCM-35-010 | DEEP keyword miss → empty/alert [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 90000ms exceeded."
+    },
+    {
+      "key": "confirm-s-cs | TC-SCM-35-011 | DEEP keyword từ dòng đầu sau Search [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 120000ms exceeded."
+    },
+    {
+      "key": "infrastructure-user-assignments | TC-SCM-50-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    {
+      "key": "infrastructure-user-assignments | TC-SCM-50-009 | DEEP no auto-search Index [LOAD]",
+      "stg4": "passed",
+      "stg10": "timedOut",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    {
+      "key": "order-dc2-stores | TC-SCM-75-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    {
+      "key": "order-dc2-stores | TC-SCM-75-009 | DEEP no auto-search Index [LOAD]",
+      "stg4": "passed",
+      "stg10": "timedOut",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    {
+      "key": "output-sale-lucky-draw-brands | TC-SCM-114-012 | DEEP pagination trang 2 [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 120000ms exceeded."
+    },
+    {
+      "key": "output-sale-lucky-draw-location-applies | TC-SCM-117-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    {
+      "key": "output-sale-lucky-draw-location-applies | TC-SCM-117-009 | DEEP no auto-search Index [LOAD]",
+      "stg4": "passed",
+      "stg10": "timedOut",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    {
+      "key": "output-sale-lucky-draw-reward-points | TC-SCM-121-011 | DEEP keyword từ dòng đầu sau Search [FLOW]",
+      "stg4": "skipped",
+      "stg10": "timedOut",
+      "error": "Test timeout of 120000ms exceeded."
+    }
+  ],
+  "skipped_sample": [
+    {
+      "key": "accounting-process-departments | TC-SCM-03-006 | EDGE pagination nếu có dữ liệu [EDGE]",
+      "stg4": "passed",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "accounting-process-departments | TC-SCM-03-011 | DEEP keyword từ dòng đầu sau Search [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "activities | TC-SCM-04-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "activity-results | TC-SCM-05-005 | STATE sau Search — grid hoặc empty/alert [STATE]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "activity-results | TC-SCM-05-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "activity-results | TC-SCM-05-008 | DETAIL read-only mở link dòng đầu nếu có [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "bonus-point-account-categories | TC-SCM-16-006 | EDGE pagination nếu có dữ liệu [EDGE]",
+      "stg4": "passed",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "market-research-results | TC-SCM-66-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "order-receiving-requests | TC-SCM-76-007 | GUARDED mutation toolbar [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    },
+    {
+      "key": "order-receiving-requests | TC-SCM-76-008 | DETAIL read-only mở link dòng đầu nếu có [FLOW]",
+      "stg4": "timedOut",
+      "stg10": "skipped",
+      "error": null
+    }
+  ],
+  "total_origin_fails": 530,
+  "origin_fails_sample": [
+    "activities | TC-SCM-04-001 | LOAD /Activities [LOAD]",
+    "activities | TC-SCM-04-002 | FLOW Search `/Activities/Search` [FLOW]",
+    "activities | TC-SCM-04-004 | VALIDATION toolbar / form search controls [VALIDATION]",
+    "activities | TC-SCM-04-013 | DEEP breadcrumb + grid shell [FLOW]",
+    "activity-results | TC-SCM-05-001 | LOAD /ActivityResults [LOAD]"
+  ]
+}

@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-10-14T11:07:40+07:00
+Prompt: Check activities progress
+Early Termination: 3fcfde30-4110-403c-8f9f-a4ed95abc9e6/task-11023
+
+[2026-10-14T11:07:25+07:00] Still waiting. Remaining time: 15s
+[2026-10-14T11:07:26+07:00] Timer cancelled: agent received a message during wait.

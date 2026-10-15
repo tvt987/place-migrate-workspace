@@ -1,0 +1,454 @@
+[MVC.CoreHelpers] Falling back to CreateInstanceLogger for index: systemerror
+[MVC.CoreHelpers] WriteSystemErrorLog fallback: Erorr message:One or more errors occurred. (Unexpected character encountered while parsing value: . Path '', line 0, position 0.). Error message detail: Unexpected character encountered while parsing value: . Path '', line 0, position 0. | logger error: Object reference not set to an instance of an object.
+[OTLP] Starting OTLP tracing setup...
+[OTLP] OTLP tracing is disabled: URI not configured
+Check health start host to readiness
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 52.1569ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 65.3429ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 111.0169ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 111.2751ms - 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e56d410fc84cfbc647e19a479c563c91-b8eac7d358cb986c-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-299a25dba27443f29feeface6010ca4f-dd92963d6034c469-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-ac6f26e32d10132df7bfc92b434886d3-6f8bc5d685760fa3-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4cf1b2d654e87830ad74695a3e6b3008-ee899baf26d9f480-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-be2a67d19b1011fc149d5926e7edc7e1-9323756030cc0fc5-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d445daa5db7acbdf035b02238e8f27eb-eded701f1bdd35cd-00 - Path: /
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+         at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+         at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-6b7221e7cf2a655615c6aa70d9902cde-cf09f9fd3c42c86c-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-646bc5f61e383822115982b79ba157b1-17d45b657c001139-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a9ea20ca547bda0c4b428098bc5cb368-3a0dda56094fbfb7-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-c9f52c9e1de1481d50316fa51cb36e3c-001675d2c31d3f2b-00 - Path: /
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at InvokeStub_HomeController.LoadUserLogin(Object, Span`1)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-54a4194506678e0a0ab9898f8a206289-846c813b8b0520ef-00 - Path: /
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-82ada445ea705cca49fee095f76a0c24-1f57ef9ab442bffd-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-88c17bab232cf513088ed56baff653a4-06f50de3bed366bb-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-f31a73950a03b3e934b433401c9d2c16-244bcf4636b6dab9-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at InvokeStub_HomeController.LoadUserLogin(Object, Span`1)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-2480f175e4c2b0cb3625ed67202924e5-55f0988374497b6e-00 - Path: /Home/Index
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-c9b24fe94f827319579066ef6bbdc48d-d97179768558b2ce-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-3c04b3ed15b63b083d2f9f41e798f752-7ca0b278b9dfc863-00 - Path: /OutputOrders
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-c8a0ed72de6a5c0031ad83a53beba190-cc210ae71778dc5d-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-0b6673fdbb0ea45360b4860c35c31547-adeefd2b56ae4406-00 - Path: /Accounts/Callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-f23251b05cc617d1d4dc21f7339a3c1a-42ba35ccdde65b7b-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-55717531cf6e4e0db7677ac38c185440-2380361bdeb3e0ad-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-095191975144a7d0d100e52e6aa244ab-0d290a3d0e226710-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-274841016076453bcb5a1c0e437c8810-f7be6b2bd0d3a555-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+Error:IFeatureCollection has been disposed.
+Object name: 'Collection'. inner exception 
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a03f8adc3a77000a476f039a1ed63b21-84d07b16d9ddfd59-00 - Path: /
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at InvokeStub_HomeController.LoadUserLogin(Object, Span`1)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e1b71441d3b29fa6a2bfe4d0335f2956-95d50db0017a4669-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-7289b0760f2865785d6cfaf2088e851d-ea3581037c89378b-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-2809e063fce5c8a406ee400a428103db-f024bf3bee15bb2f-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-f1bb33f2df7db5955fc5fa23150503fc-c21f945c8cc7ef70-00 - Path: /
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at InvokeStub_HomeController.LoadUserLogin(Object, Span`1)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-1697c62b336dfc5ee1fa72376316ba12-1edeb167fafa22c5-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-daf3d6905bdd3a0d520dab1a778ab37c-aa8fe003c39b7c16-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-0a37ea81ba1b5af9b65f215a2f4a33d3-8b355e292a2b4aa9-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-f346c5aa7c49c674dab666839ddd4b26-828ecfb2ed920f8b-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4ba628ec4ae6c68444dc61e390eba89b-8c8c3187251caef0-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-47b505ead5031fdd98addbc02bd12ffb-cc5e4e126ebad8a0-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-65db84e52cd054957d7a2d7bb4bb91a3-ff5520bf77cc6917-00 - Path: /
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at InvokeStub_HomeController.LoadUserLogin(Object, Span`1)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-5cd5bfdd7f8fc0385df6e717fa4fe83d-0621691a36f81dff-00 - Path: /
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:4114)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at CoC.Web.DC.Controllers.HomeController.LoadUserLogin(Int32 UserID) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Controllers\HomeController.cs:line 106
+         at InvokeStub_HomeController.LoadUserLogin(Object, Span`1)
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at CoC.Web.DC.ViewComponents.ChildActionViewComponent.InvokeAsync(String controller, String action, Object routeValues) in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\ViewComponents\ChildActionViewComponent.cs:line 45
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, Object component, ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+         at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.<>c__DisplayClass18_0.<<ExecuteAsync>b__1>d.MoveNext() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 39
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+         at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync() in E:\Work\Place_Migrate\cci-dc-web\02_target\CoC.Web.DC\Views\Shared\_Layout.cshtml:line 24
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+         at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+         at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 500

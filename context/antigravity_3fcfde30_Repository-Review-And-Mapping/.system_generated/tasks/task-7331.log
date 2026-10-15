@@ -1,0 +1,47 @@
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   03_qa/.env
+	modified:   03_qa/.env.example
+	modified:   03_qa/.gitignore
+	modified:   03_qa/AGENTS.md
+	modified:   03_qa/Makefile
+	modified:   03_qa/Makefile.windows
+	modified:   03_qa/fixtures/auth.fixture.ts
+	modified:   03_qa/package-lock.json
+	modified:   03_qa/package.json
+	modified:   03_qa/scripts/harvest-seeds-from-db.cjs
+	modified:   03_qa/scripts/promote-seeds.cjs
+	modified:   03_qa/scripts/resolve-scm-connection.cjs
+	modified:   03_qa/scripts/run-e2e.win.ps1
+	modified:   03_qa/test-data/back-sale-suppliers-edit-distribution-back-sale-e2e.json
+	modified:   03_qa/test-data/inputs-detail-order-out-cache-e2e.json
+	modified:   03_qa/test-data/inputs-detail-transfer-out-cache-e2e.json
+	modified:   03_qa/test-data/output-orders-edit-liquidation-e2e.json
+	modified:   03_qa/test-data/seeds.stg4.env
+	modified:   03_qa/utils/env-helper.ts
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	03_qa/fixtures/anchors/discover-log.txt
+	03_qa/fixtures/anchors/discover-tables.json
+	03_qa/fixtures/anchors/scm.json
+	03_qa/fixtures/oracle-broken-stg4.json
+	03_qa/reports/
+	03_qa/scripts/analyze-regressions.py
+	03_qa/scripts/compare-parity.py
+	03_qa/scripts/discover-seed-sql.cjs
+	03_qa/scripts/list-edit-envs.cjs
+	03_qa/scripts/probe-missing-seeds.cjs
+	03_qa/scripts/run-parity.win.ps1
+	03_qa/scripts/seed-sql-map.cjs
+	03_qa/scripts/upload-report.js
+	03_qa/scripts/upload-report_test.js
+	03_qa/scripts/verify-anchors-stg4.cjs
+	03_qa/test-data/seeds.stg4.verified.env
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped stash@{0} (4ef7efa9d52e5b822ad19e29cc4b176f0126e8d2)

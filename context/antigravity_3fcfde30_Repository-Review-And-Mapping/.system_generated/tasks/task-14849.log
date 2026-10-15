@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (103 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.2s)
+  ok 2 [e2e] › e2e\mini-games-create\mini-games-create.e2e.spec.ts:30:7 › TC-SCM-321-001 — form loads [LOAD] › mở form Tạo mới chương trình Minigame [LOAD] (2.1s)
+  ok 3 [e2e] › e2e\mini-games-create\mini-games-create.e2e.spec.ts:91:9 › TC-SCM-321-002 — form validation blocks write [VALIDATION] › validation: MiniGames Create thiếu dữ liệu / chặn ghi [VALIDATION] (1.6s)
+  ok 4 [e2e] › e2e\mini-games-create\mini-games-create.e2e.spec.ts:127:7 › TC-SCM-321-003 — save for real [FLOW] › lưu MiniGames Create thật [FLOW] (6.6s)
+  ok 5 [e2e] › e2e\mini-games-create\mini-games-create.e2e.spec.ts:162:7 › TC-SCM-321-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 6 [e2e] › e2e\mini-games-create\mini-games-create.e2e.spec.ts:182:7 › TC-SCM-321-005 — list href reachable from shell [FLOW] › quay về danh sách /MiniGames [FLOW] (1.9s)
+
+  6 passed (20.4s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-180607.json

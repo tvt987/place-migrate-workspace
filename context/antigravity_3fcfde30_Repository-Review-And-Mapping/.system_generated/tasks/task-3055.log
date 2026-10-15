@@ -1,0 +1,21 @@
+  Determining projects to restore...
+E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj]
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j [E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj]
+E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47 [E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj]
+E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+  All projects are up-to-date for restore.
+E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+  Coc.Web.Place.ObjectCore -> E:\Work\Place_Migrate\cci-store-location-web\02_target\Coc.Web.Place.ObjectCore\bin\Debug\net10.0\Coc.Web.Place.ObjectCore.dll
+  CoC.Web.Place -> E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\bin\Debug\net10.0\CoC.Web.Place.dll
+  CoC.Web.Place.Unit.Tests -> E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\bin\Debug\net10.0\CoC.Web.Place.Unit.Tests.dll
+Test run for E:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\bin\Debug\net10.0\CoC.Web.Place.Unit.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    72, Skipped:     0, Total:    72, Duration: 415 ms - CoC.Web.Place.Unit.Tests.dll (net10.0)

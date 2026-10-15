@@ -1,0 +1,12 @@
+
+Running 3 tests using 1 worker
+
+✅ reuse .auth/token.json (568 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.5s)
+  -  2 [e2e] › e2e\journeys\scope-snapshot.e2e.spec.ts:31:7 › TC-SCM-SCOPE-001 — OutputOrders Edit scope types [FLOW] › INP/Output scope: ID + date-like fields [FLOW]
+  ok 3 [e2e] › e2e\journeys\scope-snapshot.e2e.spec.ts:103:7 › TC-SCM-SCOPE-002 — Invoices Edit scope (nếu seed) [FLOW] › Invoice object number-like fields [FLOW] (6.2s)
+
+  1 skipped
+  2 passed (14.7s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-102133.json

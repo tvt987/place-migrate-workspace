@@ -1,0 +1,29 @@
+
+Running 20 tests using 1 worker
+
+✅ reuse .auth/token.json (467 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.3s)
+  -   2 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:29:7 › TC-SCM-25-001 — Index loads [LOAD] › LOAD /CacheStorerages [LOAD]
+  -   3 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:55:7 › TC-SCM-25-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  -   4 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:66:7 › TC-SCM-25-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CacheStorerages [AUTH]
+  -   5 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:79:7 › TC-SCM-25-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION]
+  -   6 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:92:7 › TC-SCM-25-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:122:7 › TC-SCM-25-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -   8 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:152:7 › TC-SCM-25-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   9 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:177:7 › TC-SCM-25-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  10 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:213:7 › TC-SCM-25-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD]
+  -  11 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:226:7 › TC-SCM-25-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:254:7 › TC-SCM-25-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:300:7 › TC-SCM-25-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  14 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:335:7 › TC-SCM-25-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW]
+  -  15 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:358:7 › TC-SCM-25-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+  -  16 [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:31:7 › TC-SCM-298-001 — form loads [LOAD] › mở form CacheStorerages CreateCacheJS [LOAD]
+  -  17 [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:92:9 › TC-SCM-298-002 — form validation blocks write [VALIDATION] › validation: CacheStorerages CreateCacheJS thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  18 [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:128:7 › TC-SCM-298-003 — save for real [FLOW] › lưu CacheStorerages CreateCacheJS thật [FLOW]
+  -  19 [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:155:7 › TC-SCM-298-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -  20 [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:175:7 › TC-SCM-298-005 — list href reachable from shell [FLOW] › quay về danh sách /CacheStorerages [FLOW]
+
+  19 skipped
+  1 passed (10.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-120223.json

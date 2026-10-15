@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (68 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.1s)
+  ok 2 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:30:7 › TC-SCM-322-001 — form loads [LOAD] › mở form Thêm mới khai báo thời gian giao hàng đến cửa hàng [LOAD] (3.4s)
+  ok 3 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:91:9 › TC-SCM-322-002 — form validation blocks write [VALIDATION] › validation: Thêm mới khai báo thời gian giao hàng đến cửa hàng thiếu dữ liệu / chặn ghi [VALIDATION] (3.2s)
+  ok 4 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:127:7 › TC-SCM-322-003 — save for real [FLOW] › lưu Thêm mới khai báo thời gian giao hàng đến cửa hàng thật [FLOW] (8.6s)
+  ok 5 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:162:7 › TC-SCM-322-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (874ms)
+  ok 6 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:182:7 › TC-SCM-322-005 — list href reachable from shell [FLOW] › quay về danh sách /OrderDC2Stores [FLOW] (4.8s)
+
+  6 passed (25.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-184118.json

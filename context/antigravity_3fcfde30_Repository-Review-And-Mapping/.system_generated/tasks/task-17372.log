@@ -1,0 +1,46 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (431 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.2s)
+  x  2 [e2e] › e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:315:7 › TC-SCM-102-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (1.3m)
+
+
+  1) [e2e] › e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:315:7 › TC-SCM-102-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+
+    Error: expect(received).not.toBeNull()
+
+    Received: null
+
+      338 |     const firstCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+      339 |     const res = await mod.gotoPage2(data.screen.searchEndpoint);
+    > 340 |     expect(res.response).not.toBeNull();
+          |                              ^
+      341 |     expect(res.response!.status()).toBeLessThan(500);
+      342 |     await expect(mod.ui.dataRows().first()).toBeVisible({ timeout: 15000 });
+      343 |     const secondCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:340:30
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-22db9-EP-pagination-trang-2-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-22db9-EP-pagination-trang-2-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-clear-stoc-22db9-EP-pagination-trang-2-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-22db9-EP-pagination-trang-2-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-clear-stoc-22db9-EP-pagination-trang-2-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:315:7 › TC-SCM-102-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+  1 passed (1.4m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-213811.json

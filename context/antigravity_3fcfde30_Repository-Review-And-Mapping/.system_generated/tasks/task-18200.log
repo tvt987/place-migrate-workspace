@@ -1,0 +1,44 @@
+
+Running 1 test using 1 worker
+
+  x  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.0s)
+
+
+  1) [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO ────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5311/
+    Call log:
+      - navigating to "http://localhost:5311/", waiting until "domcontentloaded"
+
+
+      44 |
+      45 |   const appOrigin = new URL(getBaseUrl()).origin;
+    > 46 |   await page.goto(getBaseUrl(), { waitUntil: 'domcontentloaded', timeout: 60000 });
+         |              ^
+      47 |
+      48 |   const onLoginPage = await page
+      49 |     .waitForURL(
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\fixtures\auth.fixture.ts:46:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO ─────────────────────────────────
+
+📄 JSON report: E:\Work\Place_Migrate\cci-dc-web\03_qa\reports\details\test-report-20261015-093106.json

@@ -1,0 +1,56 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (581 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.3s)
+  ok 2 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:42:7 › TC-SCM-PERM-000 — anonymous SSO [AUTH] › anon /PurchaseOrders → IDS [AUTH] (1.7s)
+  ok 3 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:60:9 › TC-SCM-PERM-001 — OutputUses.Edit — account E2E thường 403 (oracle-broken) [AUTH] › /OutputUses/Edit?id=511464 [AUTH] (2.3s)
+  ok 4 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:60:9 › TC-SCM-PERM-002 — Index PO — user E2E phải vào được [AUTH] › /PurchaseOrders [AUTH] (2.4s)
+  ok 5 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:60:9 › TC-SCM-PERM-003 — Index OutputOrders — user E2E phải vào được [AUTH] › /OutputOrders [AUTH] (1.3s)
+  x  6 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:92:7 › TC-SCM-PERM-PEER — peer account optional [AUTH] › peer mở /OutputOrders nếu có TEST_USERNAME_PEER [AUTH] (30.4s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:92:7 › TC-SCM-PERM-PEER — peer account optional [AUTH] › peer mở /OutputOrders nếu có TEST_USERNAME_PEER [AUTH] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: Target page, context or browser has been closed
+
+      109 |       await page.waitForURL((u) => !isOnIds(u), { timeout: 60000 }).catch(() => {});
+      110 |     }
+    > 111 |     const resp = await page.goto(`${getBaseUrl().replace(/\/$/, '')}/OutputOrders`, {
+          |                             ^
+      112 |       waitUntil: 'domcontentloaded',
+      113 |       timeout: 60000,
+      114 |     });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\journeys\permission-matrix.e2e.spec.ts:111:29
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-journeys-permission-ma-937a5-có-TEST-USERNAME-PEER-AUTH--e2e\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-journeys-permission-ma-937a5-có-TEST-USERNAME-PEER-AUTH--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results\e2e-journeys-permission-ma-937a5-có-TEST-USERNAME-PEER-AUTH--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-journeys-permission-ma-937a5-có-TEST-USERNAME-PEER-AUTH--e2e\error-context.md
+
+    attachment #12: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-journeys-permission-ma-937a5-có-TEST-USERNAME-PEER-AUTH--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-journeys-permission-ma-937a5-có-TEST-USERNAME-PEER-AUTH--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:92:7 › TC-SCM-PERM-PEER — peer account optional [AUTH] › peer mở /OutputOrders nếu có TEST_USERNAME_PEER [AUTH] 
+  5 passed (48.2s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-100841.json

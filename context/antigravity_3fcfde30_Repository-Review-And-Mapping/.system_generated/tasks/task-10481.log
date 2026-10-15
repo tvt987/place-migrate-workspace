@@ -1,0 +1,40 @@
+
+Running 3 tests using 1 worker
+
+✅ reuse .auth/token.json (577 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.3s)
+[JRN-002] seed AddProduct fail (ProductSearch Warning: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu); modal: GetProduct ok nhưng Lst modal rỗng / không có ProductID
+  ok 2 [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:58:7 › TC-SCM-JRN-002 — WRITE create InputOrders + teardown [FLOW] › tạo phiếu nhập PQT thật (AUTO_E2E) + teardown Hủy [FLOW] (8.3s)
+[JRN-003] { posted: false, alert: '' }
+  x  3 [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:95:7 › TC-SCM-JRN-003 — WRITE Output Create shell attempt [FLOW] › Output Create: điền mô tả AUTO_E2E + click Tạo (best-effort) [FLOW] (1.6m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:95:7 › TC-SCM-JRN-003 — WRITE Output Create shell attempt [FLOW] › Output Create: điền mô tả AUTO_E2E + click Tạo (best-effort) [FLOW] 
+
+    Test timeout of 90000ms exceeded.
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-journeys-po-input-outp-aa74d-click-Tạo-best-effort-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results\e2e-journeys-po-input-outp-aa74d-click-Tạo-best-effort-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-journeys-po-input-outp-aa74d-click-Tạo-best-effort-FLOW--e2e\error-context.md
+
+    attachment #12: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-journeys-po-input-outp-aa74d-click-Tạo-best-effort-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-journeys-po-input-outp-aa74d-click-Tạo-best-effort-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:95:7 › TC-SCM-JRN-003 — WRITE Output Create shell attempt [FLOW] › Output Create: điền mô tả AUTO_E2E + click Tạo (best-effort) [FLOW] 
+  2 passed (1.8m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-101209.json

@@ -1,0 +1,55 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (323 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.2s)
+  ok  2 [e2e] › e2e\delivery-fee-v2-by-distance-config-store-applies\delivery-fee-v2-by-distance-config-store-applies.e2e.spec.ts:28:7 › TC-SCM-45-001 — Index loads [LOAD] › LOAD /DeliveryFeeV2ByDistanceConfigStoreApplies [LOAD] (3.6s)
+  x   3 [e2e] › e2e\delivery-fee-v2-by-distance-config-store-applies\delivery-fee-v2-by-distance-config-store-applies.e2e.spec.ts:55:7 › TC-SCM-45-002 — Search / client guard [FLOW] › FLOW Search `/DeliveryFeeV2ByDistanceConfigStoreApplies/Search` [FLOW] (1.1m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\delivery-fee-v2-by-distance-config-store-applies\delivery-fee-v2-by-distance-config-store-applies.e2e.spec.ts:55:7 › TC-SCM-45-002 — Search / client guard [FLOW] › FLOW Search `/DeliveryFeeV2ByDistanceConfigStoreApplies/Search` [FLOW] 
+
+    Error: Search response
+
+    expect(received).not.toBeNull()
+
+    Received: null
+
+       at utils\json-contract.ts:95
+
+      93 |   opts?: { onPerfWarn?: PerfWarnFn; thresholdMs?: number },
+      94 | ): Promise<void> {
+    > 95 |   expect(resp, 'Search response').not.toBeNull();
+         |                                       ^
+      96 |   expect(resp!.status(), 'Search HTTP').toBeLessThan(500);
+      97 |   assertObjCodeStepShape(codeStep);
+      98 |   const body = await resp!.json().catch(() => null);
+        at assertSearchContract (E:\Work\Place_Migrate\cci-scm-web\03_qa\utils\json-contract.ts:95:39)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\delivery-fee-v2-by-distance-config-store-applies\delivery-fee-v2-by-distance-config-store-applies.e2e.spec.ts:67:31
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-delivery-fee-v2-by-dis-2a407-igStoreApplies-Search-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-delivery-fee-v2-by-dis-2a407-igStoreApplies-Search-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-delivery-fee-v2-by-dis-2a407-igStoreApplies-Search-FLOW--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-delivery-fee-v2-by-dis-2a407-igStoreApplies-Search-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-delivery-fee-v2-by-dis-2a407-igStoreApplies-Search-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\delivery-fee-v2-by-distance-config-store-applies\delivery-fee-v2-by-distance-config-store-applies.e2e.spec.ts:55:7 › TC-SCM-45-002 — Search / client guard [FLOW] › FLOW Search `/DeliveryFeeV2ByDistanceConfigStoreApplies/Search` [FLOW] 
+  12 did not run
+  2 passed (1.2m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-142619.json

@@ -1,0 +1,19 @@
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+From https://bitbucket.org/concung/cci-store-location-web
+ * branch            dev        -> FETCH_HEAD
+Already up to date.
+Merge made by the 'ort' strategy.
+ 02_target/CoC.Web.Place/Startup.cs                 |  1 +
+ ...LACE-vuot-nguong-formoptions-valuecountlimit.md | 41 ++++++++++++++++++++++
+ 2 files changed, 42 insertions(+)
+ create mode 100644 04_critical_change/TC-PLACE-vuot-nguong-formoptions-valuecountlimit.md
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-store-location-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-store-location-web.git
+   0a93b0b..bfbfceb  dev -> dev
+Deleted branch fix/TC-PLACE-vuot-nguong-formoptions-valuecountlimit (was a45b9f9).
+To https://bitbucket.org/concung/cci-store-location-web.git
+ * [new tag]         fix/TC-PLACE-vuot-nguong-formoptions-valuecountlimit -> fix/TC-PLACE-vuot-nguong-formoptions-valuecountlimit

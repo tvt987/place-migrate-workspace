@@ -1,0 +1,33 @@
+Switched to branch 'staging10'
+M	00_docs/00_screen/.oracle-lock.json
+M	02_target/Makefile
+M	04_critical_change/SESSION_CONTEXT_SUMMARY_20260930.md
+M	Makefile
+Merge made by the 'ort' strategy.
+ .../TC-PLACE-auth-stg-bypass.md                    | 68 ++++++++++++++++++++++
+ 1 file changed, 68 insertions(+)
+ create mode 100644 04_critical_change/test-mssql-report-20261001-145338/TC-PLACE-auth-stg-bypass.md
+remote: 
+remote: Create pull request for staging10:        
+remote:   https://bitbucket.org/concung/cci-store-location-web/pull-requests/new?source=staging10&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-store-location-web.git
+   97f6b40..9e20141  staging10 -> staging10
+Switched to branch 'staging'
+M	00_docs/00_screen/.oracle-lock.json
+M	02_target/Makefile
+M	04_critical_change/SESSION_CONTEXT_SUMMARY_20260930.md
+M	Makefile
+Your branch is up to date with 'origin/staging'.
+Merge made by the 'ort' strategy.
+ .../TC-PLACE-auth-stg-bypass.md                    | 68 ++++++++++++++++++++++
+ 1 file changed, 68 insertions(+)
+ create mode 100644 04_critical_change/test-mssql-report-20261001-145338/TC-PLACE-auth-stg-bypass.md
+To https://bitbucket.org/concung/cci-store-location-web.git
+   d682eb7..788a7fe  staging -> staging
+Switched to branch 'dev'
+M	00_docs/00_screen/.oracle-lock.json
+M	02_target/Makefile
+M	04_critical_change/SESSION_CONTEXT_SUMMARY_20260930.md
+M	Makefile
+Your branch is up to date with 'origin/dev'.

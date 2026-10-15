@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (169 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.4s)
+  ok 2 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:30:7 › TC-SCM-315-001 — form loads [LOAD] › mở form Tạo phiếu nhập chênh lệch kiểm kê [LOAD] (4.5s)
+  ok 3 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:91:9 › TC-SCM-315-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập chênh lệch kiểm kê thiếu dữ liệu / chặn ghi [VALIDATION] (4.9s)
+  ok 4 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:127:7 › TC-SCM-315-003 — save for real [FLOW] › lưu Tạo phiếu nhập chênh lệch kiểm kê thật [FLOW] (9.5s)
+  ok 5 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:162:7 › TC-SCM-315-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (898ms)
+  ok 6 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:182:7 › TC-SCM-315-005 — list href reachable from shell [FLOW] › quay về danh sách /IVENInputOrders [FLOW] (6.5s)
+
+  6 passed (32.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-170004.json

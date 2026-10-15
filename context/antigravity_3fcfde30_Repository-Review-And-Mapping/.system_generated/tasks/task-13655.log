@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (208 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (16.2s)
+  x  2 [e2e] › e2e\invoices-edit-gross\invoices-edit-gross.e2e.spec.ts:32:7 › TC-SCM-312-001 — form loads [LOAD] › mở form Chi tiết phiếu gộp [LOAD] (2.0s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\invoices-edit-gross\invoices-edit-gross.e2e.spec.ts:32:7 › TC-SCM-312-001 — form loads [LOAD] › mở form Chi tiết phiếu gộp [LOAD] 
+
+    Error: title="ConCung Identity Server" vs "SCM - Chi tiết phiếu gộp"
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      62 |         title === expectTitle || title.includes(soft) || title.startsWith('DC') || title.startsWith('SCM'),
+      63 |         `title="${title}" vs "${expectTitle}"`,
+    > 64 |       ).toBeTruthy();
+         |         ^
+      65 |     }
+      66 |     const contentVis = await mod.ui.content().isVisible().catch(() => false);
+      67 |     if (!contentVis) {
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\invoices-edit-gross\invoices-edit-gross.e2e.spec.ts:64:9
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-invoices-edit-gross-in-5b34c-rm-Chi-tiết-phiếu-gộp-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-invoices-edit-gross-in-5b34c-rm-Chi-tiết-phiếu-gộp-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-invoices-edit-gross-in-5b34c-rm-Chi-tiết-phiếu-gộp-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-invoices-edit-gross-in-5b34c-rm-Chi-tiết-phiếu-gộp-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-invoices-edit-gross-in-5b34c-rm-Chi-tiết-phiếu-gộp-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\invoices-edit-gross\invoices-edit-gross.e2e.spec.ts:32:7 › TC-SCM-312-001 — form loads [LOAD] › mở form Chi tiết phiếu gộp [LOAD] 
+  4 did not run
+  1 passed (20.2s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-162128.json

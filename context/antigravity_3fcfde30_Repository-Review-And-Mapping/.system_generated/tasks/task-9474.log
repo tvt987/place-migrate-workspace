@@ -1,0 +1,1 @@
+Saved working directory and index state WIP on dev: bbf232b0 fix(api-helper): fix SetBearer Authorization header parity, safe response buffering, error logging and permission null-guard

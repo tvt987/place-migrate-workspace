@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (545 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.0s)
+  ok 2 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:42:7 › TC-SCM-PERM-000 — anonymous SSO [AUTH] › anon /PurchaseOrders → IDS [AUTH] (1.4s)
+  ok 3 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:60:9 › TC-SCM-PERM-001 — OutputUses.Edit — account E2E thường 403 (oracle-broken) [AUTH] › /OutputUses/Edit?id=511464 [AUTH] (2.1s)
+  ok 4 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:60:9 › TC-SCM-PERM-002 — Index PO — user E2E phải vào được [AUTH] › /PurchaseOrders [AUTH] (2.9s)
+  ok 5 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:60:9 › TC-SCM-PERM-003 — Index OutputOrders — user E2E phải vào được [AUTH] › /OutputOrders [AUTH] (2.3s)
+  ok 6 [e2e] › e2e\journeys\permission-matrix.e2e.spec.ts:92:7 › TC-SCM-PERM-PEER — peer account optional [AUTH] › peer mở /OutputOrders nếu có TEST_USERNAME_PEER [AUTH] (1.0m)
+
+  6 passed (1.3m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-104458.json

@@ -1,0 +1,22 @@
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+From https://bitbucket.org/concung/cci-store-location-web
+ * branch            dev        -> FETCH_HEAD
+Already up to date.
+Merge made by the 'ort' strategy.
+ 02_target/CoC.Web.Place/Helpers/APIClient.cs       |  26 +++-
+ 02_target/CoC.Web.Place/Helpers/ApiHelper.cs       |   2 +-
+ .../SESSION_CONTEXT_SUMMARY_20260930.md            | 167 +++++++++++++++++++++
+ ...C-003-fix-apiclient-pascalcase-serialization.md |  53 +++++++
+ app.config                                         |   6 +-
+ .../Helpers/APIClientTests.cs                      |  77 ++++++++++
+ 6 files changed, 323 insertions(+), 8 deletions(-)
+ create mode 100644 04_critical_change/SESSION_CONTEXT_SUMMARY_20260930.md
+ create mode 100644 04_critical_change/test-report-20260929-172002/TC-FUNC-003-fix-apiclient-pascalcase-serialization.md
+ create mode 100644 tests/Unit/CoC.Web.Place.Unit.Tests/Helpers/APIClientTests.cs
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-store-location-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-store-location-web.git
+   08bb7f8..1d26371  dev -> dev

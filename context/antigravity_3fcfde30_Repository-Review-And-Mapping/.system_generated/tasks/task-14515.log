@@ -1,0 +1,51 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (129 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (7.2s)
+  x   2 [e2e] › e2e\market-research-results\market-research-results.e2e.spec.ts:28:7 › TC-SCM-66-001 — Index loads [LOAD] › LOAD /MarketResearchResults [LOAD] (18.6s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\market-research-results\market-research-results.e2e.spec.ts:28:7 › TC-SCM-66-001 — Index loads [LOAD] › LOAD /MarketResearchResults [LOAD] 
+
+    Error: title actual="" expected="SCM - Danh sách kết quả khảo sát"
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      41 |       (core.length > 0 && title.includes(core)) ||
+      42 |       /SCM/i.test(title);
+    > 43 |     expect(titleOk, `title actual="${title}" expected="${expected}"`).toBeTruthy();
+         |                                                                       ^
+      44 |     if (data.screen.keywordModel) {
+      45 |       await expect(mod.ui.keyword()).toBeVisible({ timeout: 30000 });
+      46 |     }
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\market-research-results\market-research-results.e2e.spec.ts:43:71
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-market-research-result-f352c-MarketResearchResults-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-market-research-result-f352c-MarketResearchResults-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-market-research-result-f352c-MarketResearchResults-LOAD--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-market-research-result-f352c-MarketResearchResults-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-market-research-result-f352c-MarketResearchResults-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\market-research-results\market-research-results.e2e.spec.ts:28:7 › TC-SCM-66-001 — Index loads [LOAD] › LOAD /MarketResearchResults [LOAD] 
+  13 did not run
+  1 passed (27.5s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-174038.json

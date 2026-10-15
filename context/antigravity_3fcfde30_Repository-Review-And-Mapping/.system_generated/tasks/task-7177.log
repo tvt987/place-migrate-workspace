@@ -1,0 +1,8 @@
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-scm-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-scm-web.git
+   62e2f87c..f2fab011  dev -> dev
+To https://bitbucket.org/concung/cci-scm-web.git
+ * [new tag]           fix/TC-SCM-94-005-vuot-nguong-formoptions-valuecountlimit -> fix/TC-SCM-94-005-vuot-nguong-formoptions-valuecountlimit

@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (251 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.9s)
+  ok 2 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:33:7 › TC-SCM-306-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập phiếu quà tặng [LOAD] (3.3s)
+  ok 3 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:95:9 › TC-SCM-306-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập phiếu quà tặng thiếu dữ liệu / chặn ghi [VALIDATION] (3.2s)
+  ok 4 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:132:7 › TC-SCM-306-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập phiếu quà tặng thật [FLOW] (8.1s)
+  ok 5 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:168:7 › TC-SCM-306-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (945ms)
+  ok 6 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:191:7 › TC-SCM-306-005 — list href reachable from shell [FLOW] › quay về danh sách /InputOrders [FLOW] (5.4s)
+
+  6 passed (25.6s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-153839.json

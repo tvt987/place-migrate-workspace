@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (429 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.0s)
+  ok 2 [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:30:7 › TC-SCM-299-001 — form loads [LOAD] › mở form ComparePrice Create [LOAD] (3.5s)
+  -  3 [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:91:9 › TC-SCM-299-002 — form validation blocks write [VALIDATION] › validation: ComparePrice Create thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  4 [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:127:7 › TC-SCM-299-003 — save for real [FLOW] › lưu ComparePrice Create thật [FLOW]
+  ok 5 [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:154:7 › TC-SCM-299-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 6 [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:174:7 › TC-SCM-299-005 — list href reachable from shell [FLOW] › quay về danh sách /ComparePrice [FLOW] (5.6s)
+
+  2 skipped
+  4 passed (21.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-124011.json

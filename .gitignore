@@ -1,0 +1,10 @@
+# Mode 1 repos co git rieng (Bitbucket) - khong dua vao repo workspace
+cci-*/
+# Nhay cam / lon
+.env
+**/.env
+*.db
+*.db-shm
+*.db-wal
+.auth/
+node_modules/

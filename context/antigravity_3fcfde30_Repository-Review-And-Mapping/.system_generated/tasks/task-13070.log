@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+âœ… reuse .auth/token.json (280 min left)
+  ok 1 [setup] â€º fixtures\auth.fixture.ts:37:6 â€º authenticate via SSO (5.5s)
+  ok 2 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:30:7 â€º TC-SCM-303-001 â€” form loads [LOAD] â€º má»Ÿ form Táº¡o phiáº¿u chuyá»ƒn kho hÃ ng hÃ³a [LOAD] (3.8s)
+  ok 3 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:91:9 â€º TC-SCM-303-002 â€” form validation blocks write [VALIDATION] â€º validation: Táº¡o phiáº¿u chuyá»ƒn kho hÃ ng hÃ³a thiáº¿u dá»¯ liá»‡u / cháº·n ghi [VALIDATION] (2.4s)
+  ok 4 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:127:7 â€º TC-SCM-303-003 â€” save for real [FLOW] â€º lÆ°u Táº¡o phiáº¿u chuyá»ƒn kho hÃ ng hÃ³a tháº­t [FLOW] (7.7s)
+  ok 5 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:162:7 â€º TC-SCM-303-004 â€” anonymous â†’ SSO [AUTH] â€º áº©n danh bá»‹ chuyá»ƒn tá»›i Keycloak [AUTH] (903ms)
+  ok 6 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:182:7 â€º TC-SCM-303-005 â€” list href reachable from shell [FLOW] â€º quay vá» danh sÃ¡ch /ErrDesStorechanges [FLOW] (4.7s)
+
+  6 passed (26.6s)
+
+ðŸ“„ JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-150957.json

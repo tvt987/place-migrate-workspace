@@ -1,0 +1,63 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (589 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.5s)
+  ok  2 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:28:7 › TC-SCM-51-001 — Index loads [LOAD] › LOAD /InputOrders [LOAD] (4.4s)
+  ok  3 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:53:7 › TC-SCM-51-002 — Search / client guard [FLOW] › FLOW Search `/InputOrders/Search` [FLOW] (5.0s)
+  ok  4 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:73:7 › TC-SCM-51-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /InputOrders [AUTH] (2.4s)
+  ok  5 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:86:7 › TC-SCM-51-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.9s)
+  ok  6 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:103:7 › TC-SCM-51-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (5.3s)
+  -   7 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:133:7 › TC-SCM-51-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:163:7 › TC-SCM-51-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (4.6s)
+  -   9 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:188:7 › TC-SCM-51-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:224:7 › TC-SCM-51-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (5.7s)
+  ok 11 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:237:7 › TC-SCM-51-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (4.9s)
+  x  12 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:265:7 › TC-SCM-51-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW] (2.2m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:265:7 › TC-SCM-51-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW] 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.textContent: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for locator('#content table:not(.modal *) tbody tr').filter({ hasNotText: /Không có dữ liệu/i }).filter({ visible: true }).first().locator('td').nth(1)
+
+
+      289 |       return;
+      290 |     }
+    > 291 |     const cell = ((await mod.ui.dataRows().first().locator('td').nth(1).textContent()) || '').trim();
+          |                                                                         ^
+      292 |     const token = cell.split(/\s+/).find((p) => p.length >= 3) || cell.slice(0, 8);
+      293 |     if (!token || token.length < 2) {
+      294 |       test.skip(true, 'không tách được token keyword từ dòng');
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\input-orders\input-orders.e2e.spec.ts:291:73
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-input-ord-17288-ừ-dòng-đầu-sau-Search-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-input-ord-17288-ừ-dòng-đầu-sau-Search-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-input-orders-input-ord-17288-ừ-dòng-đầu-sau-Search-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-input-ord-17288-ừ-dòng-đầu-sau-Search-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-input-orders-input-ord-17288-ừ-dòng-đầu-sau-Search-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:265:7 › TC-SCM-51-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW] 
+  2 skipped
+  3 did not run
+  9 passed (3.2m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-100020.json

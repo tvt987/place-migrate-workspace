@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-10-14T10:20:50+07:00
+Prompt: Check JRN-003 execution progress
+Early Termination: 3fcfde30-4110-403c-8f9f-a4ed95abc9e6/task-10616
+
+[2026-10-14T10:20:35+07:00] Still waiting. Remaining time: 15s
+[2026-10-14T10:20:42+07:00] Timer cancelled: agent received a message during wait.

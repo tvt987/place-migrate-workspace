@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (519 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.8s)
+  ok 2 [e2e] › e2e\activities-create\activities-create.e2e.spec.ts:30:7 › TC-SCM-286-001 — form loads [LOAD] › mở form Activities Create [LOAD] (18.1s)
+  -  3 [e2e] › e2e\activities-create\activities-create.e2e.spec.ts:91:9 › TC-SCM-286-002 — form validation blocks write [VALIDATION] › validation: Activities Create thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  4 [e2e] › e2e\activities-create\activities-create.e2e.spec.ts:127:7 › TC-SCM-286-003 — save for real [FLOW] › lưu Activities Create thật [FLOW]
+  ok 5 [e2e] › e2e\activities-create\activities-create.e2e.spec.ts:154:7 › TC-SCM-286-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 6 [e2e] › e2e\activities-create\activities-create.e2e.spec.ts:174:7 › TC-SCM-286-005 — list href reachable from shell [FLOW] › quay về danh sách /Activities [FLOW] (34.9s)
+
+  2 skipped
+  4 passed (1.6m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-111002.json

@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+  ok 1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (8.4s)
+
+  1 passed (9.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261008-145543.json

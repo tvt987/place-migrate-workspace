@@ -1,0 +1,11 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (569 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.0s)
+[JRN-003] { posted: false, alert: '' }
+  ok 2 [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:95:7 › TC-SCM-JRN-003 — WRITE Output Create shell attempt [FLOW] › Output Create: điền mô tả AUTO_E2E + click Tạo (best-effort) [FLOW] (19.0s)
+
+  2 passed (27.6s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-102014.json

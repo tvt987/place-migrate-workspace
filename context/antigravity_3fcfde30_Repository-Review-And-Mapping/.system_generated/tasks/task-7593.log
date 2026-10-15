@@ -1,0 +1,145 @@
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+From https://bitbucket.org/concung/cci-mbm-web
+ * branch            dev        -> FETCH_HEAD
+   733ada1..1aac189  dev        -> origin/dev
+Updating 733ada1..1aac189
+Fast-forward
+ .report/Makefile                                   |   6 +-
+ .../Controllers/DirectivesController.cs            |   8 +-
+ 02_target/CoC.Web.MBM/Helpers/QrPngRenderer.cs     | 105 +++++++++
+ .../CoC.Web.MBM/Views/Shared/INC/_Layout.cshtml    |   6 +-
+ 02_target/CoC.Web.MBM/Views/Shared/_Layout.cshtml  |   4 +-
+ .../CoC.Web.MBM/Views/Shared/_LayoutDefault.cshtml |   6 +-
+ .../Views/Shared/_LayoutDefaultCH.Mobile.cshtml    |   4 +-
+ .../Views/Shared/_LayoutDefaultCH.cshtml           |   4 +-
+ .../Views/Shared/_LayoutDefaultTNCN.cshtml         |   4 +-
+ .../Views/Shared/_LayoutMailBox.Mobile.cshtml      |   4 +-
+ .../Views/Shared/_LayoutMailBox.Mobile_.cshtml     |   4 +-
+ .../CoC.Web.MBM/Views/Shared/_LayoutMailBox.cshtml |   4 +-
+ .../Views/Shared/_LayoutMailBox_.cshtml            |   4 +-
+ .../CoC.Web.MBM/Views/Shared/_LayoutPrint.cshtml   |   4 +-
+ .../CoC.Web.MBM/Views/Shared/_LayoutPrint2.cshtml  |   4 +-
+ .../Views/Shared/_LayoutResetPass.cshtml           |   4 +-
+ 02_target/Makefile                                 |  11 +-
+ 03_qa/AGENTS.md                                    |   2 +-
+ 03_qa/config/screens.generated.json                |  50 ----
+ 03_qa/e2e/AGENTS.md                                |   8 +-
+ 03_qa/e2e/additional-working-sheets/COMMANDS.md    |  29 ---
+ .../additional-working-sheets.e2e.spec.ts          | 256 ---------------------
+ ...stomer-insurance-consultations-list.e2e.spec.ts |  18 +-
+ 03_qa/e2e/document-detail/COMMANDS.md              |  28 ---
+ .../document-detail/document-detail.e2e.spec.ts    |  96 --------
+ 03_qa/e2e/output-caches/COMMANDS.md                |  28 ---
+ 03_qa/e2e/output-caches/output-caches.e2e.spec.ts  | 130 -----------
+ 03_qa/e2e/twofa/twofa.e2e.spec.ts                  |  24 +-
+ 03_qa/e2e/update-avatar/update-avatar.e2e.spec.ts  |  18 +-
+ 03_qa/e2e/working-sheet-detail/COMMANDS.md         |  27 ---
+ .../working-sheet-detail.e2e.spec.ts               | 117 ----------
+ 03_qa/e2e/workshift-support-calendar/COMMANDS.md   |  27 ---
+ .../workshift-support-calendar.e2e.spec.ts         |  94 --------
+ 03_qa/e2e/workshift-support-planning/COMMANDS.md   |  29 ---
+ .../workshift-support-planning.e2e.spec.ts         | 140 -----------
+ 03_qa/modules/additional-working-sheets.module.ts  |  66 ------
+ 03_qa/modules/document-detail.module.ts            |  27 ---
+ 03_qa/modules/output-caches.module.ts              |  25 --
+ 03_qa/modules/working-sheet-detail.module.ts       |  16 --
+ 03_qa/modules/workshift-support-calendar.module.ts |  16 --
+ 03_qa/modules/workshift-support-planning.module.ts |  16 --
+ 03_qa/pages/AGENTS.md                              |   5 +-
+ 03_qa/pages/additional-working-sheets.page.ts      |  60 -----
+ 03_qa/pages/document-detail.page.ts                |  27 ---
+ 03_qa/pages/income-print.page.ts                   |   5 +-
+ 03_qa/pages/output-caches.page.ts                  |  23 --
+ 03_qa/pages/twofa.page.ts                          |  13 +-
+ 03_qa/pages/update-avatar.page.ts                  |   4 +
+ 03_qa/pages/working-sheet-detail.page.ts           |  21 --
+ 03_qa/pages/workshift-support-calendar.page.ts     |  32 ---
+ 03_qa/pages/workshift-support-planning.page.ts     |  32 ---
+ 03_qa/plan/additional-working-sheets-e2e-plan.md   | 119 ----------
+ 03_qa/plan/document-detail-e2e-plan.md             |  90 --------
+ 03_qa/plan/output-caches-e2e-plan.md               |  97 --------
+ 03_qa/plan/working-sheet-detail-e2e-plan.md        |  87 -------
+ 03_qa/plan/workshift-support-calendar-e2e-plan.md  |  90 --------
+ 03_qa/plan/workshift-support-planning-e2e-plan.md  | 108 ---------
+ 03_qa/test-data/additional-working-sheets-e2e.json |  99 --------
+ 03_qa/test-data/document-detail-e2e.json           |  43 ----
+ 03_qa/test-data/output-caches-e2e.json             |  40 ----
+ 03_qa/test-data/routes-e2e.json                    |  10 +-
+ 03_qa/test-data/twofa-e2e.json                     |  10 +-
+ 03_qa/test-data/working-sheet-detail-e2e.json      |  44 ----
+ .../test-data/workshift-support-calendar-e2e.json  |  50 ----
+ .../test-data/workshift-support-planning-e2e.json  |  54 -----
+ 04_critical_change/00_README.md                    |  21 +-
+ 04_critical_change/13_config_doi3_clienturl.md     |  31 ++-
+ .../15_jalert_notify_autoremove_e2e_race.md        |  69 ++++++
+ .../16_income_print_locator_strict_mode.md         |  47 ++++
+ .../17_routes_expected_message_wrong.md            |  51 ++++
+ 04_critical_change/18_vc_taghelper_not_executed.md |  74 ++++++
+ .../19_wssp_gated_button_guard_missing.md          |  55 +++++
+ .../20_qa_remove_moved_out_screens.md              |  81 +++++++
+ .../20_remaining_failures_disposition.md           |  55 +++++
+ .../21_update_avatar_cropper_async_assert.md       |  67 ++++++
+ 04_critical_change/AGENTS.md                       |  16 ++
+ .../TC-MBM-04-002-qr-2fa-trang-tren-linux.md       |  92 ++++++++
+ 77 files changed, 889 insertions(+), 2406 deletions(-)
+ create mode 100644 02_target/CoC.Web.MBM/Helpers/QrPngRenderer.cs
+ delete mode 100644 03_qa/e2e/additional-working-sheets/COMMANDS.md
+ delete mode 100644 03_qa/e2e/additional-working-sheets/additional-working-sheets.e2e.spec.ts
+ delete mode 100644 03_qa/e2e/document-detail/COMMANDS.md
+ delete mode 100644 03_qa/e2e/document-detail/document-detail.e2e.spec.ts
+ delete mode 100644 03_qa/e2e/output-caches/COMMANDS.md
+ delete mode 100644 03_qa/e2e/output-caches/output-caches.e2e.spec.ts
+ delete mode 100644 03_qa/e2e/working-sheet-detail/COMMANDS.md
+ delete mode 100644 03_qa/e2e/working-sheet-detail/working-sheet-detail.e2e.spec.ts
+ delete mode 100644 03_qa/e2e/workshift-support-calendar/COMMANDS.md
+ delete mode 100644 03_qa/e2e/workshift-support-calendar/workshift-support-calendar.e2e.spec.ts
+ delete mode 100644 03_qa/e2e/workshift-support-planning/COMMANDS.md
+ delete mode 100644 03_qa/e2e/workshift-support-planning/workshift-support-planning.e2e.spec.ts
+ delete mode 100644 03_qa/modules/additional-working-sheets.module.ts
+ delete mode 100644 03_qa/modules/document-detail.module.ts
+ delete mode 100644 03_qa/modules/output-caches.module.ts
+ delete mode 100644 03_qa/modules/working-sheet-detail.module.ts
+ delete mode 100644 03_qa/modules/workshift-support-calendar.module.ts
+ delete mode 100644 03_qa/modules/workshift-support-planning.module.ts
+ delete mode 100644 03_qa/pages/additional-working-sheets.page.ts
+ delete mode 100644 03_qa/pages/document-detail.page.ts
+ delete mode 100644 03_qa/pages/output-caches.page.ts
+ delete mode 100644 03_qa/pages/working-sheet-detail.page.ts
+ delete mode 100644 03_qa/pages/workshift-support-calendar.page.ts
+ delete mode 100644 03_qa/pages/workshift-support-planning.page.ts
+ delete mode 100644 03_qa/plan/additional-working-sheets-e2e-plan.md
+ delete mode 100644 03_qa/plan/document-detail-e2e-plan.md
+ delete mode 100644 03_qa/plan/output-caches-e2e-plan.md
+ delete mode 100644 03_qa/plan/working-sheet-detail-e2e-plan.md
+ delete mode 100644 03_qa/plan/workshift-support-calendar-e2e-plan.md
+ delete mode 100644 03_qa/plan/workshift-support-planning-e2e-plan.md
+ delete mode 100644 03_qa/test-data/additional-working-sheets-e2e.json
+ delete mode 100644 03_qa/test-data/document-detail-e2e.json
+ delete mode 100644 03_qa/test-data/output-caches-e2e.json
+ delete mode 100644 03_qa/test-data/working-sheet-detail-e2e.json
+ delete mode 100644 03_qa/test-data/workshift-support-calendar-e2e.json
+ delete mode 100644 03_qa/test-data/workshift-support-planning-e2e.json
+ create mode 100644 04_critical_change/15_jalert_notify_autoremove_e2e_race.md
+ create mode 100644 04_critical_change/16_income_print_locator_strict_mode.md
+ create mode 100644 04_critical_change/17_routes_expected_message_wrong.md
+ create mode 100644 04_critical_change/18_vc_taghelper_not_executed.md
+ create mode 100644 04_critical_change/19_wssp_gated_button_guard_missing.md
+ create mode 100644 04_critical_change/20_qa_remove_moved_out_screens.md
+ create mode 100644 04_critical_change/20_remaining_failures_disposition.md
+ create mode 100644 04_critical_change/21_update_avatar_cropper_async_assert.md
+ create mode 100644 04_critical_change/test-mssql-report-20261007-154209/TC-MBM-04-002-qr-2fa-trang-tren-linux.md
+Merge made by the 'ort' strategy.
+ 02_target/CoC.Web.MBM/Startup.cs                   |  6 ++++
+ ...-MBM-vuot-nguong-formoptions-valuecountlimit.md | 40 ++++++++++++++++++++++
+ 2 files changed, 46 insertions(+)
+ create mode 100644 04_critical_change/TC-MBM-vuot-nguong-formoptions-valuecountlimit.md
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-mbm-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-mbm-web.git
+   1aac189..1897a41  dev -> dev
+Deleted branch fix/TC-MBM-vuot-nguong-formoptions-valuecountlimit (was b922353).
+To https://bitbucket.org/concung/cci-mbm-web.git
+ * [new tag]         fix/TC-MBM-vuot-nguong-formoptions-valuecountlimit -> fix/TC-MBM-vuot-nguong-formoptions-valuecountlimit

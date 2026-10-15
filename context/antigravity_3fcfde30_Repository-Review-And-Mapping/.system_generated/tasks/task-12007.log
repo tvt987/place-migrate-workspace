@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (413 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.6s)
+  -   2 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:28:7 › TC-SCM-33-001 — Index loads [LOAD] › LOAD /CompetitorTypes [LOAD]
+  -   3 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:54:7 › TC-SCM-33-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  ok  4 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:65:7 › TC-SCM-33-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CompetitorTypes [AUTH] (1.3s)
+  -   5 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:78:7 › TC-SCM-33-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION]
+  -   6 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:95:7 › TC-SCM-33-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:125:7 › TC-SCM-33-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -   8 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:155:7 › TC-SCM-33-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   9 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:184:7 › TC-SCM-33-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  10 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:220:7 › TC-SCM-33-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD]
+  -  11 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:237:7 › TC-SCM-33-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:265:7 › TC-SCM-33-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:311:7 › TC-SCM-33-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  14 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:346:7 › TC-SCM-33-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW]
+  -  15 [e2e] › e2e\competitor-types\competitor-types.e2e.spec.ts:373:7 › TC-SCM-33-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+
+  13 skipped
+  2 passed (4.0m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-125621.json

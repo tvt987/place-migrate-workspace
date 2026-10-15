@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (430 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.3s)
+  x  2 [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:30:7 › TC-SCM-299-001 — form loads [LOAD] › mở form ComparePrice Create [LOAD] (3.9s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:30:7 › TC-SCM-299-001 — form loads [LOAD] › mở form ComparePrice Create [LOAD] 
+
+    Error: title="SCM - Tạo mới thông tin sản phẩm công ty" vs "SCM - ComparePrice Create"
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      59 |         title === expectTitle || title.includes(soft) || title.startsWith('DC'),
+      60 |         `title="${title}" vs "${expectTitle}"`,
+    > 61 |       ).toBeTruthy();
+         |         ^
+      62 |     }
+      63 |     const contentVis = await mod.ui.content().isVisible().catch(() => false);
+      64 |     if (!contentVis) {
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\compare-price-create\compare-price-create.e2e.spec.ts:61:9
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-compare-price-create-c-910bc-m-ComparePrice-Create-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-compare-price-create-c-910bc-m-ComparePrice-Create-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-compare-price-create-c-910bc-m-ComparePrice-Create-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-compare-price-create-c-910bc-m-ComparePrice-Create-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-compare-price-create-c-910bc-m-ComparePrice-Create-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\compare-price-create\compare-price-create.e2e.spec.ts:30:7 › TC-SCM-299-001 — form loads [LOAD] › mở form ComparePrice Create [LOAD] 
+  4 did not run
+  1 passed (8.9s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-123916.json

@@ -1,0 +1,67 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (151 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.2s)
+  ok  2 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:28:7 › TC-SCM-63-001 — Index loads [LOAD] › LOAD /LiabilitiesAhamoves [LOAD] (3.9s)
+  -   3 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:56:7 › TC-SCM-63-002 — Search / client guard [FLOW] › FLOW Search `/LiabilitiesAhamoves/Search` [FLOW]
+  ok  4 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:80:7 › TC-SCM-63-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /LiabilitiesAhamoves [AUTH] (1.5s)
+  ok  5 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:93:7 › TC-SCM-63-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.7s)
+  -   6 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:106:7 › TC-SCM-63-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:136:7 › TC-SCM-63-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:166:7 › TC-SCM-63-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.5s)
+  -   9 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:191:7 › TC-SCM-63-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:227:7 › TC-SCM-63-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.7s)
+  -  11 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:240:7 › TC-SCM-63-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:268:7 › TC-SCM-63-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:314:7 › TC-SCM-63-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  14 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:349:7 › TC-SCM-63-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW]
+  x  15 [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:377:7 › TC-SCM-63-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] (1.1m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:377:7 › TC-SCM-63-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] 
+
+    Error: không có download event và không bắt được XHR chứa "exportexcel". seen=[]
+
+    expect(received).not.toBeNull()
+
+    Received: null
+
+       at utils\download-helper.ts:84
+
+      82 |       response,
+      83 |       `không có download event và không bắt được XHR chứa "${urlHint}". seen=[${seenUrls.join(' | ')}]`,
+    > 84 |     ).not.toBeNull();
+         |           ^
+      85 |     const status = response!.status();
+      86 |     expect(status, `Export HTTP ${status}`).toBeLessThan(500);
+      87 |
+        at clickAndAssertDownload (E:\Work\Place_Migrate\cci-scm-web\03_qa\utils\download-helper.ts:84:11)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:403:22
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-liabilities-ahamoves-l-e575d-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-liabilities-ahamoves-l-e575d-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-liabilities-ahamoves-l-e575d-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-liabilities-ahamoves-l-e575d-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-liabilities-ahamoves-l-e575d-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\liabilities-ahamoves\liabilities-ahamoves.e2e.spec.ts:377:7 › TC-SCM-63-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] 
+  8 skipped
+  6 passed (1.9m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-171829.json

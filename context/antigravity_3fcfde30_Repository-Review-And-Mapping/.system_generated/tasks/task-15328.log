@@ -1,0 +1,79 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (593 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.5s)
+  ok  2 [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:28:7 › TC-SCM-79-001 — Index loads [LOAD] › LOAD /OrderSalesDayOnDemandProvinces [LOAD] (5.0s)
+  x   3 [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:53:7 › TC-SCM-79-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemandProvinces/Search` [FLOW] (1.6m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:53:7 › TC-SCM-79-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemandProvinces/Search` [FLOW] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+        - locator resolved to <button type="button" ng-click="myroot.Search()" class="btn cc-btn-style cc-btn-color-violet">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        166 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\order-sales-day-on-demand-provinces.module.ts:56
+
+      54 |       .then(() => true)
+      55 |       .catch(() => false);
+    > 56 |     await this.ui.searchButton().click();
+         |                                  ^
+      57 |     const alerted = await alertP;
+      58 |     if (alerted) {
+      59 |       return { response: null, codeStep: null, alerted: true };
+        at OrderSalesDayOnDemandProvincesModule.search (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\order-sales-day-on-demand-provinces.module.ts:56:34)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:61:27
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:53:7 › TC-SCM-79-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemandProvinces/Search` [FLOW] 
+  12 did not run
+  2 passed (1.8m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-185628.json

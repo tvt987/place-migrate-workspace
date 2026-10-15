@@ -1,0 +1,55 @@
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   02_target/net10_postgresql/CoC.API.DC/Configs/AutoFacModule.cs
+	modified:   02_target/net10_postgresql/CoC.API.DC/Configs/UtilitiesFn.cs
+	modified:   02_target/net10_postgresql/CoC.API.DC/appsettings.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   00_docs/00_screen/.oracle-lock.json
+	modified:   03_qa/.env
+	modified:   03_qa/.env.example
+	modified:   03_qa/Makefile
+	modified:   03_qa/Makefile.windows
+	modified:   03_qa/fixtures/auth.fixture.ts
+	modified:   03_qa/package-lock.json
+	modified:   03_qa/package.json
+	modified:   03_qa/scripts/run-e2e.win.ps1
+	modified:   03_qa/utils/env-helper.ts
+	modified:   04_critical_change/SESSION_CONTEXT_SUMMARY_20260930.md
+	modified:   Makefile
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	03_qa/scripts/upload-report.js
+	04_critical_change/COMPLETE_SESSION_HANDOVER_20260930.md
+	16_qa_web_playbook.md
+	DEV_GUIDE.md
+	DEV_HANDBOOK.md
+	FULL_MIGRATION_QA_HANDBOOK_CONTEXT.md
+	MINDMAP_ARCHITECTURE.md
+	enva
+	tests/reports/test-report-20260928-142903.md
+	tests/reports/test-report-20260928-144251.md
+	tests/reports/test-report-20260930-112956.md
+	tests/reports/test-report-20260930-114808.md
+	tests/reports/test-report-20260930-124412.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean

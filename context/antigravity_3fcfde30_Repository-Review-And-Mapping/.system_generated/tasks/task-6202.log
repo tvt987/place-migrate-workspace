@@ -1,0 +1,23 @@
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   02_target/CoC.Web.SCM/Controllers/BonusOutputSalesController.cs
+	modified:   02_target/CoC.Web.SCM/Helpers/ApiHelper.cs
+	modified:   02_target/CoC.Web.SCM/appsettings.example.json
+	modified:   02_target/CoC.Web.SCM/appsettings.json
+	modified:   02_target/Makefile
+	modified:   app.config
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	02_target/CoC.Web.SCM/Helpers/LocalDebugLogger.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+7d88fec8 Merge branch 'fix/TC-SCM-FUNC-003-fix-apiclient-pascalcase-serialization' into dev
+9fc02280 fix(TC-SCM-FUNC-003-fix-apiclient-pascalcase-serialization): bao toan pascalcase va content length cho apiclient tuong tu place
+ebe2b30c Merge branch 'fix/SCM-THEME-001-thieu-strip-config-prefix-theme' into dev
+2c47abbf fix(SCM-THEME-001-thieu-strip-config-prefix-theme): strip config: prefix de lay CurrentTheme
+7ec0f6bf chore(config): bo ignore, track file config/.env (2 file, theo yeu cau 2026-10-05)

@@ -1,0 +1,53 @@
+[Unit] dotnet build
+[Integration] dotnet build
+[Functional] dotnet build
+[Smoke] dotnet build
+[Unit] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    72, Skipped:     0, Total:    72, Duration: 413 ms - CoC.Web.Place.Unit.Tests.dll (net10.0)
+[Integration] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 9 s - CoC.Web.Place.Integration.Tests.dll (net10.0)
+[host] starting CoC.Web.Place on http://localhost:4784
+[Functional] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:   230, Skipped:     0, Total:   230, Duration: 2 m 15 s - CoC.Web.Place.Functional.Tests.dll (net10.0)
+[Smoke] dotnet test
+--- End of stack trace from previous location ---
+
+Failed!  - Failed:     1, Passed:   112, Skipped:     0, Total:   113, Duration: 1 m 24 s - CoC.Web.Place.Smoke.Tests.dll (net10.0)
+
+# Test Report — store-location-web (CoC.Web.Place)
+
+**Run:** 2026-09-30 11:35:23
+**SDK:** 10.0.400
+**Host:** http://localhost:4784 (Functional/Smoke)
+
+## Results
+
+| Track | Status | Passed | Failed | Skipped | Total | Duration |
+|-------|--------|--------|--------|---------|-------|----------|
+| Unit | ✅ | 72 | 0 | 0 | 72 | 413 ms |
+| Integration | ✅ | 6 | 0 | 0 | 6 | 9 s |
+| Functional | ✅ | 230 | 0 | 0 | 230 | 2 m 15 s |
+| Smoke | ❌ | 112 | 1 | 0 | 113 | 1 m 24 s |
+
+## Failed Tests
+
+### Smoke
+
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationRefer/Report", formBody: "")
+
+## Build Warnings
+
+| Track | Warnings |
+|-------|----------|
+| Unit | 435 |
+| Integration | 12 |
+| Functional | 12 |
+| Smoke | 0 |
+
+Report: /e/Work/Place_Migrate/cci-store-location-web/tests/reports/test-report-20260930-112956.md

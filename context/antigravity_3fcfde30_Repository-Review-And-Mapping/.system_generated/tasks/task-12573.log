@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (341 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.7s)
+  ok 2 [e2e] › e2e\customer-taxes-create-b2-b\customer-taxes-create-b2-b.e2e.spec.ts:30:7 › TC-SCM-301-001 — form loads [LOAD] › mở form Tạo mới khách hàng B2B [LOAD] (2.7s)
+  ok 3 [e2e] › e2e\customer-taxes-create-b2-b\customer-taxes-create-b2-b.e2e.spec.ts:91:9 › TC-SCM-301-002 — form validation blocks write [VALIDATION] › validation: Tạo mới khách hàng B2B thiếu dữ liệu / chặn ghi [VALIDATION] (2.6s)
+  ok 4 [e2e] › e2e\customer-taxes-create-b2-b\customer-taxes-create-b2-b.e2e.spec.ts:127:7 › TC-SCM-301-003 — save for real [FLOW] › lưu Tạo mới khách hàng B2B thật [FLOW] (7.7s)
+  ok 5 [e2e] › e2e\customer-taxes-create-b2-b\customer-taxes-create-b2-b.e2e.spec.ts:162:7 › TC-SCM-301-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (794ms)
+  ok 6 [e2e] › e2e\customer-taxes-create-b2-b\customer-taxes-create-b2-b.e2e.spec.ts:182:7 › TC-SCM-301-005 — list href reachable from shell [FLOW] › quay về danh sách /CustomerTaxes [FLOW] (4.0s)
+
+  6 passed (22.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-140817.json

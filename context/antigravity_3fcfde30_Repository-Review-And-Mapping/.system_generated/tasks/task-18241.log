@@ -1,0 +1,68 @@
+
+Running 15 tests using 1 worker
+
+✅ ids1 token → .auth/token.json (upload-report)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.6s)
+  ok  2 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:28:7 › TC-SCM-94-001 — Index loads [LOAD] › LOAD /OutputSaleCharities [LOAD] (5.5s)
+  ok  3 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:53:7 › TC-SCM-94-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleCharities/Search` [FLOW] (14.4s)
+  ok  4 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:73:7 › TC-SCM-94-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputSaleCharities [AUTH] (1.5s)
+  ok  5 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:86:7 › TC-SCM-94-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (5.1s)
+  ok  6 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:103:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (5.4s)
+  -   7 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:133:7 › TC-SCM-94-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:163:7 › TC-SCM-94-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (5.2s)
+  -   9 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:188:7 › TC-SCM-94-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:224:7 › TC-SCM-94-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.9s)
+  x  11 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:237:7 › TC-SCM-94-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (6.8s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:237:7 › TC-SCM-94-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))
+    Expected: visible
+    Error: strict mode violation: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText')) resolved to 2 elements:
+        1) <div class="boxText">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô').first()
+        2) <div class="boxText">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô').nth(1)
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))
+
+
+      253 |     const res = await mod.search(data.screen.searchEndpoint, data.deepKeywordMiss.input.keyword);
+      254 |     if (res.alerted) {
+    > 255 |       await expect(mod.ui.alertText().or(mod.ui.alertWarning())).toBeVisible();
+          |                                                                  ^
+      256 |       return;
+      257 |     }
+      258 |     const rows = await mod.ui.dataRows().count();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:255:66
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--6efda-rd-miss-→-empty-alert-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:237:7 › TC-SCM-94-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] 
+  2 skipped
+  4 did not run
+  8 passed (1.1m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261015-093242.json

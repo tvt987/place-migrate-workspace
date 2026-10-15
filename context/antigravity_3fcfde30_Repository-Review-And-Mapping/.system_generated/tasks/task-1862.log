@@ -1,0 +1,11 @@
+Found ezwinports: make [ezwinports.make] Version 4.4.1
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://downloads.sourceforge.net/project/ezwinports/make-4.4.1-without-guile-w32-bin.zip
+Successfully verified installer hash
+Extracting archive...
+Successfully extracted archive
+Starting package install...
+Command line alias added: "make"
+Path environment variable modified; restart your shell to use the new value.
+Successfully installed

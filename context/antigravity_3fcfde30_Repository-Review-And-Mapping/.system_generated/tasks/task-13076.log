@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (278 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.7s)
+  ok 2 [e2e] › e2e\err-des-storechanges-edit\err-des-storechanges-edit.e2e.spec.ts:33:7 › TC-SCM-304-001 — form loads [LOAD] › mở form Chi tiết phiếu chuyển kho hàng hóa [LOAD] (3.0s)
+  -  3 [e2e] › e2e\err-des-storechanges-edit\err-des-storechanges-edit.e2e.spec.ts:95:9 › TC-SCM-304-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu chuyển kho hàng hóa thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  4 [e2e] › e2e\err-des-storechanges-edit\err-des-storechanges-edit.e2e.spec.ts:132:7 › TC-SCM-304-003 — save for real [FLOW] › lưu Chi tiết phiếu chuyển kho hàng hóa thật [FLOW]
+  ok 5 [e2e] › e2e\err-des-storechanges-edit\err-des-storechanges-edit.e2e.spec.ts:168:7 › TC-SCM-304-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 6 [e2e] › e2e\err-des-storechanges-edit\err-des-storechanges-edit.e2e.spec.ts:191:7 › TC-SCM-304-005 — list href reachable from shell [FLOW] › quay về danh sách /ErrDesStorechanges [FLOW] (5.4s)
+
+  2 skipped
+  4 passed (20.1s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-151111.json

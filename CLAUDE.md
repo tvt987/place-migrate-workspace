@@ -1,0 +1,2 @@
+@AGENTS.md
+@GIT_RULES.md

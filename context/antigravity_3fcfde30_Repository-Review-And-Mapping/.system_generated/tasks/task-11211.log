@@ -1,0 +1,48 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (500 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.3s)
+  x  2 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:311:7 › TC-SCM-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (1.3m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:311:7 › TC-SCM-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+
+    Error: expect(received).not.toBeNull()
+
+    Received: null
+
+      334 |     const firstCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+      335 |     const res = await mod.gotoPage2(data.screen.searchEndpoint);
+    > 336 |     expect(res.response).not.toBeNull();
+          |                              ^
+      337 |     expect(res.response!.status()).toBeLessThan(500);
+      338 |     await expect(mod.ui.dataRows().first()).toBeVisible({ timeout: 15000 });
+      339 |     const secondCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\agent-service-products\agent-service-products.e2e.spec.ts:336:30
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:311:7 › TC-SCM-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+  1 passed (1.4m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-112957.json

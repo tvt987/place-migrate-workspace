@@ -1,0 +1,135 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (563 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.6s)
+  ok  2 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:28:7 › TC-SCM-80-001 — Index loads [LOAD] › LOAD /OrderSalesDayOnDemands [LOAD] (4.5s)
+  x   3 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:53:7 › TC-SCM-80-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemands/Search` [FLOW] (1.1m)
+  ok  4 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:73:7 › TC-SCM-80-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OrderSalesDayOnDemands [AUTH] (1.3s)
+  ok  5 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:86:7 › TC-SCM-80-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.1s)
+  x   6 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:103:7 › TC-SCM-80-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.1m)
+  ok  7 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:133:7 › TC-SCM-80-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] (1.1m)
+  ok  8 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:163:7 › TC-SCM-80-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (4.3s)
+  -   9 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:188:7 › TC-SCM-80-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:224:7 › TC-SCM-80-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.7s)
+  -  11 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:237:7 › TC-SCM-80-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:265:7 › TC-SCM-80-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  x  13 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:311:7 › TC-SCM-80-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (2.0m)
+  ok 14 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:346:7 › TC-SCM-80-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (4.3s)
+  ok 15 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:369:7 › TC-SCM-80-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] (1.1m)
+
+
+  1) [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:53:7 › TC-SCM-80-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemands/Search` [FLOW] 
+
+    Error: Search response
+
+    expect(received).not.toBeNull()
+
+    Received: null
+
+       at utils\json-contract.ts:95
+
+      93 |   opts?: { onPerfWarn?: PerfWarnFn; thresholdMs?: number },
+      94 | ): Promise<void> {
+    > 95 |   expect(resp, 'Search response').not.toBeNull();
+         |                                       ^
+      96 |   expect(resp!.status(), 'Search HTTP').toBeLessThan(500);
+      97 |   assertObjCodeStepShape(codeStep);
+      98 |   const body = await resp!.json().catch(() => null);
+        at assertSearchContract (E:\Work\Place_Migrate\cci-scm-web\03_qa\utils\json-contract.ts:95:39)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:63:31
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-1ba69-esDayOnDemands-Search-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-1ba69-esDayOnDemands-Search-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-1ba69-esDayOnDemands-Search-FLOW--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-1ba69-esDayOnDemands-Search-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-1ba69-esDayOnDemands-Search-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:103:7 › TC-SCM-80-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+
+    Error: expect(received).not.toBeNull()
+
+    Received: null
+
+      122 |       return;
+      123 |     }
+    > 124 |     expect(res.response).not.toBeNull();
+          |                              ^
+      125 |     const rows = await mod.ui.dataRows().count();
+      126 |     const empty = await mod.ui.noDataRow().isVisible().catch(() => false);
+      127 |     const grid = await mod.ui.grid().isVisible().catch(() => false);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:124:30
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-9b10f-rid-hoặc-empty-alert-STATE--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-9b10f-rid-hoặc-empty-alert-STATE--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-9b10f-rid-hoặc-empty-alert-STATE--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-9b10f-rid-hoặc-empty-alert-STATE--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-9b10f-rid-hoặc-empty-alert-STATE--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:311:7 › TC-SCM-80-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: expect(received).not.toBeNull()
+
+    Received: null
+
+      334 |     const firstCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+      335 |     const res = await mod.gotoPage2(data.screen.searchEndpoint);
+    > 336 |     expect(res.response).not.toBeNull();
+          |                              ^
+      337 |     expect(res.response!.status()).toBeLessThan(500);
+      338 |     await expect(mod.ui.dataRows().first()).toBeVisible({ timeout: 15000 });
+      339 |     const secondCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:336:30
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:53:7 › TC-SCM-80-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemands/Search` [FLOW] 
+    [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:103:7 › TC-SCM-80-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+    [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:311:7 › TC-SCM-80-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+  3 skipped
+  9 passed (8.3m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-192625.json

@@ -1,0 +1,13 @@
+
+Running 3 tests using 1 worker
+
+✅ reuse .auth/token.json (569 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.1s)
+[JRN-002] seed AddProduct fail (ProductSearch Error: Lỗi tìm sản phẩm.); modal: không SP nào ProductSearch ok (8 thử): 1920004365349: ProductSearch Warning: Không tìm thấy tài nguyên | 1920004365348: ProductSearch Warning: Không tìm thấy tài nguyên | 1920004365350: ProductSearch Warning: Không tìm thấy tài nguyên | 1920004365347: ProductSearch Warning: Không tìm thấy tài nguyên | 1920004365346: ProductSearch Warning: Không tìm thấy tài nguyên | 1920004365340: ProductSearch Wa
+  ok 2 [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:58:7 › TC-SCM-JRN-002 — WRITE create InputOrders + teardown [FLOW] › tạo phiếu nhập PQT thật (AUTO_E2E) + teardown Hủy [FLOW] (10.6s)
+[JRN-003] { posted: false, alert: '' }
+  ok 3 [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:95:7 › TC-SCM-JRN-003 — WRITE Output Create shell attempt [FLOW] › Output Create: điền mô tả AUTO_E2E + click Tạo (best-effort) [FLOW] (19.0s)
+
+  3 passed (37.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-102048.json

@@ -1,0 +1,12 @@
+=== cci-dc-api git fetch origin dev ===
+From https://bitbucket.org/concung/cci-dc-api
+ * branch            dev        -> FETCH_HEAD
+=== cci-dc-web git fetch origin dev ===
+From https://bitbucket.org/concung/cci-dc-web
+ * branch            dev        -> FETCH_HEAD
+=== cci-store-location-api git fetch origin dev ===
+From https://bitbucket.org/concung/cci-store-location-api
+ * branch            dev        -> FETCH_HEAD
+=== cci-store-location-web git fetch origin dev ===
+From https://bitbucket.org/concung/cci-store-location-web
+ * branch            dev        -> FETCH_HEAD

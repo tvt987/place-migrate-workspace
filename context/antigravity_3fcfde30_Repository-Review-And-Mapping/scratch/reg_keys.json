@@ -1,0 +1,20 @@
+[
+  {
+    "key": "accounting-process-departments | TC-SCM-03-006 | EDGE pagination nếu có dữ liệu [EDGE]",
+    "stg4": "passed",
+    "stg10": "skipped",
+    "error": null
+  },
+  {
+    "key": "accounting-process-departments | TC-SCM-03-011 | DEEP keyword từ dòng đầu sau Search [FLOW]",
+    "stg4": "timedOut",
+    "stg10": "skipped",
+    "error": null
+  },
+  {
+    "key": "activities | TC-SCM-04-007 | GUARDED mutation toolbar [FLOW]",
+    "stg4": "timedOut",
+    "stg10": "skipped",
+    "error": null
+  }
+]

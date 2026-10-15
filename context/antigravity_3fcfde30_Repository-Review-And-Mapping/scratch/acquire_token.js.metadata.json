@@ -1,0 +1,4 @@
+{
+  "summary": "Script to acquire Bearer token via Keycloak implicit flow for GCS upload",
+  "updatedAt": "2026-10-01T04:23:31.212097200Z"
+}

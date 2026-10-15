@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (237 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (4.1s)
+  ok 2 [e2e] › e2e\input-sales-edit-return-compensation\input-sales-edit-return-compensation.e2e.spec.ts:32:7 › TC-SCM-310-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập trả hàng hoàn [LOAD] (3.3s)
+  -  3 [e2e] › e2e\input-sales-edit-return-compensation\input-sales-edit-return-compensation.e2e.spec.ts:94:9 › TC-SCM-310-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập trả hàng hoàn thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  4 [e2e] › e2e\input-sales-edit-return-compensation\input-sales-edit-return-compensation.e2e.spec.ts:131:7 › TC-SCM-310-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập trả hàng hoàn thật [FLOW]
+  ok 5 [e2e] › e2e\input-sales-edit-return-compensation\input-sales-edit-return-compensation.e2e.spec.ts:167:7 › TC-SCM-310-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  ok 6 [e2e] › e2e\input-sales-edit-return-compensation\input-sales-edit-return-compensation.e2e.spec.ts:190:7 › TC-SCM-310-005 — list href reachable from shell [FLOW] › quay về danh sách /InputSales [FLOW] (7.9s)
+
+  2 skipped
+  4 passed (24.7s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-155201.json

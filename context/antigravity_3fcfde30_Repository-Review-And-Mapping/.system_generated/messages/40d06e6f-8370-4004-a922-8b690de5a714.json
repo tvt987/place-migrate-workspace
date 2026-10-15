@@ -1,0 +1,1 @@
+{"id":"40d06e6f-8370-4004-a922-8b690de5a714","recipient":"3fcfde30-4110-403c-8f9f-a4ed95abc9e6","sender":"3fcfde30-4110-403c-8f9f-a4ed95abc9e6/task-5294","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-10-06T08:53:33.791678200Z","renderDetails":{"messageTitle":"Wait for dotnet build: Timer has expired"},"content":"Check if dotnet build completed"}

@@ -1,0 +1,175 @@
+[Unit] dotnet build
+[Integration] dotnet build
+[Functional] dotnet build
+[Smoke] dotnet build
+[Unit] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    69, Skipped:     0, Total:    69, Duration: 415 ms - CoC.Web.Place.Unit.Tests.dll (net10.0)
+[Integration] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 6 s - CoC.Web.Place.Integration.Tests.dll (net10.0)
+[host] starting CoC.Web.Place on http://localhost:4784
+tests/scripts/run-tests.sh: line 110: sleep: command not found
+[Functional] dotnet test
+   at CoC.Web.Place.Tests.Shared.LoggedInSessionFixture.InitializeAsync() in E:\Work\Place_Migrate\cci-store-location-web\tests\Shared\PlaceWebSession.cs:line 215
+
+Failed!  - Failed:     6, Passed:   224, Skipped:     0, Total:   230, Duration: 1 s - CoC.Web.Place.Functional.Tests.dll (net10.0)
+[Smoke] dotnet test
+   at CoC.Web.Place.Tests.Shared.LoggedInSessionFixture.InitializeAsync() in E:\Work\Place_Migrate\cci-store-location-web\tests\Shared\PlaceWebSession.cs:line 215
+
+Failed!  - Failed:   113, Passed:     0, Skipped:     0, Total:   113, Duration: 111 ms - CoC.Web.Place.Smoke.Tests.dll (net10.0)
+
+# Test Report — store-location-web (CoC.Web.Place)
+
+**Run:** 2026-09-28 14:43:43
+**SDK:** 10.0.400
+**Host:** http://localhost:4784 (Functional/Smoke)
+
+## Results
+
+| Track | Status | Passed | Failed | Skipped | Total | Duration |
+|-------|--------|--------|--------|---------|-------|----------|
+| Unit | ✅ | 69 | 0 | 0 | 69 | 415 ms |
+| Integration | ✅ | 6 | 0 | 0 | 6 | 6 s |
+| Functional | ❌ | 224 | 6 | 0 | 230 | 1 s |
+| Smoke | ❌ | 0 | 113 | 0 | 113 | 111 ms |
+
+## Failed Tests
+
+### Functional
+
+- [FAIL] CoC.Web.Place.Functional.Tests.LogoutTests.Logout_ClearsTheSession_AndProtectedPagesGoBackToLogin
+- [FAIL] CoC.Web.Place.Functional.Tests.AuthenticatedContractTests.AjaxJson_KeepsPascalCaseEnvelope_AndHidesScriptIgnoredFields
+- [FAIL] CoC.Web.Place.Functional.Tests.AuthenticatedContractTests.HomeIndex_RendersLayoutWithTheme_ForTheSessionUser
+- [FAIL] CoC.Web.Place.Functional.Tests.AuthenticatedContractTests.RefreshToken_WithSessionRefreshToken_ReturnsSuccess
+- [FAIL] CoC.Web.Place.Functional.Tests.AuthenticatedContractTests.ProtectedPage_IsNotRedirected_WhileSessionIsValid
+- [FAIL] CoC.Web.Place.Functional.Tests.AuthenticatedContractTests.NewtonsoftController_Json_StillReturnsObjCodeStep
+
+### Smoke
+
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/danh-sach-hoat-dong-mat-bang")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-mat-bang/chinh-sua-dia-danh-1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/danh-sach-loai-mat-bang")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/danh-sach-loai-dia-danh")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/danh-gia/danh-gia-pham-vi")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/danh-sach-tinh-trang-hop-dong")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/mat-bang-ky-thanh-cong")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-mat-bang/chinh-sua-mat-bang-1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/pham-vi-tim-hieu")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-mat-bang/them-moi-dia-danh")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/trang-thai-dia-danh")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/CacheStorerages/Index")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/phan-cong/danh-sach-cong-viec-nhan-vien")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/he-thong-tham-khao")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/hang-pham-vi")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/trang-thai-pham-vi-the-hien-icon")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/hang-danh-gia")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/phan-cong/muc-tieu-nhan-su/theo-leader")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Error/ErrorMessage")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-tuyen-duong/chinh-sua-tuyen-du"···)
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Home/IndexR?id=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/CacheStorerages/CreateCacheJS?CacheKeyClient=Stor"···)
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-pham-vi/them-moi-pham-vi")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/ly-do-pham-vi-tre-han")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-mat-bang/them-moi-mat-bang")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/phan-cong/muc-tieu-nhan-su/theo-tinh")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/vai-tro")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-dia-danh")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/danh-sach-tinh-trang-cho-thue")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Error/Unauthorized")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/trang-thai-pham-vi")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/muc-tieu-theo-nam")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/phan-cong/danh-sach-kpi")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/mat-bang-tham-khao")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/danh-gia/danh-gia-nhan-vien")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/phan-quyen/danh-sach-phan-quyen")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/chi-tiet-dia-danh-1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Home/Error")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Error/NotFound")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/CacheManager/Index")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/OutputCaches/Index")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Home/AppSettings")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/vai-tro-theo-nhan-vien")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Home/Index")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/tien-ich/danh-sach-trang-thai-mat-bang")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/chi-tiet-mat-bang-1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-pham-vi")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-tuyen-duong")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/thiet-lap-tai-nguyen")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/mat-do-dan-so")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-mat-bang")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/mat-bang/danh-sach-pham-vi/chinh-sua-pham-vi-1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.Page_Returns200_WithSsoSession(path: "/Error/Error")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/ShowScopeInMap", formBody: "id=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceDetail/GetLocationActivity", formBody: "LocationID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/ScopeByIDs", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/GetListComment", formBody: "req[ScopeID]=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationIndex/LoadBin", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/MediaLocationReadByPlaceIDs", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationSigned/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationRefer/Report", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeStatus/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/WorkGoalsByMonth/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/GetRouteReport", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceDetail/GetCommentByLocation", formBody: "LocationID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/QuantityUserTarget/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/UserReviewRank/List", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeUserReport/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/LoadWard", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/QuantityKPILocationRent/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationEdit/ReadPhotoByID", formBody: "locationID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationActionIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeTargetYearly/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeReviewFile/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LeasingStatusIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ProvinceEmployeeTarget/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceTypeIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeIndex/LoadScope", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceRole_User/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/GetImplementationStatus", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeLateReason/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceRole/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationContract/ByLocationID", formBody: "LocationID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ContractStatusIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/UserAuthorizeIndex/ReadPermission", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationRefer/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationTypeIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeTempIndex/GetList", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/DistrictSummaryIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/OutputCaches/List", formBody: null)
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/GetWorkGoals", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ReferSystem/List", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationComment/ByLocationID", formBody: "LocationID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeIndex/LoadLocationByScope", formBody: "id=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationStatusIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/LoadDistrictByUser", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationHistory/ByLocationID", formBody: "LocationID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceIndex/GetScopeAndLocation", formBody: "id=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeIndex/GetLocation", formBody: "id=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/ReadByPlaceIDMVC", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceStatus/List", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/LocationEdit/GetLocationLeasingHistory", formBody: "LFLID=1")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/UserAuthorizeIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/GetSumProvinceTarget", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeStatusFile/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/ScopeTypeRank/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/Home/GetKPIEmployee", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/RouteIndex/Search", formBody: "")
+- [FAIL] CoC.Web.Place.Smoke.Tests.PageAndEndpointSmokeTests.ReadOnlyAjaxEndpoint_Returns200Json_WithSsoSession(path: "/PlaceIndex/LoadPlace", formBody: "")
+
+## Build Warnings
+
+| Track | Warnings |
+|-------|----------|
+| Unit | 12 |
+| Integration | 12 |
+| Functional | 12 |
+| Smoke | 0 |
+
+Report: /e/Work/Place_Migrate/cci-store-location-web/tests/reports/test-report-20260928-144251.md

@@ -1,0 +1,16 @@
+?? 03_qa/fixtures/anchors/discover-log.txt
+?? 03_qa/fixtures/anchors/discover-tables.json
+?? 03_qa/fixtures/anchors/scm.json
+?? 03_qa/fixtures/oracle-broken-stg4.json
+?? 03_qa/reports/
+?? 03_qa/scripts/analyze-regressions.py
+?? 03_qa/scripts/compare-parity.py
+?? 03_qa/scripts/discover-seed-sql.cjs
+?? 03_qa/scripts/list-edit-envs.cjs
+?? 03_qa/scripts/probe-missing-seeds.cjs
+?? 03_qa/scripts/run-parity.win.ps1
+?? 03_qa/scripts/seed-sql-map.cjs
+?? 03_qa/scripts/upload-report.js
+?? 03_qa/scripts/upload-report_test.js
+?? 03_qa/scripts/verify-anchors-stg4.cjs
+?? 03_qa/test-data/seeds.stg4.verified.env

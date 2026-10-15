@@ -1,0 +1,10 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (156 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.8s)
+  ok 2 [e2e] › e2e\journeys\po-input-output.e2e.spec.ts:33:7 › TC-SCM-JRN-001 — shell chain loads [LOAD] › mở lần lượt PO Index → Input Create → Output Create [LOAD] (5.7s)
+
+  2 passed (13.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261013-175101.json

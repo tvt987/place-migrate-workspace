@@ -1,0 +1,38 @@
+    CANH BAO: chua chay `make config` lan nao - Web.config dang la gia tri goc cua snapshot, khong phai app.config o root.
+
+==> Tim MSBuild
+    E:\VS2\MSBuild\Current\Bin\amd64\MSBuild.exe
+    WebApplication.targets: E:\VS2\MSBuild\Microsoft\VisualStudio\v18.0\WebApplications\Microsoft.WebApplication.targets
+
+==> Restore packages (packages.config)
+
+  Determining projects to restore...
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'AutoMapper' 5.2.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'AutoMapper' 5.2.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.DTO.SCM\CoC.Business.DTO.SCM.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Http' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Entities.SCM\CoC.Business.Entities.SCM.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Http' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Http' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1902: Package 'Microsoft.IdentityModel.JsonWebTokens' 6.27.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'Microsoft.Owin' 3.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'Microsoft.Owin' 3.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-3rq8-h3gj-r5c6 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.DTO.SCM\CoC.Business.DTO.SCM.csproj : warning NU1903: Package 'Newtonsoft.Json' 12.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Entities.SCM\CoC.Business.Entities.SCM.csproj : warning NU1903: Package 'Newtonsoft.Json' 9.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'Npgsql' 6.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'Npgsql' 6.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1902: Package 'System.IdentityModel.Tokens.Jwt' 6.27.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.DTO.SCM\CoC.Business.DTO.SCM.csproj : warning NU1904: Package 'System.Text.Encodings.Web' 4.5.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Entities.SCM\CoC.Business.Entities.SCM.csproj : warning NU1904: Package 'System.Text.Encodings.Web' 4.5.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'System.Text.Json' 6.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'System.Text.Json' 6.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+    Restore xong.
+
+==> Build (Debug | Any CPU)
+
+Build succeeded.
+    185 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:11.29
+    Build thanh cong.
+
+Xong (BuildOnly).

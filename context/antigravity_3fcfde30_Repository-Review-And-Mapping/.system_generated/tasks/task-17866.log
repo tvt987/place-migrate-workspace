@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (403 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.2s)
+  ok  2 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:28:7 › TC-SCM-107-001 — Index loads [LOAD] › LOAD /OutputSaleClearStockRatios [LOAD] (3.1s)
+  ok  3 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:53:7 › TC-SCM-107-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleClearStockRatios/Search` [FLOW] (15.2s)
+  ok  4 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:73:7 › TC-SCM-107-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputSaleClearStockRatios [AUTH] (1.3s)
+  ok  5 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:86:7 › TC-SCM-107-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.4s)
+  ok  6 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:103:7 › TC-SCM-107-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (15.1s)
+  ok  7 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:133:7 › TC-SCM-107-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] (15.1s)
+  ok  8 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:163:7 › TC-SCM-107-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (2.6s)
+  -   9 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:188:7 › TC-SCM-107-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:224:7 › TC-SCM-107-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (2.5s)
+  ok 11 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:237:7 › TC-SCM-107-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.4s)
+  ok 12 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:265:7 › TC-SCM-107-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW] (27.7s)
+  ok 13 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:311:7 › TC-SCM-107-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (15.3s)
+  ok 14 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:346:7 › TC-SCM-107-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (2.5s)
+  ok 15 [e2e] › e2e\output-sale-clear-stock-ratios\output-sale-clear-stock-ratios.e2e.spec.ts:369:7 › TC-SCM-107-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] (15.8s)
+
+  1 skipped
+  14 passed (2.4m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-220618.json

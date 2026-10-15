@@ -1,0 +1,8 @@
+--> Processing test-net4-report-20261001-104944.json (4_STORE-LOCATION, NET4_MSSQL)...
+    Uploaded to GCS: https://vcdn1.concung.com/uat_static_storage/none/vse/20261001/ad42c777-e207-430a-bc18-eced6d9133be.json (2.69 MB)
+    Recorded in DB: test_report_id=30
+    Portal Link   : https://report-api-testing-uat.concung.vn/?project=4_STORE-LOCATION&report=test-net4-report-20261001-104944.json
+--> Processing test-mssql-report-20261001-145338.json (4_STORE-LOCATION, NET10_MSSQL)...
+    Uploaded to GCS: https://vcdn1.concung.com/uat_static_storage/none/vse/20261001/ad0e270b-42bb-4c1e-8dd5-51338023abaa.json (2.69 MB)
+    Recorded in DB: test_report_id=33
+    Portal Link   : https://report-api-testing-uat.concung.vn/?project=4_STORE-LOCATION&report=test-mssql-report-20261001-145338.json

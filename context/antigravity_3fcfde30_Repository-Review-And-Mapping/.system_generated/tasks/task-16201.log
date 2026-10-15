@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (509 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.8s)
+  ok 2 [e2e] › e2e\output-order-destroys-create\output-order-destroys-create.e2e.spec.ts:30:7 › TC-SCM-330-001 — form loads [LOAD] › mở form Tạo mới phiếu xuất hủy [LOAD] (5.0s)
+  ok 3 [e2e] › e2e\output-order-destroys-create\output-order-destroys-create.e2e.spec.ts:91:9 › TC-SCM-330-002 — form validation blocks write [VALIDATION] › validation: Tạo mới phiếu xuất hủy thiếu dữ liệu / chặn ghi [VALIDATION] (4.5s)
+  ok 4 [e2e] › e2e\output-order-destroys-create\output-order-destroys-create.e2e.spec.ts:131:7 › TC-SCM-330-003 — save for real [FLOW] › lưu Tạo mới phiếu xuất hủy thật [FLOW] (10.4s)
+  ok 5 [e2e] › e2e\output-order-destroys-create\output-order-destroys-create.e2e.spec.ts:173:7 › TC-SCM-330-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  ok 6 [e2e] › e2e\output-order-destroys-create\output-order-destroys-create.e2e.spec.ts:193:7 › TC-SCM-330-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrderDestroys [FLOW] (5.0s)
+
+  6 passed (34.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-202006.json

@@ -1,0 +1,13 @@
+
+Running 5 tests using 1 worker
+
+✅ reuse .auth/token.json (230 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.7s)
+  ok 2 [e2e] › e2e\inputs-detail-order-out-cache\inputs-detail-order-out-cache.e2e.spec.ts:32:7 › TC-SCM-391-001 — detail loads [LOAD] › mở chi tiết SCM - Inputs DetailOrderOutCache [LOAD] (2.7s)
+  ok 3 [e2e] › e2e\inputs-detail-order-out-cache\inputs-detail-order-out-cache.e2e.spec.ts:65:7 › TC-SCM-391-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (2.3s)
+  ok 4 [e2e] › e2e\inputs-detail-order-out-cache\inputs-detail-order-out-cache.e2e.spec.ts:84:7 › TC-SCM-391-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (831ms)
+  ok 5 [e2e] › e2e\inputs-detail-order-out-cache\inputs-detail-order-out-cache.e2e.spec.ts:102:7 › TC-SCM-391-004 — list href [FLOW] › quay về danh sách /Inputs [FLOW] (4.8s)
+
+  5 passed (15.2s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-155905.json

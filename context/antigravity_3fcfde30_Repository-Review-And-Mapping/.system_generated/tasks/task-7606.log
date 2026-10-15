@@ -1,0 +1,7 @@
+From https://bitbucket.org/concung/cci-mbm-web
+ * [new branch]      staging10  -> origin/staging10
+ * [new branch]      staging    -> origin/staging
+ * [new tag]         fix/01-expiredate-lost-in-session -> fix/01-expiredate-lost-in-session
+ * [new tag]         fix/02-slash-date-breaks-frombody-binding -> fix/02-slash-date-breaks-frombody-binding
+ * [new tag]         fix/18-vc-taghelper-not-executed -> fix/18-vc-taghelper-not-executed
+ * [new tag]         fix/TC-MBM-04-002-qr-2fa-trang-tren-linux -> fix/TC-MBM-04-002-qr-2fa-trang-tren-linux

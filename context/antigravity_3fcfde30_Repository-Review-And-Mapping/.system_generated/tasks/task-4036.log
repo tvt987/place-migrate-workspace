@@ -1,0 +1,173 @@
+[MVC.CoreHelpers] Falling back to CreateInstanceLogger for index: systemerror
+[MVC.CoreHelpers] WriteSystemErrorLog fallback: Erorr message:One or more errors occurred. (Unexpected character encountered while parsing value: . Path '', line 0, position 0.). Error message detail: Unexpected character encountered while parsing value: . Path '', line 0, position 0. | logger error: Object reference not set to an instance of an object.
+[OTLP] Starting OTLP tracing setup...
+[OTLP] OTLP tracing is disabled: URI not configured
+Check health start host to readiness
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 48.0324ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 58.1496ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 96.0696ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 96.2199ms - 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-926985144382584e747eeb8381eb3715-500b50912cb4b5b3-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a734c183ba1d054324a614e5f2b196a3-cec7154ee328a4ab-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-21347de53ffcc974109d485419e11381-8a9a53aed66964b4-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-255532102c1d81e2c7034661325678eb-1895c55f6604dc4e-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e1a3e7b4f2f86fb09663d47827dc7008-6c233b88788a9927-00 - Path: /
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-6c4a029b6f910808b064a3b8db56649f-451e299534b3ec76-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-86e46be80cbdba51789dc9abeaf17eae-849736b0cca1a51d-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-828e04b1d8332bfeb3205f1bde172a39-6e145100dd9c010c-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-81f160862319d84d76bd302f2d0a85b3-0f8847dbc7314a96-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-ec4bcd41782c94baa5b53917ae29375d-9d47483ae2c5bc88-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-497641b35de264689f74f6c3fad588a0-ff423af94f1092a4-00 - Path: /Home/Index
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-5425828c9e99e195ccf4e252d26b6457-8a880f8486613d0c-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a296299abfbf8d7a6346c08e5ffd5ec2-9ddb2e620e473c02-00 - Path: /OutputOrders
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e9e1d59613a1efa63cff041b695f95ca-db17bbf8c71959c8-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-2f3e1136565b618b509c56161915a7f3-5b484d2e655e1f89-00 - Path: /Accounts/Callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-f75ae1dc7143214ab0d43bb307eefcc9-5017239b358c52c4-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-28b068844ea43761a44623921aceb77a-7a595205d3d4be90-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-2578e2a18af648bef5507e26becd0741-6d6373459b77a1bc-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8cbdd58bd074b9525ad85e3eb8e8ca4a-cd7dd027d5b8f70c-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-9338d4f74e2fa04e2856dda7ca9b42d7-9abdb77b68b34002-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8201fc2cb0658d7b79d2f421a7eecae8-362834c0a8a49543-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-c3e930410a50a15e8bff05bc7d0717f6-1c2e214af67fa0de-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-102624f7a20ab27728c90bde6aa4f239-406f677b9f860294-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a45beeecc971f1bdd4f9ebe5cc48c2e2-fa6457ffca76d063-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-85f687a3fbb07c10c8086dc3c6ebec36-ecc3162a49893b37-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-dbee2cfe7b32266175c90f78c82d5d51-8735d99145dd5c51-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-ffb71f96fbe89a32acf122e39b372cd4-d22eec1240711f11-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-5237fbdac142081d6c554de8353c7a70-7c4e67137416ac7d-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d0c0c10f2f5761b1ec1a9cd0fdcfdbb0-493d3ce8c67789f2-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-3364f2705088b3aa1b95fa1c56bdd921-39adf540697fd2f0-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-2aafac9be0356c5d9063f4e68c310018-939c60d70b0f7cdf-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-7c77e13a76f32814dca822a0c2c0c21f-8f9564370dbc8fba-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-32f19ae6e4a2c0d831733c67e168928e-7617e3d940dcc08f-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-7c49b2485adb6352b36c3c4523be5316-0bbdfcd1b1e3709a-00 - Path: /Error/Unauthorized
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e2dea08bb9873cf2a835aad96867a94a-4070c9d0bfa5ada1-00 - Path: /.well-known/appspecific/com.chrome.devtools.json
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 404
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-1e689b9ca304d97e70252a0ef4bca1ef-022e67d81eb7bd5f-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8cec1e2b4cc9576fcd529c158c9c6174-a95c68bc1ca12cc5-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-f7c47f051c16a3873bf5053574a9c20b-731dc13929c4c8b4-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-addca22d961bde2f29f664ebf0d4613b-2a5266403bc7d9cc-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a9b1ef8c28bf0dae2e12b807930f6181-561e7b4432694079-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-383521d00c079ee143d91c01ca614643-e290e4de227cc506-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d60537df832a5b9e6ace943225e51204-2fcfee300b5ee061-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a21db0d386f18f1f2a2823136a08ec6a-12a0027c40409df9-00 - Path: /Products
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-5d538f60dfa90af82f2db80c85550d6a-5b80dfe571410c38-00 - Path: /Products/Search
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-fd5c27adc1bcebe1caeb145318520dae-f166c7e0d415f52a-00 - Path: /DCOrders/Index
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-28e099e2d676f1e1025f0cc12b7ec79a-8d0f5b90f20a1c1a-00 - Path: /CacheStorerages/CreateCacheJS
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4b7ce6e2441c3612bca237c58e208f01-b925bd5380f37d42-00 - Path: /DCOrders/Search
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-41d9f616677cd825b03c8112e2d4c418-a627d3f99d5ba376-00 - Path: /BufferRotationOrders
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4094fb8ab321e8e36a4c3b128ffc6072-795b9c7adcb88f47-00 - Path: /BufferRotationOrders/Search
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8ffd603e4589ea9a02e45bd6e7a1e868-d6fe6dd9f9ff6d71-00 - Path: /.well-known/appspecific/com.chrome.devtools.json
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 404
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-9a4dd1fe815700458a7bfaab0c5e53f4-3ad2d76ceee3e33d-00 - Path: /
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-14b0242e1c2fe1043d57ad6c66ea9329-1d3f3e3f803ced5e-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8d92e956c9fd579d4c7c861b6ddcd0f1-687f6348ba2fda95-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-b1a02ec17839d87da476ebc9647c7a8d-35d6eb7a38081ea9-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8bc915ba0d09d224394258bfa48d1e47-94e922ed23e8ba46-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-eb4ef06d5ddb24307912714b10e362b8-400b15492b84bbbd-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e717960e26805a72df8fcec3e91e4ec1-2ac15614587185cf-00 - Path: /Home/Index
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-0611e693a5dfdabc294dc96198734efa-dd6f5310392c3ec9-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-67f678fc3f72545242631683b0bfc3c6-e4d2596548be92f9-00 - Path: /OutputOrders
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-6d73f32a05d468dbe6d48ffa1d2b5c21-d83e72110cda1e4f-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-24f6d8a238bbc9ea007be68ffa51d884-1f1ee025be44c3d3-00 - Path: /Accounts/Callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-1b20db9ea168bbbc64aa69ebdcb77ff4-a259f9b24125e13c-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-02b0fb6619c37c71f43e0753887897ad-8f9d2d9fc53a4114-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-44913c7011a885f6e2140fd2ffa01239-9f99fe78967e3b28-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-60744e5fec041154f685f4c443bca30c-583844de832b521d-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d607743f779485555ab9cf0fa14ff7f0-e43aa061b383bf09-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a7dc6256ecb5452e3c0d96acdcabbf9b-603667466383d554-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-eb5f31c61ad7b7ac94558d8e5cebb96e-77b19589f259e285-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-00fec2116466b5a70028ed9ef1c36e05-932eed99ded1f369-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-686941ea1533d25500d77c1be9d6b5e3-dc596859c6b9199a-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4ef57914b2ba62af5d55e46136eee7f5-cfba2937343dc99f-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-73b90593b97a35190f020523ef4d774b-55d5599bc54bf717-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-af6c1af9a19f9b3cdde3af3b1679e2e0-fdc3581448efb06d-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-8d3f9dc73f603292c8e5aabd3940bd42-1e435efbadec62f7-00 - Path: /Accounts/Logout
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-56379502b99120dc76f5309601306a96-06bbbdf0f84e7799-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d3c16257f981214df7a717f6d26bb6b5-cefd3acb38254a37-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302

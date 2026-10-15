@@ -1,0 +1,20 @@
+
+Running 12 tests using 2 workers
+
+  ok  1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (4.7s)
+  ok  2 [e2e] › e2e\home\home.e2e.spec.ts:26:7 › TC-DC-02-001 — after SSO, / shows Home or Unauthorized by UserType [LOAD] › sau SSO mở / — Home (type 3) hoặc Unauthorized (type khác) [LOAD] (1.5s)
+  ok  3 [e2e] › e2e\login\login.e2e.spec.ts:32:7 › TC-DC-01-001 — login redirects to Keycloak with the dc client [AUTH] › ẩn danh /Accounts/Login chuyển tới Keycloak [AUTH] (2.5s)
+  ok  4 [e2e] › e2e\home\home.e2e.spec.ts:53:7 › TC-DC-02-002 — header shows user when session has LoadUserLogin [LOAD] › header có logo và logout khi vào được shell có user [LOAD] (1.3s)
+  -   6 [e2e] › e2e\home\home.e2e.spec.ts:75:7 › TC-DC-02-003 — UserTypeID != 3 lands on Error 403 [LOAD] › UserTypeID != 3 thấy Error 403 [LOAD]
+  ok  5 [e2e] › e2e\login\login.e2e.spec.ts:60:9 › TC-DC-01-002 — protected route sends anonymous users through login [AUTH] › ẩn danh mở / [AUTH] (2.6s)
+  ok  7 [e2e] › e2e\login\login.e2e.spec.ts:60:9 › TC-DC-01-002 — protected route sends anonymous users through login [AUTH] › ẩn danh mở /Home/Index [AUTH] (1.9s)
+  ok  8 [e2e] › e2e\login\login.e2e.spec.ts:60:9 › TC-DC-01-002 — protected route sends anonymous users through login [AUTH] › ẩn danh mở /OutputOrders [AUTH] (2.0s)
+  ok  9 [e2e] › e2e\login\login.e2e.spec.ts:85:7 › TC-DC-01-003 — callback without a code fails safely [AUTH] › callback thiếu code [AUTH] (2.3s)
+  ok 10 [e2e] › e2e\login\login.e2e.spec.ts:105:7 › TC-DC-01-004 — valid credentials sign in and return to the app [FLOW] › đăng nhập Keycloak bằng ENV [FLOW] (2.0s)
+  ok 11 [e2e] › e2e\login\login.e2e.spec.ts:134:7 › TC-DC-01-005 — logout clears the session [FLOW] › đăng xuất trong context riêng [FLOW] (2.6s)
+  ok 12 [e2e] › e2e\login\login.e2e.spec.ts:156:7 › TC-DC-01-006 — anonymous logout redirects toward login [AUTH] › ẩn danh mở /Accounts/Logout [AUTH] (1.8s)
+
+  1 skipped
+  11 passed (25.1s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-dc-web\03_qa\reports\details\test-report-20261001-161033.json

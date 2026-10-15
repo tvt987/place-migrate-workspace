@@ -1,0 +1,46 @@
+
+Running 1 test using 1 worker
+
+  x  1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (1.1m)
+
+
+  1) [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO ────────────────────────────────
+
+    TimeoutError: page.waitForURL: Timeout 60000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "commit"
+      navigated to "https://place-stg10.concung.vn/?oauth_error=1"
+    ============================================================
+
+      44 |     // có thể chưa bắn 'load' trong 30s timeout của test dù đăng nhập đã xong (gặp 2026-10-01).
+      45 |     const backToApp = () =>
+    > 46 |       page.waitForURL((u) => u.origin === appOrigin, { timeout: 60000, waitUntil: 'commit' });
+         |            ^
+      47 |     await Promise.all([
+      48 |       backToApp().catch((e: Error) => {
+      49 |         // Chuỗi 302 callback có thể huỷ 1 navigation (ERR_ABORTED / frame detached) dù cuối cùng
+        at backToApp (E:\Work\Place_Migrate\cci-store-location-web\03_qa\fixtures\auth.fixture.ts:46:12)
+        at E:\Work\Place_Migrate\cci-store-location-web\03_qa\fixtures\auth.fixture.ts:48:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fixtures-auth.fixture.ts-authenticate-via-SSO-setup\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO ─────────────────────────────────
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-report-20261001-121252.json

@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (570 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.4s)
+  ok 2 [e2e] › e2e\order-sales-day-on-demand-stores-create\order-sales-day-on-demand-stores-create.e2e.spec.ts:30:7 › TC-SCM-327-001 — form loads [LOAD] › mở form Tạo mới quản lí số ngày bán hàng yêu cầu theo siêu thị [LOAD] (3.7s)
+  ok 3 [e2e] › e2e\order-sales-day-on-demand-stores-create\order-sales-day-on-demand-stores-create.e2e.spec.ts:91:9 › TC-SCM-327-002 — form validation blocks write [VALIDATION] › validation: Tạo mới quản lí số ngày bán hàng yêu cầu theo siêu thị thiếu dữ liệu / chặn ghi [VALIDATION] (3.5s)
+  -  4 [e2e] › e2e\order-sales-day-on-demand-stores-create\order-sales-day-on-demand-stores-create.e2e.spec.ts:132:7 › TC-SCM-327-003 — save for real [FLOW] › lưu Tạo mới quản lí số ngày bán hàng yêu cầu theo siêu thị thật [FLOW]
+  ok 5 [e2e] › e2e\order-sales-day-on-demand-stores-create\order-sales-day-on-demand-stores-create.e2e.spec.ts:174:7 › TC-SCM-327-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  ok 6 [e2e] › e2e\order-sales-day-on-demand-stores-create\order-sales-day-on-demand-stores-create.e2e.spec.ts:194:7 › TC-SCM-327-005 — list href reachable from shell [FLOW] › quay về danh sách /OrderSalesDayOnDemandStores [FLOW] (6.3s)
+
+  1 skipped
+  5 passed (24.0s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-191929.json

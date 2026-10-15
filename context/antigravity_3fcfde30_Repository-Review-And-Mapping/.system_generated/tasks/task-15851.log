@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (527 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.7s)
+  ok  2 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:40:7 › TC-SCM-86-001 — Index loads [LOAD] › LOAD /OutputFastSaleReFunds [LOAD] (2.1s)
+  -   3 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:68:7 › TC-SCM-86-002 — Search / client guard [FLOW] › FLOW Search `/OutputFastSaleReFunds/SearchForRefund` [FLOW]
+  ok  4 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:91:7 › TC-SCM-86-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputFastSaleReFunds [AUTH] (1.9s)
+  -   5 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:104:7 › TC-SCM-86-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION]
+  -   6 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:124:7 › TC-SCM-86-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:157:7 › TC-SCM-86-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -   8 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:190:7 › TC-SCM-86-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   9 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:218:7 › TC-SCM-86-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  10 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:257:7 › TC-SCM-86-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD]
+  -  11 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:273:7 › TC-SCM-86-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:304:7 › TC-SCM-86-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:353:7 › TC-SCM-86-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  14 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:391:7 › TC-SCM-86-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW]
+  -  15 [e2e] › e2e\output-fast-sale-re-funds\output-fast-sale-re-funds.e2e.spec.ts:417:7 › TC-SCM-86-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+
+  12 skipped
+  3 passed (35.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-200249.json

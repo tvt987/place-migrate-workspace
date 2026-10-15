@@ -1,0 +1,6 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (492 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.8s)
+  ok 2 [e2e] › e2e\output-orders-create-multi\output-orders-create-multi.e2e.spec.ts:30:7 › TC-SCM-337-001 — form loads [LOAD] › mở form Tạo mới phiếu xuất sử dụng nội bộ / xử lý [LOAD] (2.8s)

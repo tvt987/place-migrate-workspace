@@ -1,0 +1,15 @@
+    attachment #10: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  1 failed
+    [e2e] â€º e2e\infrastructure-user-assignments\infrastructure-user-assignments.e2e.spec.ts:28:7 â€º TC-SCM-50-001 â€” Index loads [LOAD] â€º LOAD /InfrastructureUserAssignments [LOAD] 
+  13 did not run
+  1 passed (38.6s)
+  1 error was not a part of any test, see above for details
+
+ðŸ“„ JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-152323.json

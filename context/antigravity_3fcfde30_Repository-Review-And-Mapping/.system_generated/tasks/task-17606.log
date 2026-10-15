@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-10-14T21:51:35+07:00
+Prompt: Wait for STG4 task-17553 to finish
+Early Termination: task-17553
+
+[2026-10-14T21:51:30+07:00] Still waiting. Remaining time: 5s
+[2026-10-14T21:51:35+07:00] Timer fired.

@@ -1,0 +1,61 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (503 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.0s)
+  ok  2 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:28:7 › TC-SCM-07-001 — Index loads [LOAD] › LOAD /AgentServiceProducts [LOAD] (4.0s)
+  ok  3 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:53:7 › TC-SCM-07-002 — Search / client guard [FLOW] › FLOW Search `/AgentServiceProducts/Search` [FLOW] (16.1s)
+  ok  4 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:73:7 › TC-SCM-07-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /AgentServiceProducts [AUTH] (2.0s)
+  ok  5 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:86:7 › TC-SCM-07-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.2s)
+  ok  6 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:103:7 › TC-SCM-07-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (16.4s)
+  ok  7 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:133:7 › TC-SCM-07-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] (16.3s)
+  ok  8 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:163:7 › TC-SCM-07-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.7s)
+  -   9 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:188:7 › TC-SCM-07-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:224:7 › TC-SCM-07-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.7s)
+  ok 11 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:237:7 › TC-SCM-07-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (16.5s)
+  ok 12 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:265:7 › TC-SCM-07-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW] (28.5s)
+  x  13 [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:311:7 › TC-SCM-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (1.3m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:311:7 › TC-SCM-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+
+    Error: expect(received).not.toBeNull()
+
+    Received: null
+
+      334 |     const firstCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+      335 |     const res = await mod.gotoPage2(data.screen.searchEndpoint);
+    > 336 |     expect(res.response).not.toBeNull();
+          |                              ^
+      337 |     expect(res.response!.status()).toBeLessThan(500);
+      338 |     await expect(mod.ui.dataRows().first()).toBeVisible({ timeout: 15000 });
+      339 |     const secondCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\agent-service-products\agent-service-products.e2e.spec.ts:336:30
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-agent-service-products-31d16-EP-pagination-trang-2-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\agent-service-products\agent-service-products.e2e.spec.ts:311:7 › TC-SCM-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+  1 skipped
+  2 did not run
+  11 passed (3.5m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-112617.json

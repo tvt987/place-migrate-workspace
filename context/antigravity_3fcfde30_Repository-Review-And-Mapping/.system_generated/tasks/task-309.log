@@ -1,0 +1,58 @@
+[Unit] dotnet build
+[Integration] dotnet build
+[Functional] dotnet build
+[Smoke] dotnet build
+[Unit] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    69, Skipped:     0, Total:    69, Duration: 349 ms - CoC.Web.Place.Unit.Tests.dll (net10.0)
+[Integration] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 6 s - CoC.Web.Place.Integration.Tests.dll (net10.0)
+[host] starting CoC.Web.Place on http://localhost:4784
+-uThe system cannot find the file specified.
+-uThe system cannot find the file specified.
+
+# Test Report — store-location-web (CoC.Web.Place)
+
+**Run:** 2026-09-28 14:34:20
+**SDK:** 10.0.400
+**Host:** http://localhost:4784 (Functional/Smoke)
+
+## Results
+
+| Track | Status | Passed | Failed | Skipped | Total | Duration |
+|-------|--------|--------|--------|---------|-------|----------|
+| Unit | ✅ | 69 | 0 | 0 | 69 | 349 ms |
+| Integration | ✅ | 6 | 0 | 0 | 6 | 6 s |
+| Functional | ❌ | 0 | - | 0 | 0 | - |
+| Smoke | ❌ | 0 | - | 0 | 0 | - |
+
+## Failed Tests
+
+### Functional
+
+- BUILD: host not reachable
+
+### Smoke
+
+- BUILD: host not reachable
+
+## Host
+
+Host did not answer on http://localhost:4784 within 90 s - Functional/Smoke not run. Last host log lines:
+```
+tests/scripts/run-tests.sh: line 105: nohup: command not found
+```
+
+## Build Warnings
+
+| Track | Warnings |
+|-------|----------|
+| Unit | 12 |
+| Integration | 12 |
+| Functional | 12 |
+| Smoke | 0 |
+
+Report: /e/Work/Place_Migrate/cci-store-location-web/tests/reports/test-report-20260928-142903.md

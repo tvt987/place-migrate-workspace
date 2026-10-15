@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-10-15T09:07:56+07:00
+Prompt: Wait for fetch to complete
+Early Termination: task-18121
+
+[2026-10-15T09:07:56+07:00] Timer fired.

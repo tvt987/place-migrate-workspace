@@ -1,0 +1,18 @@
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run-e2e.win.ps1 -Variant none -Project e2e -BaseUrl "" -Workers "" -Spec "e2e/home/home.e2e.spec.ts" -Grep "" -ReportPrefix test-net4 & C:/Users/25303_TruongVanTinh/AppData/Local/Microsoft/WinGet/Links/make.exe -f Makefile.windows -s upload-report PREFIX=test-net4 & exit /b 0
+npx playwright test --project=e2e e2e/home/home.e2e.spec.ts
+
+Running 4 tests using 1 worker
+
+✅ ids1 token → .auth/token.json (upload-report)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (13.6s)
+  ok 2 [e2e] › e2e\home\home.e2e.spec.ts:26:7 › TC-DC-02-001 — after SSO, / shows Home or Unauthorized by UserType [LOAD] › sau SSO mở / — Home (type 3) hoặc Unauthorized (type khác) [LOAD] (1.4s)
+  ok 3 [e2e] › e2e\home\home.e2e.spec.ts:53:7 › TC-DC-02-002 — header shows user when session has LoadUserLogin [LOAD] › header có logo và logout khi vào được shell có user [LOAD] (1.1s)
+  -  4 [e2e] › e2e\home\home.e2e.spec.ts:75:7 › TC-DC-02-003 — UserTypeID != 3 lands on Error 403 [LOAD] › UserTypeID != 3 thấy Error 403 [LOAD]
+
+  1 skipped
+  3 passed (18.3s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-dc-web\03_qa\reports\details\test-net4-report-20261009-120508.json
+upload-report --prefix test-net4
+uploaded test_report/WEB/11_DC/test-net4-report-20261009-120508.json (12068 bytes), test_report_id=128
+uploaded test_report/WEB/11_DC/test-net4-report-20261009-120508.json (12068 bytes), test_report_id=128

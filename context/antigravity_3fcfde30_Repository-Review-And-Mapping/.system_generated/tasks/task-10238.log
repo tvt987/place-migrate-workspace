@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (599 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.2s)
+  ok  2 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:28:7 › TC-SCM-232-001 — Index loads [LOAD] › LOAD /PurchaseOrders [LOAD] (3.9s)
+  ok  3 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:53:7 › TC-SCM-232-002 — Search / client guard [FLOW] › FLOW Search `/PurchaseOrders/Search` [FLOW] (16.1s)
+  ok  4 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:73:7 › TC-SCM-232-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /PurchaseOrders [AUTH] (1.4s)
+  ok  5 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:86:7 › TC-SCM-232-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.5s)
+  ok  6 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:103:7 › TC-SCM-232-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (16.1s)
+  ok  7 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:133:7 › TC-SCM-232-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] (16.1s)
+  ok  8 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:163:7 › TC-SCM-232-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.6s)
+  ok  9 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:188:7 › TC-SCM-232-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW] (16.2s)
+  ok 10 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:224:7 › TC-SCM-232-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.7s)
+  ok 11 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:237:7 › TC-SCM-232-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (6.5s)
+  -  12 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:265:7 › TC-SCM-232-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  ok 13 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:311:7 › TC-SCM-232-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (22.0s)
+  ok 14 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:346:7 › TC-SCM-232-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (4.7s)
+  ok 15 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:369:7 › TC-SCM-232-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] (58.8s)
+
+  1 skipped
+  14 passed (3.3m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-095052.json

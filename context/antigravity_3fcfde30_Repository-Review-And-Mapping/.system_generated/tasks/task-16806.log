@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (479 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.7s)
+  ok 2 [e2e] › e2e\output-sale-b2-bs-edit\output-sale-b2-bs-edit.e2e.spec.ts:33:7 › TC-SCM-340-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất B2B [LOAD] (2.7s)
+  -  3 [e2e] › e2e\output-sale-b2-bs-edit\output-sale-b2-bs-edit.e2e.spec.ts:95:9 › TC-SCM-340-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất B2B thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  4 [e2e] › e2e\output-sale-b2-bs-edit\output-sale-b2-bs-edit.e2e.spec.ts:132:7 › TC-SCM-340-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất B2B thật [FLOW]
+  ok 5 [e2e] › e2e\output-sale-b2-bs-edit\output-sale-b2-bs-edit.e2e.spec.ts:168:7 › TC-SCM-340-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 6 [e2e] › e2e\output-sale-b2-bs-edit\output-sale-b2-bs-edit.e2e.spec.ts:191:7 › TC-SCM-340-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputSaleB2Bs [FLOW] (3.8s)
+
+  2 skipped
+  4 passed (17.1s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-205016.json

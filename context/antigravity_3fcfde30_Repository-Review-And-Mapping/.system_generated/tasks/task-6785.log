@@ -1,0 +1,140 @@
+npx playwright test --project=e2e --workers=1 e2e/output-sale-charities/output-sale-charities.e2e.spec.ts -g TC-SCM-94-002|TC-SCM-94-005
+
+Running 3 tests using 1 worker
+
+✅ ids1 token → .auth/token.json (upload-report)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (10.1s)
+  x  2 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:51:7 › TC-SCM-94-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleCharities/Search` [FLOW] (1.6m)
+  x  3 [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:100:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.6m)
+
+
+  1) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:51:7 › TC-SCM-94-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleCharities/Search` [FLOW] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+        - locator resolved to <button ng-click="PnSearch.btnSearch.OnClick();" class="btn cc-btn-style cc-btn-color-violet">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        168 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\output-sale-charities.module.ts:56
+
+      54 |       .then(() => true)
+      55 |       .catch(() => false);
+    > 56 |     await this.ui.searchButton().click();
+         |                                  ^
+      57 |     const alerted = await alertP;
+      58 |     if (alerted) {
+      59 |       return { response: null, codeStep: null, alerted: true };
+        at OutputSaleCharitiesModule.search (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\output-sale-charities.module.ts:56:34)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:59:27
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6fcea-tSaleCharities-Search-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6fcea-tSaleCharities-Search-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--6fcea-tSaleCharities-Search-FLOW--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--6fcea-tSaleCharities-Search-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--6fcea-tSaleCharities-Search-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:100:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+        - locator resolved to <button ng-click="PnSearch.btnSearch.OnClick();" class="btn cc-btn-style cc-btn-color-violet">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        166 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <div class="jconfirm-cell">…</div> from <div class="jconfirm jconfirm-light jconfirm-open">…</div> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\output-sale-charities.module.ts:56
+
+      54 |       .then(() => true)
+      55 |       .catch(() => false);
+    > 56 |     await this.ui.searchButton().click();
+         |                                  ^
+      57 |     const alerted = await alertP;
+      58 |     if (alerted) {
+      59 |       return { response: null, codeStep: null, alerted: true };
+        at OutputSaleCharitiesModule.search (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\output-sale-charities.module.ts:56:34)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:116:27
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-charities--bc7c9-rid-hoặc-empty-alert-STATE--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:51:7 › TC-SCM-94-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleCharities/Search` [FLOW] 
+    [e2e] › e2e\output-sale-charities\output-sale-charities.e2e.spec.ts:100:7 › TC-SCM-94-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+  1 passed (3.4m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261009-100635.json

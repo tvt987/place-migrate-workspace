@@ -1,0 +1,50 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (471 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.6s)
+  x  2 [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:174:7 › TC-SCM-298-005 — list href reachable from shell [FLOW] › quay về danh sách /CacheStorerages [FLOW] (1.4s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:174:7 › TC-SCM-298-005 — list href reachable from shell [FLOW] › quay về danh sách /CacheStorerages [FLOW] 
+
+    Error: list shell/error/4xx
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      196 |     const err = await mod.ui.errorText().isVisible().catch(() => false);
+      197 |     const content = await mod.ui.content().isVisible().catch(() => false);
+    > 198 |     expect(err || content || (resp?.status() ?? 0) >= 400, 'list shell/error/4xx').toBeTruthy();
+          |                                                                                    ^
+      199 |   });
+      200 | });
+      201 |
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:198:84
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-creat-aa5d9--sách-CacheStorerages-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-creat-aa5d9--sách-CacheStorerages-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-cache-storerages-creat-aa5d9--sách-CacheStorerages-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-creat-aa5d9--sách-CacheStorerages-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-cache-storerages-creat-aa5d9--sách-CacheStorerages-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\cache-storerages-create-cache-js\cache-storerages-create-cache-js.e2e.spec.ts:174:7 › TC-SCM-298-005 — list href reachable from shell [FLOW] › quay về danh sách /CacheStorerages [FLOW] 
+  1 passed (9.7s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-115844.json

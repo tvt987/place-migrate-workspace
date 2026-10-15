@@ -1,0 +1,7 @@
+
+Running 6 tests using 1 worker
+
+âœ… reuse .auth/token.json (286 min left)
+  ok 1 [setup] â€º fixtures\auth.fixture.ts:37:6 â€º authenticate via SSO (3.2s)
+  ok 2 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:30:7 â€º TC-SCM-303-001 â€” form loads [LOAD] â€º má»Ÿ form Táº¡o phiáº¿u chuyá»ƒn kho hÃ ng hÃ³a [LOAD] (3.9s)
+  ok 3 [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:91:9 â€º TC-SCM-303-002 â€” form validation blocks write [VALIDATION] â€º validation: Táº¡o phiáº¿u chuyá»ƒn kho hÃ ng hÃ³a thiáº¿u dá»¯ liá»‡u / cháº·n ghi [VALIDATION] (3.6s)

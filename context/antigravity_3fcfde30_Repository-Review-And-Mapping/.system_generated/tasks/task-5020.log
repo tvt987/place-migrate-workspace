@@ -1,0 +1,8 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-10-05T14:00:32+07:00
+Prompt: Check if task-4968 finished test-net4 full run
+Early Termination: task-4968
+
+[2026-10-05T14:00:17+07:00] Still waiting. Remaining time: 15s
+[2026-10-05T14:00:27+07:00] Still waiting. Remaining time: 5s
+[2026-10-05T14:00:32+07:00] Timer fired.

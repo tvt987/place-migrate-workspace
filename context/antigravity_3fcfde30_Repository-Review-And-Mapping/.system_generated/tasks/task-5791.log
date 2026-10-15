@@ -1,0 +1,33 @@
+[MVC.CoreHelpers] Falling back to CreateInstanceLogger for index: systemerror
+[MVC.CoreHelpers] WriteSystemErrorLog fallback: Erorr message:One or more errors occurred. (Unexpected character encountered while parsing value: . Path '', line 0, position 0.). Error message detail: Unexpected character encountered while parsing value: . Path '', line 0, position 0. | logger error: Object reference not set to an instance of an object.
+[OTLP] Starting OTLP tracing setup...
+[OTLP] OTLP tracing is disabled: URI not configured
+Check health start host to readiness
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 46.021ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 60.7569ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 96.5303ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 96.7842ms - 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-b11171b62f1bbabd524f14ab02d04486-2dae485314f3eba3-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-b6fdd9e09ee7715adbc5297e72fa3a1f-787ce925db37533a-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-9ed1b1fb1833048cab192c0c23c95a88-8162fc3a5cb6d0b6-00 - Path: /Accounts/Login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-794548cb82c1d88547b9025b98070742-97f5c4c647e17885-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-02e87cc6a9bf527ee86508efaa4e4fba-6b478aec284a3468-00 - Path: /BonusOutputSales/Search
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d5f3fd40e8cbc4150922480b67e52ed7-f330f8bd3aadc593-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302

@@ -1,0 +1,73 @@
+npx playwright test --project=e2e e2e/home/home.e2e.spec.ts
+
+Running 24 tests using 1 worker
+
+  ok  1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (4.8s)
+  x   2 [e2e] › e2e\home\home.e2e.spec.ts:27:7 › TC-PLACE-42-001 — home page loads the map dashboard and reports [LOAD] › mở trang chủ / [LOAD] (31.3s)
+  ok  3 [e2e] › e2e\home\home.e2e.spec.ts:48:7 › TC-PLACE-42-002 — Home/Index renders the same dashboard [LOAD] › mở /Home/Index [LOAD] (6.3s)
+  ok  4 [e2e] › e2e\home\home.e2e.spec.ts:66:7 › TC-PLACE-42-003 — header shows logo, user and logout [LOAD] › header hiển thị logo, user, đăng xuất [LOAD] (13.6s)
+  ok  5 [e2e] › e2e\home\home.e2e.spec.ts:91:7 › TC-PLACE-42-004 — footer shows copyright [LOAD] › footer bản quyền [LOAD] (21.8s)
+  ok  6 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.User [LOAD] (8.4s)
+  ok  7 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Store [LOAD] (18.0s)
+  ok  8 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Province [LOAD] (12.4s)
+  ok  9 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.District [LOAD] (29.6s)
+  ok 10 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Ward [LOAD] (12.1s)
+  ok 11 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách mặt bằng [FLOW] (27.6s)
+  ok 12 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách phạm vi [FLOW] (7.1s)
+  ok 13 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách địa danh [FLOW] (9.1s)
+  ok 14 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Đánh giá nhân viên [FLOW] (23.9s)
+  ok 15 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách phân quyền [FLOW] (3.3s)
+  ok 16 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách KPI [FLOW] (24.3s)
+  ok 17 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách loại mặt bằng [FLOW] (3.5s)
+  ok 18 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab NV THỰC HIỆN [FLOW] (27.6s)
+  ok 19 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TỈNH [FLOW] (2.5s)
+  ok 20 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab MỤC TIÊU [FLOW] (6.6s)
+  ok 21 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TUYẾN SUMMARY [FLOW] (3.3s)
+  ok 22 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TUYẾN DETAIL [FLOW] (10.3s)
+  -  23 [e2e] › e2e\home\home.e2e.spec.ts:175:7 › TC-PLACE-42-008 — refresh button clears the output cache [FLOW] › nút refresh xoá output cache [FLOW]
+  ok 24 [e2e] › e2e\home\home.e2e.spec.ts:195:7 › TC-PLACE-42-009 — anonymous user is redirected to Keycloak [AUTH] › ẩn danh mở trang chủ bị chuyển tới Keycloak [AUTH] (1.7s)
+
+
+  1) [e2e] › e2e\home\home.e2e.spec.ts:27:7 › TC-PLACE-42-001 — home page loads the map dashboard and reports [LOAD] › mở trang chủ / [LOAD] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Hệ thống quản lý mặt bằng"
+    Received: ""
+
+
+      37 |     // ASSERT
+      38 |     expect(opened.response?.status()).toBe(200);
+    > 39 |     await expect(page).toHaveTitle(data.screen.title);
+         |                        ^
+      40 |     await expect(mod.ui.breadcrumbItems()).toHaveText(data.screen.breadcrumb);
+      41 |     await expect(mod.ui.reportTabs()).toHaveText(data.screen.reportTabs);
+      42 |     await expect(mod.ui.activeReportTab()).toHaveText(d.expected.activeTab);
+        at E:\Work\Place_Migrate\cci-store-location-web\03_qa\e2e\home\home.e2e.spec.ts:39:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-home-home.e2e-TC-PLACE-14676-rts-LOAD-mở-trang-chủ-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-home-home.e2e-TC-PLACE-14676-rts-LOAD-mở-trang-chủ-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-home-home.e2e-TC-PLACE-14676-rts-LOAD-mở-trang-chủ-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-home-home.e2e-TC-PLACE-14676-rts-LOAD-mở-trang-chủ-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-home-home.e2e-TC-PLACE-14676-rts-LOAD-mở-trang-chủ-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\home\home.e2e.spec.ts:27:7 › TC-PLACE-42-001 — home page loads the map dashboard and reports [LOAD] › mở trang chủ / [LOAD] 
+  1 skipped
+  22 passed (5.2m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-net4-report-20261001-102643.json

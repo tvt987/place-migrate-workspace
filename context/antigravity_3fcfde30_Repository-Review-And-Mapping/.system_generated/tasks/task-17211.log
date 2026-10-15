@@ -1,0 +1,49 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (441 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.5s)
+  x  2 [e2e] › e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:224:7 › TC-SCM-102-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.3s)
+
+
+  1) [e2e] › e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:224:7 › TC-SCM-102-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] 
+
+    Error: origin không tự Search khi mở Index
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      229 |
+      230 |     await mod.open(data.screen.route, data.screen.searchEndpoint);
+    > 231 |     expect(mod.searchesDuringLoad, 'origin không tự Search khi mở Index').toBe(0);
+          |                                                                           ^
+      232 |     await expect(mod.ui.content()).toBeVisible({ timeout: 30000 });
+      233 |   });
+      234 | });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:231:75
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-32f1c--no-auto-search-Index-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-32f1c--no-auto-search-Index-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-clear-stoc-32f1c--no-auto-search-Index-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-32f1c--no-auto-search-Index-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-clear-stoc-32f1c--no-auto-search-Index-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\output-sale-clear-stock-attributes\output-sale-clear-stock-attributes.e2e.spec.ts:224:7 › TC-SCM-102-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] 
+  1 passed (10.5s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-212818.json

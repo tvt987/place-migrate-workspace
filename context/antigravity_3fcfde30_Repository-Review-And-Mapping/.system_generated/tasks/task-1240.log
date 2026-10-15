@@ -1,0 +1,33 @@
+  Determining projects to restore...
+e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj]
+e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j [e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj]
+e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47 [e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj]
+e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+  All projects are up-to-date for restore.
+e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\CoC.Web.Place.Unit.Tests.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+  Coc.Web.Place.ObjectCore -> e:\Work\Place_Migrate\cci-store-location-web\02_target\Coc.Web.Place.ObjectCore\bin\Debug\net10.0\Coc.Web.Place.ObjectCore.dll
+  CoC.Web.Place -> e:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\bin\Debug\net10.0\CoC.Web.Place.dll
+  CoC.Web.Place.Unit.Tests -> e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\bin\Debug\net10.0\CoC.Web.Place.Unit.Tests.dll
+Test run for e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\bin\Debug\net10.0\CoC.Web.Place.Unit.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.24]     CoC.Web.Place.Unit.Tests.Helpers.APIClientTests.PostObject_SendsFullSerializedObject_NotAnEmptyObject [FAIL]
+  Failed CoC.Web.Place.Unit.Tests.Helpers.APIClientTests.PostObject_SendsFullSerializedObject_NotAnEmptyObject [30 ms]
+  Error Message:
+   Assert.Equal() Failure: Strings differ
+           ↓ (pos 0)
+Expected: "DEBUG"
+Actual:   "{"ProvinceID":null,"ScopeTypeRankID":null"···
+           ↑ (pos 0)
+  Stack Trace:
+     at CoC.Web.Place.Unit.Tests.Helpers.APIClientTests.PostObject_SendsFullSerializedObject_NotAnEmptyObject() in e:\Work\Place_Migrate\cci-store-location-web\tests\Unit\CoC.Web.Place.Unit.Tests\Helpers\APIClientTests.cs:line 52
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+Failed!  - Failed:     1, Passed:     0, Skipped:     0, Total:     1, Duration: 44 ms - CoC.Web.Place.Unit.Tests.dll (net10.0)

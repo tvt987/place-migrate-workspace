@@ -1,0 +1,79 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (174 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.7s)
+  ok 2 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:30:7 › TC-SCM-315-001 — form loads [LOAD] › mở form Tạo phiếu nhập chênh lệch kiểm kê [LOAD] (4.1s)
+  x  3 [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:91:9 › TC-SCM-315-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập chênh lệch kiểm kê thiếu dữ liệu / chặn ghi [VALIDATION] (1.5m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:91:9 › TC-SCM-315-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập chênh lệch kiểm kê thiếu dữ liệu / chặn ghi [VALIDATION] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('#content').locator('a.btn, button').filter({ hasText: 'Tạo phiếu' }).filter({ visible: true }).first()
+        - locator resolved to <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple.OnClick();" ng-disabled="btnUpdateContentMultiple.IsDisabled">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div id="MsgBoxBack" class="divMessageBox animated fadeIn fast">…</div> intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div id="MsgBoxBack" class="divMessageBox animated fadeIn fast">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        161 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <div id="MsgBoxBack" class="divMessageBox animated fadeIn fast">…</div> intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\base\form.module.ts:46
+
+      44 |
+      45 |   async click(text: string): Promise<void> {
+    > 46 |     await this.ui.button(text).click();
+         |                                ^
+      47 |   }
+      48 |
+      49 |   async openTab(text: string): Promise<void> {
+        at IvenInputOrdersCreateModule.click (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\base\form.module.ts:46:32)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:112:17
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-iven-input-orders-crea-24a65-ữ-liệu-chặn-ghi-VALIDATION--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-iven-input-orders-crea-24a65-ữ-liệu-chặn-ghi-VALIDATION--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-iven-input-orders-crea-24a65-ữ-liệu-chặn-ghi-VALIDATION--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-iven-input-orders-crea-24a65-ữ-liệu-chặn-ghi-VALIDATION--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-iven-input-orders-crea-24a65-ữ-liệu-chặn-ghi-VALIDATION--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\iven-input-orders-create\iven-input-orders-create.e2e.spec.ts:91:9 › TC-SCM-315-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập chênh lệch kiểm kê thiếu dữ liệu / chặn ghi [VALIDATION] 
+  3 did not run
+  2 passed (1.7m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-165528.json

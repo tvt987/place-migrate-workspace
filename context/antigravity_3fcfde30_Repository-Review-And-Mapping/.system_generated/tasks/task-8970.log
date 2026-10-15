@@ -1,0 +1,466 @@
+    CANH BAO: chua chay `make config` lan nao - Web.config dang la gia tri goc cua snapshot, khong phai app.config o root.
+
+==> Tim MSBuild
+    E:\VS2\MSBuild\Current\Bin\amd64\MSBuild.exe
+    WebApplication.targets: E:\VS2\MSBuild\Microsoft\VisualStudio\v18.0\WebApplications\Microsoft.WebApplication.targets
+
+==> Restore packages (packages.config)
+
+  Determining projects to restore...
+  Restoring NuGet package AutoMapper.5.2.0.
+  Restoring NuGet package Autofac.WebApi2.Owin.4.0.0.
+  Restoring NuGet package Autofac.4.8.1.
+  Restoring NuGet package Dapper.FastCrud.2.4.1.
+  Restoring NuGet package Dapper.1.50.2.
+  Restoring NuGet package Antlr.3.4.1.9004.
+  Restoring NuGet package Autofac.Owin.4.0.0.
+  Restoring NuGet package Elasticsearch.Net.7.0.0.
+  Restoring NuGet package EngineIoClientDotNet.0.9.22.
+  Restoring NuGet package FluentValidation.6.4.0.
+  Restoring NuGet package EPPlus.4.1.0.
+  Restoring NuGet package Autofac.WebApi2.4.0.1.
+  Adding package 'Dapper.1.50.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Elasticsearch.Net.7.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Antlr.3.4.1.9004' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Antlr.3.4.1.9004' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package FluentValidation.WebApi.6.4.0.
+  Added package 'Elasticsearch.Net.7.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Api.CommonProtos.2.15.0.
+  Adding package 'Google.Api.CommonProtos.2.15.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Dapper.FastCrud.2.4.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'FluentValidation.WebApi.6.4.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Autofac.Owin.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Autofac.WebApi2.4.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'AutoMapper.5.2.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Autofac.WebApi2.Owin.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Autofac.4.8.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'EPPlus.4.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Autofac.WebApi2.Owin.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Api.Gax.4.8.0.
+  Added package 'FluentValidation.WebApi.6.4.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Api.Gax.Grpc.4.8.0.
+  Adding package 'Google.Api.Gax.4.8.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Google.Api.Gax.Grpc.4.8.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Autofac.Owin.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Apis.1.68.0.
+  Adding package 'Google.Apis.1.68.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'EngineIoClientDotNet.0.9.22' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Autofac.WebApi2.4.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Apis.Auth.1.68.0.
+  Adding package 'Google.Apis.Auth.1.68.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Dapper.1.50.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Apis.Core.1.68.0.
+  Adding package 'Google.Apis.Core.1.68.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Api.Gax.4.8.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Cloud.Iam.V1.3.3.0.
+  Added package 'Google.Api.Gax.Grpc.4.8.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Cloud.Kms.V1.3.13.0.
+  Adding package 'Google.Cloud.Kms.V1.3.13.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Google.Cloud.Iam.V1.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'AutoMapper.5.2.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Cloud.Location.2.3.0.
+  Adding package 'Google.Cloud.Location.2.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'FluentValidation.6.4.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Autofac.4.8.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.LongRunning.3.3.0.
+  Added package 'Dapper.FastCrud.2.4.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Google.Protobuf.3.28.1.
+  Adding package 'Google.LongRunning.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Google.Protobuf.3.28.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Cloud.Location.2.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Grpc.Auth.2.60.0.
+  Adding package 'Grpc.Auth.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Cloud.Iam.V1.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Grpc.Core.2.46.6.
+  Adding package 'Grpc.Core.2.46.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Cloud.Kms.V1.3.13.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Grpc.Core.Api.2.60.0.
+  Added package 'Google.Apis.1.68.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Grpc.Net.Client.2.60.0.
+  Adding package 'Grpc.Core.Api.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Apis.Auth.1.68.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Grpc.Net.Common.2.60.0.
+  Adding package 'Grpc.Net.Client.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Grpc.Net.Common.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Grpc.Auth.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package IdentityModel.6.0.0.
+  Added package 'Google.Apis.Core.1.68.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package LinqToExcel.1.11.0.
+  Adding package 'IdentityModel.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'EPPlus.4.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.Cors.5.2.3.
+  Adding package 'LinqToExcel.1.11.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Protobuf.3.28.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.5.2.3.
+  Added package 'LinqToExcel.1.11.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.Client.5.2.3.
+  Adding package 'Microsoft.AspNet.Cors.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Grpc.Net.Common.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.Core.5.2.3.
+  Adding package 'Microsoft.AspNet.WebApi.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.LongRunning.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.Cors.5.2.3.
+  Added package 'Microsoft.AspNet.Cors.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.Extensions.Compression.Server.2.0.6.
+  Added package 'Grpc.Core.Api.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.Owin.5.2.3.
+  Added package 'Microsoft.AspNet.WebApi.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNet.WebApi.WebHost.5.2.3.
+  Added package 'Grpc.Net.Client.2.60.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Bcl.AsyncInterfaces.8.0.0.
+  Adding package 'Microsoft.AspNet.WebApi.Cors.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNet.WebApi.Client.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNet.WebApi.Extensions.Compression.Server.2.0.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNet.WebApi.Core.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNet.WebApi.Owin.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNet.WebApi.WebHost.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Google.Api.CommonProtos.2.15.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Bcl.HashCode.1.1.1.
+  Added package 'Microsoft.AspNet.WebApi.Cors.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.
+  Added package 'Microsoft.AspNet.WebApi.WebHost.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.CSharp.4.6.0.
+  Adding package 'Microsoft.CSharp.4.6.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNet.WebApi.Owin.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.DependencyInjection.Abstractions.8.0.1.
+  Added package 'Microsoft.AspNet.WebApi.Client.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Logging.Abstractions.6.0.0.
+  Added package 'Microsoft.AspNet.WebApi.Extensions.Compression.Server.2.0.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.IdentityModel.Abstractions.6.27.0.
+  Adding package 'Microsoft.Extensions.DependencyInjection.Abstractions.8.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.Logging.Abstractions.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNet.WebApi.Core.5.2.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.IdentityModel.JsonWebTokens.6.27.0.
+  Adding package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Bcl.HashCode.1.1.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Bcl.AsyncInterfaces.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.IdentityModel.Logging.6.27.0.
+  Adding package 'Microsoft.IdentityModel.Abstractions.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.IdentityModel.JsonWebTokens.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'EngineIoClientDotNet.0.9.22' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.IdentityModel.Protocols.6.27.0.
+  Added package 'Microsoft.Extensions.DependencyInjection.Abstractions.8.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.IdentityModel.Tokens.6.27.0.
+  Added package 'Microsoft.Bcl.HashCode.1.1.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.IO.RecyclableMemoryStream.1.1.0.
+  Added package 'Microsoft.IdentityModel.Abstractions.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Net.Compilers.1.0.0.
+  Added package 'Microsoft.IdentityModel.JsonWebTokens.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Grpc.Core.2.46.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Owin.3.0.1.
+  Restoring NuGet package Microsoft.Owin.Host.SystemWeb.3.0.1.
+  Added package 'Microsoft.Bcl.AsyncInterfaces.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Owin.Security.3.0.1.
+  Adding package 'Microsoft.IdentityModel.Protocols.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.IO.RecyclableMemoryStream.1.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Logging.Abstractions.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Owin.Security.OAuth.3.0.1.
+  Added package 'IdentityModel.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Web.Infrastructure.1.0.0.
+  Added package 'Microsoft.IO.RecyclableMemoryStream.1.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Modernizr.2.6.2.
+  Adding package 'Microsoft.Web.Infrastructure.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Web.Infrastructure.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Newtonsoft.Json.13.0.3.
+  Adding package 'Microsoft.Owin.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Newtonsoft.Json.13.0.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Owin.Security.OAuth.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Owin.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Modernizr.2.6.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package NLog.4.4.3.
+  Adding package 'Microsoft.IdentityModel.Logging.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Owin.Host.SystemWeb.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Owin.Security.OAuth.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Npgsql.6.0.6.
+  Adding package 'Microsoft.IdentityModel.Tokens.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Owin.Host.SystemWeb.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Owin.1.0.0.
+  Added package 'Microsoft.CSharp.4.6.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package protobuf-net.2.3.2.
+  Added package 'Microsoft.IdentityModel.Protocols.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.2.9.0.
+  Adding package 'protobuf-net.2.3.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Modernizr.2.6.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.Formatting.Compact.1.1.0.
+  Adding package 'Owin.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Serilog.2.9.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Serilog.Formatting.Compact.1.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.IdentityModel.Logging.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.Formatting.Elasticsearch.8.0.1.
+  Added package 'Owin.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.Sinks.Elasticsearch.8.0.1.
+  Adding package 'Npgsql.6.0.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Serilog.Sinks.Elasticsearch.8.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Owin.Security.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Serilog.Formatting.Compact.1.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.Sinks.File.4.1.0.
+  Added package 'protobuf-net.2.3.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.Sinks.PeriodicBatching.2.3.0.
+  Added package 'Microsoft.Owin.Security.3.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Serilog.Sinks.Seq.4.0.0.
+  Adding package 'Serilog.Sinks.Seq.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.IdentityModel.Tokens.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package SocketIoClientDotNet.0.9.13.
+  Adding package 'Serilog.Sinks.File.4.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Newtonsoft.Json.13.0.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package StackExchange.Redis.1.2.6.
+  Adding package 'Serilog.Formatting.Elasticsearch.8.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Net.Compilers.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'NLog.4.4.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Serilog.Sinks.PeriodicBatching.2.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Serilog.Sinks.Elasticsearch.8.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Swashbuckle.5.2.2.
+  Added package 'Serilog.Sinks.Seq.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Swashbuckle.Core.5.2.2.
+  Adding package 'Swashbuckle.5.2.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'StackExchange.Redis.1.2.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Swashbuckle.5.2.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Buffers.4.5.1.
+  Adding package 'System.Buffers.4.5.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Serilog.Sinks.File.4.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.CodeDom.7.0.0.
+  Adding package 'System.CodeDom.7.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Serilog.Formatting.Elasticsearch.8.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Collections.Immutable.8.0.0.
+  Added package 'Serilog.Sinks.PeriodicBatching.2.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Diagnostics.DiagnosticSource.8.0.0.
+  Adding package 'System.Diagnostics.DiagnosticSource.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Serilog.2.9.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.IdentityModel.Tokens.Jwt.6.27.0.
+  Added package 'Microsoft.Net.Compilers.1.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Management.7.0.2.
+  Adding package 'System.Management.7.0.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Buffers.4.5.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Memory.4.5.5.
+  Added package 'System.CodeDom.7.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Net.Http.4.3.4.
+  Adding package 'System.IdentityModel.Tokens.Jwt.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Collections.Immutable.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Net.Http.4.3.4' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Swashbuckle.Core.5.2.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Memory.4.5.5' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'SocketIoClientDotNet.0.9.13' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Diagnostics.DiagnosticSource.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Net.Http.WinHttpHandler.7.0.0.
+  Added package 'System.Memory.4.5.5' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Numerics.Vectors.4.5.0.
+  Added package 'System.IdentityModel.Tokens.Jwt.6.27.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Runtime.CompilerServices.Unsafe.6.0.0.
+  Adding package 'System.Numerics.Vectors.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Runtime.CompilerServices.Unsafe.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Swashbuckle.Core.5.2.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Security.Cryptography.Algorithms.4.3.0.
+  Adding package 'System.Security.Cryptography.Algorithms.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Net.Http.WinHttpHandler.7.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Npgsql.6.0.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Security.Cryptography.Encoding.4.3.0.
+  Added package 'System.Net.Http.4.3.4' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Security.Cryptography.Primitives.4.3.0.
+  Added package 'System.Management.7.0.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Security.Cryptography.Encoding.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Security.Cryptography.X509Certificates.4.3.0.
+  Adding package 'System.Security.Cryptography.Primitives.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Security.Cryptography.X509Certificates.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Collections.Immutable.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Text.Encoding.4.3.0.
+  Adding package 'System.Text.Encoding.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'StackExchange.Redis.1.2.6' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Text.Encodings.Web.6.0.0.
+  Added package 'System.Security.Cryptography.Primitives.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Text.Json.6.0.0.
+  Adding package 'System.Text.Encodings.Web.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Numerics.Vectors.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Threading.Channels.8.0.0.
+  Added package 'System.Net.Http.WinHttpHandler.7.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Threading.Tasks.Extensions.4.5.4.
+  Adding package 'System.Threading.Tasks.Extensions.4.5.4' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Runtime.CompilerServices.Unsafe.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.ValueTuple.4.5.0.
+  Added package 'System.Security.Cryptography.Encoding.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package WebActivatorEx.2.0.0.
+  Adding package 'WebActivatorEx.2.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'NLog.4.4.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package WebApiContrib.Formatting.ProtoBuf.0.9.5.
+  Added package 'WebActivatorEx.2.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package WebGrease.1.5.2.
+  Added package 'System.Threading.Tasks.Extensions.4.5.4' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package WebSocket4Net.0.14.1.
+  Adding package 'WebGrease.1.5.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'WebApiContrib.Formatting.ProtoBuf.0.9.5' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.ValueTuple.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Text.Encodings.Web.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Authentication.Abstractions.2.1.0.
+  Added package 'WebApiContrib.Formatting.ProtoBuf.0.9.5' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Authentication.Core.2.1.0.
+  Added package 'System.Security.Cryptography.Algorithms.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Authorization.2.1.0.
+  Added package 'WebGrease.1.5.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Authorization.Policy.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Authentication.Core.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Threading.Channels.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.ValueTuple.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Hosting.Abstractions.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Authentication.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'SocketIoClientDotNet.0.9.13' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Hosting.Server.Abstractions.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Authorization.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Text.Encoding.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Text.Json.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Http.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Authorization.Policy.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'FluentValidation.6.4.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Http.Abstractions.2.1.0.
+  Added package 'Microsoft.AspNetCore.Authorization.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Http.Extensions.2.1.0.
+  Added package 'Microsoft.AspNetCore.Authorization.Policy.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Http.Features.2.1.0.
+  Added package 'Microsoft.AspNetCore.Authentication.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Mvc.Abstractions.2.1.0.
+  Added package 'Microsoft.AspNetCore.Authentication.Core.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Mvc.Core.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Hosting.Server.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.Hosting.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Hosting.Server.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Mvc.DataAnnotations.2.1.0.
+  Added package 'Microsoft.AspNetCore.Hosting.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.ResponseCaching.Abstractions.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Http.Features.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Http.Features.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Routing.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Mvc.Core.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.Http.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.Http.Extensions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.Http.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.ResponseCaching.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Threading.Channels.8.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.Routing.Abstractions.2.1.0.
+  Added package 'Microsoft.AspNetCore.ResponseCaching.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.AspNetCore.WebUtilities.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Mvc.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Http.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.DotNet.PlatformAbstractions.2.1.0.
+  Added package 'Microsoft.AspNetCore.Http.Extensions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Configuration.Abstractions.2.1.0.
+  Adding package 'Microsoft.DotNet.PlatformAbstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.Configuration.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.Mvc.DataAnnotations.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Http.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.DependencyInjection.2.1.0.
+  Adding package 'Microsoft.AspNetCore.Routing.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Mvc.DataAnnotations.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Configuration.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.DependencyModel.2.1.0.
+  Restoring NuGet package Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0.
+  Added package 'Microsoft.AspNetCore.Mvc.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.FileProviders.Abstractions.2.1.0.
+  Added package 'Microsoft.AspNetCore.Mvc.Core.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Hosting.Abstractions.2.1.0.
+  Adding package 'Microsoft.Extensions.FileProviders.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.Hosting.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.DependencyModel.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.DotNet.PlatformAbstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Localization.2.1.0.
+  Added package 'System.Text.Json.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Localization.Abstractions.2.1.0.
+  Adding package 'Microsoft.AspNetCore.WebUtilities.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.AspNetCore.Routing.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.FileProviders.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Logging.Abstractions.2.1.0.
+  Adding package 'Microsoft.Extensions.Logging.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Hosting.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.ObjectPool.2.1.0.
+  Added package 'Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Options.2.1.0.
+  Adding package 'Microsoft.Extensions.Options.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Logging.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Routing.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Microsoft.Extensions.Primitives.2.1.0.
+  Restoring NuGet package Microsoft.Net.Http.Headers.2.1.0.
+  Added package 'Microsoft.Extensions.DependencyModel.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Newtonsoft.Json.12.0.3.
+  Adding package 'Newtonsoft.Json.12.0.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Security.Cryptography.X509Certificates.4.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.ComponentModel.Annotations.4.5.0.
+  Adding package 'System.ComponentModel.Annotations.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.WebUtilities.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Runtime.InteropServices.RuntimeInformation.4.0.0.
+  Added package 'Microsoft.Extensions.Options.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Text.Encodings.Web.4.5.0.
+  Adding package 'System.Runtime.InteropServices.RuntimeInformation.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Text.Encodings.Web.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.Localization.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.AspNetCore.Routing.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Threading.Tasks.Extensions.4.5.0.
+  Added package 'System.Text.Encodings.Web.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package EntityFramework.6.1.3.
+  Added package 'System.Runtime.InteropServices.RuntimeInformation.4.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package Newtonsoft.Json.9.0.1.
+  Adding package 'Newtonsoft.Json.9.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Localization.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package DocumentFormat.OpenXml.3.3.0.
+  Adding package 'DocumentFormat.OpenXml.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.ObjectPool.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.ObjectPool.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package DocumentFormat.OpenXml.Framework.3.3.0.
+  Adding package 'DocumentFormat.OpenXml.Framework.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.Localization.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.Primitives.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Net.Http.Headers.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'Microsoft.Extensions.DependencyInjection.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Net.Http.Headers.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Localization.Abstractions.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Threading.Tasks.Extensions.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'WebSocket4Net.0.14.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.Primitives.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Restoring NuGet package System.Management.Automation.dll.10.0.10586.
+  Restoring NuGet package System.Collections.Immutable.6.0.0.
+  Restoring NuGet package OpenXmlPowerTools.4.5.3.2.
+  Adding package 'System.Management.Automation.dll.10.0.10586' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Microsoft.Extensions.DependencyInjection.2.1.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'OpenXmlPowerTools.4.5.3.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'OpenXmlPowerTools.4.5.3.2' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Threading.Tasks.Extensions.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Newtonsoft.Json.12.0.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'System.Collections.Immutable.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.ComponentModel.Annotations.4.5.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Management.Automation.dll.10.0.10586' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'System.Collections.Immutable.6.0.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Adding package 'EntityFramework.6.1.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'Newtonsoft.Json.9.0.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'DocumentFormat.OpenXml.Framework.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'EntityFramework.6.1.3' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'WebSocket4Net.0.14.1' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+  Added package 'DocumentFormat.OpenXml.3.3.0' to folder 'E:\Work\Place_Migrate\cci-scm-api\01_origin\packages'
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'AutoMapper' 5.2.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'AutoMapper' 5.2.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.DTO.SCM\CoC.Business.DTO.SCM.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Http' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Entities.SCM\CoC.Business.Entities.SCM.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Http' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Http' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1902: Package 'Microsoft.IdentityModel.JsonWebTokens' 6.27.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'Microsoft.Owin' 3.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'Microsoft.Owin' 3.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-3rq8-h3gj-r5c6 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.DTO.SCM\CoC.Business.DTO.SCM.csproj : warning NU1903: Package 'Newtonsoft.Json' 12.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Entities.SCM\CoC.Business.Entities.SCM.csproj : warning NU1903: Package 'Newtonsoft.Json' 9.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'Npgsql' 6.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'Npgsql' 6.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1902: Package 'System.IdentityModel.Tokens.Jwt' 6.27.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.DTO.SCM\CoC.Business.DTO.SCM.csproj : warning NU1904: Package 'System.Text.Encodings.Web' 4.5.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Entities.SCM\CoC.Business.Entities.SCM.csproj : warning NU1904: Package 'System.Text.Encodings.Web' 4.5.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj : warning NU1903: Package 'System.Text.Json' 6.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.Business.Service.SCM\CoC.Business.Service.SCM.csproj : warning NU1903: Package 'System.Text.Json' 6.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [E:\Work\Place_Migrate\cci-scm-api\01_origin\CoC.API.SCM.sln]
+    Restore xong.
+    DebugType=portable + Roslyn cua MSBuild (de VS Code dat duoc breakpoint).
+
+==> Build (Debug | Any CPU)
+E:\VS2\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(5455,5): error MSB3030: Could not copy the file "E:\DumpStack.log.tmp" because it was not found. [E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj]
+E:\VS2\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(5455,5): error MSB3030: Could not copy the file "E:\pagefile.sys" because it was not found. [E:\Work\Place_Migrate\cci-scm-api\01_origin\Coc.API.SCM\CoC.API.SCM.csproj]
+
+Build FAILED.
+    184 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:44.79
+
+LOI: Build that bai (exit 1).

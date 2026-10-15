@@ -1,0 +1,57 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (469 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.6s)
+  x  2 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:65:7 › TC-SCM-25-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CacheStorerages [AUTH] (30.2s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:65:7 › TC-SCM-25-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CacheStorerages [AUTH] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected: predicate to succeed
+    Received: "https://scm-stg4.concung.vn/CacheStorerages"
+    Timeout:  30000ms
+
+
+      70 |     const { ctx, page: anonPage } = await newAnonContext(browser);
+      71 |     await anonPage.goto(data.auth.input.route, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    > 72 |     await expect(anonPage).toHaveURL((u) => isOnIds(u), { timeout: 30000 });
+         |                            ^
+      73 |     await ctx.close();
+      74 |   });
+      75 | });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\cache-storerages\cache-storerages.e2e.spec.ts:72:28
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-cache-3dfbb--danh-CacheStorerages-AUTH--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-cache-3dfbb--danh-CacheStorerages-AUTH--e2e\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-cache-3dfbb--danh-CacheStorerages-AUTH--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-cache-storerages-cache-3dfbb--danh-CacheStorerages-AUTH--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-cache-storerages-cache-3dfbb--danh-CacheStorerages-AUTH--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-cache-storerages-cache-3dfbb--danh-CacheStorerages-AUTH--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:65:7 › TC-SCM-25-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CacheStorerages [AUTH] 
+  1 passed (37.6s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-120041.json

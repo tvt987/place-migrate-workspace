@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (427 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.7s)
+  ok 2 [e2e] › e2e\compare-price-create-price\compare-price-create-price.e2e.spec.ts:30:7 › TC-SCM-300-001 — form loads [LOAD] › mở form Tạo mới giá sản phẩm [LOAD] (3.5s)
+  ok 3 [e2e] › e2e\compare-price-create-price\compare-price-create-price.e2e.spec.ts:91:9 › TC-SCM-300-002 — form validation blocks write [VALIDATION] › validation: Tạo mới giá sản phẩm thiếu dữ liệu / chặn ghi [VALIDATION] (3.3s)
+  x  4 [e2e] › e2e\compare-price-create-price\compare-price-create-price.e2e.spec.ts:127:7 › TC-SCM-300-003 — save for real [FLOW] › lưu Tạo mới giá sản phẩm thật [FLOW] (31.5s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\compare-price-create-price\compare-price-create-price.e2e.spec.ts:127:7 › TC-SCM-300-003 — save for real [FLOW] › lưu Tạo mới giá sản phẩm thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\compare-price-create-price\compare-price-create-price.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-compare-price-create-p-fe747-mới-giá-sản-phẩm-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-compare-price-create-p-fe747-mới-giá-sản-phẩm-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-compare-price-create-p-fe747-mới-giá-sản-phẩm-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-compare-price-create-p-fe747-mới-giá-sản-phẩm-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-compare-price-create-p-fe747-mới-giá-sản-phẩm-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\compare-price-create-price\compare-price-create-price.e2e.spec.ts:127:7 › TC-SCM-300-003 — save for real [FLOW] › lưu Tạo mới giá sản phẩm thật [FLOW] 
+  2 did not run
+  3 passed (43.8s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-124241.json

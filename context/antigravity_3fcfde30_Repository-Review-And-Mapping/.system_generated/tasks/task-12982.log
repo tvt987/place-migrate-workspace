@@ -1,0 +1,15 @@
+  ok  6 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:103:7 â€º TC-SCM-47-005 â€” grid or empty/alert after Search [STATE] â€º STATE sau Search â€” grid hoáº·c empty/alert [STATE] (5.6s)
+  -   7 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:133:7 â€º TC-SCM-47-006 â€” pagination when data [EDGE] â€º EDGE pagination náº¿u cÃ³ dá»¯ liá»‡u [EDGE]
+  ok  8 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:163:7 â€º TC-SCM-47-007 â€” mutation toolbar GUARDED [FLOW] â€º GUARDED mutation toolbar [FLOW] (4.3s)
+  -   9 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:188:7 â€º TC-SCM-47-008 â€” detail read-only if row link [FLOW] â€º DETAIL read-only má»Ÿ link dÃ²ng Ä‘áº§u náº¿u cÃ³ [FLOW]
+  ok 10 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:224:7 â€º TC-SCM-47-009 â€” no auto-search on Index open [LOAD] â€º DEEP no auto-search Index [LOAD] (5.0s)
+  ok 11 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:237:7 â€º TC-SCM-47-010 â€” nonsense keyword â†’ empty or alert [FLOW] â€º DEEP keyword miss â†’ empty/alert [FLOW] (5.5s)
+  -  12 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:265:7 â€º TC-SCM-47-011 â€” keyword from first row narrows result [FLOW] â€º DEEP keyword tá»« dÃ²ng Ä‘áº§u sau Search [FLOW]
+  -  13 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:311:7 â€º TC-SCM-47-012 â€” server pagination page 2 [FLOW] â€º DEEP pagination trang 2 [FLOW]
+  ok 14 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:346:7 â€º TC-SCM-47-013 â€” breadcrumb + table header [FLOW] â€º DEEP breadcrumb + grid shell [FLOW] (4.8s)
+  -  15 [e2e] â€º e2e\err-des-storechanges\err-des-storechanges.e2e.spec.ts:369:7 â€º TC-SCM-47-014 â€” Export Excel download [FLOW] â€º Xuáº¥t Excel â€” file hoáº·c XHR blob â‰¥ 1KB [FLOW]
+
+  5 skipped
+  10 passed (1.2m)
+
+ðŸ“„ JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-150143.json

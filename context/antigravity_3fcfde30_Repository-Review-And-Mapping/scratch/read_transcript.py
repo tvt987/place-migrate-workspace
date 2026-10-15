@@ -1,0 +1,16 @@
+import json
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+with open(r'C:\Users\25303_TruongVanTinh\.gemini\antigravity-ide\brain\3fcfde30-4110-403c-8f9f-a4ed95abc9e6\.system_generated\logs\transcript.jsonl', encoding='utf-8') as f:
+    for i, line in enumerate(f, 1):
+        if 10350 <= i <= 10450:
+            obj = json.loads(line)
+            t = obj.get('type')
+            if t in ['USER_INPUT', 'PLANNER_RESPONSE']:
+                content = obj.get('content', '')
+                if content:
+                    print(f"=== Line {i} [{t}] ===")
+                    print(content[:600])
+                    print("\n")

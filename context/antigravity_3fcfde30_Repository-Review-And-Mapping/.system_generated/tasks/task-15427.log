@@ -1,0 +1,10 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (586 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (4.3s)
+  ok 2 [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:28:7 › TC-SCM-79-001 — Index loads [LOAD] › LOAD /OrderSalesDayOnDemandProvinces [LOAD] (4.2s)
+
+  2 passed (10.0s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-190343.json

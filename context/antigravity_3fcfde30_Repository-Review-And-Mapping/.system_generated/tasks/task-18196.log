@@ -1,0 +1,40 @@
+=== Fetching cci-dc-web ===
+=== Status cci-dc-web ===
+## dev...origin/dev
+=== Fetching cci-dc-api ===
+=== Status cci-dc-api ===
+## dev...origin/dev [behind 4]
+ M 02_target/net10_postgresql/CoC.API.DC/Configs/AutoFacModule.cs
+ M 02_target/net10_postgresql/CoC.API.DC/Configs/UtilitiesFn.cs
+ M 02_target/net10_postgresql/CoC.API.DC/appsettings.json
+=== Fetching cci-store-location-web ===
+=== Status cci-store-location-web ===
+## dev...origin/dev
+ M 00_docs/00_screen/.oracle-lock.json
+ M 03_qa/.env
+ M 03_qa/.env.example
+ M 03_qa/Makefile
+ M 03_qa/Makefile.windows
+ M 03_qa/fixtures/auth.fixture.ts
+ M 03_qa/package-lock.json
+ M 03_qa/package.json
+ M 03_qa/scripts/run-e2e.win.ps1
+ M 03_qa/utils/env-helper.ts
+ M 04_critical_change/SESSION_CONTEXT_SUMMARY_20260930.md
+ M Makefile
+?? 03_qa/scripts/upload-report.js
+?? 04_critical_change/COMPLETE_SESSION_HANDOVER_20260930.md
+?? 16_qa_web_playbook.md
+?? DEV_GUIDE.md
+?? DEV_HANDBOOK.md
+?? FULL_MIGRATION_QA_HANDBOOK_CONTEXT.md
+?? MINDMAP_ARCHITECTURE.md
+?? enva
+?? tests/reports/test-report-20260928-142903.md
+?? tests/reports/test-report-20260928-144251.md
+?? tests/reports/test-report-20260930-112956.md
+?? tests/reports/test-report-20260930-114808.md
+?? tests/reports/test-report-20260930-124412.md
+=== Fetching cci-store-location-api ===
+=== Status cci-store-location-api ===
+## dev...origin/dev [behind 23]

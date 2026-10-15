@@ -1,0 +1,268 @@
+{
+  "totalParityFails": 14,
+  "categorized": {
+    "titleDiff": [],
+    "autoSearchDiff": [
+      {
+        "screen": "popup-actions",
+        "tc": "TC-SCM-150-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: origin không tự Search khi mở Index\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 1",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "popup-bonus-point-types",
+        "tc": "TC-SCM-153-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: origin không tự Search khi mở Index\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 1",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "popup-promotions",
+        "tc": "TC-SCM-158-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: origin không tự Search khi mở Index\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 1",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      }
+    ],
+    "visibility": [
+      {
+        "screen": "bonus-output-sales",
+        "tc": "TC-SCM-15-002",
+        "scenario": "FLOW Search `/BonusOutputSales/Search` [FLOW]",
+        "dimension": "FLOW",
+        "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "err-des-storechanges",
+        "tc": "TC-SCM-47-002",
+        "scenario": "FLOW Search `/ErrDesStorechanges/Search` [FLOW]",
+        "dimension": "FLOW",
+        "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "input-sales",
+        "tc": "TC-SCM-54-002",
+        "scenario": "FLOW Search `/InputSales/Search` [FLOW]",
+        "dimension": "FLOW",
+        "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "min-stock-auto",
+        "tc": "TC-SCM-70-002",
+        "scenario": "FLOW Search `/MinStockAuto/Search` [FLOW]",
+        "dimension": "FLOW",
+        "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "output-sale-charities",
+        "tc": "TC-SCM-94-005",
+        "scenario": "STATE sau Search — grid hoặc empty/alert [STATE]",
+        "dimension": "STATE",
+        "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))\nExpected: visible\nError: strict mode violation: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText')) resolved to 2 elements:\n    1) <div class=\"boxText\">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô').first()\n    2) <div class=\"boxText\">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô').nth(1)\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))\n",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      }
+    ],
+    "apiDiff": [],
+    "validation": [],
+    "other": [
+      {
+        "screen": "activities-create",
+        "tc": "TC-SCM-286-004",
+        "scenario": "ẩn danh bị chuyển tới Keycloak [AUTH]",
+        "dimension": "AUTH",
+        "error": "Error: IDS hoặc Error page\n\nexpect(received).toBeTruthy()\n\nReceived: false",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "agent-services",
+        "tc": "TC-SCM-08-001",
+        "scenario": "LOAD /AgentServices [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "bonus-output-sales-detail",
+        "tc": "TC-SCM-389-001",
+        "scenario": "mở chi tiết SCM - Chi tiết phiếu xuất thưởng [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 500\nReceived:   500",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "category-attribute-months",
+        "tc": "TC-SCM-29-001",
+        "scenario": "LOAD /CategoryAttributeMonths [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "customer-taxes",
+        "tc": "TC-SCM-43-001",
+        "scenario": "LOAD /CustomerTaxes [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      },
+      {
+        "screen": "output-sale-agent-services",
+        "tc": "TC-SCM-91-001",
+        "scenario": "LOAD /OutputSaleAgentServices [LOAD]",
+        "dimension": "LOAD",
+        "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+        "stg4Status": "passed",
+        "stg10Status": "failed"
+      }
+    ]
+  },
+  "parityFails": [
+    {
+      "screen": "activities-create",
+      "tc": "TC-SCM-286-004",
+      "scenario": "ẩn danh bị chuyển tới Keycloak [AUTH]",
+      "dimension": "AUTH",
+      "error": "Error: IDS hoặc Error page\n\nexpect(received).toBeTruthy()\n\nReceived: false",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "agent-services",
+      "tc": "TC-SCM-08-001",
+      "scenario": "LOAD /AgentServices [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "bonus-output-sales",
+      "tc": "TC-SCM-15-002",
+      "scenario": "FLOW Search `/BonusOutputSales/Search` [FLOW]",
+      "dimension": "FLOW",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "bonus-output-sales-detail",
+      "tc": "TC-SCM-389-001",
+      "scenario": "mở chi tiết SCM - Chi tiết phiếu xuất thưởng [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 500\nReceived:   500",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "category-attribute-months",
+      "tc": "TC-SCM-29-001",
+      "scenario": "LOAD /CategoryAttributeMonths [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "customer-taxes",
+      "tc": "TC-SCM-43-001",
+      "scenario": "LOAD /CustomerTaxes [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "err-des-storechanges",
+      "tc": "TC-SCM-47-002",
+      "scenario": "FLOW Search `/ErrDesStorechanges/Search` [FLOW]",
+      "dimension": "FLOW",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "input-sales",
+      "tc": "TC-SCM-54-002",
+      "scenario": "FLOW Search `/InputSales/Search` [FLOW]",
+      "dimension": "FLOW",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "min-stock-auto",
+      "tc": "TC-SCM-70-002",
+      "scenario": "FLOW Search `/MinStockAuto/Search` [FLOW]",
+      "dimension": "FLOW",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 30000ms\n  - waiting for locator('a.btn[ng-click*=\"Search\"], a.btn[ng-click*=\"btnSearch\"], button[ng-click*=\"Search\"], button[ng-click*=\"btnSearch\"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()\n",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "output-sale-agent-services",
+      "tc": "TC-SCM-91-001",
+      "scenario": "LOAD /OutputSaleAgentServices [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "output-sale-charities",
+      "tc": "TC-SCM-94-005",
+      "scenario": "STATE sau Search — grid hoặc empty/alert [STATE]",
+      "dimension": "STATE",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))\nExpected: visible\nError: strict mode violation: locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText')) resolved to 2 elements:\n    1) <div class=\"boxText\">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô').first()\n    2) <div class=\"boxText\">Không có dữ liệu hoặc bạn không có quyền xem dữ l…</div> aka getByText('Không có dữ liệu hoặc bạn khô').nth(1)\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('#divSmallBoxes .boxText').or(locator('#divSmallBoxes .boxNotifyWarning .boxText'))\n",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "popup-actions",
+      "tc": "TC-SCM-150-009",
+      "scenario": "DEEP no auto-search Index [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: origin không tự Search khi mở Index\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 1",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "popup-bonus-point-types",
+      "tc": "TC-SCM-153-009",
+      "scenario": "DEEP no auto-search Index [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: origin không tự Search khi mở Index\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 1",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    },
+    {
+      "screen": "popup-promotions",
+      "tc": "TC-SCM-158-009",
+      "scenario": "DEEP no auto-search Index [LOAD]",
+      "dimension": "LOAD",
+      "error": "Error: origin không tự Search khi mở Index\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 1",
+      "stg4Status": "passed",
+      "stg10Status": "failed"
+    }
+  ]
+}

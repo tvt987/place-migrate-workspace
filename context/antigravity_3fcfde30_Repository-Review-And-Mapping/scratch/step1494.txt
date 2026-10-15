@@ -1,0 +1,11 @@
+@{
+  ProvinceID = $null
+  ScopeTypeRankID = $null
+  ScopeStatusID = @(5, 4, 101)
+  UserIDFilter = $null
+  ScopeIDs = @()
+  IsAll = $false
+  IsNearStore = $false
+  ReferSystemIDs = $null
+  StoreSizeIDs = $null
+} | ConvertTo-Json

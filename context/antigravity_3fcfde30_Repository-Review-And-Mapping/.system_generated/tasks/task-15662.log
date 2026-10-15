@@ -1,0 +1,61 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (552 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.1s)
+  ok  2 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:28:7 › TC-SCM-80-001 — Index loads [LOAD] › LOAD /OrderSalesDayOnDemands [LOAD] (4.3s)
+  ok  3 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:53:7 › TC-SCM-80-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemands/Search` [FLOW] (16.5s)
+  ok  4 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:73:7 › TC-SCM-80-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OrderSalesDayOnDemands [AUTH] (1.5s)
+  ok  5 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:86:7 › TC-SCM-80-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.3s)
+  ok  6 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:103:7 › TC-SCM-80-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (16.4s)
+  ok  7 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:133:7 › TC-SCM-80-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE] (18.0s)
+  ok  8 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:163:7 › TC-SCM-80-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (4.0s)
+  -   9 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:188:7 › TC-SCM-80-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:224:7 › TC-SCM-80-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.5s)
+  -  11 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:237:7 › TC-SCM-80-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:265:7 › TC-SCM-80-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  x  13 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:311:7 › TC-SCM-80-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (17.9s)
+  ok 14 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:346:7 › TC-SCM-80-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (4.1s)
+  ok 15 [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:369:7 › TC-SCM-80-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] (19.0s)
+
+
+  1) [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:311:7 › TC-SCM-80-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      339 |     const secondCell = ((await mod.ui.dataRows().first().locator('td').first().textContent()) || '').trim();
+      340 |     // soft: page 2 có thể trùng nếu sort lạ — chỉ bắt buộc còn dòng
+    > 341 |     expect(secondCell.length + firstCell.length).toBeGreaterThan(0);
+          |                                                  ^
+      342 |   });
+      343 | });
+      344 |
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:341:50
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-0c532-EP-pagination-trang-2-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\order-sales-day-on-demands\order-sales-day-on-demands.e2e.spec.ts:311:7 › TC-SCM-80-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] 
+  3 skipped
+  11 passed (2.4m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-193715.json

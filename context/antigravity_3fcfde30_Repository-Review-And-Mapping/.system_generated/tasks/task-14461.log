@@ -1,0 +1,14 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (138 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.8s)
+  ok 2 [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:30:7 › TC-SCM-319-001 — form loads [LOAD] › mở form LuckyBoxes Create [LOAD] (5.5s)
+  ok 3 [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:91:9 › TC-SCM-319-002 — form validation blocks write [VALIDATION] › validation: LuckyBoxes Create thiếu dữ liệu / chặn ghi [VALIDATION] (4.0s)
+  ok 4 [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:127:7 › TC-SCM-319-003 — save for real [FLOW] › lưu LuckyBoxes Create thật [FLOW] (9.2s)
+  ok 5 [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:162:7 › TC-SCM-319-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (912ms)
+  ok 6 [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:182:7 › TC-SCM-319-005 — list href reachable from shell [FLOW] › quay về danh sách /LuckyBoxes [FLOW] (4.8s)
+
+  6 passed (31.9s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-173133.json

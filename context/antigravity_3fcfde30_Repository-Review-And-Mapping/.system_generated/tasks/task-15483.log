@@ -1,0 +1,102 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (580 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.9s)
+  ok 2 [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:30:7 › TC-SCM-325-001 — form loads [LOAD] › mở form Tạo mới số ngày bán hàng theo tỉnh thành [LOAD] (2.8s)
+  x  3 [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:91:9 › TC-SCM-325-002 — form validation blocks write [VALIDATION] › validation: Tạo mới số ngày bán hàng theo tỉnh thành thiếu dữ liệu / chặn ghi [VALIDATION] (1.6m)
+  x  4 [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:127:7 › TC-SCM-325-003 — save for real [FLOW] › lưu Tạo mới số ngày bán hàng theo tỉnh thành thật [FLOW] (8.2s)
+  ok 5 [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:162:7 › TC-SCM-325-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 6 [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:182:7 › TC-SCM-325-005 — list href reachable from shell [FLOW] › quay về danh sách /OrderSalesDayOnDemandProvinces [FLOW] (4.5s)
+
+
+  1) [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:91:9 › TC-SCM-325-002 — form validation blocks write [VALIDATION] › validation: Tạo mới số ngày bán hàng theo tỉnh thành thiếu dữ liệu / chặn ghi [VALIDATION] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('#content').locator('a.btn, button').filter({ hasText: 'Thêm mới' }).filter({ visible: true }).first()
+        - locator resolved to <button disabled="disabled" ng-click="PnImport.Creates();" ng-disabled="PnImport.Lst.length == 0" class="btn cc-btn-style cc-btn-color-blue">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        174 × waiting for element to be visible, enabled and stable
+            - element is not enabled
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\base\form.module.ts:46
+
+      44 |
+      45 |   async click(text: string): Promise<void> {
+    > 46 |     await this.ui.button(text).click();
+         |                                ^
+      47 |   }
+      48 |
+      49 |   async openTab(text: string): Promise<void> {
+        at OrderSalesDayOnDemandProvincesCreateModule.click (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\base\form.module.ts:46:32)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:112:17
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-c7fd9-ữ-liệu-chặn-ghi-VALIDATION--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-c7fd9-ữ-liệu-chặn-ghi-VALIDATION--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-c7fd9-ữ-liệu-chặn-ghi-VALIDATION--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-c7fd9-ữ-liệu-chặn-ghi-VALIDATION--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-c7fd9-ữ-liệu-chặn-ghi-VALIDATION--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:127:7 › TC-SCM-325-003 — save for real [FLOW] › lưu Tạo mới số ngày bán hàng theo tỉnh thành thật [FLOW] 
+
+    TimeoutError: page.waitForResponse: Timeout 5000ms exceeded while waiting for event "response"
+
+      141 |     let resp: any = null;
+      142 |     try {
+    > 143 |       const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                          ^
+      144 |         timeout: 5000,
+      145 |       });
+      146 |       await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:143:26
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-ca0a8--theo-tỉnh-thành-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-ca0a8--theo-tỉnh-thành-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-ca0a8--theo-tỉnh-thành-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-ca0a8--theo-tỉnh-thành-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-ca0a8--theo-tỉnh-thành-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:91:9 › TC-SCM-325-002 — form validation blocks write [VALIDATION] › validation: Tạo mới số ngày bán hàng theo tỉnh thành thiếu dữ liệu / chặn ghi [VALIDATION] 
+    [e2e] › e2e\order-sales-day-on-demand-provinces-create\order-sales-day-on-demand-provinces-create.e2e.spec.ts:127:7 › TC-SCM-325-003 — save for real [FLOW] › lưu Tạo mới số ngày bán hàng theo tỉnh thành thật [FLOW] 
+  4 passed (1.9m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-190939.json

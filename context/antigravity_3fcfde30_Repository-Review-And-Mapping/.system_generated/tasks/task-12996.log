@@ -1,0 +1,15 @@
+    attachment #11: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    test-results\e2e-err-des-storechanges-c-0f285-yá»ƒn-kho-hÃ ng-hÃ³a-tháº­t-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-err-des-storechanges-c-0f285-yá»ƒn-kho-hÃ ng-hÃ³a-tháº­t-FLOW--e2e\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  1 failed
+    [e2e] â€º e2e\err-des-storechanges-create\err-des-storechanges-create.e2e.spec.ts:127:7 â€º TC-SCM-303-003 â€” save for real [FLOW] â€º lÆ°u Táº¡o phiáº¿u chuyá»ƒn kho hÃ ng hÃ³a tháº­t [FLOW] 
+  2 did not run
+  3 passed (43.8s)
+  1 error was not a part of any test, see above for details
+
+ðŸ“„ JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-150312.json

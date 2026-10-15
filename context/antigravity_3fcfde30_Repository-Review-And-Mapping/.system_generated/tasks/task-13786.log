@@ -1,0 +1,64 @@
+../00_docs/00_screen/00_README.md:74:| 60 | `ipos-voucher-types` | full | `/IPOSVoucherTypes` |
+../00_docs/00_screen/60_ipos_voucher_types.md:9:> **URL**: `/IPOSVoucherTypes`
+../00_docs/00_screen/60_ipos_voucher_types.md:10:> **Controller**: `IPOSVoucherTypesController`
+../00_docs/00_screen/60_ipos_voucher_types.md:12:> **Search**: `/IPOSVoucherTypes/Search`
+../00_docs/00_screen/60_ipos_voucher_types.md:29:- https://scm-stg4.concung.vn/IPOSVoucherTypes
+../00_docs/00_screen/60_ipos_voucher_types.md:85:- `01_origin/.../Controllers/IPOSVoucherTypesController.cs`
+../01_origin/CoC.Web.SCM/CoC.Web.SCM.csproj:1016:    <Compile Include="Controllers\IPOSVoucherTypesController.cs" />
+../01_origin/CoC.Web.SCM/CoC.Web.SCM.csproj:2060:    <Compile Include="Request\SCM\IPOSVoucherTypes\IPOSVoucherTypeCreateReq.cs" />
+../01_origin/CoC.Web.SCM/CoC.Web.SCM.csproj:2061:    <Compile Include="Request\SCM\IPOSVoucherTypes\IPOSVoucherTypeUpdateReq.cs" />
+../01_origin/CoC.Web.SCM/CoC.Web.SCM.csproj:2425:    <Compile Include="Response\SCM\IPOSVoucherTypes\IPOSVoucherTypeRes.cs" />
+../01_origin/CoC.Web.SCM/CoC.Web.SCM.csproj:4836:    <Content Include="Views\IPOSVoucherTypes\Index.cshtml" />
+../01_origin/CoC.Web.SCM/CoC.Web.SCM.csproj:4837:    <Content Include="Views\IPOSVoucherTypes\IndexOutputCache.cshtml" />
+../01_origin/CoC.Web.SCM/Config/ApiEndPoint.cs:288:        public static string IPOSVoucherTypesResource { get { return SCMAPIBaseUrl + "api/IPOSVoucherTypes/"; } }
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:38:            List<IPOSVoucherTypeRes> lstIpos = _ObjApiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource).OrderBy(c => c.iPOSVoucherTypeID).ToList();
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:212:            List<IPOSVoucherTypeRes> lstIpos = _ObjApiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource).Where(c=>c.iPOSVoucherTypeID==3).OrderBy(c => c.iPOSVoucherTypeID).ToList();
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:362:                    //IPOSVoucherTypeSheet(excelPackage, Worksheet); chưa xài vì hiện tại chỉ có 1 loại, sau này nếu nhiều loại thì sẽ bật lên
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:384:        private void IPOSVoucherTypeSheet(ExcelPackage excelPackage, ExcelWorksheet DataWorksheet)
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:397:            List<IPOSVoucherTypeRes> lstIpos = _ObjApiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource).Where(c=>c.iPOSVoucherTypeID==3).OrderBy(c => c.iPOSVoucherTypeID).ToList();
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:18:    public class IPOSVoucherTypesController : Controller
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:27:        public IPOSVoucherTypesController(IApiHelper apiHelper)
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:62:                List<IPOSVoucherTypeRes> data = _apiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource);
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:88:                List<IPOSVoucherTypeRes> data = _apiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource);
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:154:                var result = _apiHelper.PostMethod<bool, IPOSVoucherTypeCreateReq>(ApiEndPoint.IPOSVoucherTypesResource + "Create", objReq);
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:191:                var result = _apiHelper.GetMethod<int>(ApiEndPoint.IPOSVoucherTypesResource + "GetNewID");
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:220:                var result = _apiHelper.PutMethod<bool, IPOSVoucherTypeUpdateReq>(ApiEndPoint.IPOSVoucherTypesResource + "Update", obj);
+../01_origin/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:255:                var result = _apiHelper.DeleteMethod<bool>(ApiEndPoint.IPOSVoucherTypesResource + id, "");
+../01_origin/CoC.Web.SCM/Menu/xmlMenuFiles.xml:8717:		<Controller>IPOSVoucherTypes</Controller>
+../01_origin/CoC.Web.SCM/Menu/xmlMenuFiles.xml:8720:		<Action>/IPOSVoucherTypes</Action>
+../01_origin/CoC.Web.SCM/Menu/xmlMenuFiles.xml:8722:		<BreadCrumbDefaultLink>/IPOSVoucherTypes</BreadCrumbDefaultLink>
+../01_origin/CoC.Web.SCM/script-handler/ipos-voucher-types/index-controller.js:3:    var endPoint = "/IPOSVoucherTypes";
+../02_target/CoC.Web.SCM/Config/ApiEndPoint.cs:287:        public static string IPOSVoucherTypesResource { get { return SCMAPIBaseUrl + "api/IPOSVoucherTypes/"; } }
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:40:            List<IPOSVoucherTypeRes> lstIpos = _ObjApiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource).OrderBy(c => c.iPOSVoucherTypeID).ToList();
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:210:            List<IPOSVoucherTypeRes> lstIpos = _ObjApiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource).Where(c=>c.iPOSVoucherTypeID==3).OrderBy(c => c.iPOSVoucherTypeID).ToList();
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:360:                    //IPOSVoucherTypeSheet(excelPackage, Worksheet); chưa xài vì hiện tại chỉ có 1 loại, sau này nếu nhiều loại thì sẽ bật lên
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:378:        private void IPOSVoucherTypeSheet(ExcelPackage excelPackage, ExcelWorksheet DataWorksheet)
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherHistoriesController.cs:391:            List<IPOSVoucherTypeRes> lstIpos = _ObjApiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource).Where(c=>c.iPOSVoucherTypeID==3).OrderBy(c => c.iPOSVoucherTypeID).ToList();
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:19:    public class IPOSVoucherTypesController : Controller
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:28:        public IPOSVoucherTypesController(IApiHelper apiHelper)
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:63:                List<IPOSVoucherTypeRes> data = _apiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource);
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:89:                List<IPOSVoucherTypeRes> data = _apiHelper.GetMethod<List<IPOSVoucherTypeRes>>(ApiEndPoint.IPOSVoucherTypesResource);
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:151:                var result = _apiHelper.PostMethod<bool, IPOSVoucherTypeCreateReq>(ApiEndPoint.IPOSVoucherTypesResource + "Create", objReq);
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:188:                var result = _apiHelper.GetMethod<int>(ApiEndPoint.IPOSVoucherTypesResource + "GetNewID");
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:217:                var result = _apiHelper.PutMethod<bool, IPOSVoucherTypeUpdateReq>(ApiEndPoint.IPOSVoucherTypesResource + "Update", obj);
+../02_target/CoC.Web.SCM/Controllers/IPOSVoucherTypesController.cs:252:                var result = _apiHelper.DeleteMethod<bool>(ApiEndPoint.IPOSVoucherTypesResource + id, "");
+../02_target/CoC.Web.SCM/Menu/xmlMenuFiles.xml:8717:		<Controller>IPOSVoucherTypes</Controller>
+../02_target/CoC.Web.SCM/Menu/xmlMenuFiles.xml:8720:		<Action>/IPOSVoucherTypes</Action>
+../02_target/CoC.Web.SCM/Menu/xmlMenuFiles.xml:8722:		<BreadCrumbDefaultLink>/IPOSVoucherTypes</BreadCrumbDefaultLink>
+../02_target/CoC.Web.SCM/Views/IPOSVoucherTypes/Index.cshtml:7:@*AI[MIGRATE_START]: Html.Action("IndexOutputCache") has no Core surface (MVC5 child action; CS1929 on IHtmlHelper, invisible while RazorCompileOnBuild=false). The action is a pure shell (`return View();`) -> the view is rendered as a partial*@@await Html.PartialAsync("~/Views/IPOSVoucherTypes/IndexOutputCache.cshtml")@*AI[MIGRATE_END]*@
+../02_target/CoC.Web.SCM/wwwroot/script-handler/ipos-voucher-types/index-controller.js:3:    var endPoint = "/IPOSVoucherTypes";
+e2e/ipos-voucher-types/ipos-voucher-types.e2e.spec.ts:3:import { IposVoucherTypesModule } from '../../modules/ipos-voucher-types.module';
+e2e/ipos-voucher-types/ipos-voucher-types.e2e.spec.ts:9:// Oracle: IPOSVoucherTypesController — full coverage blueprint 00_docs/00_screen/60_ipos_voucher_types.md
+e2e/ipos-voucher-types/ipos-voucher-types.e2e.spec.ts:10:let mod: IposVoucherTypesModule;
+e2e/ipos-voucher-types/ipos-voucher-types.e2e.spec.ts:24:  mod = new IposVoucherTypesModule(page);
+modules/ipos-voucher-types.module.ts:2:import { IposVoucherTypesPage } from '../pages/ipos-voucher-types.page';
+modules/ipos-voucher-types.module.ts:6:export class IposVoucherTypesModule {
+modules/ipos-voucher-types.module.ts:7:  readonly ui: IposVoucherTypesPage;
+modules/ipos-voucher-types.module.ts:10:    this.ui = new IposVoucherTypesPage(page);
+pages/ipos-voucher-types.page.ts:5:export class IposVoucherTypesPage extends ShellPage {
+test-data/ipos-voucher-types-e2e.json:26:    "route": "/IPOSVoucherTypes",
+test-data/ipos-voucher-types-e2e.json:28:    "searchEndpoint": "/IPOSVoucherTypes/Search",
+test-data/ipos-voucher-types-e2e.json:33:    "scenario": "LOAD /IPOSVoucherTypes"
+test-data/ipos-voucher-types-e2e.json:36:    "scenario": "FLOW Search `/IPOSVoucherTypes/Search`"
+test-data/ipos-voucher-types-e2e.json:39:    "scenario": "AUTH ẩn danh /IPOSVoucherTypes",
+test-data/ipos-voucher-types-e2e.json:41:      "route": "/IPOSVoucherTypes"

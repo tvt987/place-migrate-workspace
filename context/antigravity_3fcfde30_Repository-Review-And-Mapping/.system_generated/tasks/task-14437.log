@@ -1,0 +1,61 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (140 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.9s)
+  x  2 [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:30:7 › TC-SCM-319-001 — form loads [LOAD] › mở form LuckyBoxes Create [LOAD] (6.1s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:30:7 › TC-SCM-319-001 — form loads [LOAD] › mở form LuckyBoxes Create [LOAD] 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('#btnSave').or(locator('#content').locator('a.btn, button').filter({ hasText: 'Cập nhật' }).filter({ visible: true }).first()).or(locator('#content').locator('a.btn, button').filter({ hasText: 'Tạo phiếu' }).filter({ visible: true }).first())
+    Expected: visible
+    Error: strict mode violation: locator('#btnSave').or(locator('#content').locator('a.btn, button').filter({ hasText: 'Cập nhật' }).filter({ visible: true }).first()).or(locator('#content').locator('a.btn, button').filter({ hasText: 'Tạo phiếu' }).filter({ visible: true }).first()) resolved to 5 elements:
+        1) <button id="btnSave" type="button" ng-click="btnUpdate_OnClick();" class="btn cc-btn-style cc-btn-color-blue" ng-show="Permission.Update||Permission.Create">…</button> aka getByRole('button', { name: ' Cập nhật' })
+        2) <button id="btnSave" type="button" ng-show="Permission.CreateObject" ng-click="PnLuckyBoxObject.Add();" class="btn cc-btn-style cc-btn-color-blue">…</button> aka locator('#luckyboxobject_form #btnSave')
+        3) <button id="btnSave" type="button" ng-click="PnDetail.Add();" ng-show="Permission.CreateDetail" class="btn cc-btn-style cc-btn-color-blue">…</button> aka locator('#luckyboxdetail_form #btnSave')
+        4) <button id="btnSave" type="button" ng-click="PnDetailProduct.Add();" ng-show="Permission.CreateDetailProduct" class="btn cc-btn-style cc-btn-color-blue">…</button> aka locator('#luckyboxdetailproduct_form #btnSave')
+        5) <button id="btnSave" type="button" ng-show="Permission.CreateImage" ng-click="PnLuckyBoxImage.Add();" class="btn cc-btn-style cc-btn-color-blue">…</button> aka locator('#luckyboximage_form #btnSave')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for locator('#btnSave').or(locator('#content').locator('a.btn, button').filter({ hasText: 'Cập nhật' }).filter({ visible: true }).first()).or(locator('#content').locator('a.btn, button').filter({ hasText: 'Tạo phiếu' }).filter({ visible: true }).first())
+
+
+      83 |     }
+      84 |     const submitCount = await mod.ui.submitButton().count();
+    > 85 |     if (submitCount) await expect(mod.ui.submitButton()).toBeVisible({ timeout: 30000 });
+         |                                                          ^
+      86 |   });
+      87 | });
+      88 |
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:85:58
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-lucky-boxes-create-luc-2baef-orm-LuckyBoxes-Create-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-lucky-boxes-create-luc-2baef-orm-LuckyBoxes-Create-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-lucky-boxes-create-luc-2baef-orm-LuckyBoxes-Create-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-lucky-boxes-create-luc-2baef-orm-LuckyBoxes-Create-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-lucky-boxes-create-luc-2baef-orm-LuckyBoxes-Create-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\lucky-boxes-create\lucky-boxes-create.e2e.spec.ts:30:7 › TC-SCM-319-001 — form loads [LOAD] › mở form LuckyBoxes Create [LOAD] 
+  4 did not run
+  1 passed (15.0s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-172923.json

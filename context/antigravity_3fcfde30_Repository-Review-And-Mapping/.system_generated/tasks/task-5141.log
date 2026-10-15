@@ -1,0 +1,9 @@
+From https://bitbucket.org/concung/cci-dc-web
+ * branch            dev        -> FETCH_HEAD
+Updating ef3fe0b..5cde43c
+Fast-forward
+ 03_qa/.env                   | 23 +++++++++++++++++++++++
+ 03_qa/.gitignore             |  1 +
+ 03_qa/utils/json-reporter.ts |  2 ++
+ 3 files changed, 26 insertions(+)
+ create mode 100644 03_qa/.env

@@ -1,0 +1,20 @@
+npm warn exec The following package was not found and will be installed: playwright@1.64.0
+Usage: npx playwright show-trace [options] [trace]
+
+show trace viewer
+
+Options:
+  -b, --browser <browserType>  browser to use, one of cr, chromium, ff, firefox,
+                               wk, webkit (default: "chromium")
+  -h, --host <host>            Host to serve trace on; specifying this option
+                               opens trace in a browser tab
+  -p, --port <port>            Port to serve trace on, 0 for any free port;
+                               specifying this option opens trace in a browser
+                               tab
+  --stdin                      Accept trace URLs over stdin to update the viewer
+  --help                       display help for command
+
+  Examples:
+
+    $ show-trace
+    $ show-trace https://example.com/trace.zip

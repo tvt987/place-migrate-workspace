@@ -1,0 +1,38 @@
+From https://bitbucket.org/concung/cci-dc-web
+   3a7ef00..6fb95bc  staging    -> origin/staging
+   ccb39d3..16f12df  staging10  -> origin/staging10
+ * [new tag]         fix/06-returnurl-same-origin -> fix/06-returnurl-same-origin
+From https://bitbucket.org/concung/cci-dc-api
+   93575b8..2e43752  dev        -> origin/dev
+   39e82ad..7173e5a  staging    -> origin/staging
+   5ed4811..fb29d42  staging10  -> origin/staging10
+ * [new tag]         fix/test-net10-posgresql-report-20261014-095940 -> fix/test-net10-posgresql-report-20261014-095940
+From https://bitbucket.org/concung/cci-store-location-web
+   fca4e09..1581c2c  staging    -> origin/staging
+   e3299f1..5eec0b0  staging10  -> origin/staging10
+From https://bitbucket.org/concung/cci-store-location-api
+   fef7126..1753474  dev        -> origin/dev
+ * [new tag]         fix/03-ids1-token-endpoint-fallback -> fix/03-ids1-token-endpoint-fallback
+From https://bitbucket.org/concung/cci-scm-web
+   21de3e4f..ec73c89f  staging    -> origin/staging
+   33ec9bc9..5e251f08  staging10  -> origin/staging10
+From https://bitbucket.org/concung/cci-scm-api
+   0a09d95..009f02a  staging4   -> origin/staging4
+   8addb7d..78916a4  dev        -> origin/dev
+   d165605..583d727  staging    -> origin/staging
+   e7ae9e8..a06ee0f  staging10  -> origin/staging10
+ * [new tag]         fix/12-ids1-token-endpoint-fallback -> fix/12-ids1-token-endpoint-fallback
+ * [new tag]         fix/14-paging-response-envelope -> fix/14-paging-response-envelope
+ * [new tag]         fix/15-response-id-casing -> fix/15-response-id-casing
+ * [new tag]         fix/16-cnb-vat-invoice-field -> fix/16-cnb-vat-invoice-field
+ * [new tag]         fix/17-epplus-compile-runtime-abi -> fix/17-epplus-compile-runtime-abi
+ * [new tag]         fix/18-prefix-code-json-string -> fix/18-prefix-code-json-string
+ * [new tag]         fix/19-reflection-response-helper -> fix/19-reflection-response-helper
+ * [new tag]         fix/21-payment-recipient-search-filters -> fix/21-payment-recipient-search-filters
+ * [new tag]         fix/26-iven-output-query-id-route -> fix/26-iven-output-query-id-route
+ * [new tag]         fix/27-purc-order-query-id-route -> fix/27-purc-order-query-id-route
+ * [new tag]         fix/28-voucher-receipt-query-id-route -> fix/28-voucher-receipt-query-id-route
+ * [new tag]         fix/31-null-json-response-contract -> fix/31-null-json-response-contract
+ * [new tag]         fix/33-near-expired-duplicate-category-params -> fix/33-near-expired-duplicate-category-params
+ * [new tag]         fix/34-swagger-oauth-security-scheme-401 -> fix/34-swagger-oauth-security-scheme-401
+ * [new tag]         fix/35-net4-anonymous-helper-construction -> fix/35-net4-anonymous-helper-construction

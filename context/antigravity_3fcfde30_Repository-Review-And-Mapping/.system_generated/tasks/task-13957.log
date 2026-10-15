@@ -1,0 +1,48 @@
+../01_origin/CoC.Web.SCM/Views/ErrDesStorechanges/CreateOutputCache.cshtml:331:                <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../01_origin/CoC.Web.SCM/Views/IVENInputOrders/CreateOutputCache.cshtml:216:                    ng-disabled="btnUpdateContentMultiple.IsDisabled"
+../01_origin/CoC.Web.SCM/Views/IVENInputOrders/CreateOutputCache.cshtml:217:                    ng-click="btnUpdateContentMultiple.OnClick();">
+../01_origin/CoC.Web.SCM/Views/IVENOutputOrders/CreateOutputCache.cshtml:198:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../01_origin/CoC.Web.SCM/Views/OutputOrders/CreateOutputCache.cshtml:181:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();">
+../01_origin/CoC.Web.SCM/Views/OutputOrders/ProductGiftsOutStoreCreateOutputCache.cshtml:180:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();">
+../01_origin/CoC.Web.SCM/Views/OutputSales/ProductGiftsCreateOutputCache.cshtml:216:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();">
+../01_origin/CoC.Web.SCM/Views/OutputUses/CreateOutputCache.cshtml:167:            <button type="button" class="btn btn-primary cc-btn-style" ng-click="btnUpdateContentMultiple_OnClick();">
+../01_origin/CoC.Web.SCM/Views/XStoreChanges/CreateOutputCache.cshtml:177:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../01_origin/CoC.Web.SCM/Views/XStoreChanges/EvictionFullCreateOutputCache.cshtml:193:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../01_origin/CoC.Web.SCM/script-handler/err-des-storechanges/create-controller.js:610:    $scope.btnUpdateContentMultiple_OnClick = function (LstStoreID) {
+../01_origin/CoC.Web.SCM/script-handler/iven-input-orders/iven-input-orders-create-controller.js:341:    $scope.btnUpdateContentMultiple = {};
+../01_origin/CoC.Web.SCM/script-handler/iven-input-orders/iven-input-orders-create-controller.js:342:    $scope.btnUpdateContentMultiple.IsDisabled = false;
+../01_origin/CoC.Web.SCM/script-handler/iven-input-orders/iven-input-orders-create-controller.js:343:    $scope.btnUpdateContentMultiple.OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/iven-input-orders/iven-input-orders-create-controller.js:401:                    $scope.btnUpdateContentMultiple.IsDisabled = true;
+../01_origin/CoC.Web.SCM/script-handler/iven-output-orders/iven-output-orders-create-controller.js:484:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/output-orders/output-orders-create-controller.js:478:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/output-orders/productgifts-outstore-create-controller.js:341:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/output-sales/productgifts-create-controller.js:323:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/output-use/output-use-create-controller.js:409:    $scope.btnUpdateContentMultiple_OnClick = function () { 
+../01_origin/CoC.Web.SCM/script-handler/store-change/evictionfull-create-controller.js:280:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/store-change/store-changes-create-controller.js:631:    $scope.btnUpdateContentMultiple_OnClick = function (LstStoreID) {
+../01_origin/CoC.Web.SCM/script-handler/xstorechanges/evictionfull-create-controller.js:280:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../01_origin/CoC.Web.SCM/script-handler/xstorechanges/store-changes-create-controller.js:645:    $scope.btnUpdateContentMultiple_OnClick = function (LstStoreID) {
+../02_target/CoC.Web.SCM/Views/ErrDesStorechanges/CreateOutputCache.cshtml:331:                <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../02_target/CoC.Web.SCM/Views/IVENInputOrders/CreateOutputCache.cshtml:217:                    ng-disabled="btnUpdateContentMultiple.IsDisabled"
+../02_target/CoC.Web.SCM/Views/IVENInputOrders/CreateOutputCache.cshtml:218:                    ng-click="btnUpdateContentMultiple.OnClick();">
+../02_target/CoC.Web.SCM/Views/IVENOutputOrders/CreateOutputCache.cshtml:199:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../02_target/CoC.Web.SCM/Views/OutputOrders/CreateOutputCache.cshtml:182:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();">
+../02_target/CoC.Web.SCM/Views/OutputOrders/ProductGiftsOutStoreCreateOutputCache.cshtml:180:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();">
+../02_target/CoC.Web.SCM/Views/OutputSales/ProductGiftsCreateOutputCache.cshtml:216:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();">
+../02_target/CoC.Web.SCM/Views/OutputUses/CreateOutputCache.cshtml:168:            <button type="button" class="btn btn-primary cc-btn-style" ng-click="btnUpdateContentMultiple_OnClick();">
+../02_target/CoC.Web.SCM/Views/XStoreChanges/CreateOutputCache.cshtml:178:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../02_target/CoC.Web.SCM/Views/XStoreChanges/EvictionFullCreateOutputCache.cshtml:193:            <button type="button" class="btn cc-btn-style cc-btn-color-blue" ng-click="btnUpdateContentMultiple_OnClick();" ng-disabled="IsRefeshPage">
+../02_target/CoC.Web.SCM/wwwroot/script-handler/err-des-storechanges/create-controller.js:610:    $scope.btnUpdateContentMultiple_OnClick = function (LstStoreID) {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/iven-input-orders/iven-input-orders-create-controller.js:341:    $scope.btnUpdateContentMultiple = {};
+../02_target/CoC.Web.SCM/wwwroot/script-handler/iven-input-orders/iven-input-orders-create-controller.js:342:    $scope.btnUpdateContentMultiple.IsDisabled = false;
+../02_target/CoC.Web.SCM/wwwroot/script-handler/iven-input-orders/iven-input-orders-create-controller.js:343:    $scope.btnUpdateContentMultiple.OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/iven-input-orders/iven-input-orders-create-controller.js:401:                    $scope.btnUpdateContentMultiple.IsDisabled = true;
+../02_target/CoC.Web.SCM/wwwroot/script-handler/iven-output-orders/iven-output-orders-create-controller.js:484:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/output-orders/output-orders-create-controller.js:478:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/output-orders/productgifts-outstore-create-controller.js:341:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/output-sales/productgifts-create-controller.js:323:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/output-use/output-use-create-controller.js:409:    $scope.btnUpdateContentMultiple_OnClick = function () { 
+../02_target/CoC.Web.SCM/wwwroot/script-handler/store-change/evictionfull-create-controller.js:280:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/store-change/store-changes-create-controller.js:631:    $scope.btnUpdateContentMultiple_OnClick = function (LstStoreID) {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/xstorechanges/evictionfull-create-controller.js:280:    $scope.btnUpdateContentMultiple_OnClick = function () {
+../02_target/CoC.Web.SCM/wwwroot/script-handler/xstorechanges/store-changes-create-controller.js:645:    $scope.btnUpdateContentMultiple_OnClick = function (LstStoreID) {

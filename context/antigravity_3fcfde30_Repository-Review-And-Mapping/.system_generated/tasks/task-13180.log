@@ -1,0 +1,5 @@
+
+Running 15 tests using 1 worker
+
+âœ… reuse .auth/token.json (267 min left)
+  ok  1 [setup] â€º fixtures\auth.fixture.ts:37:6 â€º authenticate via SSO (3.5s)

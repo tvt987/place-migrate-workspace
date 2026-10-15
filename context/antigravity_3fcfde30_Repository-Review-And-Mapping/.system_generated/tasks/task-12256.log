@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (390 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.2s)
+  ok  2 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:28:7 › TC-SCM-34-001 — Index loads [LOAD] › LOAD /ConfirmGSMs [LOAD] (4.3s)
+  -   3 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:55:7 › TC-SCM-34-002 — Search / client guard [FLOW] › FLOW Search `/ConfirmGSMs/Search` [FLOW]
+  ok  4 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:83:7 › TC-SCM-34-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /ConfirmGSMs [AUTH] (1.6s)
+  ok  5 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:96:7 › TC-SCM-34-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.9s)
+  -   6 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:113:7 › TC-SCM-34-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:147:7 › TC-SCM-34-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:177:7 › TC-SCM-34-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (4.0s)
+  -   9 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:202:7 › TC-SCM-34-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:238:7 › TC-SCM-34-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.8s)
+  -  11 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:251:7 › TC-SCM-34-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:279:7 › TC-SCM-34-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:325:7 › TC-SCM-34-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 14 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:360:7 › TC-SCM-34-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (4.1s)
+  -  15 [e2e] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:383:7 › TC-SCM-34-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+
+  8 skipped
+  7 passed (2.2m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-131952.json

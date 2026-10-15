@@ -1,0 +1,67 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (87 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.9s)
+  ok  2 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:28:7 › TC-SCM-74-001 — Index loads [LOAD] › LOAD /OrderBufferLimitStocks [LOAD] (4.8s)
+  -   3 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:50:7 › TC-SCM-74-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  ok  4 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:61:7 › TC-SCM-74-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OrderBufferLimitStocks [AUTH] (1.3s)
+  ok  5 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:74:7 › TC-SCM-74-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.9s)
+  -   6 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:87:7 › TC-SCM-74-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:117:7 › TC-SCM-74-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:147:7 › TC-SCM-74-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (4.9s)
+  -   9 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:172:7 › TC-SCM-74-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:208:7 › TC-SCM-74-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.8s)
+  -  11 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:221:7 › TC-SCM-74-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:249:7 › TC-SCM-74-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:295:7 › TC-SCM-74-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  14 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:330:7 › TC-SCM-74-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW]
+  x  15 [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:358:7 › TC-SCM-74-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] (1.1m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:358:7 › TC-SCM-74-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] 
+
+    Error: Export Content-Type="" size=0
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+       at utils\download-helper.ts:101
+
+       99 |       /excel|spreadsheet|octet-stream|csv|zip|pdf/i.test(contentType) || body.length >= minBytes,
+      100 |       `Export Content-Type="${contentType}" size=${body.length}`,
+    > 101 |     ).toBeTruthy();
+          |       ^
+      102 |     expect(body.length, `Export body size=${body.length} (min ${minBytes})`).toBeGreaterThanOrEqual(minBytes);
+      103 |
+      104 |     const fileName = fileNameHdr || `export-via-xhr${guessExt(contentType)}`;
+        at clickAndAssertDownload (E:\Work\Place_Migrate\cci-scm-web\03_qa\utils\download-helper.ts:101:7)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:379:22
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-buffer-limit-sto-1ff95-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-buffer-limit-sto-1ff95-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-buffer-limit-sto-1ff95-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-buffer-limit-sto-1ff95-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-buffer-limit-sto-1ff95-e-hoặc-XHR-blob-≥-1KB-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\order-buffer-limit-stocks\order-buffer-limit-stocks.e2e.spec.ts:358:7 › TC-SCM-74-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW] 
+  8 skipped
+  6 passed (2.2m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-182218.json

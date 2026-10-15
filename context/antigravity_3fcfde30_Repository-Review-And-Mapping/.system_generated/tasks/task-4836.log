@@ -1,0 +1,20 @@
+HTTP/1.1 302 Found
+Cache-Control: private
+Content-Length: 132
+Content-Type: text/html; charset=utf-8
+Location: /accounts/login
+Set-Cookie: returnUrl=https://dc-stg4.concung.vn/; expires=Sun, 01-Nov-2026 04:37:54 GMT; path=/; secure; HttpOnly; SameSite=Lax
+Set-Cookie: CC.SID=f1xl0e024x2xtl12jd5cmiju; path=/; secure; HttpOnly; SameSite=None
+Set-Cookie: ASP.NET_SessionId=; expires=Thu, 02-Oct-2025 04:37:55 GMT; path=/; secure; HttpOnly; SameSite=None
+Set-Cookie: .AspNet.TempState=; expires=Thu, 02-Oct-2025 04:37:55 GMT; path=/; secure; HttpOnly; SameSite=None
+Set-Cookie: __RequestVerificationToken=; expires=Thu, 02-Oct-2025 04:37:55 GMT; path=/; secure; HttpOnly; SameSite=Lax
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, ContextID
+Date: Fri, 02 Oct 2026 04:37:55 GMT
+

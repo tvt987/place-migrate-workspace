@@ -1,0 +1,80 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (454 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.6s)
+  ok  2 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:28:7 › TC-SCM-28-001 — Index loads [LOAD] › LOAD /Category_StoreExclusions [LOAD] (4.2s)
+  ok  3 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:53:7 › TC-SCM-28-002 — Search / client guard [FLOW] › FLOW Search `/Category_StoreExclusions/Search` [FLOW] (5.4s)
+  ok  4 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:73:7 › TC-SCM-28-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /Category_StoreExclusions [AUTH] (2.0s)
+  ok  5 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:86:7 › TC-SCM-28-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (4.0s)
+  ok  6 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:103:7 › TC-SCM-28-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (4.7s)
+  -   7 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:133:7 › TC-SCM-28-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:163:7 › TC-SCM-28-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.9s)
+  -   9 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:188:7 › TC-SCM-28-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:224:7 › TC-SCM-28-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.7s)
+  x  11 [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:237:7 › TC-SCM-28-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (1.6m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:237:7 › TC-SCM-28-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.fill: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('#content input[type="text"]').first()
+        - locator resolved to <input type="text" readonly="readonly" data-toggle="dropdown" placeholder="Chọn ngành hàng" ng-disabled="myroot.IsDisableOpenTree" ng-model="myroot.NodeResult.NameSelected" ng-style="{'background': (!myroot.IsDisableOpenTree)? '#fff':'#eee'}" class="dropdown_HelpTrees form-control ng-pristine ng-untouched ng-valid ng-not-empty"/>
+        - fill("ZZZNOMATCH99999XYZ")
+      - attempting fill action
+        2 × waiting for element to be visible, enabled and editable
+          - element is not editable
+        - retrying fill action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and editable
+          - element is not editable
+        - retrying fill action
+          - waiting 100ms
+        165 × waiting for element to be visible, enabled and editable
+            - element is not editable
+          - retrying fill action
+            - waiting 500ms
+
+
+       at modules\category_store-exclusions.module.ts:41
+
+      39 |       const kw = this.ui.keyword();
+      40 |       if (await kw.count()) {
+    > 41 |         await kw.fill(keyword);
+         |                  ^
+      42 |       }
+      43 |     } else if (keyword === '') {
+      44 |       const kw = this.ui.keyword();
+        at Category_StoreExclusionsModule.search (E:\Work\Place_Migrate\cci-scm-web\03_qa\modules\category_store-exclusions.module.ts:41:18)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:253:17
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-category_store-exclusi-2fbeb-rd-miss-→-empty-alert-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-category_store-exclusi-2fbeb-rd-miss-→-empty-alert-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-category_store-exclusi-2fbeb-rd-miss-→-empty-alert-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-category_store-exclusi-2fbeb-rd-miss-→-empty-alert-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-category_store-exclusi-2fbeb-rd-miss-→-empty-alert-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\category_store-exclusions\category_store-exclusions.e2e.spec.ts:237:7 › TC-SCM-28-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] 
+  2 skipped
+  4 did not run
+  8 passed (2.3m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-121517.json

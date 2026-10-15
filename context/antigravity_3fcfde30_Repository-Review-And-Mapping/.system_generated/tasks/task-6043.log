@@ -1,0 +1,11 @@
+WARNING: TCP connect to (127.0.0.1 : 5316) failed
+
+ComputerName           : 127.0.0.1
+RemoteAddress          : 127.0.0.1
+RemotePort             : 5316
+InterfaceAlias         : Loopback Pseudo-Interface 1
+SourceAddress          : 127.0.0.1
+PingSucceeded          : True
+PingReplyDetails (RTT) : 0 ms
+TcpTestSucceeded       : False
+

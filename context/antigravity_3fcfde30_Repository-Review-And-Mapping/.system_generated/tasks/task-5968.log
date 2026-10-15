@@ -1,0 +1,92 @@
+[MVC.CoreHelpers] Falling back to CreateInstanceLogger for index: systemerror
+[MVC.CoreHelpers] WriteSystemErrorLog fallback: Erorr message:One or more errors occurred. (Unexpected character encountered while parsing value: . Path '', line 0, position 0.). Error message detail: Unexpected character encountered while parsing value: . Path '', line 0, position 0. | logger error: Object reference not set to an instance of an object.
+[OTLP] Starting OTLP tracing setup...
+[OTLP] OTLP tracing is disabled: URI not configured
+Check health start host to readiness
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 50.1185ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 68.5173ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 102.4996ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 102.8467ms - 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-da5cabf92a0a9fbfe7b695ce8ab82282-bdff284151b56ea9-00 - Path: /BonusOutputSales.
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 404
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-630f89a72b1085cd8dc947db8efba7fc-1383e65e6714ac86-00 - Path: /BonusOutputSales
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-a5943637c02325075ad5bfe4a7d4a3ef-b4a0886d1ff89e3d-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-360b10932f5f66935dcc125de5394c23-d929ae92b74cd041-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-7918bab002e17e8cecd1b63fddc326fa-3df851f25789c9c3-00 - Path: /BonusOutputSales
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d40ddb41eabf2a8636cb4b23d5306ddf-dbc4e9e245b468f2-00 - Path: /BonusOutputSales/Search
+[LocalDebugLogger] [BonusOutputSalesController.Search:START] UserID: 1742, UserName: 2741
+AppConfig.ApiUrl: http://localhost:4119/
+Target Endpoint: http://localhost:4119/api/BonusOutputSales/Search
+Incoming Payload: {"KeySearch":null,"CustomerID":-1,"OutputDateFrom":"2026-09-07T00:00:00","OutputDateTo":"2026-10-07T23:59:00","CreatedUser":-1,"PageIndex":0,"PageSize":10}
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Lỗi tìm phiếu xuất thưởng.
+ErrorStep: Call API
+ErrorMessage: 
+DataSend:
+objEx.Message: No connection could be made because the target machine actively refused it. (localhost:4119)
+objEx.StackTrace:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.<SendAsync>g__CreateHandlerAndSendAsync|115_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at CoC.Web.SCM.Helpers.APIClient.Post[T](String EndPoint, T Obj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\APIClient.cs:line 62
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 420
+   at CoC.Web.SCM.Controllers.BonusOutputSalesController.Search(BonusOutputSaleSearchReq ObjOSSearchMerchandiseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\BonusOutputSalesController.cs:line 921
+objEx.InnerException: System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+-----------------------------Exception-----------------------------------
+
+[LocalDebugLogger] [BonusOutputSalesController.Search:EXCEPTION] Exception Type: System.Net.Http.HttpRequestException
+Message: No connection could be made because the target machine actively refused it. (localhost:4119)
+StackTrace:
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.<SendAsync>g__CreateHandlerAndSendAsync|115_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at CoC.Web.SCM.Helpers.APIClient.Post[T](String EndPoint, T Obj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\APIClient.cs:line 62
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 420
+   at CoC.Web.SCM.Controllers.BonusOutputSalesController.Search(BonusOutputSaleSearchReq ObjOSSearchMerchandiseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\BonusOutputSalesController.cs:line 921
+--- InnerException [1]: System.Net.Sockets.SocketException ---
+Inner Message: No connection could be made because the target machine actively refused it.
+Inner StackTrace:
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+objCodeStep.Status: Error
+objCodeStep.Message: Lỗi tìm phiếu xuất thưởng.
+objCodeStep.ErrorMessage: 
+objCodeStep.ErrorStep: Call API
+objCodeStep.HTTPStatusCode: 0
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200

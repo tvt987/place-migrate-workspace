@@ -1,0 +1,919 @@
+  Determining projects to restore...
+E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\CoC.Web.SCM.Functional.csproj]
+E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\CoC.Web.SCM.Functional.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\CoC.Web.SCM.Functional.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Mvc.Core' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-3wcj-rg8q-9cqv
+  Restored E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\CoC.Web.SCM.Functional.csproj (in 1.37 sec).
+  1 of 2 projects are up-to-date for restore.
+E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\CoC.Web.SCM.Functional.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\CoC.Web.SCM.Functional.csproj : warning NU1903: Package 'Microsoft.AspNetCore.Mvc.Core' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-3wcj-rg8q-9cqv
+E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+  CoC.Web.SCM -> E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll
+E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "System.IdentityModel.Tokens.Jwt" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "System.IdentityModel.Tokens.Jwt, Version=6.32.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" and "System.IdentityModel.Tokens.Jwt, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "System.IdentityModel.Tokens.Jwt, Version=6.32.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was chosen because it was primary and "System.IdentityModel.Tokens.Jwt, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "System.IdentityModel.Tokens.Jwt, Version=6.32.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" [C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "System.IdentityModel.Tokens.Jwt, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "Autofac" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "Autofac, Version=6.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" and "Autofac, Version=8.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "Autofac, Version=6.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was chosen because it was primary and "Autofac, Version=8.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "Autofac, Version=6.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" [C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "Autofac, Version=8.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\DLL.Web\Core.Infrastructure.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\DLL.Web\Core.Infrastructure.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Core.Infrastructure [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "Microsoft.IdentityModel.Tokens" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" and "Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was chosen because it was primary and "Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" [C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "Autofac.Extensions.DependencyInjection" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "Autofac.Extensions.DependencyInjection, Version=7.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" and "Autofac.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "Autofac.Extensions.DependencyInjection, Version=7.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was chosen because it was primary and "Autofac.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "Autofac.Extensions.DependencyInjection, Version=7.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" [C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "Autofac.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+  
+  Build succeeded.
+  
+E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "System.IdentityModel.Tokens.Jwt" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "System.IdentityModel.Tokens.Jwt, Version=6.32.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" and "System.IdentityModel.Tokens.Jwt, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "System.IdentityModel.Tokens.Jwt, Version=6.32.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was chosen because it was primary and "System.IdentityModel.Tokens.Jwt, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "System.IdentityModel.Tokens.Jwt, Version=6.32.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" [C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\system.identitymodel.tokens.jwt\6.32.1\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "System.IdentityModel.Tokens.Jwt, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "Autofac" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "Autofac, Version=6.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" and "Autofac, Version=8.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "Autofac, Version=6.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was chosen because it was primary and "Autofac, Version=8.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "Autofac, Version=6.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" [C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac\6.3.0\lib\net5.0\Autofac.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "Autofac, Version=8.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\DLL.Web\Core.Infrastructure.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\DLL.Web\Core.Infrastructure.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Core.Infrastructure [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "Microsoft.IdentityModel.Tokens" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" and "Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was chosen because it was primary and "Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" [C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Found conflicts between different versions of "Autofac.Extensions.DependencyInjection" that could not be resolved. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: There was a conflict between "Autofac.Extensions.DependencyInjection, Version=7.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" and "Autofac.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: "Autofac.Extensions.DependencyInjection, Version=7.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was chosen because it was primary and "Autofac.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" was not. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on "Autofac.Extensions.DependencyInjection, Version=7.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" [C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll]. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: C:\Users\25303_TruongVanTinh\.nuget\packages\autofac.extensions.dependencyinjection\7.1.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: References which depend on or have been unified to "Autofac.Extensions.DependencyInjection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da" []. [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: Project file item includes which caused reference "E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\bin\Debug\net10.0\CoC.Web.SCM.dll". [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+C:\Program Files\dotnet\sdk\10.0.400\Microsoft.Common.CurrentVersion.targets(2453,5): warning MSB3277: CoC.Web.SCM [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM.Views2\CoC.Web.SCM.Views2.csproj] [E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\CoC.Web.SCM.csproj]
+      6 Warning(s)
+      0 Error(s)
+  
+  Time Elapsed 00:00:01.67
+  CoC.Web.SCM.Functional -> E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\bin\Debug\net10.0\CoC.Web.SCM.Functional.dll
+Test run for E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\bin\Debug\net10.0\CoC.Web.SCM.Functional.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:01.50]     CoC.Web.SCM.Functional.JsonCompatibilityTests.ActivityTypesController_Search_ReturnsPascalCaseJson [SKIP]
+[xUnit.net 00:00:01.50]     CoC.Web.SCM.Functional.JsonCompatibilityTests.HomeController_GetAccessToken_ReturnsPascalCaseJson [SKIP]
+  Skipped CoC.Web.SCM.Functional.JsonCompatibilityTests.ActivityTypesController_Search_ReturnsPascalCaseJson [1 ms]
+  Skipped CoC.Web.SCM.Functional.JsonCompatibilityTests.HomeController_GetAccessToken_ReturnsPascalCaseJson [1 ms]
+[xUnit.net 00:00:03.44]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Environment_Testing_EnablesDeveloperExceptionPage [FAIL]
+[xUnit.net 00:00:03.44]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RouteIsMatched [FAIL]
+[xUnit.net 00:00:03.45]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/") [FAIL]
+[xUnit.net 00:00:03.45]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Search_RequiresPostMethod [FAIL]
+[xUnit.net 00:00:03.46]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/NonExistent/Page") [FAIL]
+[xUnit.net 00:00:03.46]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RespondsWithSecurityHeaders [FAIL]
+[xUnit.net 00:00:03.46]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Delete_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:03.46]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_Returns200Or302 [SKIP]
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Environment_Testing_EnablesDeveloperExceptionPage [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RouteIsMatched [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\ActivityTypesControllerFunctionalTests.cs:line 27
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/") [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Search_RequiresPostMethod [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\ActivityTypesControllerFunctionalTests.cs:line 27
+   at InvokeStub_ActivityTypesControllerFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/NonExistent/Page") [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RespondsWithSecurityHeaders [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\ActivityTypesControllerFunctionalTests.cs:line 27
+   at InvokeStub_ActivityTypesControllerFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Delete_ReturnsJsonResponse [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_Returns200Or302 [1 ms]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_NonExistentAction_Returns404 [FAIL]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Update_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Search_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Create_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/ActivityTypes/Index") [FAIL]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/api/nonexistent") [FAIL]
+[xUnit.net 00:00:03.47]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_RouteMatching_PreservesPathInfo [FAIL]
+[xUnit.net 00:00:03.48]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_ResponseBody_Exists [FAIL]
+[xUnit.net 00:00:03.48]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_Session_IsConfigured [FAIL]
+  Failed CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_NonExistentAction_Returns404 [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\ActivityTypesControllerFunctionalTests.cs:line 27
+   at InvokeStub_ActivityTypesControllerFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Update_ReturnsJsonResponse [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Search_ReturnsJsonResponse [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Create_ReturnsJsonResponse [1 ms]
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/ActivityTypes/Index") [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/api/nonexistent") [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_RouteMatching_PreservesPathInfo [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_ResponseBody_Exists [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_Session_IsConfigured [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:03.49]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ServerHeader_IsRemoved [FAIL]
+[xUnit.net 00:00:03.50]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_Authentication_IsConfigured [FAIL]
+[xUnit.net 00:00:03.50]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_StrictTransportSecurity_IsPresent [FAIL]
+[xUnit.net 00:00:03.51]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_On404Response_StillPresent [FAIL]
+[xUnit.net 00:00:03.51]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_OnController500Response_StillPresent [FAIL]
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ServerHeader_IsRemoved [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_Authentication_IsConfigured [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_StrictTransportSecurity_IsPresent [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_On404Response_StillPresent [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_OnController500Response_StillPresent [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.MiddlewareFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 31
+   at InvokeStub_MiddlewareFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:09.81]     CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndex_Returns404_BecauseHomeControllerIsExcluded [FAIL]
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndex_Returns404_BecauseHomeControllerIsExcluded [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:09.82]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_WithIdParameter_IsRoutable [FAIL]
+[xUnit.net 00:00:09.82]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_NonExistentController_Returns404 [FAIL]
+[xUnit.net 00:00:09.82]     CoC.Web.SCM.Functional.RoutingFunctionalTests.AllRoutableControllers_IncludeSecurityHeaders [FAIL]
+[xUnit.net 00:00:09.83]     CoC.Web.SCM.Functional.RoutingFunctionalTests.ErrorRoute_ErrorNotFound_IsRoutable [FAIL]
+[xUnit.net 00:00:09.83]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_ActivityTypes_Search_IsRoutableWithPost [FAIL]
+[xUnit.net 00:00:09.83]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_ActivityTypes_Index_IsRoutable [FAIL]
+[xUnit.net 00:00:09.84]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_Activities_Index_IsRoutable [FAIL]
+[xUnit.net 00:00:09.85]     CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndexWithTrailingSlash_Returns404 [FAIL]
+[xUnit.net 00:00:09.85]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_UsersController_IsRoutable [FAIL]
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_WithIdParameter_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_NonExistentController_Returns404 [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.AllRoutableControllers_IncludeSecurityHeaders [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.ErrorRoute_ErrorNotFound_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_ActivityTypes_Search_IsRoutableWithPost [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_ActivityTypes_Index_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_Activities_Index_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndexWithTrailingSlash_Returns404 [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_UsersController_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:09.86]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_StoreTypes_Index_IsRoutable [FAIL]
+[xUnit.net 00:00:09.86]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_NonExistentAction_Returns404 [FAIL]
+[xUnit.net 00:00:09.87]     CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_OnlineController_IsRoutable [FAIL]
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_StoreTypes_Index_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_NonExistentAction_Returns404 [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.Route_OnlineController_IsRoutable [1 ms]
+  Error Message:
+   System.IO.FileNotFoundException : CoC.Web.SCM.Views2.dll (compiled views P-Z) is missing next to CoC.Web.SCM.dll; build with `dotnet build CoC.Web.SCM.csproj` (it builds the second views assembly) and publish with `dotnet publish CoC.Web.SCM.csproj`
+  Stack Trace:
+     at CoC.Web.SCM.Startup.<>c.<ConfigureServices>b__8_2(ApplicationPartManager manager) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.ConfigureApplicationPartManager(IMvcBuilder builder, Action`1 setupAction)
+   at CoC.Web.SCM.Startup.ConfigureServices(IServiceCollection services) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Startup.cs:line 33
+   at InvokeStub_Startup.ConfigureServices(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass7_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.RoutingFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 26
+   at InvokeStub_RoutingFunctionalTests..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+Failed!  - Failed:    30, Passed:     4, Skipped:     7, Total:    41, Duration: 8 s - CoC.Web.SCM.Functional.dll (net10.0)

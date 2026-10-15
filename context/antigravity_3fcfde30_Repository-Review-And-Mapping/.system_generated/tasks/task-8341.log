@@ -1,0 +1,38 @@
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run-e2e.win.ps1 -Variant none -Project e2e -BaseUrl "" -Workers "" -Spec "e2e/home/home.e2e.spec.ts" -Grep "" -ReportPrefix test-net4 & C:/Users/25303_TruongVanTinh/AppData/Local/Microsoft/WinGet/Links/make.exe -f Makefile.windows -s upload-report PREFIX=test-net4 & exit /b 0
+npx playwright test --project=e2e e2e/home/home.e2e.spec.ts
+
+Running 24 tests using 1 worker
+
+✅ ids1 token → .auth/token.json (upload-report)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (1.0m)
+  ok  2 [e2e] › e2e\home\home.e2e.spec.ts:27:7 › TC-PLACE-42-001 — home page loads the map dashboard and reports [LOAD] › mở trang chủ / [LOAD] (20.6s)
+  ok  3 [e2e] › e2e\home\home.e2e.spec.ts:48:7 › TC-PLACE-42-002 — Home/Index renders the same dashboard [LOAD] › mở /Home/Index [LOAD] (3.5s)
+  ok  4 [e2e] › e2e\home\home.e2e.spec.ts:66:7 › TC-PLACE-42-003 — header shows logo, user and logout [LOAD] › header hiển thị logo, user, đăng xuất [LOAD] (12.9s)
+  ok  5 [e2e] › e2e\home\home.e2e.spec.ts:91:7 › TC-PLACE-42-004 — footer shows copyright [LOAD] › footer bản quyền [LOAD] (23.0s)
+  ok  6 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.User [LOAD] (3.6s)
+  ok  7 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Store [LOAD] (4.5s)
+  ok  8 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Province [LOAD] (13.7s)
+  ok  9 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.District [LOAD] (6.5s)
+  ok 10 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Ward [LOAD] (3.3s)
+  ok 11 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách mặt bằng [FLOW] (16.7s)
+  ok 12 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách phạm vi [FLOW] (16.9s)
+  ok 13 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách địa danh [FLOW] (2.2s)
+  ok 14 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Đánh giá nhân viên [FLOW] (6.3s)
+  ok 15 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách phân quyền [FLOW] (4.3s)
+  ok 16 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách KPI [FLOW] (3.9s)
+  ok 17 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách loại mặt bằng [FLOW] (14.5s)
+  ok 18 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab NV THỰC HIỆN [FLOW] (15.7s)
+  ok 19 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TỈNH [FLOW] (3.1s)
+  ok 20 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab MỤC TIÊU [FLOW] (11.3s)
+  ok 21 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TUYẾN SUMMARY [FLOW] (14.2s)
+  ok 22 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TUYẾN DETAIL [FLOW] (11.4s)
+  -  23 [e2e] › e2e\home\home.e2e.spec.ts:175:7 › TC-PLACE-42-008 — refresh button clears the output cache [FLOW] › nút refresh xoá output cache [FLOW]
+  ok 24 [e2e] › e2e\home\home.e2e.spec.ts:195:7 › TC-PLACE-42-009 — anonymous user is redirected to Keycloak [AUTH] › ẩn danh mở trang chủ bị chuyển tới Keycloak [AUTH] (1.5s)
+
+  1 skipped
+  23 passed (4.6m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-net4-report-20261009-120545.json
+upload-report --prefix test-net4
+uploaded test_report/WEB/4_STORE-LOCATION/test-net4-report-20261009-120545.json (250932 bytes), test_report_id=130
+uploaded test_report/WEB/4_STORE-LOCATION/test-net4-report-20261009-120545.json (250932 bytes), test_report_id=130

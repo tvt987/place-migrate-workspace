@@ -1,0 +1,2 @@
+[dev 2289b947] fix(qa): update pagerPage2 selector in page objects to target clickable link and resolve auth fixture
+ 321 files changed, 3271 insertions(+), 404 deletions(-)

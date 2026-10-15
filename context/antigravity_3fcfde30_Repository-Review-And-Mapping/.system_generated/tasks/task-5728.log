@@ -1,0 +1,10 @@
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-scm-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-scm-web.git
+   ebe2b30c..7d88fec8  dev -> dev
+error: src refspec fix/TC-SCM-FUNC-003-fix-apiclient-pascalcase-serialization matches more than one
+error: failed to push some refs to 'https://bitbucket.org/concung/cci-scm-web.git'
+To https://bitbucket.org/concung/cci-scm-web.git
+ * [new tag]           fix/TC-SCM-FUNC-003-fix-apiclient-pascalcase-serialization -> fix/TC-SCM-FUNC-003-fix-apiclient-pascalcase-serialization

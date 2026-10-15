@@ -1,0 +1,48 @@
+[Unit] dotnet build
+[Integration] dotnet build
+[Functional] dotnet build
+[Smoke] dotnet build
+[Unit] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    69, Skipped:     0, Total:    69, Duration: 417 ms - CoC.Web.Place.Unit.Tests.dll (net10.0)
+[Integration] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 6 s - CoC.Web.Place.Integration.Tests.dll (net10.0)
+[host] starting CoC.Web.Place on http://localhost:4784
+tests/scripts/run-tests.sh: line 110: sleep: command not found
+[Functional] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:   230, Skipped:     0, Total:   230, Duration: 1 m 37 s - CoC.Web.Place.Functional.Tests.dll (net10.0)
+[Smoke] dotnet test
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:   113, Skipped:     0, Total:   113, Duration: 54 s - CoC.Web.Place.Smoke.Tests.dll (net10.0)
+
+# Test Report — store-location-web (CoC.Web.Place)
+
+**Run:** 2026-09-28 15:12:08
+**SDK:** 10.0.400
+**Host:** http://localhost:4784 (Functional/Smoke)
+
+## Results
+
+| Track | Status | Passed | Failed | Skipped | Total | Duration |
+|-------|--------|--------|--------|---------|-------|----------|
+| Unit | ✅ | 69 | 0 | 0 | 69 | 417 ms |
+| Integration | ✅ | 6 | 0 | 0 | 6 | 6 s |
+| Functional | ✅ | 230 | 0 | 0 | 230 | 1 m 37 s |
+| Smoke | ✅ | 113 | 0 | 0 | 113 | 54 s |
+
+## Build Warnings
+
+| Track | Warnings |
+|-------|----------|
+| Unit | 12 |
+| Integration | 12 |
+| Functional | 12 |
+| Smoke | 0 |
+
+Report: /e/Work/Place_Migrate/cci-store-location-web/tests/reports/test-report-20260928-150851.md

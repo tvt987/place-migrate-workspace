@@ -1,0 +1,50 @@
+npx playwright test --project=e2e e2e/place-status/place-status.e2e.spec.ts -g TC-PLACE-11-001
+
+Running 2 tests using 1 worker
+
+  ok 1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (35.0s)
+  x  2 [e2e] › e2e\place-status\place-status.e2e.spec.ts:36:7 › TC-PLACE-11-001 — screen loads the list [LOAD] › mở màn tải danh sách [LOAD] (31.3s)
+
+
+  1) [e2e] › e2e\place-status\place-status.e2e.spec.ts:36:7 › TC-PLACE-11-001 — screen loads the list [LOAD] › mở màn tải danh sách [LOAD] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Địa danh - Trạng thái địa danh"
+    Received: ""
+
+
+      48 |     // ASSERT
+      49 |     expect(opened.response?.status()).toBe(200);
+    > 50 |     await expect(page).toHaveTitle(data.screen.title);
+         |                        ^
+      51 |     await expect(mod.ui.breadcrumbItems()).toHaveText(data.screen.breadcrumb);
+      52 |     await expect(mod.ui.headerCells()).toHaveText(data.screen.headers);
+      53 |     expect(opened.searchResponse, `POST ${data.screen.searchEndpoint} phải được gửi lúc mở trang`).not.toBeNull();
+        at E:\Work\Place_Migrate\cci-store-location-web\03_qa\e2e\place-status\place-status.e2e.spec.ts:50:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-place-status-place-sta-76386--mở-màn-tải-danh-sách-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-place-status-place-sta-76386--mở-màn-tải-danh-sách-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-place-status-place-sta-76386--mở-màn-tải-danh-sách-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-place-status-place-sta-76386--mở-màn-tải-danh-sách-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-place-status-place-sta-76386--mở-màn-tải-danh-sách-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\place-status\place-status.e2e.spec.ts:36:7 › TC-PLACE-11-001 — screen loads the list [LOAD] › mở màn tải danh sách [LOAD] 
+  1 passed (1.1m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-report-20261001-113950.json

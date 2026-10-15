@@ -1,0 +1,8 @@
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-store-location-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-store-location-web.git
+   3bbb9e3..d4076d0  dev -> dev
+To https://bitbucket.org/concung/cci-store-location-web.git
+ * [new tag]         fix/TC-FUNC-002-fix-403-restore-token-user-permission -> fix/TC-FUNC-002-fix-403-restore-token-user-permission

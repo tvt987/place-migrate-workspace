@@ -1,0 +1,10 @@
+npx playwright test --project=e2e e2e/home/home.e2e.spec.ts -g TC-PLACE-42-001
+
+Running 2 tests using 1 worker
+
+  ok 1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (3.7s)
+  ok 2 [e2e] › e2e\home\home.e2e.spec.ts:27:7 › TC-PLACE-42-001 — home page loads the map dashboard and reports [LOAD] › mở trang chủ / [LOAD] (21.4s)
+
+  2 passed (26.5s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-net4-report-20261001-103213.json

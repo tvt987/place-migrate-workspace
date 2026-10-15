@@ -1,0 +1,59 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (191 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.0s)
+  x   2 [e2e] › e2e\ipos-voucher-types\ipos-voucher-types.e2e.spec.ts:28:7 › TC-SCM-60-001 — Index loads [LOAD] › LOAD /IPOSVoucherTypes [LOAD] (31.6s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\ipos-voucher-types\ipos-voucher-types.e2e.spec.ts:28:7 › TC-SCM-60-001 — Index loads [LOAD] › LOAD /IPOSVoucherTypes [LOAD] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+    Expected: visible
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+      - Test timeout of 30000ms exceeded.
+
+
+      45 |       await expect(mod.ui.keyword()).toBeVisible({ timeout: 30000 });
+      46 |     }
+    > 47 |     await expect(mod.ui.searchButton()).toBeVisible({ timeout: 30000 });
+         |                                         ^
+      48 |     await expect(mod.ui.footer()).toContainText('Copyright: concung.com');
+      49 |   });
+      50 | });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\ipos-voucher-types\ipos-voucher-types.e2e.spec.ts:47:41
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-ipos-voucher-types-ipo-61cd0-LOAD-IPOSVoucherTypes-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-ipos-voucher-types-ipo-61cd0-LOAD-IPOSVoucherTypes-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-ipos-voucher-types-ipo-61cd0-LOAD-IPOSVoucherTypes-LOAD--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-ipos-voucher-types-ipo-61cd0-LOAD-IPOSVoucherTypes-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-ipos-voucher-types-ipo-61cd0-LOAD-IPOSVoucherTypes-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\ipos-voucher-types\ipos-voucher-types.e2e.spec.ts:28:7 › TC-SCM-60-001 — Index loads [LOAD] › LOAD /IPOSVoucherTypes [LOAD] 
+  13 did not run
+  1 passed (36.6s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-163808.json

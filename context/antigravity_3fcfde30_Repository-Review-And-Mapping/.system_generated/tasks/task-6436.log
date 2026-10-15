@@ -1,0 +1,17 @@
+On branch stg
+Your branch is up to date with 'origin/stg'.
+
+nothing to commit, working tree clean
+origin	https://gitlab.ingress.prod.concung.io/ConCung/Operation/DevOps/vaults-gitops.git (fetch)
+origin	https://gitlab.ingress.prod.concung.io/ConCung/Operation/DevOps/vaults-gitops.git (push)
+  beta
+  pipeline
+* stg
+  uat
+  remotes/origin/HEAD -> origin/uat
+  remotes/origin/beta
+  remotes/origin/pipeline
+  remotes/origin/prod
+  remotes/origin/revert-de092f01
+  remotes/origin/stg
+  remotes/origin/uat

@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (256 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.8s)
+  ok 2 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:30:7 › TC-SCM-305-001 — form loads [LOAD] › mở form Tạo mới phiếu nhập phiếu quà tặng [LOAD] (2.7s)
+  ok 3 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:91:9 › TC-SCM-305-002 — form validation blocks write [VALIDATION] › validation: Tạo mới phiếu nhập phiếu quà tặng thiếu dữ liệu / chặn ghi [VALIDATION] (2.6s)
+  x  4 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:127:7 › TC-SCM-305-003 — save for real [FLOW] › lưu Tạo mới phiếu nhập phiếu quà tặng thật [FLOW] (31.2s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:127:7 › TC-SCM-305-003 — save for real [FLOW] › lưu Tạo mới phiếu nhập phiếu quà tặng thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\input-orders-create\input-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-create-in-81965-p-phiếu-quà-tặng-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-create-in-81965-p-phiếu-quà-tặng-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-input-orders-create-in-81965-p-phiếu-quà-tặng-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-create-in-81965-p-phiếu-quà-tặng-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-input-orders-create-in-81965-p-phiếu-quà-tặng-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:127:7 › TC-SCM-305-003 — save for real [FLOW] › lưu Tạo mới phiếu nhập phiếu quà tặng thật [FLOW] 
+  2 did not run
+  3 passed (41.0s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-153358.json

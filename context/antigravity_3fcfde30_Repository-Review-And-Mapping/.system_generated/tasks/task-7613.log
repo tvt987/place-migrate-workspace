@@ -1,0 +1,12 @@
+remote: 
+remote: Create pull request for staging10:        
+remote:   https://bitbucket.org/concung/cci-mbm-web/pull-requests/new?source=staging10&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-mbm-web.git
+   13d68c8..66efaee  staging10 -> staging10
+remote: 
+remote: Create pull request for staging:        
+remote:   https://bitbucket.org/concung/cci-mbm-web/pull-requests/new?source=staging&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-mbm-web.git
+   7d26ff3..adb7806  staging -> staging

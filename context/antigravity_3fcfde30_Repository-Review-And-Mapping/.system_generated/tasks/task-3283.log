@@ -1,0 +1,33 @@
+npx playwright test --project=e2e e2e/home/home.e2e.spec.ts
+
+Running 24 tests using 1 worker
+
+  ok  1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (4.2s)
+  ok  2 [e2e] › e2e\home\home.e2e.spec.ts:27:7 › TC-PLACE-42-001 — home page loads the map dashboard and reports [LOAD] › mở trang chủ / [LOAD] (11.2s)
+  ok  3 [e2e] › e2e\home\home.e2e.spec.ts:48:7 › TC-PLACE-42-002 — Home/Index renders the same dashboard [LOAD] › mở /Home/Index [LOAD] (3.2s)
+  ok  4 [e2e] › e2e\home\home.e2e.spec.ts:66:7 › TC-PLACE-42-003 — header shows logo, user and logout [LOAD] › header hiển thị logo, user, đăng xuất [LOAD] (3.5s)
+  ok  5 [e2e] › e2e\home\home.e2e.spec.ts:91:7 › TC-PLACE-42-004 — footer shows copyright [LOAD] › footer bản quyền [LOAD] (3.6s)
+  ok  6 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.User [LOAD] (4.8s)
+  ok  7 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Store [LOAD] (4.2s)
+  ok  8 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Province [LOAD] (5.2s)
+  ok  9 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.District [LOAD] (3.6s)
+  ok 10 [e2e] › e2e\home\home.e2e.spec.ts:109:9 › TC-PLACE-42-005 — layout injects MasterData and cache keys [LOAD] › CacheKeyClient.Ward [LOAD] (5.4s)
+  ok 11 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách mặt bằng [FLOW] (4.4s)
+  ok 12 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách phạm vi [FLOW] (4.0s)
+  ok 13 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách địa danh [FLOW] (3.6s)
+  ok 14 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Đánh giá nhân viên [FLOW] (3.5s)
+  ok 15 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách phân quyền [FLOW] (5.2s)
+  ok 16 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách KPI [FLOW] (5.0s)
+  ok 17 [e2e] › e2e\home\home.e2e.spec.ts:134:9 › TC-PLACE-42-006 — menu links to the main screens [FLOW] › menu có link Danh sách loại mặt bằng [FLOW] (3.3s)
+  ok 18 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab NV THỰC HIỆN [FLOW] (5.5s)
+  ok 19 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TỈNH [FLOW] (4.3s)
+  ok 20 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab MỤC TIÊU [FLOW] (3.4s)
+  ok 21 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TUYẾN SUMMARY [FLOW] (3.6s)
+  ok 22 [e2e] › e2e\home\home.e2e.spec.ts:154:9 › TC-PLACE-42-007 — report tabs switch [FLOW] › chuyển tab TUYẾN DETAIL [FLOW] (3.9s)
+  -  23 [e2e] › e2e\home\home.e2e.spec.ts:175:7 › TC-PLACE-42-008 — refresh button clears the output cache [FLOW] › nút refresh xoá output cache [FLOW]
+  ok 24 [e2e] › e2e\home\home.e2e.spec.ts:195:7 › TC-PLACE-42-009 — anonymous user is redirected to Keycloak [AUTH] › ẩn danh mở trang chủ bị chuyển tới Keycloak [AUTH] (1.5s)
+
+  1 skipped
+  23 passed (1.7m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-mssql-report-20261001-103247.json

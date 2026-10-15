@@ -1,0 +1,12 @@
+by System.Net.Http.Json.HttpClientJsonExtensions
+$bodyCamel = '{"provinceID":null,"scopeTypeRankID":null,"scopeStatusID":[5,4,101],"userIDFilter":null,"scopeIDs":[],"isAll":false,"isNearStore":false,"referSystemIDs":null,"storeSizeIDs":null}'
+
+$headers = @{
+  "Authorization" = "Bearer $token"
+  "Content-Type" = "application/json"
+  "Accept" = "application/json"
+  "UserID" = "2741"
+}
+
+try {
+  $res 

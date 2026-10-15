@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (519 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.5s)
+  ok  2 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:28:7 › TC-SCM-87-001 — Index loads [LOAD] › LOAD /OutputFastSales [LOAD] (2.0s)
+  -   3 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:60:7 › TC-SCM-87-002 — Search / client guard [FLOW] › FLOW Search `/OutputFastSales/Search` [FLOW]
+  ok  4 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:85:7 › TC-SCM-87-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputFastSales [AUTH] (395ms)
+  -   5 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:100:7 › TC-SCM-87-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION]
+  -   6 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:122:7 › TC-SCM-87-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:157:7 › TC-SCM-87-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -   8 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:192:7 › TC-SCM-87-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   9 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:222:7 › TC-SCM-87-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  10 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:263:7 › TC-SCM-87-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD]
+  -  11 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:281:7 › TC-SCM-87-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:314:7 › TC-SCM-87-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:365:7 › TC-SCM-87-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  14 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:405:7 › TC-SCM-87-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW]
+  -  15 [e2e] › e2e\output-fast-sales\output-fast-sales.e2e.spec.ts:433:7 › TC-SCM-87-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+
+  12 skipped
+  3 passed (11.1s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-201032.json

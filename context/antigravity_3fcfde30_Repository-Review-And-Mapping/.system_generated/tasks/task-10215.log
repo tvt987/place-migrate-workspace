@@ -1,0 +1,10 @@
+
+Running 2 tests using 1 worker
+
+✅ ids1 token → .auth/token.json (upload-report)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (24.4s)
+  ok 2 [e2e] › e2e\purchase-orders\purchase-orders.e2e.spec.ts:311:7 › TC-SCM-232-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW] (23.5s)
+
+  2 passed (54.7s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-094914.json

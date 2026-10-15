@@ -1,0 +1,22 @@
+From https://bitbucket.org/concung/cci-scm-web
+   7d88fec8..30b3c506  dev        -> origin/dev
+ * [new tag]           fix/05-returnurl-same-origin -> fix/05-returnurl-same-origin
+On branch dev
+Your branch is behind 'origin/dev' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   02_target/CoC.Web.SCM/Controllers/BonusOutputSalesController.cs
+	modified:   02_target/CoC.Web.SCM/Helpers/ApiHelper.cs
+	modified:   02_target/CoC.Web.SCM/appsettings.example.json
+	modified:   02_target/CoC.Web.SCM/appsettings.json
+	modified:   02_target/Makefile
+	modified:   app.config
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	02_target/CoC.Web.SCM/Helpers/LocalDebugLogger.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")

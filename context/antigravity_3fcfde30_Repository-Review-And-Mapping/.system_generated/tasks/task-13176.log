@@ -1,0 +1,59 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (267 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.5s)
+  x   2 [e2e] › e2e\infrastructure-user-assignments\infrastructure-user-assignments.e2e.spec.ts:28:7 › TC-SCM-50-001 — Index loads [LOAD] › LOAD /InfrastructureUserAssignments [LOAD] (31.3s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\infrastructure-user-assignments\infrastructure-user-assignments.e2e.spec.ts:28:7 › TC-SCM-50-001 — Index loads [LOAD] › LOAD /InfrastructureUserAssignments [LOAD] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('input[ng-model="Grid.KeySearch"]').first()
+    Expected: visible
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for locator('input[ng-model="Grid.KeySearch"]').first()
+      - Test timeout of 30000ms exceeded.
+
+
+      43 |     expect(titleOk, `title actual="${title}" expected="${expected}"`).toBeTruthy();
+      44 |     if (data.screen.keywordModel) {
+    > 45 |       await expect(mod.ui.keyword()).toBeVisible({ timeout: 30000 });
+         |                                      ^
+      46 |     }
+      47 |     await expect(mod.ui.searchButton()).toBeVisible({ timeout: 30000 });
+      48 |     await expect(mod.ui.footer()).toContainText('Copyright: concung.com');
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\infrastructure-user-assignments\infrastructure-user-assignments.e2e.spec.ts:45:38
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-infrastructure-user-as-792d5-uctureUserAssignments-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\infrastructure-user-assignments\infrastructure-user-assignments.e2e.spec.ts:28:7 › TC-SCM-50-001 — Index loads [LOAD] › LOAD /InfrastructureUserAssignments [LOAD] 
+  13 did not run
+  1 passed (37.0s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-152227.json

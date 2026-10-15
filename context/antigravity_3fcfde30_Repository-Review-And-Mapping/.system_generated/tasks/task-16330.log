@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (503 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.7s)
+  ok 2 [e2e] › e2e\output-order-handle-wrong-inputs-edit\output-order-handle-wrong-inputs-edit.e2e.spec.ts:33:7 › TC-SCM-332-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất xử lý nhập sai tại cửa hàng [LOAD] (2.0s)
+  -  3 [e2e] › e2e\output-order-handle-wrong-inputs-edit\output-order-handle-wrong-inputs-edit.e2e.spec.ts:95:9 › TC-SCM-332-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất xử lý nhập sai tại cửa hàng thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  4 [e2e] › e2e\output-order-handle-wrong-inputs-edit\output-order-handle-wrong-inputs-edit.e2e.spec.ts:132:7 › TC-SCM-332-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất xử lý nhập sai tại cửa hàng thật [FLOW]
+  ok 5 [e2e] › e2e\output-order-handle-wrong-inputs-edit\output-order-handle-wrong-inputs-edit.e2e.spec.ts:160:7 › TC-SCM-332-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 6 [e2e] › e2e\output-order-handle-wrong-inputs-edit\output-order-handle-wrong-inputs-edit.e2e.spec.ts:183:7 › TC-SCM-332-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrderHandleWrongInputs [FLOW] (2.8s)
+
+  2 skipped
+  4 passed (16.6s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-202610.json

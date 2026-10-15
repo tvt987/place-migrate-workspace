@@ -1,0 +1,389 @@
+[
+  {
+    "screen": "output-sale-charities",
+    "count": 4,
+    "tests": [
+      {
+        "tc": "TC-SCM-94-001",
+        "scenario": "LOAD /OutputSaleCharities [LOAD]",
+        "error": "Test timeout of 30000ms exceeded."
+      },
+      {
+        "tc": "TC-SCM-94-002",
+        "scenario": "FLOW Search `/OutputSaleCharities/Search` [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      },
+      {
+        "tc": "TC-SCM-94-004",
+        "scenario": "VALIDATION toolbar / form search controls [VALIDATION]",
+        "error": "Test timeout of 30000ms exceeded."
+      },
+      {
+        "tc": "TC-SCM-94-005",
+        "scenario": "STATE sau Search — grid hoặc empty/alert [STATE]",
+        "error": "Error: expect(locator).toBeVisible() failed"
+      }
+    ]
+  },
+  {
+    "screen": "output-sale-agent-services",
+    "count": 3,
+    "tests": [
+      {
+        "tc": "TC-SCM-91-001",
+        "scenario": "LOAD /OutputSaleAgentServices [LOAD]",
+        "error": "Error: expect(received).toBeTruthy()"
+      },
+      {
+        "tc": "TC-SCM-91-002",
+        "scenario": "FLOW Search `/OutputSaleAgentServices/Search` [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      },
+      {
+        "tc": "TC-SCM-91-004",
+        "scenario": "VALIDATION toolbar / form search controls [VALIDATION]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-sale-card-pays",
+    "count": 3,
+    "tests": [
+      {
+        "tc": "TC-SCM-93-001",
+        "scenario": "LOAD /OutputSaleCardPays [LOAD]",
+        "error": "Test timeout of 30000ms exceeded."
+      },
+      {
+        "tc": "TC-SCM-93-002",
+        "scenario": "FLOW Search `/OutputSaleCardPays/Search` [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      },
+      {
+        "tc": "TC-SCM-93-004",
+        "scenario": "VALIDATION toolbar / form search controls [VALIDATION]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "accounting-process-departments",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-03-003",
+        "scenario": "AUTH ẩn danh /AccountingProcessDepartments [AUTH]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "activities-create",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-286-004",
+        "scenario": "ẩn danh bị chuyển tới Keycloak [AUTH]",
+        "error": "Error: IDS hoặc Error page"
+      }
+    ]
+  },
+  {
+    "screen": "agent-service-products",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-07-004",
+        "scenario": "VALIDATION toolbar / form search controls [VALIDATION]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "agent-services",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-08-001",
+        "scenario": "LOAD /AgentServices [LOAD]",
+        "error": "Error: expect(received).toBeTruthy()"
+      }
+    ]
+  },
+  {
+    "screen": "bonus-output-sales",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-15-002",
+        "scenario": "FLOW Search `/BonusOutputSales/Search` [FLOW]",
+        "error": "Error: expect(locator).toBeVisible() failed"
+      }
+    ]
+  },
+  {
+    "screen": "bonus-output-sales-detail",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-389-001",
+        "scenario": "mở chi tiết SCM - Chi tiết phiếu xuất thưởng [LOAD]",
+        "error": "Error: expect(received).toBeLessThan(expected)"
+      }
+    ]
+  },
+  {
+    "screen": "bonus-point-type-membership-limits",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-21-013",
+        "scenario": "DEEP breadcrumb + grid shell [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "card-pay-bank-credits",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-27-007",
+        "scenario": "GUARDED mutation toolbar [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "category-attribute-months",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-29-001",
+        "scenario": "LOAD /CategoryAttributeMonths [LOAD]",
+        "error": "Error: expect(received).toBeTruthy()"
+      }
+    ]
+  },
+  {
+    "screen": "customer-taxes",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-43-001",
+        "scenario": "LOAD /CustomerTaxes [LOAD]",
+        "error": "Error: expect(received).toBeTruthy()"
+      }
+    ]
+  },
+  {
+    "screen": "err-des-storechanges",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-47-002",
+        "scenario": "FLOW Search `/ErrDesStorechanges/Search` [FLOW]",
+        "error": "Error: expect(locator).toBeVisible() failed"
+      }
+    ]
+  },
+  {
+    "screen": "input-sales",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-54-002",
+        "scenario": "FLOW Search `/InputSales/Search` [FLOW]",
+        "error": "Error: expect(locator).toBeVisible() failed"
+      }
+    ]
+  },
+  {
+    "screen": "min-stock-auto",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-70-002",
+        "scenario": "FLOW Search `/MinStockAuto/Search` [FLOW]",
+        "error": "Error: expect(locator).toBeVisible() failed"
+      }
+    ]
+  },
+  {
+    "screen": "mini-games",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-69-007",
+        "scenario": "GUARDED mutation toolbar [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "order-sales-day-on-demand-provinces",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-79-013",
+        "scenario": "DEEP breadcrumb + grid shell [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-orders-create-multi",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-337-005",
+        "scenario": "quay về danh sách /OutputOrders [FLOW]",
+        "error": "Test timeout of 90000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-orders-create-return-supplier",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-335-005",
+        "scenario": "quay về danh sách /OutputOrders [FLOW]",
+        "error": "Test timeout of 90000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-sale-check-in-gift-groups",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-95-001",
+        "scenario": "LOAD /OutputSaleCheckInGiftGroups [LOAD]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-sale-check-in-store-limits",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-99-013",
+        "scenario": "DEEP breadcrumb + grid shell [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-sale-sodexos",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-133-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "output-sale-support-requests",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-134-002",
+        "scenario": "FLOW Search `/OutputSaleSupportRequests/Search` [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "popup-actions",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-150-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "error": "Error: origin không tự Search khi mở Index"
+      }
+    ]
+  },
+  {
+    "screen": "popup-bonus-point-types",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-153-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "error": "Error: origin không tự Search khi mở Index"
+      }
+    ]
+  },
+  {
+    "screen": "popup-promotions",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-158-009",
+        "scenario": "DEEP no auto-search Index [LOAD]",
+        "error": "Error: origin không tự Search khi mở Index"
+      }
+    ]
+  },
+  {
+    "screen": "popup-vouchers",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-160-007",
+        "scenario": "GUARDED mutation toolbar [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "product-near-expireds",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-195-004",
+        "scenario": "VALIDATION toolbar / form search controls [VALIDATION]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "product-up-sale-bill2nd-prices",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-205-004",
+        "scenario": "VALIDATION toolbar / form search controls [VALIDATION]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "sale-kpi-store-results",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-237-007",
+        "scenario": "GUARDED mutation toolbar [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  },
+  {
+    "screen": "take-inventory-cc-apps",
+    "count": 1,
+    "tests": [
+      {
+        "tc": "TC-SCM-269-007",
+        "scenario": "GUARDED mutation toolbar [FLOW]",
+        "error": "Test timeout of 30000ms exceeded."
+      }
+    ]
+  }
+]

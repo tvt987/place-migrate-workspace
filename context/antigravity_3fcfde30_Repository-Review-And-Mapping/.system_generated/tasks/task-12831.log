@@ -1,0 +1,2896 @@
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+.Name : The term '.Name' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:47
++ Get-ChildItem -Directory e2e | Where-Object { .Name -like 'e*' } | Se ...
++                                               ~~~~~
+    + CategoryInfo          : ObjectNotFound: (.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 

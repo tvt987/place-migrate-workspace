@@ -1,0 +1,140 @@
+Test run for E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\bin\Debug\net10.0\CoC.Web.SCM.Functional.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.22]     CoC.Web.SCM.Functional.JsonCompatibilityTests.ActivityTypesController_Search_ReturnsPascalCaseJson [SKIP]
+[xUnit.net 00:00:00.22]     CoC.Web.SCM.Functional.JsonCompatibilityTests.HomeController_GetAccessToken_ReturnsPascalCaseJson [SKIP]
+  Skipped CoC.Web.SCM.Functional.JsonCompatibilityTests.ActivityTypesController_Search_ReturnsPascalCaseJson [1 ms]
+  Skipped CoC.Web.SCM.Functional.JsonCompatibilityTests.HomeController_GetAccessToken_ReturnsPascalCaseJson [1 ms]
+[xUnit.net 00:00:08.54]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RouteIsMatched [FAIL]
+  Failed CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RouteIsMatched [1 ms]
+  Error Message:
+   System.InvalidOperationException : Unable to resolve service for type 'WebEssentials.AspNetCore.OutputCaching.IOutputCachingService' while attempting to activate 'WebEssentials.AspNetCore.OutputCaching.OutputCacheMiddleware'.
+  Stack Trace:
+     at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Start(IHost host)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateHost(IHostBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.ConfigureHostBuilder(IHostBuilder hostBuilder)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.StartServer()
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient()
+   at CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests..ctor(AppFactory factory) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\ActivityTypesControllerFunctionalTests.cs:line 27
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:17.79]     CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndex_Returns404_BecauseHomeControllerIsExcluded [FAIL]
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndex_Returns404_BecauseHomeControllerIsExcluded [17 s]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: NotFound
+Actual:   InternalServerError
+  Stack Trace:
+     at CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndex_Returns404_BecauseHomeControllerIsExcluded() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 36
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:18.05]     CoC.Web.SCM.Functional.RoutingFunctionalTests.ErrorRoute_ErrorNotFound_IsRoutable [FAIL]
+[xUnit.net 00:00:18.28]     CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndexWithTrailingSlash_Returns404 [FAIL]
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.ErrorRoute_ErrorNotFound_IsRoutable [68 ms]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: NotFound
+Actual:   InternalServerError
+  Stack Trace:
+     at CoC.Web.SCM.Functional.RoutingFunctionalTests.ErrorRoute_ErrorNotFound_IsRoutable() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 150
+--- End of stack trace from previous location ---
+  Failed CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndexWithTrailingSlash_Returns404 [56 ms]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: NotFound
+Actual:   InternalServerError
+  Stack Trace:
+     at CoC.Web.SCM.Functional.RoutingFunctionalTests.DefaultRoute_HomeIndexWithTrailingSlash_Returns404() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\RoutingFunctionalTests.cs:line 44
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:22.69]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Environment_Testing_EnablesDeveloperExceptionPage [FAIL]
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Environment_Testing_EnablesDeveloperExceptionPage [22 s]
+  Error Message:
+   Assert.True() Failure
+Expected: True
+Actual:   False
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Environment_Testing_EnablesDeveloperExceptionPage() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 120
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:22.70]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/") [FAIL]
+[xUnit.net 00:00:22.70]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/NonExistent/Page") [FAIL]
+[xUnit.net 00:00:22.70]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/ActivityTypes/Index") [FAIL]
+[xUnit.net 00:00:22.71]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/api/nonexistent") [FAIL]
+[xUnit.net 00:00:22.71]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_RouteMatching_PreservesPathInfo [FAIL]
+[xUnit.net 00:00:22.71]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_ResponseBody_Exists [FAIL]
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/") [7 ms]
+  Error Message:
+   Assert.Contains() Failure: Filter not matched in collection
+Collection: [["X-XSS-Protection"] = ["1; mode=block"], ["X-Content-Type-Options"] = ["nosniff"], ["Referrer-Policy"] = ["no-referrer"], ["Strict-Transport-Security"] = ["max-age=31536000; includeSubDomains"]]
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(String path) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 44
+--- End of stack trace from previous location ---
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/NonExistent/Page") [1 ms]
+  Error Message:
+   Assert.Contains() Failure: Filter not matched in collection
+Collection: [["X-XSS-Protection"] = ["1; mode=block"], ["X-Content-Type-Options"] = ["nosniff"], ["Referrer-Policy"] = ["no-referrer"], ["Strict-Transport-Security"] = ["max-age=31536000; includeSubDomains"]]
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(String path) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 44
+--- End of stack trace from previous location ---
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/ActivityTypes/Index") [3 ms]
+  Error Message:
+   Assert.Contains() Failure: Filter not matched in collection
+Collection: [["X-XSS-Protection"] = ["1; mode=block"], ["X-Content-Type-Options"] = ["nosniff"], ["Referrer-Policy"] = ["no-referrer"], ["Strict-Transport-Security"] = ["max-age=31536000; includeSubDomains"]]
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(String path) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 44
+--- End of stack trace from previous location ---
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(path: "/api/nonexistent") [1 ms]
+  Error Message:
+   Assert.Contains() Failure: Filter not matched in collection
+Collection: [["X-XSS-Protection"] = ["1; mode=block"], ["X-Content-Type-Options"] = ["nosniff"], ["Referrer-Policy"] = ["no-referrer"], ["Strict-Transport-Security"] = ["max-age=31536000; includeSubDomains"]]
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_ArePresentOnAllResponses(String path) in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 44
+--- End of stack trace from previous location ---
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_RouteMatching_PreservesPathInfo [4 ms]
+  Error Message:
+   Assert.NotEmpty() Failure: Collection was empty
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_RouteMatching_PreservesPathInfo() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 131
+--- End of stack trace from previous location ---
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_ResponseBody_Exists [3 ms]
+  Error Message:
+   Assert.NotEmpty() Failure: Collection was empty
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.Middleware_ResponseBody_Exists() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 108
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:22.73]     CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_On404Response_StillPresent [FAIL]
+  Failed CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_On404Response_StillPresent [1 ms]
+  Error Message:
+   Assert.Contains() Failure: Filter not matched in collection
+Collection: [["X-XSS-Protection"] = ["1; mode=block"], ["X-Content-Type-Options"] = ["nosniff"], ["Referrer-Policy"] = ["no-referrer"], ["Strict-Transport-Security"] = ["max-age=31536000; includeSubDomains"]]
+  Stack Trace:
+     at CoC.Web.SCM.Functional.MiddlewareFunctionalTests.SecurityHeaders_On404Response_StillPresent() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\MiddlewareFunctionalTests.cs:line 87
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:24.78]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RespondsWithSecurityHeaders [FAIL]
+[xUnit.net 00:00:24.78]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Delete_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:24.78]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_Returns200Or302 [SKIP]
+[xUnit.net 00:00:24.78]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Update_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:24.78]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Search_ReturnsJsonResponse [SKIP]
+[xUnit.net 00:00:24.78]     CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Create_ReturnsJsonResponse [SKIP]
+  Failed CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RespondsWithSecurityHeaders [49 ms]
+  Error Message:
+   Assert.Contains() Failure: Filter not matched in collection
+Collection: [["X-XSS-Protection"] = ["1; mode=block"], ["X-Content-Type-Options"] = ["nosniff"], ["Referrer-Policy"] = ["no-referrer"], ["Strict-Transport-Security"] = ["max-age=31536000; includeSubDomains"], ["Cache-Control"] = ["no-store, no-cache"], ···]
+  Stack Trace:
+     at CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_RespondsWithSecurityHeaders() in E:\Work\Place_Migrate\cci-scm-web\02_target\tests\Functional\CoC.Web.SCM.Functional\ActivityTypesControllerFunctionalTests.cs:line 57
+--- End of stack trace from previous location ---
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Delete_ReturnsJsonResponse [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Index_Returns200Or302 [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Update_ReturnsJsonResponse [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Search_ReturnsJsonResponse [1 ms]
+  Skipped CoC.Web.SCM.Functional.ActivityTypesControllerFunctionalTests.ActivityTypesController_Create_ReturnsJsonResponse [1 ms]
+
+Failed!  - Failed:    13, Passed:    21, Skipped:     7, Total:    41, Duration: 24 s - CoC.Web.SCM.Functional.dll (net10.0)

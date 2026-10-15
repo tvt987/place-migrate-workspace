@@ -1,0 +1,19 @@
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+From https://bitbucket.org/concung/cci-dc-web
+ * branch            dev        -> FETCH_HEAD
+Already up to date.
+Merge made by the 'ort' strategy.
+ 02_target/CoC.Web.DC/Startup.cs                    |  6 ++++
+ ...C-DC-vuot-nguong-formoptions-valuecountlimit.md | 40 ++++++++++++++++++++++
+ 2 files changed, 46 insertions(+)
+ create mode 100644 04_critical_change/TC-DC-vuot-nguong-formoptions-valuecountlimit.md
+remote: 
+remote: Create pull request for dev:        
+remote:   https://bitbucket.org/concung/cci-dc-web/pull-requests/new?source=dev&t=1        
+remote: 
+To https://bitbucket.org/concung/cci-dc-web.git
+   f27d294..e72bf58  dev -> dev
+Deleted branch fix/TC-DC-vuot-nguong-formoptions-valuecountlimit (was db6a954).
+To https://bitbucket.org/concung/cci-dc-web.git
+ * [new tag]         fix/TC-DC-vuot-nguong-formoptions-valuecountlimit -> fix/TC-DC-vuot-nguong-formoptions-valuecountlimit

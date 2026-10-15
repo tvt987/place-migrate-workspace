@@ -1,0 +1,12 @@
+
+Running 3 tests using 1 worker
+
+✅ reuse .auth/token.json (578 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (5.4s)
+  -  2 [e2e] › e2e\journeys\state-transition.e2e.spec.ts:26:7 › TC-SCM-STATE-001 — Edit OO toolbar transitions [FLOW] › Edit seed: ghi nhận nút Confirm/Cancel/Save visible [FLOW]
+  -  3 [e2e] › e2e\journeys\state-transition.e2e.spec.ts:65:7 › TC-SCM-STATE-002 — blocked transition without WRITE [VALIDATION] › không bấm Confirm khi TEST_ALLOW_WRITE≠1 [VALIDATION]
+
+  2 skipped
+  1 passed (9.0s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-101148.json

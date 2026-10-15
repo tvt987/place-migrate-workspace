@@ -1,0 +1,183 @@
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1903: Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.12.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place\CoC.Web.Place.csproj : warning NU1902: Package 'OpenTelemetry.Exporter.Jaeger' 1.6.0-rc.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-38h3-2333-qx47
+[MVC.CoreHelpers] Falling back to CreateInstanceLogger for index: systemerror
+[MVC.CoreHelpers] WriteSystemErrorLog fallback: Erorr message:One or more errors occurred. (Unexpected character encountered while parsing value: . Path '', line 0, position 0.). Error message detail: Unexpected character encountered while parsing value: . Path '', line 0, position 0. | logger error: Object reference not set to an instance of an object.
+[OTLP] Starting OTLP tracing setup...
+[OTLP] OTLP URI configured: http://otel.elastic-system.concung.io:4317
+[OTLP] Tracing service name: place
+[OTLP] Full OTLP config: URI=http://otel.elastic-system.concung.io:4317
+[OTLP] Configuring tracing builder...
+[OTLP] Tracing builder configuration completed
+[OTLP] OTLP tracing setup completed successfully
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[63]
+      User profile is available. Using 'C:\Users\25303_TruongVanTinh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[OTLP] ASP.NET Core instrumentation configured with filters
+[OTLP] Configuring OTLP exporter with endpoint: http://otel.elastic-system.concung.io:4317
+[OTLP] OTLP exporter configured successfully
+Check health start host to readiness
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 61.6209ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 69.9583ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 72.6088ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 72.7266ms - 200
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5305
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\Work\Place_Migrate\cci-store-location-web\02_target\CoC.Web.Place
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 31.5036ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 31.5814ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 57.0852ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 57.189ms - 200
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5305/ - - -
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-d98728e72653475109a812e1221d6b87-c5a53172f768f649-01 - Path: /
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoC.Web.Place.Controllers.HomeController.Index (CoC.Web.Place)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller CoC.Web.Place.Controllers.HomeController (CoC.Web.Place).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'CoC.Web.Place.MvcAuthorizeAttribute'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor[1]
+      Executing RedirectResult, redirecting to /accounts/login.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoC.Web.Place.Controllers.HomeController.Index (CoC.Web.Place) in 8.5821ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoC.Web.Place.Controllers.HomeController.Index (CoC.Web.Place)'
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5305/ - 302 0 - 115.8270ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5305/ - - -
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4bb34daba87a653aaa9eec5ae95b6e97-48df7632b0cf3675-01 - Path: /
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoC.Web.Place.Controllers.HomeController.Index (CoC.Web.Place)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller CoC.Web.Place.Controllers.HomeController (CoC.Web.Place).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'CoC.Web.Place.MvcAuthorizeAttribute'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor[1]
+      Executing RedirectResult, redirecting to /accounts/login.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoC.Web.Place.Controllers.HomeController.Index (CoC.Web.Place) in 0.399ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoC.Web.Place.Controllers.HomeController.Index (CoC.Web.Place)'
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5305/ - 302 0 - 5.6850ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5305/accounts/login - - -
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-bf474bf141042f24357c38c5856fe2ae-6e3f6097d545f3a0-01 - Path: /accounts/login
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoC.Web.Place.Controllers.AccountsController.Login (CoC.Web.Place)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Login", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String) on controller CoC.Web.Place.Controllers.AccountsController (CoC.Web.Place).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[101]
+      Executing action method CoC.Web.Place.Controllers.AccountsController.Login (CoC.Web.Place) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[103]
+      Executed action method CoC.Web.Place.Controllers.AccountsController.Login (CoC.Web.Place), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.9497ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor[1]
+      Executing RedirectResult, redirecting to https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/auth?client_id=place.concung.com&response_type=code&scope=openid%20place-api&redirect_uri=https%3A%2F%2Fplace-stg10.concung.vn%2Faccounts%2Fcallback&post_logout_redirect_uri=https%3A%2F%2Fplace-stg10.concung.vn%2F&response_mode=query&state=d58fea165bb141ae99f85bc1a0874b51&nonce=a04bc9926fda4a18b01b1ff681ff690f.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoC.Web.Place.Controllers.AccountsController.Login (CoC.Web.Place) in 29.2333ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoC.Web.Place.Controllers.AccountsController.Login (CoC.Web.Place)'
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:abffeb50-f26c-b785-3499-a950d781f5dd, Id:f8fc5b65-5994-4953-9a11-7a04d49c6e9f
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5305/accounts/login - 302 0 - 42.1468ms
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 37.0817ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 37.1894ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 186.1704ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 186.9567ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 30.4394ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 30.5133ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 60.9302ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 60.9905ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 35.4893ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 35.9911ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 43.0983ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 43.159ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 36.1543ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 36.3766ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.ClientPermissionWorker.ClientHandler[101]
+      Received HTTP response headers after 193.4515ms - 200
+info: System.Net.Http.HttpClient.ClientPermissionWorker.LogicalHandler[101]
+      End processing HTTP request after 193.5739ms - 200

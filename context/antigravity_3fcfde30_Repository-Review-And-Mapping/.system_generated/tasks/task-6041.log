@@ -1,0 +1,186 @@
+[MVC.CoreHelpers] Falling back to CreateInstanceLogger for index: systemerror
+[MVC.CoreHelpers] WriteSystemErrorLog fallback: Erorr message:One or more errors occurred. (Unexpected character encountered while parsing value: . Path '', line 0, position 0.). Error message detail: Unexpected character encountered while parsing value: . Path '', line 0, position 0. | logger error: Object reference not set to an instance of an object.
+[OTLP] Starting OTLP tracing setup...
+[OTLP] OTLP tracing is disabled: URI not configured
+Check health start host to readiness
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request POST https://ids1-stg.concung.vn/realms/master/protocol/openid-connect/token
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 48.1622ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 61.6641ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[100]
+      Start processing HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[100]
+      Sending HTTP request GET https://mdm-api-stg.concung.vn/api/Permissions/ReadClient?*
+info: System.Net.Http.HttpClient.mdm-permission.ClientHandler[101]
+      Received HTTP response headers after 91.7405ms - 200
+info: System.Net.Http.HttpClient.mdm-permission.LogicalHandler[101]
+      End processing HTTP request after 92.0218ms - 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-b2b435c7372f63c5da63d1faf38965f8-f96bca01d9772b06-00 - Path: /BonusOutputSales
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-40877a5d1b3fbcfa66df7b2b363e9943-67245faeacb83565-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-e0f98110cd224073a65170248c26d423-3b9c558808ed8236-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4c2ae7924297a6fc357c95c4bd9cfbf8-a7264ac2953e8d8a-00 - Path: /BonusOutputSales
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-9eefb185507e60580847b69d19fd2c52-f5c2c90aa073a411-00 - Path: /BonusOutputSales/Search
+[LocalDebugLogger] [BonusOutputSalesController.Search:START] UserID: 1742, UserName: 2741
+AppConfig.ApiUrl: https://scm-api-stg4.concung.vn/
+Target Endpoint: https://scm-api-stg4.concung.vn/api/BonusOutputSales/Search
+Incoming Payload: {"KeySearch":null,"CustomerID":-1,"OutputDateFrom":"2026-09-07T00:00:00","OutputDateTo":"2026-10-07T23:59:00","CreatedUser":-1,"PageIndex":0,"PageSize":10}
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/BonusOutputSales/Search 
+ErrorMessage: 
+DataSend:{"KeySearch":null,"CustomerID":-1,"OutputDateFrom":"09/07/2026 00:00","OutputDateTo":"10/07/2026 23:59","CreatedUser":-1,"PageIndex":0,"PageSize":10}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.BonusOutputSalesController.Search(BonusOutputSaleSearchReq ObjOSSearchMerchandiseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\BonusOutputSalesController.cs:line 921
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[LocalDebugLogger] [BonusOutputSalesController.Search:EXCEPTION] Exception Type: System.Exception
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+StackTrace:
+   at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.BonusOutputSalesController.Search(BonusOutputSaleSearchReq ObjOSSearchMerchandiseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\BonusOutputSalesController.cs:line 921
+objCodeStep.Status: Warning
+objCodeStep.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objCodeStep.ErrorMessage: 
+objCodeStep.ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/BonusOutputSales/Search 
+objCodeStep.HTTPStatusCode: 204
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-19c843590958aeebb212c9363411abd4-d935147b5ecdede4-00 - Path: /Directives/GetSupplier/
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-789bc51378a186a7feaf6a2e8f3306a2-ce8604ce1b18f5b2-00 - Path: /BonusOutputSales/Search
+[LocalDebugLogger] [BonusOutputSalesController.Search:START] UserID: 1742, UserName: 2741
+AppConfig.ApiUrl: https://scm-api-stg4.concung.vn/
+Target Endpoint: https://scm-api-stg4.concung.vn/api/BonusOutputSales/Search
+Incoming Payload: {"KeySearch":null,"CustomerID":1900411,"OutputDateFrom":"2026-09-07T00:00:00","OutputDateTo":"2026-10-07T23:59:00","CreatedUser":-1,"PageIndex":0,"PageSize":10}
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/BonusOutputSales/Search 
+ErrorMessage: 
+DataSend:{"KeySearch":null,"CustomerID":1900411,"OutputDateFrom":"09/07/2026 00:00","OutputDateTo":"10/07/2026 23:59","CreatedUser":-1,"PageIndex":0,"PageSize":10}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.BonusOutputSalesController.Search(BonusOutputSaleSearchReq ObjOSSearchMerchandiseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\BonusOutputSalesController.cs:line 921
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[LocalDebugLogger] [BonusOutputSalesController.Search:EXCEPTION] Exception Type: System.Exception
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+StackTrace:
+   at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.BonusOutputSalesController.Search(BonusOutputSaleSearchReq ObjOSSearchMerchandiseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\BonusOutputSalesController.cs:line 921
+objCodeStep.Status: Warning
+objCodeStep.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objCodeStep.ErrorMessage: 
+objCodeStep.ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/BonusOutputSales/Search 
+objCodeStep.HTTPStatusCode: 204
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-65aab57f18c6af7ebc84acb6dd8704ce-4d25aa048073fbed-00 - Path: /OutputOrders
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-80e3fe8a4a05226d354341c6a7f98288-8e0458702d2682c4-00 - Path: /CacheStorerages/CreateCacheJS
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-9f1161d4dc90f4be6d386c51be76c3b3-743836756178da1b-00 - Path: /OutputOrders/Search
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/OutputOrders/Search 
+ErrorMessage: 
+DataSend:{"FromDate":"09/07/2026 00:00","ToDate":"10/07/2026 23:59","KeySearch":null,"CreatedUser":0,"OutputTypeID":13,"OutputStoreIDs":null}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.OutputOrdersController.Search(OutputOrderSearchUseReq ObjOutputOrderSearchUseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\OutputOrdersController.cs:line 158
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-b10a67c093e4d0ae26cd8aa9e2395009-16defe416ee6500a-00 - Path: /OutputOrders/Search
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/OutputOrders/Search 
+ErrorMessage: 
+DataSend:{"FromDate":"09/07/2026 00:00","ToDate":"10/07/2026 23:59","KeySearch":null,"CreatedUser":1742,"OutputTypeID":13,"OutputStoreIDs":null}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.OutputOrdersController.Search(OutputOrderSearchUseReq ObjOutputOrderSearchUseReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\OutputOrdersController.cs:line 158
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-56074f30ac49a329c4884eecaa298278-34f0cc3709c56f53-00 - Path: /ProductGiftCNBs
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-4065458193e4665bf21dce54f461f59c-803d18816a9438b9-00 - Path: /ProductGiftCNBs/Search
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/ProductGiftCnBs/Search 
+ErrorMessage: 
+DataSend:{"KeySearch":null,"Month":10,"Year":2026,"IsUsed":-1,"CnBTypeID":-1,"PageSize":10,"PageIndex":0,"CnBGroupIDs":null,"UsedDateFrom":null,"UsedDateTo":null}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.ProductGiftCNBsController.Search(ProductGiftCnBSearchReq objReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\ProductGiftCNBsController.cs:line 79
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-7926d17394dee2ae467a595a6977554f-00daaf99064864be-00 - Path: /ProductGiftCNBs/Search
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/ProductGiftCnBs/Search 
+ErrorMessage: 
+DataSend:{"KeySearch":null,"Month":10,"Year":2026,"IsUsed":-1,"CnBTypeID":-1,"PageSize":10,"PageIndex":0,"CnBGroupIDs":null,"UsedDateFrom":null,"UsedDateTo":null}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.ProductGiftCNBsController.Search(ProductGiftCnBSearchReq objReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\ProductGiftCNBsController.cs:line 79
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-ea0103736a74363ecf747da3a17f3dd0-b5cd1fc00bbeb7cd-00 - Path: /ProductGiftCNBs/Search
+[LocalDebugLogger] [ApiHelper.LogError] CurrentUser.UserID: 1742
+Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+ErrorStep: API error 204: Không có dữ liệu , ApiEndPoint:https://scm-api-stg4.concung.vn/api/ProductGiftCnBs/Search 
+ErrorMessage: 
+DataSend:{"KeySearch":null,"Month":10,"Year":2026,"IsUsed":-1,"CnBTypeID":-1,"PageSize":10,"PageIndex":0,"CnBGroupIDs":null,"UsedDateFrom":null,"UsedDateTo":null}
+objEx.Message: Không có dữ liệu hoặc bạn không có quyền xem dữ liệu
+objEx.StackTrace:    at CoC.Web.SCM.Helpers.ApiHelper.SetErrorAPI(HttpContent content, Int32 StatusCode, String ApiEndPoint, Object reqObj) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 657
+   at CoC.Web.SCM.Helpers.ApiHelper.PostMethod[T1,T2](String ApiEndPoint, T2 objPara, String CacheKey, Int32 timeout) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Helpers\ApiHelper.cs:line 422
+   at CoC.Web.SCM.Controllers.ProductGiftCNBsController.Search(ProductGiftCnBSearchReq objReq) in E:\Work\Place_Migrate\cci-scm-web\02_target\CoC.Web.SCM\Controllers\ProductGiftCNBsController.cs:line 79
+objEx.InnerException: 
+-----------------------------Exception-----------------------------------
+
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-b98227aecf9b731b63ee5c223b4b6bd7-21e3acc9d343f24c-00 - Path: /ProductGiftCNBs/Search
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-dfb0697270bf82f4353ddf2cc0bed71a-52340ad6749149e3-00 - Path: /OutputVoucher/OSEdit/164812148
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-ec6c2ed0eefb7c24e1683bf701247ef8-ff9b1382715b468c-00 - Path: /
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-671b3eadf271c68a249d8b263ad32478-c8e67c9126190d11-00 - Path: /accounts/login
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-5a4b983df2528e91fb315a075adad84b-752bfce3edba34ef-00 - Path: /accounts/callback
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 302
+[OTLP] Trace activity started: Microsoft.AspNetCore.Hosting.HttpRequestIn - 00-790dc984b83b6bbecfb5f2f40b95e20b-2f5faa98068a89f5-00 - Path: /
+warn: Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider[3]
+      The temp data cookie .AspNetCore.Mvc.CookieTempDataProvider could not be loaded.
+      System.Security.Cryptography.CryptographicException: The payload was invalid. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+         at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+         at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+         at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.LoadTempData(HttpContext context)
+[OTLP] Trace activity completed: Microsoft.AspNetCore.Hosting.HttpRequestIn - Duration: 0ms - Status: 200

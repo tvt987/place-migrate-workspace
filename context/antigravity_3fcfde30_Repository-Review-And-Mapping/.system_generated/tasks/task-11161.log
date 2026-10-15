@@ -1,0 +1,53 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (512 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.1s)
+  ok  2 [e2e] › e2e\activity-types\activity-types.e2e.spec.ts:28:7 › TC-SCM-06-001 — Index loads [LOAD] › LOAD /ActivityTypes [LOAD] (3.7s)
+  -   3 [e2e] › e2e\activity-types\activity-types.e2e.spec.ts:55:7 › TC-SCM-06-002 — Search / client guard [FLOW] › FLOW Search `/ActivityTypes/Search` [FLOW]
+  ok  4 [e2e] › e2e\activity-types\activity-types.e2e.spec.ts:79:7 › TC-SCM-06-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /ActivityTypes [AUTH] (1.5s)
+  x   5 [e2e] › e2e\activity-types\activity-types.e2e.spec.ts:92:7 › TC-SCM-06-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (30.7s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\activity-types\activity-types.e2e.spec.ts:92:7 › TC-SCM-06-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.count: Target page, context or browser has been closed
+
+      100 |       await expect(mod.ui.searchButton()).toBeVisible({ timeout: 30000 });
+      101 |     } catch {
+    > 102 |       const toolbarCount = await mod.ui.toolbar().count();
+          |                                                   ^
+      103 |       expect(toolbarCount, 'expect search hoặc toolbar sau render').toBeGreaterThan(0);
+      104 |     }
+      105 |   });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\activity-types\activity-types.e2e.spec.ts:102:51
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-activity-types-activit-45d38-search-controls-VALIDATION--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-activity-types-activit-45d38-search-controls-VALIDATION--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-activity-types-activit-45d38-search-controls-VALIDATION--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-activity-types-activit-45d38-search-controls-VALIDATION--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-activity-types-activit-45d38-search-controls-VALIDATION--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\activity-types\activity-types.e2e.spec.ts:92:7 › TC-SCM-06-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] 
+  1 skipped
+  10 did not run
+  3 passed (44.4s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-111710.json

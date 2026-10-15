@@ -1,0 +1,51 @@
+
+Running 2 tests using 1 worker
+
+✅ reuse .auth/token.json (585 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.8s)
+  x  2 [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:53:7 › TC-SCM-79-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemandProvinces/Search` [FLOW] (1.1m)
+
+
+  1) [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:53:7 › TC-SCM-79-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemandProvinces/Search` [FLOW] 
+
+    Error: Search response
+
+    expect(received).not.toBeNull()
+
+    Received: null
+
+       at utils\json-contract.ts:95
+
+      93 |   opts?: { onPerfWarn?: PerfWarnFn; thresholdMs?: number },
+      94 | ): Promise<void> {
+    > 95 |   expect(resp, 'Search response').not.toBeNull();
+         |                                       ^
+      96 |   expect(resp!.status(), 'Search HTTP').toBeLessThan(500);
+      97 |   assertObjCodeStepShape(codeStep);
+      98 |   const body = await resp!.json().catch(() => null);
+        at assertSearchContract (E:\Work\Place_Migrate\cci-scm-web\03_qa\utils\json-contract.ts:95:39)
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:63:31
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-sales-day-on-dem-67ab0-emandProvinces-Search-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\order-sales-day-on-demand-provinces\order-sales-day-on-demand-provinces.e2e.spec.ts:53:7 › TC-SCM-79-002 — Search / client guard [FLOW] › FLOW Search `/OrderSalesDayOnDemandProvinces/Search` [FLOW] 
+  1 passed (1.2m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-190425.json

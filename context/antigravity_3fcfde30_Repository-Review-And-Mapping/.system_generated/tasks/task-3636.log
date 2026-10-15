@@ -1,0 +1,10 @@
+npx playwright test --project=e2e e2e/place-status/place-status.e2e.spec.ts -g TC-PLACE-11-001
+
+Running 2 tests using 1 worker
+
+  ok 1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (19.3s)
+  ok 2 [e2e] › e2e\place-status\place-status.e2e.spec.ts:36:7 › TC-PLACE-11-001 — screen loads the list [LOAD] › mở màn tải danh sách [LOAD] (1.4s)
+
+  2 passed (22.1s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-store-location-web\03_qa\reports\details\test-report-20261001-145307.json

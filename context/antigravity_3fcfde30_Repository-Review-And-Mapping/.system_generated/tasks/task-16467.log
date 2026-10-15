@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (497 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.4s)
+  ok 2 [e2e] › e2e\output-orders-create\output-orders-create.e2e.spec.ts:30:7 › TC-SCM-333-001 — form loads [LOAD] › mở form Tạo mới phiếu xuất sử dụng nội bộ / xử lý [LOAD] (4.8s)
+  ok 3 [e2e] › e2e\output-orders-create\output-orders-create.e2e.spec.ts:91:9 › TC-SCM-333-002 — form validation blocks write [VALIDATION] › validation: Tạo mới phiếu xuất sử dụng nội bộ / xử lý thiếu dữ liệu / chặn ghi [VALIDATION] (4.6s)
+  x  4 [e2e] › e2e\output-orders-create\output-orders-create.e2e.spec.ts:127:7 › TC-SCM-333-003 — save for real [FLOW] › lưu Tạo mới phiếu xuất sử dụng nội bộ / xử lý thật [FLOW] (31.4s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\output-orders-create\output-orders-create.e2e.spec.ts:127:7 › TC-SCM-333-003 — save for real [FLOW] › lưu Tạo mới phiếu xuất sử dụng nội bộ / xử lý thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-orders-create\output-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-orders-create-o-b2225-ụng-nội-bộ-xử-lý-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-orders-create-o-b2225-ụng-nội-bộ-xử-lý-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-orders-create-o-b2225-ụng-nội-bộ-xử-lý-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-orders-create-o-b2225-ụng-nội-bộ-xử-lý-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-orders-create-o-b2225-ụng-nội-bộ-xử-lý-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\output-orders-create\output-orders-create.e2e.spec.ts:127:7 › TC-SCM-333-003 — save for real [FLOW] › lưu Tạo mới phiếu xuất sử dụng nội bộ / xử lý thật [FLOW] 
+  2 did not run
+  3 passed (46.2s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-203213.json

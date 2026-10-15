@@ -1,0 +1,1452 @@
+npx playwright test --project=e2e --workers=4
+
+Running 757 tests using 4 workers
+
+  ok   1 [setup] › fixtures\auth.fixture.ts:10:6 › authenticate via SSO (3.2s)
+  ok   5 [e2e] › e2e\buffer-orders-create\buffer-orders-create.e2e.spec.ts:30:7 › TC-DC-51-001 — form loads [LOAD] › mở form BufferOrders Create [LOAD] (1.9s)
+  -    6 [e2e] › e2e\buffer-orders-create\buffer-orders-create.e2e.spec.ts:91:9 › TC-DC-51-002 — form validation blocks write [VALIDATION] › validation: BufferOrders Create thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok   3 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:26:7 › TC-DC-10-001 — Index loads [LOAD] › LOAD /BufferGrandOrders [LOAD] (3.2s)
+  ok   4 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:26:7 › TC-DC-11-001 — Index loads [LOAD] › LOAD /BufferOrders [LOAD] (3.2s)
+  -    7 [e2e] › e2e\buffer-orders-create\buffer-orders-create.e2e.spec.ts:127:7 › TC-DC-51-003 — save for real [FLOW] › lưu BufferOrders Create thật [FLOW]
+  ok   2 [e2e] › e2e\buffer-grand-orders-edit\buffer-grand-orders-edit.e2e.spec.ts:32:7 › TC-DC-50-001 — form loads [LOAD] › mở form Chi tiết đơn hàng luân chuyển nội bộ [LOAD] (4.8s)
+  ok  10 [e2e] › e2e\buffer-orders-create\buffer-orders-create.e2e.spec.ts:154:7 › TC-DC-51-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  -    9 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:41:7 › TC-DC-11-002 — Search / guarded [FLOW] › FLOW Search `/BufferOrders/Search` [FLOW]
+  ok   8 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:43:7 › TC-DC-10-002 — Search / client guard [FLOW] › FLOW Search `/BufferGrandOrders/Search` [FLOW] (3.3s)
+  -   11 [e2e] › e2e\buffer-grand-orders-edit\buffer-grand-orders-edit.e2e.spec.ts:94:9 › TC-DC-50-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng luân chuyển nội bộ thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok  12 [e2e] › e2e\buffer-orders-create\buffer-orders-create.e2e.spec.ts:174:7 › TC-DC-51-005 — list href reachable from shell [FLOW] › quay về danh sách /BufferOrders [FLOW] (2.4s)
+  ok  13 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:53:7 › TC-DC-11-003 — anonymous users redirected to SSO [AUTH] › AUTH ẩn danh /BufferOrders [AUTH] (2.1s)
+  -   16 [e2e] › e2e\buffer-orders-edit\buffer-orders-edit.e2e.spec.ts:34:7 › TC-DC-52-001 — form loads [LOAD] › mở form BufferOrders Edit [LOAD]
+  -   18 [e2e] › e2e\buffer-orders-edit\buffer-orders-edit.e2e.spec.ts:96:9 › TC-DC-52-002 — form validation blocks write [VALIDATION] › validation: BufferOrders Edit thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok  14 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:62:7 › TC-DC-10-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /BufferGrandOrders [AUTH] (2.8s)
+  -   19 [e2e] › e2e\buffer-orders-edit\buffer-orders-edit.e2e.spec.ts:133:7 › TC-DC-52-003 — save for real [FLOW] › lưu BufferOrders Edit thật [FLOW]
+  -   21 [e2e] › e2e\buffer-orders-edit\buffer-orders-edit.e2e.spec.ts:161:7 › TC-DC-52-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -   22 [e2e] › e2e\buffer-orders-edit\buffer-orders-edit.e2e.spec.ts:184:7 › TC-DC-52-005 — list href reachable from shell [FLOW] › quay về danh sách /BufferOrders [FLOW]
+  -   15 [e2e] › e2e\buffer-grand-orders-edit\buffer-grand-orders-edit.e2e.spec.ts:131:7 › TC-DC-50-003 — save for real [FLOW] › lưu Chi tiết đơn hàng luân chuyển nội bộ thật [FLOW]
+  ok  17 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:71:7 › TC-DC-11-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (2.7s)
+  ok  20 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:75:7 › TC-DC-10-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.1s)
+  ok  24 [e2e] › e2e\buffer-grand-orders-edit\buffer-grand-orders-edit.e2e.spec.ts:159:7 › TC-DC-50-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  -   25 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:84:7 › TC-DC-11-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  ok  26 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:92:7 › TC-DC-10-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.5s)
+  ok  23 [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:30:7 › TC-DC-53-001 — form loads [LOAD] › mở form Tạo phiếu nhập kho [LOAD] (3.8s)
+  ok  27 [e2e] › e2e\buffer-grand-orders-edit\buffer-grand-orders-edit.e2e.spec.ts:182:7 › TC-DC-50-005 — list href reachable from shell [FLOW] › quay về danh sách /BufferGrandOrders [FLOW] (4.0s)
+  -   28 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:112:7 › TC-DC-11-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -   29 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:122:7 › TC-DC-10-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  30 [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:91:9 › TC-DC-53-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION] (2.6s)
+  ok  31 [e2e] › e2e\buffer-package-input-orders-edit\buffer-package-input-orders-edit.e2e.spec.ts:32:7 › TC-DC-54-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập kho [LOAD] (1.7s)
+  -   33 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:152:7 › TC-DC-10-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   32 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:158:7 › TC-DC-11-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -   35 [e2e] › e2e\buffer-package-input-orders-edit\buffer-package-input-orders-edit.e2e.spec.ts:94:9 › TC-DC-54-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  -   38 [e2e] › e2e\buffer-package-input-orders-edit\buffer-package-input-orders-edit.e2e.spec.ts:131:7 › TC-DC-54-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập kho thật [FLOW]
+  -   36 [e2e] › e2e\buffer-grand-orders\buffer-grand-orders.e2e.spec.ts:177:7 › TC-DC-10-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  x   37 [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:193:7 › TC-DC-11-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (2.8s)
+  ok  39 [e2e] › e2e\buffer-package-input-orders-edit\buffer-package-input-orders-edit.e2e.spec.ts:159:7 › TC-DC-54-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok  40 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:26:7 › TC-DC-12-001 — Index loads [LOAD] › LOAD /BufferPackageOrders [LOAD] (1.6s)
+  ok  41 [e2e] › e2e\buffer-package-input-orders-edit\buffer-package-input-orders-edit.e2e.spec.ts:182:7 › TC-DC-54-005 — list href reachable from shell [FLOW] › quay về danh sách /BufferPackageInputOrders [FLOW] (1.5s)
+  ok  42 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:43:7 › TC-DC-12-002 — Search / client guard [FLOW] › FLOW Search `/BufferPackageOrders/Search` [FLOW] (1.8s)
+  ok  45 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:62:7 › TC-DC-12-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /BufferPackageOrders [AUTH] (1.4s)
+  ok  44 [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:32:7 › TC-DC-55-001 — form loads [LOAD] › mở form Chi tiết đơn hàng luân chuyển nội bộ [LOAD] (2.5s)
+  ok  43 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:26:7 › TC-DC-13-001 — Index loads [LOAD] › LOAD /BufferRotationOrders [LOAD] (3.5s)
+  ok  46 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:75:7 › TC-DC-12-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.3s)
+  ok  49 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:92:7 › TC-DC-12-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.6s)
+  x   47 [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:94:9 › TC-DC-55-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng luân chuyển nội bộ thiếu dữ liệu / chặn ghi [VALIDATION] (2.8s)
+  -   50 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:122:7 › TC-DC-12-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  48 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:43:7 › TC-DC-13-002 — Search / client guard [FLOW] › FLOW Search `/BufferRotationOrders/Search` [FLOW] (4.1s)
+  ok  51 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:152:7 › TC-DC-12-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.7s)
+  ok  52 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:62:7 › TC-DC-13-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /BufferRotationOrders [AUTH] (1.9s)
+  -   54 [e2e] › e2e\buffer-package-orders\buffer-package-orders.e2e.spec.ts:177:7 › TC-DC-12-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok  53 [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:131:7 › TC-DC-55-003 — save for real [FLOW] › lưu Chi tiết đơn hàng luân chuyển nội bộ thật [FLOW] (3.1s)
+  ok  56 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:26:7 › TC-DC-14-001 — Index loads [LOAD] › LOAD /CacheManager [LOAD] (1.0s)
+  ok  57 [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:159:7 › TC-DC-55-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  -   58 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:40:7 › TC-DC-14-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  ok  55 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:75:7 › TC-DC-13-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.6s)
+  ok  60 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:51:7 › TC-DC-14-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CacheManager [AUTH] (1.5s)
+  ok  62 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:64:7 › TC-DC-14-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (827ms)
+  ok  59 [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:182:7 › TC-DC-55-005 — list href reachable from shell [FLOW] › quay về danh sách /BufferRotationOrders [FLOW] (3.1s)
+  -   63 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:77:7 › TC-DC-14-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   64 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:26:7 › TC-DC-15-001 — Index loads [LOAD] › LOAD /CacheStorerages [LOAD]
+  ok  61 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:92:7 › TC-DC-13-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.6s)
+  -   66 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:39:7 › TC-DC-15-002 — Search / guarded [FLOW] › FLOW Search `N/A` [FLOW]
+  -   65 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:107:7 › TC-DC-14-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -   68 [e2e] › e2e\cache-storerages\cache-storerages.e2e.spec.ts:51:7 › TC-DC-15-003 — anonymous users redirected to SSO [AUTH] › AUTH ẩn danh /CacheStorerages [AUTH]
+  -   69 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:137:7 › TC-DC-14-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok  70 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:26:7 › TC-DC-16-001 — Index loads [LOAD] › LOAD /DCGoodsStoreInputOrders [LOAD] (1.3s)
+  -   71 [e2e] › e2e\cache-manager\cache-manager.e2e.spec.ts:162:7 › TC-DC-14-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok  72 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:43:7 › TC-DC-16-002 — Search / client guard [FLOW] › FLOW Search `/DCGoodsStoreInputOrders/Search` [FLOW] (1.3s)
+  -   67 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:122:7 › TC-DC-13-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  73 [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:30:7 › TC-DC-56-001 — form loads [LOAD] › mở form Tạo phiếu nhập kho [LOAD] (2.0s)
+  ok  74 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:62:7 › TC-DC-16-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCGoodsStoreInputOrders [AUTH] (1.4s)
+  ok  77 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:75:7 › TC-DC-16-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.1s)
+  ok  76 [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:91:9 › TC-DC-56-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION] (1.8s)
+  ok  78 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:92:7 › TC-DC-16-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.4s)
+  -   75 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:152:7 › TC-DC-13-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   80 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:122:7 › TC-DC-16-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  x   34 [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:127:7 › TC-DC-53-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] (32.1s)
+  ok  82 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:152:7 › TC-DC-16-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.1s)
+  -   83 [e2e] › e2e\dc-goods-store-input-orders\dc-goods-store-input-orders.e2e.spec.ts:177:7 › TC-DC-16-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -   81 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:177:7 › TC-DC-13-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -   85 [e2e] › e2e\dc-goods-store-input-orders-detail\dc-goods-store-input-orders-detail.e2e.spec.ts:34:7 › TC-DC-108-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu nhập kho [LOAD]
+  -   87 [e2e] › e2e\dc-goods-store-input-orders-detail\dc-goods-store-input-orders-detail.e2e.spec.ts:67:7 › TC-DC-108-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE]
+  ok  84 [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:154:7 › TC-DC-53-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  -   88 [e2e] › e2e\dc-goods-store-input-orders-detail\dc-goods-store-input-orders-detail.e2e.spec.ts:86:7 › TC-DC-108-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -   90 [e2e] › e2e\dc-goods-store-input-orders-detail\dc-goods-store-input-orders-detail.e2e.spec.ts:104:7 › TC-DC-108-004 — list href [FLOW] › quay về danh sách /DCGoodsStoreInputOrders [FLOW]
+  -   91 [e2e] › e2e\dc-goods-store-input-orders-edit\dc-goods-store-input-orders-edit.e2e.spec.ts:34:7 › TC-DC-57-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập kho [LOAD]
+  -   92 [e2e] › e2e\dc-goods-store-input-orders-edit\dc-goods-store-input-orders-edit.e2e.spec.ts:96:9 › TC-DC-57-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  -   93 [e2e] › e2e\dc-goods-store-input-orders-edit\dc-goods-store-input-orders-edit.e2e.spec.ts:133:7 › TC-DC-57-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập kho thật [FLOW]
+  -   94 [e2e] › e2e\dc-goods-store-input-orders-edit\dc-goods-store-input-orders-edit.e2e.spec.ts:161:7 › TC-DC-57-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  ok  89 [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:174:7 › TC-DC-53-005 — list href reachable from shell [FLOW] › quay về danh sách /BufferPackageInputOrders [FLOW] (2.0s)
+  -   95 [e2e] › e2e\dc-goods-store-input-orders-edit\dc-goods-store-input-orders-edit.e2e.spec.ts:184:7 › TC-DC-57-005 — list href reachable from shell [FLOW] › quay về danh sách /DCGoodsStoreInputOrders [FLOW]
+  ok  86 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:213:7 › TC-DC-13-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.3s)
+  ok  96 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:26:7 › TC-DC-17-001 — Index loads [LOAD] › LOAD /DCGoodsStoreOutputOrders [LOAD] (898ms)
+  ok  99 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:43:7 › TC-DC-17-002 — Search / client guard [FLOW] › FLOW Search `/DCGoodsStoreOutputOrders/Search` [FLOW] (1.1s)
+  ok  97 [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:30:7 › TC-DC-58-001 — form loads [LOAD] › mở form Tạo phiếu xuất hàng DC cho đơn hàng [LOAD] (2.3s)
+  ok 100 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:62:7 › TC-DC-17-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCGoodsStoreOutputOrders [AUTH] (1.5s)
+  ok  98 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:226:7 › TC-DC-13-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.8s)
+  ok 102 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:75:7 › TC-DC-17-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (905ms)
+  ok 101 [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:91:9 › TC-DC-58-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất hàng DC cho đơn hàng thiếu dữ liệu / chặn ghi [VALIDATION] (2.2s)
+  ok 104 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:92:7 › TC-DC-17-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.0s)
+  -  106 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:122:7 › TC-DC-17-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 107 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:152:7 › TC-DC-17-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (823ms)
+  -  103 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:254:7 › TC-DC-13-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  108 [e2e] › e2e\dc-goods-store-output-orders\dc-goods-store-output-orders.e2e.spec.ts:177:7 › TC-DC-17-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 110 [e2e] › e2e\dc-goods-store-output-orders-edit\dc-goods-store-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-59-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất hàng DC cho đơn hàng [LOAD] (1.5s)
+  -  111 [e2e] › e2e\dc-goods-store-output-orders-edit\dc-goods-store-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-59-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất hàng DC cho đơn hàng thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  109 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:300:7 › TC-DC-13-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  112 [e2e] › e2e\dc-goods-store-output-orders-edit\dc-goods-store-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-59-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất hàng DC cho đơn hàng thật [FLOW]
+  ok 114 [e2e] › e2e\dc-goods-store-output-orders-edit\dc-goods-store-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-59-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  ok 115 [e2e] › e2e\dc-goods-store-output-orders-edit\dc-goods-store-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-59-005 — list href reachable from shell [FLOW] › quay về danh sách /DCGoodsStoreOutputOrders [FLOW] (1.6s)
+  ok 113 [e2e] › e2e\buffer-rotation-orders\buffer-rotation-orders.e2e.spec.ts:335:7 › TC-DC-13-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.2s)
+  ok 117 [e2e] › e2e\dc-input-tranfers-edit\dc-input-tranfers-edit.e2e.spec.ts:32:7 › TC-DC-60-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập [LOAD] (1.5s)
+  ok 116 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:26:7 › TC-DC-18-001 — Index loads [LOAD] › LOAD /DCInputTranfers [LOAD] (2.4s)
+  -  118 [e2e] › e2e\dc-input-tranfers-edit\dc-input-tranfers-edit.e2e.spec.ts:94:9 › TC-DC-60-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  120 [e2e] › e2e\dc-input-tranfers-edit\dc-input-tranfers-edit.e2e.spec.ts:131:7 › TC-DC-60-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập thật [FLOW]
+  ok 119 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:43:7 › TC-DC-18-002 — Search / client guard [FLOW] › FLOW Search `/DCInputTranfers/Search` [FLOW] (3.1s)
+  ok 121 [e2e] › e2e\dc-input-tranfers-edit\dc-input-tranfers-edit.e2e.spec.ts:159:7 › TC-DC-60-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (840ms)
+  ok 122 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:62:7 › TC-DC-18-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCInputTranfers [AUTH] (1.5s)
+  ok 123 [e2e] › e2e\dc-input-tranfers-edit\dc-input-tranfers-edit.e2e.spec.ts:182:7 › TC-DC-60-005 — list href reachable from shell [FLOW] › quay về danh sách /DCInputTranfers [FLOW] (1.8s)
+  x   79 [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:127:7 › TC-DC-56-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] (32.0s)
+  ok 125 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:26:7 › TC-DC-19-001 — Index loads [LOAD] › LOAD /DCIvenInputOrders [LOAD] (1.5s)
+  ok 124 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:75:7 › TC-DC-18-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.6s)
+  ok 126 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:43:7 › TC-DC-19-002 — Search / client guard [FLOW] › FLOW Search `/DCIvenInputOrders/Search` [FLOW] (1.7s)
+  ok 127 [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:154:7 › TC-DC-56-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 129 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:62:7 › TC-DC-19-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCIvenInputOrders [AUTH] (1.3s)
+  ok 128 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:92:7 › TC-DC-18-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.3s)
+  ok 130 [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:174:7 › TC-DC-56-005 — list href reachable from shell [FLOW] › quay về danh sách /DCGoodsStoreInputOrders [FLOW] (2.2s)
+  ok 131 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:75:7 › TC-DC-19-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.4s)
+  ok 133 [e2e] › e2e\dc-iven-input-orders-edit\dc-iven-input-orders-edit.e2e.spec.ts:32:7 › TC-DC-61-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập chênh lệch kiểm kê [LOAD] (1.4s)
+  ok 134 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:92:7 › TC-DC-19-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.5s)
+  -  135 [e2e] › e2e\dc-iven-input-orders-edit\dc-iven-input-orders-edit.e2e.spec.ts:94:9 › TC-DC-61-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập chênh lệch kiểm kê thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  132 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:122:7 › TC-DC-18-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  136 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:122:7 › TC-DC-19-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  137 [e2e] › e2e\dc-iven-input-orders-edit\dc-iven-input-orders-edit.e2e.spec.ts:131:7 › TC-DC-61-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập chênh lệch kiểm kê thật [FLOW]
+  ok 139 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:152:7 › TC-DC-19-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.6s)
+  ok 140 [e2e] › e2e\dc-iven-input-orders-edit\dc-iven-input-orders-edit.e2e.spec.ts:159:7 › TC-DC-61-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 138 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:152:7 › TC-DC-18-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.1s)
+  -  141 [e2e] › e2e\dc-iven-input-orders\dc-iven-input-orders.e2e.spec.ts:177:7 › TC-DC-19-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 142 [e2e] › e2e\dc-iven-input-orders-edit\dc-iven-input-orders-edit.e2e.spec.ts:182:7 › TC-DC-61-005 — list href reachable from shell [FLOW] › quay về danh sách /DCIvenInputOrders [FLOW] (2.8s)
+  ok 144 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:26:7 › TC-DC-20-001 — Index loads [LOAD] › LOAD /DCIvenOutputOrders [LOAD] (1.8s)
+  x  105 [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:127:7 › TC-DC-58-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng DC cho đơn hàng thật [FLOW] (32.7s)
+  -  143 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:177:7 › TC-DC-18-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 145 [e2e] › e2e\dc-iven-output-orders-edit\dc-iven-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-62-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất xử lý nhập sai DC [LOAD] (1.9s)
+  ok 146 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:43:7 › TC-DC-20-002 — Search / client guard [FLOW] › FLOW Search `/BufferRotationOrders/Search` [FLOW] (2.0s)
+  -  148 [e2e] › e2e\dc-iven-output-orders-edit\dc-iven-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-62-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất xử lý nhập sai DC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 149 [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:154:7 › TC-DC-58-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.3s)
+  ok 147 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:213:7 › TC-DC-18-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (2.9s)
+  ok 150 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:62:7 › TC-DC-20-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCIvenOutputOrders [AUTH] (1.9s)
+  -  151 [e2e] › e2e\dc-iven-output-orders-edit\dc-iven-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-62-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất xử lý nhập sai DC thật [FLOW]
+  ok 154 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:75:7 › TC-DC-20-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.5s)
+  ok 155 [e2e] › e2e\dc-iven-output-orders-edit\dc-iven-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-62-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  ok 152 [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:174:7 › TC-DC-58-005 — list href reachable from shell [FLOW] › quay về danh sách /DCGoodsStoreOutputOrders [FLOW] (2.5s)
+  ok 156 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:92:7 › TC-DC-20-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.9s)
+  ok 153 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:226:7 › TC-DC-18-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.5s)
+  ok 158 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:26:7 › TC-DC-21-001 — Index loads [LOAD] › LOAD /DCOnlineOutputOrders [LOAD] (1.5s)
+  ok 157 [e2e] › e2e\dc-iven-output-orders-edit\dc-iven-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-62-005 — list href reachable from shell [FLOW] › quay về danh sách /DCIvenOutputOrders [FLOW] (2.4s)
+  ok 161 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:43:7 › TC-DC-21-002 — Search / client guard [FLOW] › FLOW Search `/DCOnlineOutputOrders/Search` [FLOW] (1.6s)
+  -  159 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:122:7 › TC-DC-20-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 162 [e2e] › e2e\dc-online-output-orders-edit\dc-online-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-63-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất bán Online DC [LOAD] (1.9s)
+  ok 164 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:152:7 › TC-DC-20-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.8s)
+  ok 163 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:62:7 › TC-DC-21-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCOnlineOutputOrders [AUTH] (1.9s)
+  -  160 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:254:7 › TC-DC-18-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  165 [e2e] › e2e\dc-online-output-orders-edit\dc-online-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-63-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất bán Online DC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 167 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:75:7 › TC-DC-21-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.3s)
+  -  166 [e2e] › e2e\dc-iven-output-orders\dc-iven-output-orders.e2e.spec.ts:177:7 › TC-DC-20-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  169 [e2e] › e2e\dc-online-output-orders-edit\dc-online-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-63-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất bán Online DC thật [FLOW]
+  ok 170 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:92:7 › TC-DC-21-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.3s)
+  ok 171 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:26:7 › TC-DC-22-001 — Index loads [LOAD] › LOAD /DCOrders [LOAD] (1.9s)
+  -  168 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:300:7 › TC-DC-18-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 172 [e2e] › e2e\dc-online-output-orders-edit\dc-online-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-63-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.3s)
+  -  173 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:122:7 › TC-DC-21-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 177 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:152:7 › TC-DC-21-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.1s)
+  ok 176 [e2e] › e2e\dc-online-output-orders-edit\dc-online-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-63-005 — list href reachable from shell [FLOW] › quay về danh sách /DCOnlineOutputOrders [FLOW] (1.9s)
+  ok 174 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:43:7 › TC-DC-22-002 — Search / client guard [FLOW] › FLOW Search `/DCOrders/Search` [FLOW] (2.5s)
+  ok 175 [e2e] › e2e\dc-input-tranfers\dc-input-tranfers.e2e.spec.ts:335:7 › TC-DC-18-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (2.6s)
+  -  178 [e2e] › e2e\dc-online-output-orders\dc-online-output-orders.e2e.spec.ts:177:7 › TC-DC-21-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 180 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:62:7 › TC-DC-22-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCOrders [AUTH] (1.7s)
+  ok 182 [e2e] › e2e\dc-output-orders-edit\dc-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-65-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất [LOAD] (1.5s)
+  ok 179 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:26:7 › TC-DC-06-001 — Index loads [LOAD] › LOAD /DCOutputOrders [LOAD] (3.0s)
+  ok 181 [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:30:7 › TC-DC-64-001 — form loads [LOAD] › mở form Tạo phiếu xuất kho DC [LOAD] (3.1s)
+  ok 183 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:75:7 › TC-DC-22-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  -  184 [e2e] › e2e\dc-output-orders-edit\dc-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-65-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  188 [e2e] › e2e\dc-output-orders-edit\dc-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-65-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất thật [FLOW]
+  -  187 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:92:7 › TC-DC-22-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 189 [e2e] › e2e\dc-output-orders-edit\dc-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-65-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  ok 186 [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:91:9 › TC-DC-64-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất kho DC thiếu dữ liệu / chặn ghi [VALIDATION] (2.8s)
+  ok 185 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:43:7 › TC-DC-06-002 — Search / client guard [FLOW] › FLOW Search `/DCOutputOrders/Search` [FLOW] (3.7s)
+  -  190 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:122:7 › TC-DC-22-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 191 [e2e] › e2e\dc-output-orders-edit\dc-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-65-005 — list href reachable from shell [FLOW] › quay về danh sách /DCOutputOrders [FLOW] (2.7s)
+  ok 193 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:62:7 › TC-DC-06-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCOutputOrders [AUTH] (2.8s)
+  -  194 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:152:7 › TC-DC-22-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok 195 [e2e] › e2e\dc-output-orders-edit-accreditation\dc-output-orders-edit-accreditation.e2e.spec.ts:32:7 › TC-DC-66-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kiểm định [LOAD] (1.7s)
+  -  197 [e2e] › e2e\dc-orders\dc-orders.e2e.spec.ts:177:7 › TC-DC-22-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  198 [e2e] › e2e\dc-output-orders-edit-accreditation\dc-output-orders-edit-accreditation.e2e.spec.ts:94:9 › TC-DC-66-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kiểm định thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 196 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:75:7 › TC-DC-06-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.0s)
+  -  200 [e2e] › e2e\dc-output-orders-edit-accreditation\dc-output-orders-edit-accreditation.e2e.spec.ts:131:7 › TC-DC-66-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kiểm định thật [FLOW]
+  ok 199 [e2e] › e2e\dc-output-orders-edit-sakura-accreditation\dc-output-orders-edit-sakura-accreditation.e2e.spec.ts:32:7 › TC-DC-67-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kiểm định Sakura [LOAD] (1.6s)
+  ok 202 [e2e] › e2e\dc-output-orders-edit-accreditation\dc-output-orders-edit-accreditation.e2e.spec.ts:159:7 › TC-DC-66-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (950ms)
+  -  203 [e2e] › e2e\dc-output-orders-edit-sakura-accreditation\dc-output-orders-edit-sakura-accreditation.e2e.spec.ts:94:9 › TC-DC-67-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kiểm định Sakura thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 201 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:92:7 › TC-DC-06-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.7s)
+  -  205 [e2e] › e2e\dc-output-orders-edit-sakura-accreditation\dc-output-orders-edit-sakura-accreditation.e2e.spec.ts:131:7 › TC-DC-67-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kiểm định Sakura thật [FLOW]
+  ok 204 [e2e] › e2e\dc-output-orders-edit-accreditation\dc-output-orders-edit-accreditation.e2e.spec.ts:182:7 › TC-DC-66-005 — list href reachable from shell [FLOW] › quay về danh sách /DCOutputOrders [FLOW] (2.1s)
+  ok 207 [e2e] › e2e\dc-output-orders-edit-sakura-accreditation\dc-output-orders-edit-sakura-accreditation.e2e.spec.ts:159:7 › TC-DC-67-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 208 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:26:7 › TC-DC-23-001 — Index loads [LOAD] › LOAD /DCReports [LOAD] (2.1s)
+  -  206 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:122:7 › TC-DC-06-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 209 [e2e] › e2e\dc-output-orders-edit-sakura-accreditation\dc-output-orders-edit-sakura-accreditation.e2e.spec.ts:182:7 › TC-DC-67-005 — list href reachable from shell [FLOW] › quay về danh sách /DCOutputOrders [FLOW] (2.1s)
+  -  210 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:40:7 › TC-DC-23-002 — Search / client guard [FLOW] › FLOW Search `/DCReports/Search` [FLOW]
+  ok 212 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:26:7 › TC-DC-24-001 — Index loads [LOAD] › LOAD /DCReturn2SupplierOutputOrders [LOAD] (1.5s)
+  ok 213 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:51:7 › TC-DC-23-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCReports [AUTH] (1.4s)
+  ok 211 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:152:7 › TC-DC-06-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (2.9s)
+  ok 214 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:43:7 › TC-DC-24-002 — Search / client guard [FLOW] › FLOW Search `/DCReturn2SupplierOutputOrders/Search` [FLOW] (1.6s)
+  ok 215 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:64:7 › TC-DC-23-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.1s)
+  ok 217 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:62:7 › TC-DC-24-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCReturn2SupplierOutputOrders [AUTH] (1.5s)
+  ok 219 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:75:7 › TC-DC-24-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.2s)
+  -  216 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:177:7 › TC-DC-06-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 218 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:77:7 › TC-DC-23-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.0s)
+  ok 220 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:92:7 › TC-DC-24-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.5s)
+  -  222 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:107:7 › TC-DC-23-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  223 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:122:7 › TC-DC-24-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 221 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:213:7 › TC-DC-06-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.0s)
+  ok 225 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:152:7 › TC-DC-24-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.5s)
+  ok 224 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:137:7 › TC-DC-23-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (2.3s)
+  -  227 [e2e] › e2e\dc-return2-supplier-output-orders\dc-return2-supplier-output-orders.e2e.spec.ts:177:7 › TC-DC-24-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 226 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:226:7 › TC-DC-06-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.9s)
+  -  228 [e2e] › e2e\dc-reports\dc-reports.e2e.spec.ts:162:7 › TC-DC-23-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 229 [e2e] › e2e\dc-return2-supplier-output-orders-edit\dc-return2-supplier-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-68-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất trả NCC [LOAD] (1.8s)
+  -  232 [e2e] › e2e\dc-return2-supplier-output-orders-edit\dc-return2-supplier-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-68-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất trả NCC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 231 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:26:7 › TC-DC-05-001 — Index loads [LOAD] › LOAD /DCStoreChanges [LOAD] (3.0s)
+  -  233 [e2e] › e2e\dc-return2-supplier-output-orders-edit\dc-return2-supplier-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-68-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất trả NCC thật [FLOW]
+  -  230 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:254:7 › TC-DC-06-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  ok 235 [e2e] › e2e\dc-return2-supplier-output-orders-edit\dc-return2-supplier-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-68-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  x  192 [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:127:7 › TC-DC-64-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho DC thật [FLOW] (32.2s)
+  ok 234 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:43:7 › TC-DC-05-002 — Search / client guard [FLOW] › FLOW Search `/DCStoreChanges/Search` [FLOW] (3.3s)
+  ok 237 [e2e] › e2e\dc-return2-supplier-output-orders-edit\dc-return2-supplier-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-68-005 — list href reachable from shell [FLOW] › quay về danh sách /DCReturn2SupplierOutputOrders [FLOW] (2.3s)
+  -  240 [e2e] › e2e\dc-store-changes-detail\dc-store-changes-detail.e2e.spec.ts:34:7 › TC-DC-109-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu chuyển kho [LOAD]
+  -  236 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:300:7 › TC-DC-06-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  241 [e2e] › e2e\dc-store-changes-detail\dc-store-changes-detail.e2e.spec.ts:67:7 › TC-DC-109-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE]
+  ok 239 [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:154:7 › TC-DC-64-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  ok 238 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:62:7 › TC-DC-05-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /DCStoreChanges [AUTH] (1.8s)
+  -  243 [e2e] › e2e\dc-store-changes-detail\dc-store-changes-detail.e2e.spec.ts:86:7 › TC-DC-109-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -  246 [e2e] › e2e\dc-store-changes-detail\dc-store-changes-detail.e2e.spec.ts:104:7 › TC-DC-109-004 — list href [FLOW] › quay về danh sách /DCStoreChanges [FLOW]
+  ok 247 [e2e] › e2e\dc-store-changes-detail-input-transfer\dc-store-changes-detail-input-transfer.e2e.spec.ts:32:7 › TC-DC-110-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu nhập chuyển kho [LOAD] (1.4s)
+  ok 242 [e2e] › e2e\dc-output-orders\dc-output-orders.e2e.spec.ts:335:7 › TC-DC-06-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.0s)
+  -  249 [e2e] › e2e\dc-store-changes-detail-shipping-stock-logistic-to-dc\dc-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:34:7 › TC-DC-111-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu chuyển kho đi đường về đền DC [LOAD]
+  ok 245 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:75:7 › TC-DC-05-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.0s)
+  -  250 [e2e] › e2e\dc-store-changes-detail-shipping-stock-logistic-to-dc\dc-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:67:7 › TC-DC-111-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE]
+  ok 244 [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:174:7 › TC-DC-64-005 — list href reachable from shell [FLOW] › quay về danh sách /DCOutputOrders [FLOW] (3.2s)
+  -  252 [e2e] › e2e\dc-store-changes-detail-shipping-stock-logistic-to-dc\dc-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:86:7 › TC-DC-111-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  ok 248 [e2e] › e2e\dc-store-changes-detail-input-transfer\dc-store-changes-detail-input-transfer.e2e.spec.ts:65:7 › TC-DC-110-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (1.5s)
+  -  254 [e2e] › e2e\dc-store-changes-detail-shipping-stock-logistic-to-dc\dc-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:104:7 › TC-DC-111-004 — list href [FLOW] › quay về danh sách /DCStoreChanges [FLOW]
+  -  256 [e2e] › e2e\dc-store-changes-edit-opening\dc-store-changes-edit-opening.e2e.spec.ts:34:7 › TC-DC-70-001 — form loads [LOAD] › mở form Chi tiết phiếu chuyển kho [LOAD]
+  ok 255 [e2e] › e2e\dc-store-changes-detail-input-transfer\dc-store-changes-detail-input-transfer.e2e.spec.ts:84:7 › TC-DC-110-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 253 [e2e] › e2e\dc-store-changes-edit\dc-store-changes-edit.e2e.spec.ts:32:7 › TC-DC-69-001 — form loads [LOAD] › mở form Chi tiết phiếu chuyển kho [LOAD] (1.7s)
+  -  257 [e2e] › e2e\dc-store-changes-edit-opening\dc-store-changes-edit-opening.e2e.spec.ts:96:9 › TC-DC-70-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu chuyển kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  260 [e2e] › e2e\dc-store-changes-edit-opening\dc-store-changes-edit-opening.e2e.spec.ts:133:7 › TC-DC-70-003 — save for real [FLOW] › lưu Chi tiết phiếu chuyển kho thật [FLOW]
+  -  261 [e2e] › e2e\dc-store-changes-edit-opening\dc-store-changes-edit-opening.e2e.spec.ts:161:7 › TC-DC-70-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -  262 [e2e] › e2e\dc-store-changes-edit-opening\dc-store-changes-edit-opening.e2e.spec.ts:184:7 › TC-DC-70-005 — list href reachable from shell [FLOW] › quay về danh sách /DCStoreChanges [FLOW]
+  -  259 [e2e] › e2e\dc-store-changes-edit\dc-store-changes-edit.e2e.spec.ts:94:9 › TC-DC-69-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu chuyển kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 251 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:92:7 › TC-DC-05-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.8s)
+  ok 258 [e2e] › e2e\dc-store-changes-detail-input-transfer\dc-store-changes-detail-input-transfer.e2e.spec.ts:102:7 › TC-DC-110-004 — list href [FLOW] › quay về danh sách /DCStoreChanges [FLOW] (2.5s)
+  ok 263 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:26:7 › TC-DC-25-001 — Index loads [LOAD] › LOAD /FashionInputOrders [LOAD] (1.9s)
+  -  264 [e2e] › e2e\dc-store-changes-edit\dc-store-changes-edit.e2e.spec.ts:131:7 › TC-DC-69-003 — save for real [FLOW] › lưu Chi tiết phiếu chuyển kho thật [FLOW]
+  ok 268 [e2e] › e2e\dc-store-changes-edit\dc-store-changes-edit.e2e.spec.ts:159:7 › TC-DC-69-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 266 [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:30:7 › TC-DC-71-001 — form loads [LOAD] › mở form Tạo phiếu nhập kho [LOAD] (2.5s)
+  -  265 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:122:7 › TC-DC-05-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 267 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:43:7 › TC-DC-25-002 — Search / client guard [FLOW] › FLOW Search `/FashionInputOrders/Search` [FLOW] (2.4s)
+  ok 270 [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:91:9 › TC-DC-71-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION] (2.5s)
+  ok 272 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:62:7 › TC-DC-25-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /FashionInputOrders [AUTH] (1.8s)
+  ok 269 [e2e] › e2e\dc-store-changes-edit\dc-store-changes-edit.e2e.spec.ts:182:7 › TC-DC-69-005 — list href reachable from shell [FLOW] › quay về danh sách /DCStoreChanges [FLOW] (2.6s)
+  ok 271 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:152:7 › TC-DC-05-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.1s)
+  ok 274 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:75:7 › TC-DC-25-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.5s)
+  ok 275 [e2e] › e2e\fashion-input-orders-detail\fashion-input-orders-detail.e2e.spec.ts:32:7 › TC-DC-112-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu nhập kho [LOAD] (2.4s)
+  ok 277 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:92:7 › TC-DC-25-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.8s)
+  ok 278 [e2e] › e2e\fashion-input-orders-detail\fashion-input-orders-detail.e2e.spec.ts:65:7 › TC-DC-112-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (1.4s)
+  -  276 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:177:7 › TC-DC-05-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 280 [e2e] › e2e\fashion-input-orders-detail\fashion-input-orders-detail.e2e.spec.ts:84:7 › TC-DC-112-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  -  279 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:122:7 › TC-DC-25-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 283 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:152:7 › TC-DC-25-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.3s)
+  ok 282 [e2e] › e2e\fashion-input-orders-detail\fashion-input-orders-detail.e2e.spec.ts:102:7 › TC-DC-112-004 — list href [FLOW] › quay về danh sách /FashionInputOrders [FLOW] (2.1s)
+  ok 281 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:213:7 › TC-DC-05-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (2.9s)
+  -  286 [e2e] › e2e\fashion-input-orders-edit\fashion-input-orders-edit.e2e.spec.ts:34:7 › TC-DC-72-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập kho [LOAD]
+  -  287 [e2e] › e2e\fashion-input-orders-edit\fashion-input-orders-edit.e2e.spec.ts:96:9 › TC-DC-72-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  288 [e2e] › e2e\fashion-input-orders-edit\fashion-input-orders-edit.e2e.spec.ts:133:7 › TC-DC-72-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập kho thật [FLOW]
+  -  284 [e2e] › e2e\fashion-input-orders\fashion-input-orders.e2e.spec.ts:177:7 › TC-DC-25-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  289 [e2e] › e2e\fashion-input-orders-edit\fashion-input-orders-edit.e2e.spec.ts:161:7 › TC-DC-72-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -  291 [e2e] › e2e\fashion-input-orders-edit\fashion-input-orders-edit.e2e.spec.ts:184:7 › TC-DC-72-005 — list href reachable from shell [FLOW] › quay về danh sách /FashionInputOrders [FLOW]
+  ok 290 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:26:7 › TC-DC-26-001 — Index loads [LOAD] › LOAD /FashionOutputOrders [LOAD] (1.2s)
+  ok 285 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:226:7 › TC-DC-05-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.3s)
+  ok 292 [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:30:7 › TC-DC-73-001 — form loads [LOAD] › mở form Tạo phiếu xuất hàng thời trang [LOAD] (2.1s)
+  ok 293 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:43:7 › TC-DC-26-002 — Search / client guard [FLOW] › FLOW Search `/FashionOutputOrders/Search` [FLOW] (2.7s)
+  ok 295 [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:91:9 › TC-DC-73-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất hàng thời trang thiếu dữ liệu / chặn ghi [VALIDATION] (1.9s)
+  -  294 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:254:7 › TC-DC-05-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  ok 296 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:62:7 › TC-DC-26-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /FashionOutputOrders [AUTH] (1.3s)
+  ok 299 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:75:7 › TC-DC-26-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.4s)
+  -  298 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:300:7 › TC-DC-05-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 300 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:92:7 › TC-DC-26-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.5s)
+  -  302 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:122:7 › TC-DC-26-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 303 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:152:7 › TC-DC-26-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.2s)
+  ok 301 [e2e] › e2e\dc-store-changes\dc-store-changes.e2e.spec.ts:335:7 › TC-DC-05-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (2.9s)
+  -  304 [e2e] › e2e\fashion-output-orders\fashion-output-orders.e2e.spec.ts:177:7 › TC-DC-26-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 305 [e2e] › e2e\fashion-output-orders-edit\fashion-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-74-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất [LOAD] (1.6s)
+  ok 306 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:26:7 › TC-DC-27-001 — Index loads [LOAD] › LOAD /GoodsStoreOrders [LOAD] (927ms)
+  -  307 [e2e] › e2e\fashion-output-orders-edit\fashion-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-74-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 308 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:43:7 › TC-DC-27-002 — Search / client guard [FLOW] › FLOW Search `/GoodsStoreOrders/Search` [FLOW] (1.8s)
+  -  309 [e2e] › e2e\fashion-output-orders-edit\fashion-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-74-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất thật [FLOW]
+  ok 311 [e2e] › e2e\fashion-output-orders-edit\fashion-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-74-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 310 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:62:7 › TC-DC-27-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /GoodsStoreOrders [AUTH] (1.8s)
+  ok 313 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:75:7 › TC-DC-27-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (999ms)
+  ok 312 [e2e] › e2e\fashion-output-orders-edit\fashion-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-74-005 — list href reachable from shell [FLOW] › quay về danh sách /FashionOutputOrders [FLOW] (2.6s)
+  ok 314 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:92:7 › TC-DC-27-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.0s)
+  ok 315 [e2e] › e2e\home\home.e2e.spec.ts:26:7 › TC-DC-02-001 — after SSO, / shows Home or Unauthorized by UserType [LOAD] › sau SSO mở / — Home (type 3) hoặc Unauthorized (type khác) [LOAD] (1.1s)
+  ok 317 [e2e] › e2e\home\home.e2e.spec.ts:53:7 › TC-DC-02-002 — header shows user when session has LoadUserLogin [LOAD] › header có logo và logout khi vào được shell có user [LOAD] (1.0s)
+  -  316 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:122:7 › TC-DC-27-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  318 [e2e] › e2e\home\home.e2e.spec.ts:75:7 › TC-DC-02-003 — UserTypeID != 3 lands on Error 403 [LOAD] › UserTypeID != 3 thấy Error 403 [LOAD]
+  -  319 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:152:7 › TC-DC-27-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok 320 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:26:7 › TC-DC-28-001 — Index loads [LOAD] › LOAD /InputDCOnlines [LOAD] (1.1s)
+  x  273 [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:127:7 › TC-DC-71-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] (32.6s)
+  -  321 [e2e] › e2e\goods-store-orders\goods-store-orders.e2e.spec.ts:177:7 › TC-DC-27-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 322 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:43:7 › TC-DC-28-002 — Search / client guard [FLOW] › FLOW Search `/InputDCOnlines/Search` [FLOW] (1.5s)
+  ok 323 [e2e] › e2e\input-dc-onlines-edit\input-dc-onlines-edit.e2e.spec.ts:32:7 › TC-DC-75-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập trả DC Online [LOAD] (1.8s)
+  ok 325 [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:154:7 › TC-DC-71-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 324 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:62:7 › TC-DC-28-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /InputDCOnlines [AUTH] (1.7s)
+  ok 328 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:75:7 › TC-DC-28-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (917ms)
+  -  326 [e2e] › e2e\input-dc-onlines-edit\input-dc-onlines-edit.e2e.spec.ts:94:9 › TC-DC-75-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập trả DC Online thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 329 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:92:7 › TC-DC-28-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.3s)
+  -  330 [e2e] › e2e\input-dc-onlines-edit\input-dc-onlines-edit.e2e.spec.ts:131:7 › TC-DC-75-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập trả DC Online thật [FLOW]
+  ok 327 [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:174:7 › TC-DC-71-005 — list href reachable from shell [FLOW] › quay về danh sách /FashionInputOrders [FLOW] (2.9s)
+  -  331 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:122:7 › TC-DC-28-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 332 [e2e] › e2e\input-dc-onlines-edit\input-dc-onlines-edit.e2e.spec.ts:159:7 › TC-DC-75-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 333 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:26:7 › TC-DC-29-001 — Index loads [LOAD] › LOAD /InputOrderDCToOnlineDCs [LOAD] (1.7s)
+  ok 334 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:152:7 › TC-DC-28-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.3s)
+  -  337 [e2e] › e2e\input-dc-onlines\input-dc-onlines.e2e.spec.ts:177:7 › TC-DC-28-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 335 [e2e] › e2e\input-dc-onlines-edit\input-dc-onlines-edit.e2e.spec.ts:182:7 › TC-DC-75-005 — list href reachable from shell [FLOW] › quay về danh sách /InputDCOnlines [FLOW] (2.3s)
+  ok 336 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:43:7 › TC-DC-29-002 — Search / client guard [FLOW] › FLOW Search `/InputOrderDCToOnlineDCs/Search` [FLOW] (2.4s)
+  ok 338 [e2e] › e2e\input-order-dc-to-online-d-cs-edit\input-order-dc-to-online-d-cs-edit.e2e.spec.ts:32:7 › TC-DC-76-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập kho Online DC [LOAD] (1.7s)
+  ok 339 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:26:7 › TC-DC-30-001 — Index loads [LOAD] › LOAD /InputOrderSakura [LOAD] (1.7s)
+  ok 340 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:62:7 › TC-DC-29-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /InputOrderDCToOnlineDCs [AUTH] (1.6s)
+  -  341 [e2e] › e2e\input-order-dc-to-online-d-cs-edit\input-order-dc-to-online-d-cs-edit.e2e.spec.ts:94:9 › TC-DC-76-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập kho Online DC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 342 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:43:7 › TC-DC-30-002 — Search / client guard [FLOW] › FLOW Search `/InputOrderSakura/Search` [FLOW] (1.7s)
+  x  297 [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:127:7 › TC-DC-73-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng thời trang thật [FLOW] (32.1s)
+  ok 343 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:75:7 › TC-DC-29-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  -  344 [e2e] › e2e\input-order-dc-to-online-d-cs-edit\input-order-dc-to-online-d-cs-edit.e2e.spec.ts:131:7 › TC-DC-76-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập kho Online DC thật [FLOW]
+  ok 345 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:62:7 › TC-DC-30-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /InputOrderSakura [AUTH] (1.7s)
+  ok 346 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:92:7 › TC-DC-29-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.9s)
+  ok 347 [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:154:7 › TC-DC-73-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 348 [e2e] › e2e\input-order-dc-to-online-d-cs-edit\input-order-dc-to-online-d-cs-edit.e2e.spec.ts:159:7 › TC-DC-76-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.6s)
+  ok 349 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:75:7 › TC-DC-30-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  -  350 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:122:7 › TC-DC-29-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 353 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:92:7 › TC-DC-30-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.6s)
+  ok 352 [e2e] › e2e\input-order-dc-to-online-d-cs-edit\input-order-dc-to-online-d-cs-edit.e2e.spec.ts:182:7 › TC-DC-76-005 — list href reachable from shell [FLOW] › quay về danh sách /InputOrderDCToOnlineDCs [FLOW] (2.3s)
+  ok 354 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:152:7 › TC-DC-29-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.5s)
+  ok 351 [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:174:7 › TC-DC-73-005 — list href reachable from shell [FLOW] › quay về danh sách /FashionOutputOrders [FLOW] (2.9s)
+  -  355 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:122:7 › TC-DC-30-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 356 [e2e] › e2e\input-order-sakura-edit\input-order-sakura-edit.e2e.spec.ts:32:7 › TC-DC-77-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập trả Sakura [LOAD] (1.6s)
+  -  357 [e2e] › e2e\input-order-dc-to-online-d-cs\input-order-dc-to-online-d-cs.e2e.spec.ts:177:7 › TC-DC-29-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 359 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:152:7 › TC-DC-30-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.6s)
+  -  360 [e2e] › e2e\input-order-sakura-edit\input-order-sakura-edit.e2e.spec.ts:94:9 › TC-DC-77-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập trả Sakura thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 358 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:26:7 › TC-DC-04-001 — Index loads [LOAD] › LOAD /InputOrders [LOAD] (3.4s)
+  -  362 [e2e] › e2e\input-order-sakura\input-order-sakura.e2e.spec.ts:177:7 › TC-DC-30-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  363 [e2e] › e2e\input-order-sakura-edit\input-order-sakura-edit.e2e.spec.ts:131:7 › TC-DC-77-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập trả Sakura thật [FLOW]
+  ok 361 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:30:7 › TC-DC-78-001 — form loads [LOAD] › mở form Tạo phiếu nhập kho [LOAD] (3.8s)
+  ok 366 [e2e] › e2e\input-order-sakura-edit\input-order-sakura-edit.e2e.spec.ts:159:7 › TC-DC-77-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.6s)
+  ok 365 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:32:7 › TC-DC-79-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập kho [LOAD] (2.2s)
+  ok 364 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:43:7 › TC-DC-04-002 — Search / client guard [FLOW] › FLOW Search `/InputOrders/Search` [FLOW] (3.9s)
+  ok 367 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:91:9 › TC-DC-78-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION] (2.8s)
+  -  369 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:94:9 › TC-DC-79-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 368 [e2e] › e2e\input-order-sakura-edit\input-order-sakura-edit.e2e.spec.ts:182:7 › TC-DC-77-005 — list href reachable from shell [FLOW] › quay về danh sách /InputOrderSakura [FLOW] (2.6s)
+  ok 370 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:62:7 › TC-DC-04-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /InputOrders [AUTH] (1.8s)
+  -  372 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:131:7 › TC-DC-79-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập kho thật [FLOW]
+  ok 373 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:26:7 › TC-DC-31-001 — Index loads [LOAD] › LOAD /InternalTransports [LOAD] (1.6s)
+  ok 375 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:159:7 › TC-DC-79-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (975ms)
+  ok 376 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:43:7 › TC-DC-31-002 — Search / client guard [FLOW] › FLOW Search `/InternalTransports/Search` [FLOW] (1.8s)
+  ok 374 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:75:7 › TC-DC-04-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.2s)
+  ok 377 [e2e] › e2e\input-orders-edit\input-orders-edit.e2e.spec.ts:182:7 › TC-DC-79-005 — list href reachable from shell [FLOW] › quay về danh sách /InputOrders [FLOW] (2.2s)
+  ok 378 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:62:7 › TC-DC-31-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /InternalTransports [AUTH] (1.4s)
+  ok 381 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:75:7 › TC-DC-31-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.5s)
+  ok 379 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:92:7 › TC-DC-04-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.2s)
+  ok 382 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:92:7 › TC-DC-31-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.5s)
+  ok 380 [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:30:7 › TC-DC-80-001 — form loads [LOAD] › mở form Tạo phiếu vận chuyển nội bộ [LOAD] (3.4s)
+  -  384 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:122:7 › TC-DC-31-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  383 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:122:7 › TC-DC-04-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 386 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:152:7 › TC-DC-31-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.3s)
+  ok 385 [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:91:9 › TC-DC-80-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu vận chuyển nội bộ thiếu dữ liệu / chặn ghi [VALIDATION] (3.3s)
+  -  388 [e2e] › e2e\internal-transports\internal-transports.e2e.spec.ts:177:7 › TC-DC-31-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  387 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:152:7 › TC-DC-04-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok 390 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:26:7 › TC-DC-32-001 — Index loads [LOAD] › LOAD /IvenOutputOrders [LOAD] (1.2s)
+  ok 392 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:43:7 › TC-DC-32-002 — Search / client guard [FLOW] › FLOW Search `/IvenOutputOrders/Search` [FLOW] (2.1s)
+  -  391 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:177:7 › TC-DC-04-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 393 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:62:7 › TC-DC-32-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /IvenOutputOrders [AUTH] (1.5s)
+  ok 395 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:75:7 › TC-DC-32-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.2s)
+  -  396 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:92:7 › TC-DC-32-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 394 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:213:7 › TC-DC-04-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (2.9s)
+  -  397 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:122:7 › TC-DC-32-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 399 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:152:7 › TC-DC-32-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.2s)
+  ok 398 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:226:7 › TC-DC-04-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.4s)
+  -  400 [e2e] › e2e\iven-output-orders\iven-output-orders.e2e.spec.ts:177:7 › TC-DC-32-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 402 [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:30:7 › TC-DC-81-001 — form loads [LOAD] › mở form Tạo phiếu xuất xử lý nhập sai DC [LOAD] (1.8s)
+  -  401 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:254:7 › TC-DC-04-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  ok 403 [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:91:9 › TC-DC-81-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất xử lý nhập sai DC thiếu dữ liệu / chặn ghi [VALIDATION] (2.0s)
+  -  404 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:300:7 › TC-DC-04-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  x  371 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:127:7 › TC-DC-78-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] (31.7s)
+  ok 406 [e2e] › e2e\input-orders\input-orders.e2e.spec.ts:335:7 › TC-DC-04-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.0s)
+  ok 407 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:154:7 › TC-DC-78-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 408 [e2e] › e2e\iven-output-orders-edit\iven-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-82-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất xử lý nhập sai DC [LOAD] (1.8s)
+  -  410 [e2e] › e2e\iven-output-orders-edit\iven-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-82-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất xử lý nhập sai DC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 409 [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:174:7 › TC-DC-78-005 — list href reachable from shell [FLOW] › quay về danh sách /InputOrders [FLOW] (4.1s)
+  -  411 [e2e] › e2e\iven-output-orders-edit\iven-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-82-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất xử lý nhập sai DC thật [FLOW]
+  ok 412 [e2e] › e2e\login\login.e2e.spec.ts:32:7 › TC-DC-01-001 — login redirects to Keycloak with the dc client [AUTH] › ẩn danh /Accounts/Login chuyển tới Keycloak [AUTH] (4.4s)
+  ok 413 [e2e] › e2e\iven-output-orders-edit\iven-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-82-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (2.6s)
+  ok 414 [e2e] › e2e\login\login.e2e.spec.ts:60:9 › TC-DC-01-002 — protected route sends anonymous users through login [AUTH] › ẩn danh mở / [AUTH] (2.7s)
+  ok 415 [e2e] › e2e\iven-output-orders-edit\iven-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-82-005 — list href reachable from shell [FLOW] › quay về danh sách /IvenOutputOrders [FLOW] (2.9s)
+  x  389 [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:127:7 › TC-DC-80-003 — save for real [FLOW] › lưu Tạo phiếu vận chuyển nội bộ thật [FLOW] (34.3s)
+  ok 416 [e2e] › e2e\login\login.e2e.spec.ts:60:9 › TC-DC-01-002 — protected route sends anonymous users through login [AUTH] › ẩn danh mở /Home/Index [AUTH] (1.9s)
+  ok 418 [e2e] › e2e\login\login.e2e.spec.ts:60:9 › TC-DC-01-002 — protected route sends anonymous users through login [AUTH] › ẩn danh mở /OutputOrders [AUTH] (1.8s)
+  ok 417 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:26:7 › TC-DC-07-001 — Index loads [LOAD] › LOAD /OddPickOrders [LOAD] (4.0s)
+  ok 419 [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:154:7 › TC-DC-80-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (2.3s)
+  ok 420 [e2e] › e2e\login\login.e2e.spec.ts:85:7 › TC-DC-01-003 — callback without a code fails safely [AUTH] › callback thiếu code [AUTH] (3.0s)
+  ok 421 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:43:7 › TC-DC-07-002 — Search / client guard [FLOW] › FLOW Search `/OddPickOrders/Search` [FLOW] (4.3s)
+  ok 423 [e2e] › e2e\login\login.e2e.spec.ts:105:7 › TC-DC-01-004 — valid credentials sign in and return to the app [FLOW] › đăng nhập Keycloak bằng ENV [FLOW] (2.8s)
+  ok 424 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:62:7 › TC-DC-07-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OddPickOrders [AUTH] (1.6s)
+  ok 422 [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:174:7 › TC-DC-80-005 — list href reachable from shell [FLOW] › quay về danh sách /InternalTransports [FLOW] (4.6s)
+  ok 427 [e2e] › e2e\odd-pick-orders-edit\odd-pick-orders-edit.e2e.spec.ts:32:7 › TC-DC-83-001 — form loads [LOAD] › mở form Chi tiết đơn hàng pick lẻ DC về siêu thị [LOAD] (1.6s)
+  ok 425 [e2e] › e2e\login\login.e2e.spec.ts:134:7 › TC-DC-01-005 — logout clears the session [FLOW] › đăng xuất trong context riêng [FLOW] (3.3s)
+  ok 426 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:75:7 › TC-DC-07-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.2s)
+  -  428 [e2e] › e2e\odd-pick-orders-edit\odd-pick-orders-edit.e2e.spec.ts:94:9 › TC-DC-83-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng pick lẻ DC về siêu thị thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 429 [e2e] › e2e\login\login.e2e.spec.ts:156:7 › TC-DC-01-006 — anonymous logout redirects toward login [AUTH] › ẩn danh mở /Accounts/Logout [AUTH] (1.6s)
+  ok 432 [e2e] › e2e\orders\orders.e2e.spec.ts:26:7 › TC-DC-33-001 — Index loads [LOAD] › LOAD /Orders [LOAD] (507ms)
+  x  405 [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:127:7 › TC-DC-81-003 — save for real [FLOW] › lưu Tạo phiếu xuất xử lý nhập sai DC thật [FLOW] (32.5s)
+  -  433 [e2e] › e2e\orders\orders.e2e.spec.ts:44:7 › TC-DC-33-002 — Search / guarded [FLOW] › FLOW Search `/Orders/Search` [FLOW]
+  -  431 [e2e] › e2e\odd-pick-orders-edit\odd-pick-orders-edit.e2e.spec.ts:131:7 › TC-DC-83-003 — save for real [FLOW] › lưu Chi tiết đơn hàng pick lẻ DC về siêu thị thật [FLOW]
+  ok 434 [e2e] › e2e\orders\orders.e2e.spec.ts:56:7 › TC-DC-33-003 — anonymous users redirected to SSO [AUTH] › AUTH ẩn danh /Orders [AUTH] (1.7s)
+  ok 430 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:92:7 › TC-DC-07-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.8s)
+  ok 435 [e2e] › e2e\odd-pick-orders-edit\odd-pick-orders-edit.e2e.spec.ts:159:7 › TC-DC-83-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (2.0s)
+  ok 436 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:26:7 › TC-DC-34-001 — Index loads [LOAD] › LOAD /Outbounds [LOAD] (1.4s)
+  ok 438 [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:154:7 › TC-DC-81-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.8s)
+  -  440 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:40:7 › TC-DC-34-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  ok 439 [e2e] › e2e\odd-pick-orders-edit\odd-pick-orders-edit.e2e.spec.ts:182:7 › TC-DC-83-005 — list href reachable from shell [FLOW] › quay về danh sách /OddPickOrders [FLOW] (2.7s)
+  -  437 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:122:7 › TC-DC-07-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 443 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:26:7 › TC-DC-35-001 — Index loads [LOAD] › LOAD /OutputDCToOnlineDCs [LOAD] (1.5s)
+  ok 442 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:51:7 › TC-DC-34-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /Outbounds [AUTH] (2.2s)
+  ok 441 [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:174:7 › TC-DC-81-005 — list href reachable from shell [FLOW] › quay về danh sách /IvenOutputOrders [FLOW] (2.9s)
+  ok 446 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:64:7 › TC-DC-34-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.2s)
+  ok 445 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:43:7 › TC-DC-35-002 — Search / client guard [FLOW] › FLOW Search `/OutputDCToOnlineDCs/Search` [FLOW] (1.8s)
+  ok 447 [e2e] › e2e\output-dc-to-online-d-cs-edit\output-dc-to-online-d-cs-edit.e2e.spec.ts:32:7 › TC-DC-84-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kho DC về Online DC [LOAD] (1.7s)
+  -  444 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:152:7 › TC-DC-07-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -  448 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:77:7 › TC-DC-34-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 449 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:62:7 › TC-DC-35-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputDCToOnlineDCs [AUTH] (1.7s)
+  -  452 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:107:7 › TC-DC-34-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  450 [e2e] › e2e\output-dc-to-online-d-cs-edit\output-dc-to-online-d-cs-edit.e2e.spec.ts:94:9 › TC-DC-84-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kho DC về Online DC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 453 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:75:7 › TC-DC-35-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.6s)
+  ok 454 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:137:7 › TC-DC-34-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.3s)
+  -  455 [e2e] › e2e\output-dc-to-online-d-cs-edit\output-dc-to-online-d-cs-edit.e2e.spec.ts:131:7 › TC-DC-84-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kho DC về Online DC thật [FLOW]
+  -  451 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:177:7 › TC-DC-07-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  457 [e2e] › e2e\outbounds\outbounds.e2e.spec.ts:162:7 › TC-DC-34-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 456 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:92:7 › TC-DC-35-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.0s)
+  ok 458 [e2e] › e2e\output-dc-to-online-d-cs-edit\output-dc-to-online-d-cs-edit.e2e.spec.ts:159:7 › TC-DC-84-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.8s)
+  ok 460 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:26:7 › TC-DC-36-001 — Index loads [LOAD] › LOAD /OutputFailDCOnlines [LOAD] (1.8s)
+  -  461 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:122:7 › TC-DC-35-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 459 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:213:7 › TC-DC-07-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.6s)
+  ok 462 [e2e] › e2e\output-dc-to-online-d-cs-edit\output-dc-to-online-d-cs-edit.e2e.spec.ts:182:7 › TC-DC-84-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputDCToOnlineDCs [FLOW] (3.2s)
+  ok 463 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:43:7 › TC-DC-36-002 — Search / client guard [FLOW] › FLOW Search `/OutputFailDCOnlines/Search` [FLOW] (3.2s)
+  ok 464 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:152:7 › TC-DC-35-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (2.9s)
+  ok 465 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:226:7 › TC-DC-07-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (4.9s)
+  -  468 [e2e] › e2e\output-dc-to-online-d-cs\output-dc-to-online-d-cs.e2e.spec.ts:177:7 › TC-DC-35-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 466 [e2e] › e2e\output-fail-dc-onlines-edit\output-fail-dc-onlines-edit.e2e.spec.ts:32:7 › TC-DC-85-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất xử lý hàng hoàn [LOAD] (4.7s)
+  ok 467 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:62:7 › TC-DC-36-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputFailDCOnlines [AUTH] (4.8s)
+  -  471 [e2e] › e2e\output-fail-dc-onlines-edit\output-fail-dc-onlines-edit.e2e.spec.ts:94:9 › TC-DC-85-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất xử lý hàng hoàn thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 470 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:26:7 › TC-DC-37-001 — Index loads [LOAD] › LOAD /OutputGrandOrders [LOAD] (2.0s)
+  ok 472 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:75:7 › TC-DC-36-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  -  469 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:254:7 › TC-DC-07-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  473 [e2e] › e2e\output-fail-dc-onlines-edit\output-fail-dc-onlines-edit.e2e.spec.ts:131:7 › TC-DC-85-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất xử lý hàng hoàn thật [FLOW]
+  -  475 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:92:7 › TC-DC-36-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 477 [e2e] › e2e\output-fail-dc-onlines-edit\output-fail-dc-onlines-edit.e2e.spec.ts:159:7 › TC-DC-85-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (2.3s)
+  ok 474 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:43:7 › TC-DC-37-002 — Search / client guard [FLOW] › FLOW Search `/OutputGrandOrders/SearchVer2` [FLOW] (5.1s)
+  -  478 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:122:7 › TC-DC-36-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  476 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:300:7 › TC-DC-07-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  -  481 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:152:7 › TC-DC-36-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok 479 [e2e] › e2e\output-fail-dc-onlines-edit\output-fail-dc-onlines-edit.e2e.spec.ts:182:7 › TC-DC-85-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputFailDCOnlines [FLOW] (3.5s)
+  ok 480 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:62:7 › TC-DC-37-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputGrandOrders [AUTH] (3.2s)
+  -  483 [e2e] › e2e\output-fail-dc-onlines\output-fail-dc-onlines.e2e.spec.ts:177:7 › TC-DC-36-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 485 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:75:7 › TC-DC-37-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  ok 482 [e2e] › e2e\odd-pick-orders\odd-pick-orders.e2e.spec.ts:335:7 › TC-DC-07-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.4s)
+  ok 486 [e2e] › e2e\output-grand-orders-edit\output-grand-orders-edit.e2e.spec.ts:32:7 › TC-DC-87-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kho khai trương [LOAD] (1.9s)
+  ok 488 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:26:7 › TC-DC-38-001 — Index loads [LOAD] › LOAD /OutputOddPickOrders [LOAD] (1.7s)
+  ok 484 [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:30:7 › TC-DC-86-001 — form loads [LOAD] › mở form Tạo phiếu xuất kho chia khai trương [LOAD] (4.6s)
+  -  489 [e2e] › e2e\output-grand-orders-edit\output-grand-orders-edit.e2e.spec.ts:94:9 › TC-DC-87-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kho khai trương thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 487 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:92:7 › TC-DC-37-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (4.6s)
+  ok 490 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:43:7 › TC-DC-38-002 — Search / client guard [FLOW] › FLOW Search `/OutputOddPickOrders/Search` [FLOW] (2.5s)
+  ok 491 [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:91:9 › TC-DC-86-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất kho chia khai trương thiếu dữ liệu / chặn ghi [VALIDATION] (4.1s)
+  -  492 [e2e] › e2e\output-grand-orders-edit\output-grand-orders-edit.e2e.spec.ts:131:7 › TC-DC-87-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kho khai trương thật [FLOW]
+  ok 494 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:62:7 › TC-DC-38-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputOddPickOrders [AUTH] (2.4s)
+  ok 496 [e2e] › e2e\output-grand-orders-edit\output-grand-orders-edit.e2e.spec.ts:159:7 › TC-DC-87-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.8s)
+  -  493 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:122:7 › TC-DC-37-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 497 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:75:7 › TC-DC-38-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.5s)
+  ok 499 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:152:7 › TC-DC-37-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.9s)
+  ok 500 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:92:7 › TC-DC-38-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.1s)
+  ok 498 [e2e] › e2e\output-grand-orders-edit\output-grand-orders-edit.e2e.spec.ts:182:7 › TC-DC-87-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputGrandOrders [FLOW] (3.5s)
+  -  502 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:122:7 › TC-DC-38-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 503 [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:30:7 › TC-DC-88-001 — form loads [LOAD] › mở form Tạo phiếu xuất DC cho đơn hàng pick lẻ DC về cửa hàng [LOAD] (2.8s)
+  -  501 [e2e] › e2e\output-grand-orders\output-grand-orders.e2e.spec.ts:177:7 › TC-DC-37-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 504 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:152:7 › TC-DC-38-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.5s)
+  -  506 [e2e] › e2e\output-odd-pick-orders\output-odd-pick-orders.e2e.spec.ts:177:7 › TC-DC-38-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 505 [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:91:9 › TC-DC-88-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất DC cho đơn hàng pick lẻ DC về cửa hàng thiếu dữ liệu / chặn ghi [VALIDATION] (2.7s)
+  ok 507 [e2e] › e2e\output-odd-pick-orders-edit\output-odd-pick-orders-edit.e2e.spec.ts:32:7 › TC-DC-89-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kho [LOAD] (1.8s)
+  -  510 [e2e] › e2e\output-odd-pick-orders-edit\output-odd-pick-orders-edit.e2e.spec.ts:94:9 › TC-DC-89-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 508 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:26:7 › TC-DC-40-001 — Index loads [LOAD] › LOAD /OutputOrderPackProducts [LOAD] (3.3s)
+  -  511 [e2e] › e2e\output-odd-pick-orders-edit\output-odd-pick-orders-edit.e2e.spec.ts:131:7 › TC-DC-89-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kho thật [FLOW]
+  ok 513 [e2e] › e2e\output-odd-pick-orders-edit\output-odd-pick-orders-edit.e2e.spec.ts:159:7 › TC-DC-89-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.3s)
+  ok 512 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:43:7 › TC-DC-40-002 — Search / client guard [FLOW] › FLOW Search `/OutputOrderPackProducts/Search` [FLOW] (3.9s)
+  ok 514 [e2e] › e2e\output-odd-pick-orders-edit\output-odd-pick-orders-edit.e2e.spec.ts:182:7 › TC-DC-89-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOddPickOrders [FLOW] (2.8s)
+  ok 515 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:62:7 › TC-DC-40-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputOrderPackProducts [AUTH] (1.9s)
+  ok 516 [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:30:7 › TC-DC-91-001 — form loads [LOAD] › mở form Tạo mới thông tin kiện [LOAD] (2.1s)
+  ok 517 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:75:7 › TC-DC-40-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.3s)
+  ok 518 [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:91:9 › TC-DC-91-002 — form validation blocks write [VALIDATION] › validation: Tạo mới thông tin kiện thiếu dữ liệu / chặn ghi [VALIDATION] (3.1s)
+  ok 519 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:92:7 › TC-DC-40-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.6s)
+  -  521 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:122:7 › TC-DC-40-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  x  495 [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:127:7 › TC-DC-86-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho chia khai trương thật [FLOW] (32.4s)
+  ok 522 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:152:7 › TC-DC-40-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (2.9s)
+  ok 524 [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:154:7 › TC-DC-86-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  -  523 [e2e] › e2e\output-order-pack-products\output-order-pack-products.e2e.spec.ts:177:7 › TC-DC-40-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 526 [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:30:7 › TC-DC-93-001 — form loads [LOAD] › mở form Tạo mới thông tin kiện [LOAD] (2.0s)
+  ok 525 [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:174:7 › TC-DC-86-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputGrandOrders [FLOW] (3.6s)
+  ok 527 [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:91:9 › TC-DC-93-002 — form validation blocks write [VALIDATION] › validation: Tạo mới thông tin kiện thiếu dữ liệu / chặn ghi [VALIDATION] (2.2s)
+  x  509 [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:127:7 › TC-DC-88-003 — save for real [FLOW] › lưu Tạo phiếu xuất DC cho đơn hàng pick lẻ DC về cửa hàng thật [FLOW] (32.1s)
+  ok 530 [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:154:7 › TC-DC-88-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  ok 528 [e2e] › e2e\output-order-pack-products-edit-order-pack-product\output-order-pack-products-edit-order-pack-product.e2e.spec.ts:32:7 › TC-DC-92-001 — form loads [LOAD] › mở form Chi tiết mã kiện [LOAD] (7.0s)
+  -  532 [e2e] › e2e\output-order-pack-products-edit-order-pack-product\output-order-pack-products-edit-order-pack-product.e2e.spec.ts:94:9 › TC-DC-92-002 — form validation blocks write [VALIDATION] › validation: Chi tiết mã kiện thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 531 [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:174:7 › TC-DC-88-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOddPickOrders [FLOW] (3.4s)
+  ok 534 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:26:7 › TC-DC-39-001 — Index loads [LOAD] › LOAD /OutputOrder2Sakuras [LOAD] (1.5s)
+  -  533 [e2e] › e2e\output-order-pack-products-edit-order-pack-product\output-order-pack-products-edit-order-pack-product.e2e.spec.ts:131:7 › TC-DC-92-003 — save for real [FLOW] › lưu Chi tiết mã kiện thật [FLOW]
+  ok 535 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:43:7 › TC-DC-39-002 — Search / client guard [FLOW] › FLOW Search `/OutputOrder2Sakuras/Search` [FLOW] (2.0s)
+  ok 536 [e2e] › e2e\output-order-pack-products-edit-order-pack-product\output-order-pack-products-edit-order-pack-product.e2e.spec.ts:159:7 › TC-DC-92-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.3s)
+  ok 537 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:62:7 › TC-DC-39-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputOrder2Sakuras [AUTH] (1.7s)
+  ok 539 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:75:7 › TC-DC-39-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.5s)
+  x  520 [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:127:7 › TC-DC-91-003 — save for real [FLOW] › lưu Tạo mới thông tin kiện thật [FLOW] (32.5s)
+  ok 540 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:92:7 › TC-DC-39-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.0s)
+  ok 538 [e2e] › e2e\output-order-pack-products-edit-order-pack-product\output-order-pack-products-edit-order-pack-product.e2e.spec.ts:182:7 › TC-DC-92-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrderPackProducts [FLOW] (5.1s)
+  -  541 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:122:7 › TC-DC-39-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 542 [e2e] › e2e\output-order2-sakuras-edit\output-order2-sakuras-edit.e2e.spec.ts:32:7 › TC-DC-90-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất [LOAD] (2.1s)
+  ok 543 [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:154:7 › TC-DC-91-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.6s)
+  ok 544 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:152:7 › TC-DC-39-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.8s)
+  -  545 [e2e] › e2e\output-order2-sakuras-edit\output-order2-sakuras-edit.e2e.spec.ts:94:9 › TC-DC-90-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  548 [e2e] › e2e\output-order2-sakuras-edit\output-order2-sakuras-edit.e2e.spec.ts:131:7 › TC-DC-90-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất thật [FLOW]
+  -  547 [e2e] › e2e\output-order2-sakuras\output-order2-sakuras.e2e.spec.ts:177:7 › TC-DC-39-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 546 [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:174:7 › TC-DC-91-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrderPackProducts [FLOW] (5.0s)
+  ok 549 [e2e] › e2e\output-order2-sakuras-edit\output-order2-sakuras-edit.e2e.spec.ts:159:7 › TC-DC-90-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.8s)
+  ok 550 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:26:7 › TC-DC-03-001 — Index loads [LOAD] › LOAD /OutputOrders [LOAD] (3.4s)
+  ok 552 [e2e] › e2e\output-order2-sakuras-edit\output-order2-sakuras-edit.e2e.spec.ts:182:7 › TC-DC-90-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrder2Sakuras [FLOW] (2.4s)
+  ok 551 [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:30:7 › TC-DC-94-001 — form loads [LOAD] › mở form Tạo phiếu xuất kho [LOAD] (2.7s)
+  ok 554 [e2e] › e2e\output-orders-edit\output-orders-edit.e2e.spec.ts:32:7 › TC-DC-96-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kho [LOAD] (1.7s)
+  ok 555 [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:91:9 › TC-DC-94-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất kho thiếu dữ liệu / chặn ghi [VALIDATION] (3.0s)
+  ok 553 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:43:7 › TC-DC-03-002 — Search / client guard [FLOW] › FLOW Search `/OutputOrders/Search` [FLOW] (3.6s)
+  -  556 [e2e] › e2e\output-orders-edit\output-orders-edit.e2e.spec.ts:94:9 › TC-DC-96-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  559 [e2e] › e2e\output-orders-edit\output-orders-edit.e2e.spec.ts:131:7 › TC-DC-96-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kho thật [FLOW]
+  ok 558 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:62:7 › TC-DC-03-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputOrders [AUTH] (2.8s)
+  x  529 [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:127:7 › TC-DC-93-003 — save for real [FLOW] › lưu Tạo mới thông tin kiện thật [FLOW] (33.9s)
+  ok 560 [e2e] › e2e\output-orders-edit\output-orders-edit.e2e.spec.ts:159:7 › TC-DC-96-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.6s)
+  ok 561 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:75:7 › TC-DC-03-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.3s)
+  ok 563 [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:154:7 › TC-DC-93-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 562 [e2e] › e2e\output-orders-edit\output-orders-edit.e2e.spec.ts:182:7 › TC-DC-96-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrders [FLOW] (2.9s)
+  ok 566 [e2e] › e2e\output-orders-edit-ver2\output-orders-edit-ver2.e2e.spec.ts:32:7 › TC-DC-95-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kho [LOAD] (1.8s)
+  ok 564 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:92:7 › TC-DC-03-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.7s)
+  -  567 [e2e] › e2e\output-orders-edit-ver2\output-orders-edit-ver2.e2e.spec.ts:94:9 › TC-DC-95-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 565 [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:174:7 › TC-DC-93-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrderPackProducts [FLOW] (4.8s)
+  -  570 [e2e] › e2e\output-transfers-detail\output-transfers-detail.e2e.spec.ts:34:7 › TC-DC-113-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu xuất chuyển kho [LOAD]
+  -  569 [e2e] › e2e\output-orders-edit-ver2\output-orders-edit-ver2.e2e.spec.ts:131:7 › TC-DC-95-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kho thật [FLOW]
+  -  571 [e2e] › e2e\output-transfers-detail\output-transfers-detail.e2e.spec.ts:67:7 › TC-DC-113-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE]
+  -  573 [e2e] › e2e\output-transfers-detail\output-transfers-detail.e2e.spec.ts:86:7 › TC-DC-113-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -  574 [e2e] › e2e\output-transfers-detail\output-transfers-detail.e2e.spec.ts:104:7 › TC-DC-113-004 — list href [FLOW] › quay về danh sách /OutputTransfers [FLOW]
+  -  568 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:122:7 › TC-DC-03-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 572 [e2e] › e2e\output-orders-edit-ver2\output-orders-edit-ver2.e2e.spec.ts:159:7 › TC-DC-95-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 576 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:152:7 › TC-DC-03-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.3s)
+  ok 577 [e2e] › e2e\output-orders-edit-ver2\output-orders-edit-ver2.e2e.spec.ts:182:7 › TC-DC-95-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrders [FLOW] (3.1s)
+  ok 575 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:26:7 › TC-DC-08-001 — Index loads [LOAD] › LOAD /PackageRotationOrders [LOAD] (4.0s)
+  ok 579 [e2e] › e2e\package-rotation-orders-edit\package-rotation-orders-edit.e2e.spec.ts:32:7 › TC-DC-97-001 — form loads [LOAD] › mở form Chi tiết đơn hàng chia theo kiện [LOAD] (2.5s)
+  -  578 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:177:7 › TC-DC-03-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 580 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:43:7 › TC-DC-08-002 — Search / client guard [FLOW] › FLOW Search `/PackageRotationOrders/Search` [FLOW] (5.1s)
+  -  581 [e2e] › e2e\package-rotation-orders-edit\package-rotation-orders-edit.e2e.spec.ts:94:9 › TC-DC-97-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng chia theo kiện thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 582 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:213:7 › TC-DC-03-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.9s)
+  -  584 [e2e] › e2e\package-rotation-orders-edit\package-rotation-orders-edit.e2e.spec.ts:131:7 › TC-DC-97-003 — save for real [FLOW] › lưu Chi tiết đơn hàng chia theo kiện thật [FLOW]
+  ok 586 [e2e] › e2e\package-rotation-orders-edit\package-rotation-orders-edit.e2e.spec.ts:159:7 › TC-DC-97-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  ok 583 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:62:7 › TC-DC-08-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /PackageRotationOrders [AUTH] (5.3s)
+  ok 585 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:226:7 › TC-DC-03-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.6s)
+  ok 587 [e2e] › e2e\package-rotation-orders-edit\package-rotation-orders-edit.e2e.spec.ts:182:7 › TC-DC-97-005 — list href reachable from shell [FLOW] › quay về danh sách /PackageRotationOrders [FLOW] (2.4s)
+  ok 588 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:75:7 › TC-DC-08-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.2s)
+  ok 590 [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:30:7 › TC-DC-98-001 — form loads [LOAD] › mở form Tạo phiếu xuất hàng chia theo kiện [LOAD] (2.6s)
+  -  589 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:254:7 › TC-DC-03-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  x  557 [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:127:7 › TC-DC-94-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho thật [FLOW] (33.3s)
+  ok 591 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:92:7 › TC-DC-08-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.7s)
+  ok 592 [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:91:9 › TC-DC-98-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu xuất hàng chia theo kiện thiếu dữ liệu / chặn ghi [VALIDATION] (2.5s)
+  -  593 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:300:7 › TC-DC-03-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 596 [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:154:7 › TC-DC-94-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (3.1s)
+  -  594 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:122:7 › TC-DC-08-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 597 [e2e] › e2e\output-orders\output-orders.e2e.spec.ts:335:7 › TC-DC-03-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.9s)
+  -  599 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:152:7 › TC-DC-08-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok 598 [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:174:7 › TC-DC-94-005 — list href reachable from shell [FLOW] › quay về danh sách /OutputOrders [FLOW] (3.6s)
+  ok 600 [e2e] › e2e\package-rotation-output-orders-edit\package-rotation-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-99-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất đơn hàng chia theo kiện [LOAD] (2.4s)
+  ok 602 [e2e] › e2e\products\products.e2e.spec.ts:26:7 › TC-DC-41-001 — Index loads [LOAD] › LOAD /Products [LOAD] (2.7s)
+  -  603 [e2e] › e2e\package-rotation-output-orders-edit\package-rotation-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-99-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất đơn hàng chia theo kiện thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  601 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:177:7 › TC-DC-08-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 604 [e2e] › e2e\products\products.e2e.spec.ts:43:7 › TC-DC-41-002 — Search / client guard [FLOW] › FLOW Search `/Products/Search` [FLOW] (2.8s)
+  -  605 [e2e] › e2e\package-rotation-output-orders-edit\package-rotation-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-99-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất đơn hàng chia theo kiện thật [FLOW]
+  ok 608 [e2e] › e2e\package-rotation-output-orders-edit\package-rotation-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-99-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 607 [e2e] › e2e\products\products.e2e.spec.ts:62:7 › TC-DC-41-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /Products [AUTH] (2.1s)
+  ok 610 [e2e] › e2e\products\products.e2e.spec.ts:75:7 › TC-DC-41-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.5s)
+  ok 606 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:213:7 › TC-DC-08-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (4.3s)
+  ok 609 [e2e] › e2e\package-rotation-output-orders-edit\package-rotation-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-99-005 — list href reachable from shell [FLOW] › quay về danh sách /PackageRotationOutputOrders [FLOW] (2.1s)
+  -  611 [e2e] › e2e\products\products.e2e.spec.ts:92:7 › TC-DC-41-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 613 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:26:7 › TC-DC-42-001 — Index loads [LOAD] › LOAD /SakuraBufferRotationOrders [LOAD] (2.1s)
+  -  614 [e2e] › e2e\products\products.e2e.spec.ts:122:7 › TC-DC-41-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 612 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:226:7 › TC-DC-08-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.9s)
+  -  616 [e2e] › e2e\products\products.e2e.spec.ts:152:7 › TC-DC-41-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  ok 615 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:43:7 › TC-DC-42-002 — Search / client guard [FLOW] › FLOW Search `/SakuraBufferRotationOrders/Search` [FLOW] (2.6s)
+  -  618 [e2e] › e2e\products\products.e2e.spec.ts:177:7 › TC-DC-41-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 619 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:62:7 › TC-DC-42-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /SakuraBufferRotationOrders [AUTH] (1.9s)
+  ok 620 [e2e] › e2e\sakura-buffer-rotation-orders-edit\sakura-buffer-rotation-orders-edit.e2e.spec.ts:32:7 › TC-DC-100-001 — form loads [LOAD] › mở form Chi tiết đơn hàng chia từ kho Sakura [LOAD] (2.0s)
+  -  617 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:254:7 › TC-DC-08-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  ok 621 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:75:7 › TC-DC-42-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.0s)
+  -  622 [e2e] › e2e\sakura-buffer-rotation-orders-edit\sakura-buffer-rotation-orders-edit.e2e.spec.ts:94:9 › TC-DC-100-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng chia từ kho Sakura thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  625 [e2e] › e2e\sakura-buffer-rotation-orders-edit\sakura-buffer-rotation-orders-edit.e2e.spec.ts:131:7 › TC-DC-100-003 — save for real [FLOW] › lưu Chi tiết đơn hàng chia từ kho Sakura thật [FLOW]
+  -  623 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:300:7 › TC-DC-08-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 624 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:92:7 › TC-DC-42-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (2.2s)
+  ok 626 [e2e] › e2e\sakura-buffer-rotation-orders-edit\sakura-buffer-rotation-orders-edit.e2e.spec.ts:159:7 › TC-DC-100-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  -  628 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:122:7 › TC-DC-42-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 627 [e2e] › e2e\package-rotation-orders\package-rotation-orders.e2e.spec.ts:335:7 › TC-DC-08-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.2s)
+  ok 629 [e2e] › e2e\sakura-buffer-rotation-orders-edit\sakura-buffer-rotation-orders-edit.e2e.spec.ts:182:7 › TC-DC-100-005 — list href reachable from shell [FLOW] › quay về danh sách /SakuraBufferRotationOrders [FLOW] (2.9s)
+  -  630 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:152:7 › TC-DC-42-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  x  595 [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:127:7 › TC-DC-98-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng chia theo kiện thật [FLOW] (32.7s)
+  ok 632 [e2e] › e2e\sakura-output-orders-edit\sakura-output-orders-edit.e2e.spec.ts:32:7 › TC-DC-101-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất [LOAD] (1.7s)
+  -  633 [e2e] › e2e\sakura-buffer-rotation-orders\sakura-buffer-rotation-orders.e2e.spec.ts:177:7 › TC-DC-42-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  634 [e2e] › e2e\sakura-output-orders-edit\sakura-output-orders-edit.e2e.spec.ts:94:9 › TC-DC-101-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  637 [e2e] › e2e\sakura-output-orders-edit\sakura-output-orders-edit.e2e.spec.ts:131:7 › TC-DC-101-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất thật [FLOW]
+  ok 635 [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:154:7 › TC-DC-98-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.7s)
+  ok 636 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:26:7 › TC-DC-44-001 — Index loads [LOAD] › LOAD /SampleInputOrders [LOAD] (2.0s)
+  ok 638 [e2e] › e2e\sakura-output-orders-edit\sakura-output-orders-edit.e2e.spec.ts:159:7 › TC-DC-101-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.0s)
+  ok 640 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:43:7 › TC-DC-44-002 — Search / client guard [FLOW] › FLOW Search `/SampleInputOrders/Search` [FLOW] (2.1s)
+  ok 639 [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:174:7 › TC-DC-98-005 — list href reachable from shell [FLOW] › quay về danh sách /PackageRotationOutputOrders [FLOW] (2.5s)
+  ok 642 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:62:7 › TC-DC-44-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /SampleInputOrders [AUTH] (1.8s)
+  ok 643 [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:30:7 › TC-DC-102-001 — form loads [LOAD] › mở form Tạo phiếu nhập kho hàng sample [LOAD] (2.3s)
+  ok 644 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:75:7 › TC-DC-44-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.1s)
+  ok 645 [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:91:9 › TC-DC-102-002 — form validation blocks write [VALIDATION] › validation: Tạo phiếu nhập kho hàng sample thiếu dữ liệu / chặn ghi [VALIDATION] (2.5s)
+  -  646 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:92:7 › TC-DC-44-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -  648 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:122:7 › TC-DC-44-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 649 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:152:7 › TC-DC-44-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.6s)
+  -  650 [e2e] › e2e\sample-input-orders\sample-input-orders.e2e.spec.ts:177:7 › TC-DC-44-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 641 [e2e] › e2e\sakura-output-orders-edit\sakura-output-orders-edit.e2e.spec.ts:182:7 › TC-DC-101-005 — list href reachable from shell [FLOW] › quay về danh sách /SakuraOutputOrders [FLOW] (12.3s)
+  ok 651 [e2e] › e2e\sample-input-orders-edit\sample-input-orders-edit.e2e.spec.ts:32:7 › TC-DC-103-001 — form loads [LOAD] › mở form Chi tiết phiếu nhập kho [LOAD] (1.9s)
+  ok 652 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:26:7 › TC-DC-45-001 — Index loads [LOAD] › LOAD /SampleOutputOrders [LOAD] (1.7s)
+  ok 631 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:26:7 › TC-DC-43-001 — Index loads [LOAD] › LOAD /SakuraOutputOrders [LOAD] (20.9s)
+  -  653 [e2e] › e2e\sample-input-orders-edit\sample-input-orders-edit.e2e.spec.ts:94:9 › TC-DC-103-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu nhập kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 655 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:43:7 › TC-DC-43-002 — Search / client guard [FLOW] › FLOW Search `/SakuraOutputOrders/Search` [FLOW] (2.1s)
+  ok 654 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:43:7 › TC-DC-45-002 — Search / client guard [FLOW] › FLOW Search `/SampleOutputOrders/Search` [FLOW] (3.0s)
+  -  656 [e2e] › e2e\sample-input-orders-edit\sample-input-orders-edit.e2e.spec.ts:131:7 › TC-DC-103-003 — save for real [FLOW] › lưu Chi tiết phiếu nhập kho thật [FLOW]
+  ok 657 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:62:7 › TC-DC-43-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /SakuraOutputOrders [AUTH] (4.4s)
+  ok 659 [e2e] › e2e\sample-input-orders-edit\sample-input-orders-edit.e2e.spec.ts:159:7 › TC-DC-103-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (3.4s)
+  ok 660 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:75:7 › TC-DC-43-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.4s)
+  ok 661 [e2e] › e2e\sample-input-orders-edit\sample-input-orders-edit.e2e.spec.ts:182:7 › TC-DC-103-005 — list href reachable from shell [FLOW] › quay về danh sách /SampleInputOrders [FLOW] (4.2s)
+  -  663 [e2e] › e2e\sample-output-orders-edit\sample-output-orders-edit.e2e.spec.ts:34:7 › TC-DC-104-001 — form loads [LOAD] › mở form Chi tiết phiếu xuất kho [LOAD]
+  ok 662 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:92:7 › TC-DC-43-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.5s)
+  -  664 [e2e] › e2e\sample-output-orders-edit\sample-output-orders-edit.e2e.spec.ts:96:9 › TC-DC-104-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu xuất kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 658 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:62:7 › TC-DC-45-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /SampleOutputOrders [AUTH] (10.2s)
+  -  666 [e2e] › e2e\sample-output-orders-edit\sample-output-orders-edit.e2e.spec.ts:133:7 › TC-DC-104-003 — save for real [FLOW] › lưu Chi tiết phiếu xuất kho thật [FLOW]
+  -  668 [e2e] › e2e\sample-output-orders-edit\sample-output-orders-edit.e2e.spec.ts:161:7 › TC-DC-104-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH]
+  -  669 [e2e] › e2e\sample-output-orders-edit\sample-output-orders-edit.e2e.spec.ts:184:7 › TC-DC-104-005 — list href reachable from shell [FLOW] › quay về danh sách /SampleOutputOrders [FLOW]
+  -  665 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:122:7 › TC-DC-43-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 667 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:75:7 › TC-DC-45-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  ok 671 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:152:7 › TC-DC-43-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.7s)
+  -  672 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:92:7 › TC-DC-45-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 670 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:26:7 › TC-DC-09-001 — Index loads [LOAD] › LOAD /ShippingStocks [LOAD] (3.5s)
+  -  673 [e2e] › e2e\sakura-output-orders\sakura-output-orders.e2e.spec.ts:177:7 › TC-DC-43-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  674 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:122:7 › TC-DC-45-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 676 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:26:7 › TC-DC-46-001 — Index loads [LOAD] › LOAD /StoreChangeDCs [LOAD] (1.9s)
+  ok 677 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:152:7 › TC-DC-45-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.9s)
+  ok 678 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:43:7 › TC-DC-46-002 — Search / client guard [FLOW] › FLOW Search `/StoreChangeDCs/Search` [FLOW] (2.0s)
+  ok 675 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:43:7 › TC-DC-09-002 — Search / client guard [FLOW] › FLOW Search `/ShippingStocks/Search` [FLOW] (4.3s)
+  -  679 [e2e] › e2e\sample-output-orders\sample-output-orders.e2e.spec.ts:177:7 › TC-DC-45-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 680 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:62:7 › TC-DC-46-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /StoreChangeDCs [AUTH] (1.9s)
+  ok 681 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:62:7 › TC-DC-09-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /ShippingStocks [AUTH] (2.3s)
+  ok 682 [e2e] › e2e\store-change-d-cs-edit\store-change-d-cs-edit.e2e.spec.ts:32:7 › TC-DC-105-001 — form loads [LOAD] › mở form Chi tiết phiếu chuyển kho giữa các DC [LOAD] (3.1s)
+  ok 683 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:75:7 › TC-DC-46-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.7s)
+  x  647 [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:127:7 › TC-DC-102-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho hàng sample thật [FLOW] (33.3s)
+  ok 686 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:92:7 › TC-DC-46-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.8s)
+  -  685 [e2e] › e2e\store-change-d-cs-edit\store-change-d-cs-edit.e2e.spec.ts:94:9 › TC-DC-105-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu chuyển kho giữa các DC thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 684 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:75:7 › TC-DC-09-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.5s)
+  ok 687 [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:154:7 › TC-DC-102-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.1s)
+  -  688 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:122:7 › TC-DC-46-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  689 [e2e] › e2e\store-change-d-cs-edit\store-change-d-cs-edit.e2e.spec.ts:131:7 › TC-DC-105-003 — save for real [FLOW] › lưu Chi tiết phiếu chuyển kho giữa các DC thật [FLOW]
+  ok 692 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:152:7 › TC-DC-46-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.5s)
+  ok 693 [e2e] › e2e\store-change-d-cs-edit\store-change-d-cs-edit.e2e.spec.ts:159:7 › TC-DC-105-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (939ms)
+  ok 690 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:92:7 › TC-DC-09-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.3s)
+  ok 691 [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:174:7 › TC-DC-102-005 — list href reachable from shell [FLOW] › quay về danh sách /SampleInputOrders [FLOW] (3.4s)
+  -  694 [e2e] › e2e\store-change-d-cs\store-change-d-cs.e2e.spec.ts:177:7 › TC-DC-46-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 697 [e2e] › e2e\store-change-d-cs-internal-detail-input-transfer\store-change-d-cs-internal-detail-input-transfer.e2e.spec.ts:32:7 › TC-DC-114-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu nhập chuyển kho [LOAD] (1.6s)
+  ok 695 [e2e] › e2e\store-change-d-cs-edit\store-change-d-cs-edit.e2e.spec.ts:182:7 › TC-DC-105-005 — list href reachable from shell [FLOW] › quay về danh sách /StoreChangeDCs [FLOW] (3.0s)
+  ok 698 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:26:7 › TC-DC-47-001 — Index loads [LOAD] › LOAD /StoreGroupDCs [LOAD] (1.7s)
+  ok 699 [e2e] › e2e\store-change-d-cs-internal-detail-input-transfer\store-change-d-cs-internal-detail-input-transfer.e2e.spec.ts:65:7 › TC-DC-114-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (1.7s)
+  -  696 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:122:7 › TC-DC-09-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -  701 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:40:7 › TC-DC-47-002 — Search / client guard [FLOW] › FLOW Search `/StoreGroupDCs/Search` [FLOW]
+  ok 702 [e2e] › e2e\store-change-d-cs-internal-detail-input-transfer\store-change-d-cs-internal-detail-input-transfer.e2e.spec.ts:84:7 › TC-DC-114-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.4s)
+  ok 700 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:26:7 › TC-DC-48-001 — Index loads [LOAD] › LOAD /StoreGroups [LOAD] (3.2s)
+  ok 704 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:51:7 › TC-DC-47-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /StoreGroupDCs [AUTH] (2.1s)
+  ok 705 [e2e] › e2e\store-change-d-cs-internal-detail-input-transfer\store-change-d-cs-internal-detail-input-transfer.e2e.spec.ts:102:7 › TC-DC-114-004 — list href [FLOW] › quay về danh sách /StoreChangeDCs [FLOW] (2.8s)
+  ok 703 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:152:7 › TC-DC-09-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (4.7s)
+  -  706 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:40:7 › TC-DC-48-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  ok 707 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:64:7 › TC-DC-47-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.7s)
+  ok 708 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:26:7 › TC-DC-49-001 — Index loads [LOAD] › LOAD /SuggestReturnDCOnlines [LOAD] (1.6s)
+  -  711 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:77:7 › TC-DC-47-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  ok 710 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:51:7 › TC-DC-48-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /StoreGroups [AUTH] (2.4s)
+  ok 712 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:43:7 › TC-DC-49-002 — Search / client guard [FLOW] › FLOW Search `/SuggestReturnDCOnlines/Search` [FLOW] (1.8s)
+  -  709 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:177:7 › TC-DC-09-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  713 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:107:7 › TC-DC-47-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 715 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:62:7 › TC-DC-49-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /SuggestReturnDCOnlines [AUTH] (2.1s)
+  ok 714 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:64:7 › TC-DC-48-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.8s)
+  ok 718 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:75:7 › TC-DC-49-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (1.4s)
+  ok 717 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:137:7 › TC-DC-47-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (2.1s)
+  ok 716 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:213:7 › TC-DC-09-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.5s)
+  ok 720 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:92:7 › TC-DC-49-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.7s)
+  -  719 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:77:7 › TC-DC-48-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -  721 [e2e] › e2e\store-group-d-cs\store-group-d-cs.e2e.spec.ts:162:7 › TC-DC-47-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  723 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:122:7 › TC-DC-49-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 725 [e2e] › e2e\suggest-return-dc-onlines-edit\suggest-return-dc-onlines-edit.e2e.spec.ts:32:7 › TC-DC-106-001 — form loads [LOAD] › mở form Chi tiết đề nghị nhập trả [LOAD] (1.9s)
+  ok 722 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:226:7 › TC-DC-09-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW] (3.9s)
+  -  724 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:107:7 › TC-DC-48-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok 726 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:152:7 › TC-DC-49-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (1.8s)
+  -  727 [e2e] › e2e\suggest-return-dc-onlines-edit\suggest-return-dc-onlines-edit.e2e.spec.ts:94:9 › TC-DC-106-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đề nghị nhập trả thiếu dữ liệu / chặn ghi [VALIDATION]
+  -  731 [e2e] › e2e\suggest-return-dc-onlines-edit\suggest-return-dc-onlines-edit.e2e.spec.ts:131:7 › TC-DC-106-003 — save for real [FLOW] › lưu Chi tiết đề nghị nhập trả thật [FLOW]
+  -  728 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:254:7 › TC-DC-09-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  ok 729 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:137:7 › TC-DC-48-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (5.1s)
+  ok 732 [e2e] › e2e\suggest-return-dc-onlines-edit\suggest-return-dc-onlines-edit.e2e.spec.ts:159:7 › TC-DC-106-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (4.4s)
+  -  734 [e2e] › e2e\store-groups\store-groups.e2e.spec.ts:162:7 › TC-DC-48-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  -  733 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:300:7 › TC-DC-09-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 735 [e2e] › e2e\suggest-return-dc-onlines-edit\suggest-return-dc-onlines-edit.e2e.spec.ts:182:7 › TC-DC-106-005 — list href reachable from shell [FLOW] › quay về danh sách /SuggestReturnDCOnlines [FLOW] (2.9s)
+  ok 736 [e2e] › e2e\x-input-transfers-detail\x-input-transfers-detail.e2e.spec.ts:32:7 › TC-DC-115-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu nhập chuyển kho [LOAD] (3.1s)
+  ok 737 [e2e] › e2e\shipping-stocks\shipping-stocks.e2e.spec.ts:335:7 › TC-DC-09-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (3.5s)
+  ok 738 [e2e] › e2e\x-output-transfers-detail\x-output-transfers-detail.e2e.spec.ts:32:7 › TC-DC-116-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu xuất chuyển kho [LOAD] (1.8s)
+  ok 739 [e2e] › e2e\x-input-transfers-detail\x-input-transfers-detail.e2e.spec.ts:65:7 › TC-DC-115-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (1.2s)
+  ok 742 [e2e] › e2e\x-input-transfers-detail\x-input-transfers-detail.e2e.spec.ts:84:7 › TC-DC-115-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.6s)
+  ok 741 [e2e] › e2e\x-output-transfers-detail\x-output-transfers-detail.e2e.spec.ts:65:7 › TC-DC-116-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (2.1s)
+  ok 740 [e2e] › e2e\x-store-changes-detail\x-store-changes-detail.e2e.spec.ts:32:7 › TC-DC-117-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu chuyển kho [LOAD] (2.7s)
+  ok 743 [e2e] › e2e\x-input-transfers-detail\x-input-transfers-detail.e2e.spec.ts:102:7 › TC-DC-115-004 — list href [FLOW] › quay về danh sách /XInputTransfers [FLOW] (1.4s)
+  ok 744 [e2e] › e2e\x-output-transfers-detail\x-output-transfers-detail.e2e.spec.ts:84:7 › TC-DC-116-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.5s)
+  ok 745 [e2e] › e2e\x-store-changes-detail\x-store-changes-detail.e2e.spec.ts:65:7 › TC-DC-117-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (1.9s)
+  ok 747 [e2e] › e2e\x-output-transfers-detail\x-output-transfers-detail.e2e.spec.ts:102:7 › TC-DC-116-004 — list href [FLOW] › quay về danh sách /XOutputTransfers [FLOW] (2.1s)
+  ok 746 [e2e] › e2e\x-store-changes-detail-shipping-stock-logistic-to-dc\x-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:32:7 › TC-DC-118-001 — detail loads [LOAD] › mở chi tiết Chi tiết phiếu chuyển kho đi đường về đền DC [LOAD] (2.6s)
+  ok 748 [e2e] › e2e\x-store-changes-detail\x-store-changes-detail.e2e.spec.ts:84:7 › TC-DC-117-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (2.9s)
+  ok 750 [e2e] › e2e\x-store-changes-detail-shipping-stock-logistic-to-dc\x-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:65:7 › TC-DC-118-002 — unknown id shell [STATE] › id không tồn tại / unknown vẫn render shell [STATE] (2.4s)
+  ok 749 [e2e] › e2e\x-store-changes-edit-opening\x-store-changes-edit-opening.e2e.spec.ts:32:7 › TC-DC-107-001 — form loads [LOAD] › mở form Chi tiết phiếu chuyển kho [LOAD] (3.2s)
+  ok 751 [e2e] › e2e\x-store-changes-detail\x-store-changes-detail.e2e.spec.ts:102:7 › TC-DC-117-004 — list href [FLOW] › quay về danh sách /XStoreChanges [FLOW] (1.8s)
+  ok 752 [e2e] › e2e\x-store-changes-detail-shipping-stock-logistic-to-dc\x-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:84:7 › TC-DC-118-003 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.8s)
+  -  753 [e2e] › e2e\x-store-changes-edit-opening\x-store-changes-edit-opening.e2e.spec.ts:94:9 › TC-DC-107-002 — form validation blocks write [VALIDATION] › validation: Chi tiết phiếu chuyển kho thiếu dữ liệu / chặn ghi [VALIDATION]
+  ok 754 [e2e] › e2e\x-store-changes-detail-shipping-stock-logistic-to-dc\x-store-changes-detail-shipping-stock-logistic-to-dc.e2e.spec.ts:102:7 › TC-DC-118-004 — list href [FLOW] › quay về danh sách /XStoreChanges [FLOW] (1.8s)
+  -  755 [e2e] › e2e\x-store-changes-edit-opening\x-store-changes-edit-opening.e2e.spec.ts:131:7 › TC-DC-107-003 — save for real [FLOW] › lưu Chi tiết phiếu chuyển kho thật [FLOW]
+  ok 756 [e2e] › e2e\x-store-changes-edit-opening\x-store-changes-edit-opening.e2e.spec.ts:159:7 › TC-DC-107-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (1.2s)
+  ok 757 [e2e] › e2e\x-store-changes-edit-opening\x-store-changes-edit-opening.e2e.spec.ts:182:7 › TC-DC-107-005 — list href reachable from shell [FLOW] › quay về danh sách /XStoreChanges [FLOW] (1.9s)
+  x  730 [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:177:7 › TC-DC-49-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW] (1.7m)
+
+
+  1) [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:193:7 › TC-DC-11-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] 
+
+    Error: grid có cấu trúc sau load/search
+
+    expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      209 |     }
+      210 |     const headers2 = await mod.ui.grid().locator('thead th, thead td, tbody tr').count();
+    > 211 |     expect(headers2, 'grid có cấu trúc sau load/search').toBeGreaterThan(0);
+          |                                                          ^
+      212 |   });
+      213 | });
+      214 |
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\buffer-orders\buffer-orders.e2e.spec.ts:211:58
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-buffer-orders-buffer-o-ca293-breadcrumb-grid-shell-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-buffer-orders-buffer-o-ca293-breadcrumb-grid-shell-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-buffer-orders-buffer-o-ca293-breadcrumb-grid-shell-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-buffer-orders-buffer-o-ca293-breadcrumb-grid-shell-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-buffer-orders-buffer-o-ca293-breadcrumb-grid-shell-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:127:7 › TC-DC-53-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-buffer-package-input-o-48637-o-phiếu-nhập-kho-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-buffer-package-input-o-48637-o-phiếu-nhập-kho-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-buffer-package-input-o-48637-o-phiếu-nhập-kho-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-buffer-package-input-o-48637-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-buffer-package-input-o-48637-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:94:9 › TC-DC-55-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng luân chuyển nội bộ thiếu dữ liệu / chặn ghi [VALIDATION] 
+
+    Error: chặn ghi hoặc hiện lỗi client
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      121 |       const fielded = await fieldErr.first().isVisible().catch(() => false);
+      122 |       // Place-parity: không ghi; message có thể khác nhau theo state form
+    > 123 |       expect(warned || fielded || guard.blocked.length === 0, 'chặn ghi hoặc hiện lỗi client').toBeTruthy();
+          |                                                                                                ^
+      124 |       await expect(mod.ui.confirmBox()).toHaveCount(0);
+      125 |       expect(guard.blocked, 'không được gửi request ghi').toEqual([]);
+      126 |     });
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:123:96
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-buffer-rotation-orders-0fcbc-ữ-liệu-chặn-ghi-VALIDATION--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-buffer-rotation-orders-0fcbc-ữ-liệu-chặn-ghi-VALIDATION--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-buffer-rotation-orders-0fcbc-ữ-liệu-chặn-ghi-VALIDATION--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-buffer-rotation-orders-0fcbc-ữ-liệu-chặn-ghi-VALIDATION--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-buffer-rotation-orders-0fcbc-ữ-liệu-chặn-ghi-VALIDATION--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:127:7 › TC-DC-56-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-input-o-b1f12-o-phiếu-nhập-kho-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-input-o-b1f12-o-phiếu-nhập-kho-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-dc-goods-store-input-o-b1f12-o-phiếu-nhập-kho-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-input-o-b1f12-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-dc-goods-store-input-o-b1f12-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:127:7 › TC-DC-58-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng DC cho đơn hàng thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-output--f1fa2--DC-cho-đơn-hàng-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-output--f1fa2--DC-cho-đơn-hàng-thật-FLOW--e2e\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-output--f1fa2--DC-cho-đơn-hàng-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-dc-goods-store-output--f1fa2--DC-cho-đơn-hàng-thật-FLOW--e2e\error-context.md
+
+    attachment #12: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-dc-goods-store-output--f1fa2--DC-cho-đơn-hàng-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-dc-goods-store-output--f1fa2--DC-cho-đơn-hàng-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:127:7 › TC-DC-64-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho DC thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-dc-output-orders-creat-739a0-hiếu-xuất-kho-DC-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-dc-output-orders-creat-739a0-hiếu-xuất-kho-DC-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-dc-output-orders-creat-739a0-hiếu-xuất-kho-DC-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-dc-output-orders-creat-739a0-hiếu-xuất-kho-DC-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-dc-output-orders-creat-739a0-hiếu-xuất-kho-DC-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:127:7 › TC-DC-71-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-fashion-input-orders-c-a0dd4-o-phiếu-nhập-kho-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-fashion-input-orders-c-a0dd4-o-phiếu-nhập-kho-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-fashion-input-orders-c-a0dd4-o-phiếu-nhập-kho-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-fashion-input-orders-c-a0dd4-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-fashion-input-orders-c-a0dd4-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:127:7 › TC-DC-73-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng thời trang thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-fashion-output-orders--f2fa0--hàng-thời-trang-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-fashion-output-orders--f2fa0--hàng-thời-trang-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-fashion-output-orders--f2fa0--hàng-thời-trang-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-fashion-output-orders--f2fa0--hàng-thời-trang-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-fashion-output-orders--f2fa0--hàng-thời-trang-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:127:7 › TC-DC-78-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\input-orders-create\input-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-create-in-65cfd-o-phiếu-nhập-kho-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-create-in-65cfd-o-phiếu-nhập-kho-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-input-orders-create-in-65cfd-o-phiếu-nhập-kho-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-input-orders-create-in-65cfd-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-input-orders-create-in-65cfd-o-phiếu-nhập-kho-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:127:7 › TC-DC-80-003 — save for real [FLOW] › lưu Tạo phiếu vận chuyển nội bộ thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-internal-transports-cr-1676e-ận-chuyển-nội-bộ-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-internal-transports-cr-1676e-ận-chuyển-nội-bộ-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-internal-transports-cr-1676e-ận-chuyển-nội-bộ-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-internal-transports-cr-1676e-ận-chuyển-nội-bộ-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-internal-transports-cr-1676e-ận-chuyển-nội-bộ-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:127:7 › TC-DC-81-003 — save for real [FLOW] › lưu Tạo phiếu xuất xử lý nhập sai DC thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-iven-output-orders-cre-72d6c-ử-lý-nhập-sai-DC-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-iven-output-orders-cre-72d6c-ử-lý-nhập-sai-DC-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-iven-output-orders-cre-72d6c-ử-lý-nhập-sai-DC-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-iven-output-orders-cre-72d6c-ử-lý-nhập-sai-DC-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-iven-output-orders-cre-72d6c-ử-lý-nhập-sai-DC-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:127:7 › TC-DC-86-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho chia khai trương thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-grand-orders-cr-356f6-chia-khai-trương-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-grand-orders-cr-356f6-chia-khai-trương-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-grand-orders-cr-356f6-chia-khai-trương-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-grand-orders-cr-356f6-chia-khai-trương-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-grand-orders-cr-356f6-chia-khai-trương-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:127:7 › TC-DC-88-003 — save for real [FLOW] › lưu Tạo phiếu xuất DC cho đơn hàng pick lẻ DC về cửa hàng thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-odd-pick-orders-3689e-ẻ-DC-về-cửa-hàng-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-odd-pick-orders-3689e-ẻ-DC-về-cửa-hàng-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-odd-pick-orders-3689e-ẻ-DC-về-cửa-hàng-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-odd-pick-orders-3689e-ẻ-DC-về-cửa-hàng-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-odd-pick-orders-3689e-ẻ-DC-về-cửa-hàng-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:127:7 › TC-DC-91-003 — save for real [FLOW] › lưu Tạo mới thông tin kiện thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-order-pack-prod-0938f-i-thông-tin-kiện-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-order-pack-prod-0938f-i-thông-tin-kiện-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-order-pack-prod-0938f-i-thông-tin-kiện-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-order-pack-prod-0938f-i-thông-tin-kiện-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-order-pack-prod-0938f-i-thông-tin-kiện-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:127:7 › TC-DC-93-003 — save for real [FLOW] › lưu Tạo mới thông tin kiện thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-order-pack-prod-cc19e-i-thông-tin-kiện-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-order-pack-prod-cc19e-i-thông-tin-kiện-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-order-pack-prod-cc19e-i-thông-tin-kiện-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-order-pack-prod-cc19e-i-thông-tin-kiện-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-order-pack-prod-cc19e-i-thông-tin-kiện-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:127:7 › TC-DC-94-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-orders-create-v-ad558-o-phiếu-xuất-kho-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-orders-create-v-ad558-o-phiếu-xuất-kho-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-orders-create-v-ad558-o-phiếu-xuất-kho-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-orders-create-v-ad558-o-phiếu-xuất-kho-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-orders-create-v-ad558-o-phiếu-xuất-kho-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:127:7 › TC-DC-98-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng chia theo kiện thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-package-rotation-outpu-58791-g-chia-theo-kiện-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-package-rotation-outpu-58791-g-chia-theo-kiện-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-package-rotation-outpu-58791-g-chia-theo-kiện-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-package-rotation-outpu-58791-g-chia-theo-kiện-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-package-rotation-outpu-58791-g-chia-theo-kiện-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  18) [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:127:7 › TC-DC-102-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho hàng sample thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-sample-input-orders-cr-ef8c7--kho-hàng-sample-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-sample-input-orders-cr-ef8c7--kho-hàng-sample-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-sample-input-orders-cr-ef8c7--kho-hàng-sample-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-sample-input-orders-cr-ef8c7--kho-hàng-sample-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-sample-input-orders-cr-ef8c7--kho-hàng-sample-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19) [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:177:7 › TC-DC-49-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW] 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('a.btn[ng-click*="Search"], a.btn[ng-click*="btnSearch"], button[ng-click*="Search"], button[ng-click*="btnSearch"], #btnSearch, a.btn.cc-btn-color-violet, button.cc-btn-color-violet').filter({ hasText: /Tìm kiếm/i }).filter({ visible: true }).first()
+        - locator resolved to <button type="button" ng-click="PnSearch.btnSearch.OnClick();" class="btn cc-btn-style cc-btn-color-violet margin-left-5 ">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="" id="cover-spin"></div> from <div class="ng-scope" ng-controller="MasterPageController">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="" id="cover-spin"></div> from <div class="ng-scope" ng-controller="MasterPageController">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        181 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <div class="" id="cover-spin"></div> from <div class="ng-scope" ng-controller="MasterPageController">…</div> subtree intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+
+
+       at modules\suggest-return-dc-onlines.module.ts:25
+
+      23 |       .then(() => true)
+      24 |       .catch(() => false);
+    > 25 |     await this.ui.searchButton().click();
+         |                                  ^
+      26 |     const alerted = await alertP;
+      27 |     if (alerted) {
+      28 |       return { response: null, codeStep: null, alerted: true };
+        at SuggestReturnDcOnlinesModule.search (E:\Work\Place_Migrate\cci-dc-web\03_qa\modules\suggest-return-dc-onlines.module.ts:25:34)
+        at E:\Work\Place_Migrate\cci-dc-web\03_qa\e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:188:27
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-suggest-return-dc-onli-631ae--link-dòng-đầu-nếu-có-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-suggest-return-dc-onli-631ae--link-dòng-đầu-nếu-có-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-suggest-return-dc-onli-631ae--link-dòng-đầu-nếu-có-FLOW--e2e\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-suggest-return-dc-onli-631ae--link-dòng-đầu-nếu-có-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-suggest-return-dc-onli-631ae--link-dòng-đầu-nếu-có-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19 failed
+    [e2e] › e2e\buffer-orders\buffer-orders.e2e.spec.ts:193:7 › TC-DC-11-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] 
+    [e2e] › e2e\buffer-package-input-orders-create\buffer-package-input-orders-create.e2e.spec.ts:127:7 › TC-DC-53-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+    [e2e] › e2e\buffer-rotation-orders-edit\buffer-rotation-orders-edit.e2e.spec.ts:94:9 › TC-DC-55-002 — form validation blocks write [VALIDATION] › validation: Chi tiết đơn hàng luân chuyển nội bộ thiếu dữ liệu / chặn ghi [VALIDATION] 
+    [e2e] › e2e\dc-goods-store-input-orders-create\dc-goods-store-input-orders-create.e2e.spec.ts:127:7 › TC-DC-56-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+    [e2e] › e2e\dc-goods-store-output-orders-create\dc-goods-store-output-orders-create.e2e.spec.ts:127:7 › TC-DC-58-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng DC cho đơn hàng thật [FLOW] 
+    [e2e] › e2e\dc-output-orders-create\dc-output-orders-create.e2e.spec.ts:127:7 › TC-DC-64-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho DC thật [FLOW] 
+    [e2e] › e2e\fashion-input-orders-create\fashion-input-orders-create.e2e.spec.ts:127:7 › TC-DC-71-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+    [e2e] › e2e\fashion-output-orders-create-ver2\fashion-output-orders-create-ver2.e2e.spec.ts:127:7 › TC-DC-73-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng thời trang thật [FLOW] 
+    [e2e] › e2e\input-orders-create\input-orders-create.e2e.spec.ts:127:7 › TC-DC-78-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho thật [FLOW] 
+    [e2e] › e2e\internal-transports-create\internal-transports-create.e2e.spec.ts:127:7 › TC-DC-80-003 — save for real [FLOW] › lưu Tạo phiếu vận chuyển nội bộ thật [FLOW] 
+    [e2e] › e2e\iven-output-orders-create\iven-output-orders-create.e2e.spec.ts:127:7 › TC-DC-81-003 — save for real [FLOW] › lưu Tạo phiếu xuất xử lý nhập sai DC thật [FLOW] 
+    [e2e] › e2e\output-grand-orders-create\output-grand-orders-create.e2e.spec.ts:127:7 › TC-DC-86-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho chia khai trương thật [FLOW] 
+    [e2e] › e2e\output-odd-pick-orders-create\output-odd-pick-orders-create.e2e.spec.ts:127:7 › TC-DC-88-003 — save for real [FLOW] › lưu Tạo phiếu xuất DC cho đơn hàng pick lẻ DC về cửa hàng thật [FLOW] 
+    [e2e] › e2e\output-order-pack-products-create\output-order-pack-products-create.e2e.spec.ts:127:7 › TC-DC-91-003 — save for real [FLOW] › lưu Tạo mới thông tin kiện thật [FLOW] 
+    [e2e] › e2e\output-order-pack-products-create-fashion\output-order-pack-products-create-fashion.e2e.spec.ts:127:7 › TC-DC-93-003 — save for real [FLOW] › lưu Tạo mới thông tin kiện thật [FLOW] 
+    [e2e] › e2e\output-orders-create-ver2\output-orders-create-ver2.e2e.spec.ts:127:7 › TC-DC-94-003 — save for real [FLOW] › lưu Tạo phiếu xuất kho thật [FLOW] 
+    [e2e] › e2e\package-rotation-output-orders-create\package-rotation-output-orders-create.e2e.spec.ts:127:7 › TC-DC-98-003 — save for real [FLOW] › lưu Tạo phiếu xuất hàng chia theo kiện thật [FLOW] 
+    [e2e] › e2e\sample-input-orders-create\sample-input-orders-create.e2e.spec.ts:127:7 › TC-DC-102-003 — save for real [FLOW] › lưu Tạo phiếu nhập kho hàng sample thật [FLOW] 
+    [e2e] › e2e\suggest-return-dc-onlines\suggest-return-dc-onlines.e2e.spec.ts:177:7 › TC-DC-49-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW] 
+  253 skipped
+  485 passed (10.8m)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-dc-web\03_qa\reports\details\test-mssql-report-20261005-133627.json

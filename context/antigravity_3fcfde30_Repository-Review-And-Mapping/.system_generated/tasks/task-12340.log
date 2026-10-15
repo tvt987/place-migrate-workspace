@@ -1,0 +1,24 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (376 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (6.1s)
+  ok  2 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:28:7 › TC-SCM-36-001 — Index loads [LOAD] › LOAD /CustomerCheckIns [LOAD] (3.2s)
+  -   3 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:50:7 › TC-SCM-36-002 — Search / client guard [FLOW] › FLOW Search `N/A` [FLOW]
+  ok  4 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:61:7 › TC-SCM-36-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /CustomerCheckIns [AUTH] (1.9s)
+  ok  5 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:74:7 › TC-SCM-36-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (2.8s)
+  -   6 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:87:7 › TC-SCM-36-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE]
+  -   7 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:117:7 › TC-SCM-36-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  -   8 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:147:7 › TC-SCM-36-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW]
+  -   9 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:172:7 › TC-SCM-36-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  ok 10 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:208:7 › TC-SCM-36-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (2.5s)
+  -  11 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:221:7 › TC-SCM-36-010 — nonsense keyword → empty or alert [FLOW] › DEEP keyword miss → empty/alert [FLOW]
+  -  12 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:249:7 › TC-SCM-36-011 — keyword from first row narrows result [FLOW] › DEEP keyword từ dòng đầu sau Search [FLOW]
+  -  13 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:295:7 › TC-SCM-36-012 — server pagination page 2 [FLOW] › DEEP pagination trang 2 [FLOW]
+  ok 14 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:330:7 › TC-SCM-36-013 — breadcrumb + table header [FLOW] › DEEP breadcrumb + grid shell [FLOW] (2.5s)
+  -  15 [e2e] › e2e\customer-check-ins\customer-check-ins.e2e.spec.ts:353:7 › TC-SCM-36-014 — Export Excel download [FLOW] › Xuất Excel — file hoặc XHR blob ≥ 1KB [FLOW]
+
+  9 skipped
+  6 passed (43.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-133352.json

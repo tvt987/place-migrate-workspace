@@ -1,0 +1,51 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (71 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.0s)
+  ok 2 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:30:7 › TC-SCM-322-001 — form loads [LOAD] › mở form Thêm mới khai báo thời gian giao hàng đến cửa hàng [LOAD] (3.5s)
+  ok 3 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:91:9 › TC-SCM-322-002 — form validation blocks write [VALIDATION] › validation: Thêm mới khai báo thời gian giao hàng đến cửa hàng thiếu dữ liệu / chặn ghi [VALIDATION] (3.2s)
+  x  4 [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:127:7 › TC-SCM-322-003 — save for real [FLOW] › lưu Thêm mới khai báo thời gian giao hàng đến cửa hàng thật [FLOW] (31.1s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:127:7 › TC-SCM-322-003 — save for real [FLOW] › lưu Thêm mới khai báo thời gian giao hàng đến cửa hàng thật [FLOW] 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 30000ms exceeded.
+
+      139 |
+      140 |     const ep = data.saveGuarded.endpoint as string;
+    > 141 |     const respP = page.waitForResponse((r) => r.url().includes(ep) && r.request().method() !== 'GET', {
+          |                        ^
+      142 |       timeout: 60000,
+      143 |     });
+      144 |     await mod.click(data.saveGuarded.input.submit as string);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:141:24
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-order-dc2-stores-creat-aabb6-àng-đến-cửa-hàng-thật-FLOW--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-order-dc2-stores-creat-aabb6-àng-đến-cửa-hàng-thật-FLOW--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-order-dc2-stores-creat-aabb6-àng-đến-cửa-hàng-thật-FLOW--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-order-dc2-stores-creat-aabb6-àng-đến-cửa-hàng-thật-FLOW--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-order-dc2-stores-creat-aabb6-àng-đến-cửa-hàng-thật-FLOW--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\order-dc2-stores-create\order-dc2-stores-create.e2e.spec.ts:127:7 › TC-SCM-322-003 — save for real [FLOW] › lưu Thêm mới khai báo thời gian giao hàng đến cửa hàng thật [FLOW] 
+  2 did not run
+  3 passed (42.6s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-183809.json

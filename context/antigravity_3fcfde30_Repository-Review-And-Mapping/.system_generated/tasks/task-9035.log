@@ -1,0 +1,14 @@
+Starting IIS Express ...
+Successfully registered URL "http://localhost:4119/" for site "Development Web Site" application "/"
+Registration completed
+IIS Express is running.
+Request started: "GET" http://localhost:4119/swagger/ui/index
+Response sent: http://localhost:4119/swagger/ui/index with HTTP status 200.0
+Request started: "POST" http://localhost:4119/api/BonusOutputSales/Search
+Response sent: http://localhost:4119/api/BonusOutputSales/Search with HTTP status 500.0
+Request started: "POST" http://localhost:4119/api/BonusOutputSales/Search
+Response sent: http://localhost:4119/api/BonusOutputSales/Search with HTTP status 401.0
+Request started: "POST" http://localhost:4119/api/BonusOutputSales/Search
+Response sent: http://localhost:4119/api/BonusOutputSales/Search with HTTP status 401.0
+Request started: "POST" http://localhost:4119/api/ProductCategoryGMs/Search
+Response sent: http://localhost:4119/api/ProductCategoryGMs/Search with HTTP status 401.0

@@ -1,0 +1,15 @@
+
+Running 6 tests using 1 worker
+
+✅ reuse .auth/token.json (546 min left)
+  ok 1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.1s)
+  ok 2 [e2e] › e2e\order-sales-day-on-demands-create\order-sales-day-on-demands-create.e2e.spec.ts:30:7 › TC-SCM-326-001 — form loads [LOAD] › mở form Khai báo số ngày bán hàng yêu cầu [LOAD] (3.3s)
+  ok 3 [e2e] › e2e\order-sales-day-on-demands-create\order-sales-day-on-demands-create.e2e.spec.ts:91:9 › TC-SCM-326-002 — form validation blocks write [VALIDATION] › validation: Khai báo số ngày bán hàng yêu cầu thiếu dữ liệu / chặn ghi [VALIDATION] (2.9s)
+  -  4 [e2e] › e2e\order-sales-day-on-demands-create\order-sales-day-on-demands-create.e2e.spec.ts:132:7 › TC-SCM-326-003 — save for real [FLOW] › lưu Khai báo số ngày bán hàng yêu cầu thật [FLOW]
+  ok 5 [e2e] › e2e\order-sales-day-on-demands-create\order-sales-day-on-demands-create.e2e.spec.ts:174:7 › TC-SCM-326-004 — anonymous → SSO [AUTH] › ẩn danh bị chuyển tới Keycloak [AUTH] (822ms)
+  ok 6 [e2e] › e2e\order-sales-day-on-demands-create\order-sales-day-on-demands-create.e2e.spec.ts:194:7 › TC-SCM-326-005 — list href reachable from shell [FLOW] › quay về danh sách /OrderSalesDayOnDemands [FLOW] (5.0s)
+
+  1 skipped
+  5 passed (19.8s)
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-194356.json

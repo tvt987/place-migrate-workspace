@@ -1,0 +1,54 @@
+
+Running 29 tests using 1 worker
+
+✅ reuse .auth/token.json (400 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (2.8s)
+  ok  2 [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:28:7 › TC-SCM-34-001 — Index loads [LOAD] › LOAD /ConfirmGSMs [LOAD] (4.1s)
+  -   3 [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:55:7 › TC-SCM-34-002 — Search / client guard [FLOW] › FLOW Search `/ConfirmGSMs/Search` [FLOW]
+  ok  4 [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:83:7 › TC-SCM-34-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /ConfirmGSMs [AUTH] (1.2s)
+  ok  5 [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:96:7 › TC-SCM-34-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.9s)
+  x   6 [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:113:7 › TC-SCM-34-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (1.1m)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:113:7 › TC-SCM-34-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+
+    Error: expect(received).not.toBeNull()
+
+    Received: null
+
+      132 |       return;
+      133 |     }
+    > 134 |     expect(res.response).not.toBeNull();
+          |                              ^
+      135 |     const rows = await mod.ui.dataRows().count();
+      136 |     const empty = await mod.ui.noDataRow().isVisible().catch(() => false);
+      137 |     const grid = await mod.ui.grid().isVisible().catch(() => false);
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:134:30
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-confirm-gs-ms-confirm--f268f-rid-hoặc-empty-alert-STATE--e2e-local\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-confirm-gs-ms-confirm--f268f-rid-hoặc-empty-alert-STATE--e2e-local\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-confirm-gs-ms-confirm--f268f-rid-hoặc-empty-alert-STATE--e2e-local\error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-confirm-gs-ms-confirm--f268f-rid-hoặc-empty-alert-STATE--e2e-local\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-confirm-gs-ms-confirm--f268f-rid-hoặc-empty-alert-STATE--e2e-local\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e-local] › e2e\confirm-gs-ms\confirm-gs-ms.e2e.spec.ts:113:7 › TC-SCM-34-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] 
+  1 skipped
+  23 did not run
+  4 passed (2.5m)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-130926.json

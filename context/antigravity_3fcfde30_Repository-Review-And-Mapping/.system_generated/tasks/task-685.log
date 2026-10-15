@@ -1,0 +1,31 @@
+WARNING: TCP connect to (192.168.12.136 : 443) failed
+
+
+ComputerName           : place-stg.concung.vn
+RemoteAddress          : 192.168.12.136
+RemotePort             : 443
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.1.6.100
+PingSucceeded          : True
+PingReplyDetails (RTT) : 5 ms
+TcpTestSucceeded       : False
+
+WARNING: TCP connect to (192.168.12.136 : 80) failed
+ComputerName           : place-stg.concung.vn
+RemoteAddress          : 192.168.12.136
+RemotePort             : 80
+InterfaceAlias         : Ethernet
+SourceAddress          : 10.1.6.100
+PingSucceeded          : True
+PingReplyDetails (RTT) : 3 ms
+TcpTestSucceeded       : False
+
+ComputerName     : place-stg10.concung.vn
+RemoteAddress    : 192.168.13.191
+RemotePort       : 443
+InterfaceAlias   : Ethernet
+SourceAddress    : 10.1.6.100
+TcpTestSucceeded : True
+
+
+

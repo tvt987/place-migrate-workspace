@@ -1,0 +1,8 @@
+Invoke-RestMethod -Uri "https://place-api-stg4.concung.vn/api/Scopes/GetListMVC" -Method Post -Headers $headers -Body $bodyCamel
+  "Status: 200 OK, Count = " + $res.Count
+} catch {
+  "FAILED: " + $_.Exception.Response.StatusCode
+  $stream = $_.Exception.Response.GetResponseStream()
+  $reader = New-Object System.IO.StreamReader($stream)
+  $reader.ReadToEnd()
+}

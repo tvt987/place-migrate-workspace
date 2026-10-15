@@ -1,0 +1,61 @@
+
+Running 15 tests using 1 worker
+
+✅ reuse .auth/token.json (400 min left)
+  ok  1 [setup] › fixtures\auth.fixture.ts:37:6 › authenticate via SSO (3.4s)
+  ok  2 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:28:7 › TC-SCM-109-001 — Index loads [LOAD] › LOAD /OutputSaleClearStockSurveys [LOAD] (3.5s)
+  ok  3 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:53:7 › TC-SCM-109-002 — Search / client guard [FLOW] › FLOW Search `/OutputSaleClearStockSurveys/Search` [FLOW] (3.5s)
+  ok  4 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:73:7 › TC-SCM-109-003 — anonymous → SSO [AUTH] › AUTH ẩn danh /OutputSaleClearStockSurveys [AUTH] (413ms)
+  ok  5 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:86:7 › TC-SCM-109-004 — toolbar / search controls [VALIDATION] › VALIDATION toolbar / form search controls [VALIDATION] (3.3s)
+  ok  6 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:103:7 › TC-SCM-109-005 — grid or empty/alert after Search [STATE] › STATE sau Search — grid hoặc empty/alert [STATE] (3.5s)
+  -   7 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:133:7 › TC-SCM-109-006 — pagination when data [EDGE] › EDGE pagination nếu có dữ liệu [EDGE]
+  ok  8 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:163:7 › TC-SCM-109-007 — mutation toolbar GUARDED [FLOW] › GUARDED mutation toolbar [FLOW] (3.5s)
+  -   9 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:188:7 › TC-SCM-109-008 — detail read-only if row link [FLOW] › DETAIL read-only mở link dòng đầu nếu có [FLOW]
+  x  10 [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:224:7 › TC-SCM-109-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] (3.6s)
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:224:7 › TC-SCM-109-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] 
+
+    Error: origin không tự Search khi mở Index
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      229 |
+      230 |     await mod.open(data.screen.route, data.screen.searchEndpoint);
+    > 231 |     expect(mod.searchesDuringLoad, 'origin không tự Search khi mở Index').toBe(0);
+          |                                                                           ^
+      232 |     await expect(mod.ui.content()).toBeVisible({ timeout: 30000 });
+      233 |   });
+      234 | });
+        at E:\Work\Place_Migrate\cci-scm-web\03_qa\e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:231:75
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-32cd2--no-auto-search-Index-LOAD--e2e\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-32cd2--no-auto-search-Index-LOAD--e2e\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\e2e-output-sale-clear-stoc-32cd2--no-auto-search-Index-LOAD--e2e\error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results\e2e-output-sale-clear-stoc-32cd2--no-auto-search-Index-LOAD--e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-output-sale-clear-stoc-32cd2--no-auto-search-Index-LOAD--e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [e2e] › e2e\output-sale-clear-stock-surveys\output-sale-clear-stock-surveys.e2e.spec.ts:224:7 › TC-SCM-109-009 — no auto-search on Index open [LOAD] › DEEP no auto-search Index [LOAD] 
+  2 skipped
+  5 did not run
+  7 passed (33.9s)
+  1 error was not a part of any test, see above for details
+
+📄 JSON report: E:\Work\Place_Migrate\cci-scm-web\03_qa\reports\details\test-report-20261014-220920.json

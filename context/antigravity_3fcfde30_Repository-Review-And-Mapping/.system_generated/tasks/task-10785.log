@@ -1,0 +1,10 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-10-14T10:32:17+07:00
+Prompt: Check Wave B2 STG10 completion
+Early Termination: 3fcfde30-4110-403c-8f9f-a4ed95abc9e6/task-10775
+
+[2026-10-14T10:31:37+07:00] Still waiting. Remaining time: 40s
+[2026-10-14T10:31:47+07:00] Still waiting. Remaining time: 30s
+[2026-10-14T10:31:57+07:00] Still waiting. Remaining time: 20s
+[2026-10-14T10:32:07+07:00] Still waiting. Remaining time: 10s
+[2026-10-14T10:32:17+07:00] Timer fired.

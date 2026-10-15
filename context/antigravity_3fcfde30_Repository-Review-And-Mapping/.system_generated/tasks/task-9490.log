@@ -1,0 +1,9 @@
+=== Creating PR: dev -> staging10 ===
+[SUCCESS] Created PR #5: Merge dev into staging10
+  Source: dev -> Destination: staging10
+  URL: https://bitbucket.org/concung/cci-scm-web/pull-requests/5
+
+=== Creating PR: dev -> staging ===
+[SUCCESS] Created PR #4: Merge dev into staging
+  Source: dev -> Destination: staging
+  URL: https://bitbucket.org/concung/cci-scm-web/pull-requests/4

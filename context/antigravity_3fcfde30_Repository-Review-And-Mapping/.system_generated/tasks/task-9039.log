@@ -1,0 +1,29 @@
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <!DOCTYPE html>
+                    <html>
+                    <head>
+                      <meta charset="UTF-8">
+                      <title>Swagger UI</title>
+                      <link rel="icon" type="image/png" href="images/favicon-32x32-png" sizes="32x32" />
+                      <link rel="icon" type="i.
+RawContent        : HTTP/1.1 200 OK
+                    Cache-Control: no-cache
+                    Pragma: no-cache
+                    X-SourceFiles: =?UTF-8?B?RTpcV29ya1xQbGFjZV9NaWdyYXRlXGNjaS1zY20tYXBpXDAxX29yaWdpblxDb2MuQVBJLlNDTV
+                    xzd2FnZ2VyXHVpXGluZGV4?=
+                    X-Frame-Options.
+Headers           : {[Cache-Control, System.String[]], [Pragma, System.String[]], [X-SourceFiles, System.String[]], 
+                    [X-Frame-Options, System.String[]].}
+Images            : {}
+InputFields       : {@{outerHTML=<input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" 
+                    type="text"/>; tagName=INPUT; placeholder=http://example.com/api; id=input_baseUrl; name=baseUrl; 
+                    type=text}, @{outerHTML=<input placeholder="api_key" id="input_apiKey" name="apiKey" 
+                    type="text"/>; tagName=INPUT; placeholder=api_key; id=input_apiKey; name=apiKey; type=text}}
+Links             : {@{outerHTML=<a id="logo" href="http://swagger.io">swagger</a>; tagName=A; id=logo; 
+                    href=http://swagger.io}, @{outerHTML=<a id="explore" href="#" data-sw-translate>Explore</a>; 
+                    tagName=A; id=explore; href=#; data-sw-translate=}}
+RawContentLength  : 6027
+RelationLink      : {}
+
