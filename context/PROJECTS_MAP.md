@@ -1,4 +1,7 @@
-# PROJECTS_MAP (snapshot 2026-10-15 10:46)  | Project | Remote | Nhanh | HEAD | |---|---|---|---|
+# PROJECTS_MAP (snapshot 2026-10-15)
+
+| Project | Remote | Nhanh | HEAD |
+|---|---|---|---|
 | cci-dc-api | https://bitbucket.org/concung/cci-dc-api.git | dev | 2e43752 |
 | cci-dc-web | https://bitbucket.org/concung/cci-dc-web.git | dev | 5e1484d |
 | cci-mbm-web | https://bitbucket.org/concung/cci-mbm-web.git | dev | 1aac189 |
