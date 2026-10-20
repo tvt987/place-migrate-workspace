@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-10-19 17:02:14",
+  "repo_status": {
+    "cci-hrm-web": {
+      "status": "synced",
+      "latest_commit": "e34ff3c - tringuyen-spec, 18 hours ago : fix: enhance test stability and reliability for StoreCVSLs and WorkShiftSupportPolicies"
+    },
+    "cci-mbm-web": {
+      "status": "synced",
+      "latest_commit": "2312f0f - Long Phan, 27 hours ago : chore: them CLAUDE.md pointer (@AGENTS.md) con thieu theo init-deep"
+    },
+    "cci-timekeeping-web": {
+      "status": "synced",
+      "latest_commit": "47e5500 - tringuyen-spec, 18 hours ago : feat: Implement page readiness utilities and response assertions for E2E testing"
+    },
+    "cci-supplier-web": {
+      "status": "synced",
+      "latest_commit": "f503ba3 - nqdthuancc, 71 minutes ago : Merge branch 'qa/gen-testcase' into dev"
+    },
+    "cci-common-web": {
+      "status": "synced",
+      "latest_commit": "c912bd9 - Long Phan, 27 hours ago : chore: them newline cuoi file CLAUDE.md"
+    },
+    "cci-hrm-api": {
+      "status": "synced",
+      "latest_commit": "e7bf1abe - Long Phan, 3 hours ago : Merge remote-tracking branch 'origin/dev' into dev"
+    }
+  },
+  "categories_summary": {
+    "Redis & DataProtection / Session": 23,
+    "API Client & Endpoint Normalization": 17,
+    "Excel Export & EPPlus / ClosedXML": 4,
+    "Authentication / Keycloak / SSO / Cookie": 57,
+    "Database / MSSQL / PostgreSQL / Dapper / EF": 6,
+    "Razor Views / Bundles / Partial Views": 2,
+    "E2E QA Testing & Stability Utilities": 14,
+    "Other Fixes / Migration Build": 27
+  },
+  "check_results": {
+    "cci-dc-web": {
+      "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
+      "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
+      "EPPlus DataValidation": "KHÔNG SỬ DỤNG (N/A)",
+      "Git dev HEAD": "[dev] fb7a4ce Merge branch 'fix/replicate-redis-dataprotection-and-url-normalize' into dev"
+    },
+    "cci-store-location-web": {
+      "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
+      "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
+      "EPPlus DataValidation": "ĐÃ FIX THỨ TỰ (RenderSheetMasterDataHelper.cs)",
+      "Git dev HEAD": "[dev] 16c821d Merge branch 'feat/parity-compare-3d-matrix-viewer' into dev"
+    },
+    "cci-scm-web": {
+      "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
+      "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
+      "EPPlus DataValidation": "ĐÃ FIX THỨ TỰ (AccountingProcessDepartmentsController.cs)",
+      "Git dev HEAD": "[dev] 6db328b8 Merge branch 'fix/replicate-redis-dataprotection-url-normalize-and-epplus-validation' into dev"
+    }
+  }
+}

@@ -47,7 +47,7 @@ Quy tắc theo mode:
 
 - Commit fix lên `dev` (theo DEV_GUIDE), push `dev`.
 - Muốn đưa lên staging: **tạo Pull Request** `dev → staging10` và `dev → staging` trên Bitbucket (cho mỗi repo liên quan). **Không** `git merge dev` rồi `git push origin staging|staging10`, không bấm Build tay: hệ thống **tự auto-merge và tự build**.
-- Link tạo PR: `https://bitbucket.org/concung/<repo>/pull-requests/new?source=dev&dest=staging10` (đổi `dest=staging` cho nhánh còn lại). `git-sync.ps1` in sẵn link này và **từ chối** push khi nhánh hiện tại là `staging`, `staging10`, `staging4`, `master`, `main`.
+- **Tự động tạo PR (Không cần đợi xác nhận):** Agent **tự động gọi công cụ tạo cặp PR** (`python tools/bitbucket_pr.py --repo concung/<repo> --action create-pair ...`) ngay sau khi push `dev` mà **KHÔNG CẦN CHỜ USER XÁC NHẬN HAY CLICK TẠO THỦ CÔNG**, chỉ cần xuất lại link PR đã tạo vào phản hồi cho user theo dõi.
 - Sau khi PR được auto-merge và build xong thì mới test lại trên staging, ghi SHA + link report vào hồ sơ (DEV_GUIDE mục 5.7–5.8).
 
 ## 3. Chỗ DEV_GUIDE cũ bị thay thế
@@ -77,3 +77,25 @@ Mỗi lần fix một bug ở **một** trong ba project này, bắt buộc:
 - Local: file này + `AGENTS.md` + `CLAUDE.md` ở root workspace; agent mở workspace tự đọc được.
 - Git (mode 2): các file này, `tools/`, và context nằm trong repo workspace trên GitHub `tvt987`, nên máy khác clone về cũng có rule.
 - Sửa rule: sửa file này, rồi push mode 2.
+
+## 7. Commit Message Sạch & Chuyên Nghiệp (TUYỆT ĐỐI CẤM "Co-Authored-By")
+
+- **TUYỆT ĐỐI KHÔNG** thêm bất kỳ dòng trailer, watermark hay chữ ký AI nào như `Co-Authored-By: ...`, `Co-authored-by: Claude`, `Co-authored-by: Gemini`, `Co-authored-by: Antigravity` vào commit message, tag message hoặc nội dung Pull Request.
+- Mọi commit message phải sạch sẽ, chuẩn mực kỹ sư theo định dạng Conventional Commits (`fix(...)`, `feat(...)`, `chore(...)`, `test(...)`, `docs(...)`) theo quy định trong `DEV_HANDBOOK.md`.
+
+## 8. Ưu tiên tuyệt đối Subagents & Background Tasks
+
+- Mọi tác vụ tốn thời gian (chạy suite test E2E dài, fail-fast sweep, clone repo, phân tích git commit, chờ deploy) BẮT BUỘC khởi chạy dưới dạng Background Task / Subagent.
+- Giữ khung chat chính luôn trống để người dùng có thể prompt, tra cứu hoặc chỉ đạo bất kỳ lúc nào mà không bị gián đoạn.
+
+## 9. Chu trình Tự Động Hoá Khắc Phục Lỗi Migration (Auto-Healing Loop)
+
+1. Test ngầm tuần tự các portal (Fail-Fast `--max-failures=1`).
+2. Phát hiện `migrate-bug` $\rightarrow$ dừng ngay, phân tích nguyên nhân gốc giữa `01_origin` và `02_target`.
+3. Nếu tự fix được: Tách nhánh `fix/*` $\rightarrow$ Sửa `02_target/` $\rightarrow$ Quét chéo 3 portal $\rightarrow$ Verify $\rightarrow$ Merge `dev` $\rightarrow$ Tự động tạo PR Bitbucket $\rightarrow$ Chờ 15 phút K8s rollout $\rightarrow$ Test lại nghiệm thu $\rightarrow$ Tiếp tục quét các màn kế tiếp cho đến khi 100% Parity.
+
+## 10. Job Đồng Bộ & Dập Khuôn Kỹ Thuật Định Kỳ 17:00 Hằng Ngày
+
+- Hằng ngày vào lúc 17:00, cron job tự động fetch/pull nhánh `dev` của `cci-hrm-web` và `cci-mbm-web`.
+- Lập danh sách commit fix bug/migration mới, gom nhóm phân loại, đối chiếu chéo xem 3 project (`dc`, `store-location`, `scm`) có bị vấn đề tương tự không.
+- Tiến hành dập khuôn các giải pháp chuẩn mực (Redis DataProtection keyring, xử lý file Excel nhị phân không BOM, ApiHelper 204 guard, v.v.), commit và mở PR theo đúng quy trình.

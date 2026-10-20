@@ -8,3 +8,6 @@ cci-*/
 *.db-wal
 .auth/
 node_modules/
+
+.system_generated/
+**/.system_generated/
