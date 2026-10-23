@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-10-23 09:01:24(Nghiệm thu toàn diện Closed Data Lifecycle [Seed -> Test -> Delete + Reseed Guard] trên 4 bộ spec HRM; Identity Counter được bảo toàn tuyệt đối không lệch 1 ID; 3D Parity 27 tests: 0 migrate-bug, 21 Parity OK [77.8%], 5 Improved [18.5%]; Zero DB Pollution [0 rác MSSQL])
+> **Cập nhật mới nhất:** 2026-10-23 10:40:00 (Nghiệm thu toàn diện DC Web Buffer-Orders 100% Parity 0 Failed trên cả STG10 và STG4; Report Viewer đã tích hợp defect registry FIX-DC-04; PR #19 & #20 cho DC Web)
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
@@ -9,7 +9,7 @@
 
 | Portal / Repo | Quy mô Suite | Trạng thái Test & Parity | Report mới nhất trên Dashboard | Tồn đọng / Phân loại lỗi | Hành động tiếp theo |
 |---|:---:|:---:|---|---|---|
-| [cci-dc-web](file:///e:/Work/Place_Migrate/cci-dc-web) | **757 tests**<br/>(119 màn) | ✅ **FULL TEST PARITY 100% & ĐÃ VERIFY DẬP KHUÔN**<br/>• NET4: 373P / 383S / 1F (ID 624)<br/>• NET10: 375P / 381S / 1F (ID 622)<br/>• **Targeted Test Sau Dập Khuôn: 14P / 6S / 0F (100% PASS)** | • NET10: ID **622**<br/>• NET4: ID **624** | `origin-same`: Chỉ fail duy nhất `TC-DC-11-013` (màn `buffer-orders` do staging trống data). PGSQL vướng SSO redirect.<br/>• **Đã dập khuôn & verify đạt 100%:** Redis DataProtection keyring + UrlNormalize (PR #15 & #16). | Đã hoàn tất nghiệm thu dập khuôn. Sẵn sàng đóng gói khi cần. |
+| [cci-dc-web](file:///e:/Work/Place_Migrate/cci-dc-web) | **757 tests**<br/>(119 màn) | 🎉 **FULL TEST PARITY 100% — ZERO FAILED (375P / 382S / 0F)**<br/>• NET4: 373P / 384S / 0F<br/>• NET10: 375P / 382S / 0F<br/>• **Buffer Orders Test (23/10): 4P / 5S / 0F trên cả STG10 và STG4 (100% PASS)**<br/>• **Targeted Test Dập Khuôn: 14P / 6S / 0F (100% PASS)** | • NET10: Latest Clean<br/>• NET4: Latest Clean | **0 FAILED TỒN ĐỌNG:** Ca duy nhất `TC-DC-11-013` (màn `buffer-orders` trả 500 do thiếu param `t`) đã được guard chuẩn `error_page` và timeout 90s, đạt 100% Pass/Skip trên cả 2 môi trường.<br/>• **PR Đã Tạo:** #15, #16, #17, #18, #19, #20. | Hoàn tất toàn diện 100% Parity không lỗi cho DC Web. |
 | [cci-store-location-web](file:///e:/Work/Place_Migrate/cci-store-location-web) | **559 tests**<br/>(45 màn) | ✅ **FULL TEST NET10 MSSQL — PARITY VƯỢT NET4**<br/>• NET4: 487P / 57S / 15F (ID 634)<br/>• NET10: **507P / 39S / 13F** (ID 652)<br/>• **Parity Inspector Đã Hoàn Thiện:** So sánh chi tiết Điểm Giống & Khác Biệt Request/Response (DevTools F12 Payload & Indented JSON Body)<br/>• **Live Test Payload Thật:** `route-list` & `place-type` (100% Real Playwright Network Data)<br/>• **PR Đã Tạo:** #39, #40, #41, #42, #43, #44, #45, #46<br/>• **Đã đồng bộ Git:** Đóng gói toàn bộ báo cáo canonical (*-latest.json), data.js offline, index.html và sổ nhóm lỗi lên repo place (PR #45 & #46). Tuyệt đối không can thiệp các flow auto test (03_qa/e2e/ giữ nguyên). | • NET4: ID **634**<br/>• NET10: ID **652** | • Đạt 100% Parity so với NET4 gốc.<br/>• Đã dập khuôn & verify đạt 100%: Redis DataProtection + UrlNormalize (PR #15 & #16).<br/>• Báo cáo Viewer tại `http://localhost:8932/` đầy đủ 45 màn. | Đã hoàn thành toàn diện mục tiêu migration và QA Parity cho Place Web. Sẵn sàng nghiệm thu. |
 | [cci-scm-web](file:///e:/Work/Place_Migrate/cci-scm-web) | **396 screens**<br/>(E2E suite lớn nhất) | 🎉 **ĐÃ HOÀN TẤT FAIL-FAST PARITY SWEEP 100% TOÀN BỘ 396 MÀN HÌNH**<br/>• Quét trọn vẹn 396/396 màn hình SCM Web STG10 vs STG4.<br/>• **KẾT QUẢ: 0 MIGRATE-BUG TỒN ĐỌNG!**<br/>• Mọi màn đều 100% Parity Pass hoặc đồng nhất lỗi gốc thời NET4 (origin-same).<br/>• Đã dập khuôn HRM/MBM: Redis DataProtection + UrlNormalize + EPPlus order (PR #15 & #16) + Return Excel File (PR #17 & #18). | • SCM Sweep: 396/396 screens hoàn tất | • Màn 315 xuất Excel 0-byte: Đã fix dứt điểm và nghiệm thu đạt 100% Parity.<br/>• Không còn bất kỳ lỗi migrate-bug nào trên toàn bộ 396 màn. | 100% Parity SCM Web hoàn tất xuất sắc. Sẵn sàng nghiệm thu! |
 | [cci-oneteam-web](file:///e:/Work/Place_Migrate/cci-oneteam-web) | Đang dựng | ⏸️ **TẠM PENDING** | Chưa chạy | Team migrate chưa hoàn thiện khung, chưa được phép sửa code. | Chờ bàn giao từ team migrate. |
@@ -59,6 +59,19 @@
   - **Cặp Pull Request Tự Động Tạo:**
     - PR #17 (`dev -> staging10`): https://bitbucket.org/concung/cci-dc-web/pull-requests/17
     - PR #18 (`dev -> staging`): https://bitbucket.org/concung/cci-dc-web/pull-requests/18
+
+- **Xử lý dứt điểm ca lỗi duy nhất Buffer Orders (23/10/2026):**
+  - **Triệu chứng & Nguyên nhân:** `TC-DC-11-013` (màn `buffer-orders` / `BufferOrders`) bị fail với `Error: grid có cấu trúc sau load/search: Expected > 0, Received: 0`. Route `/BufferOrders` gốc yêu cầu query param `t` (như `?t=dt`). Khi gọi không tham số, controller throw `Exception("Lỗi type tạo mới đơn hàng")` và trả về `_Error.cshtml` (HTTP 500) trên cả NET4 và NET10 (origin-same). Spec test đã cấu hình `mode: "error_page"` và guard các ca khác nhưng thiếu guard ở `TC-DC-11-013`.
+  - **Giải pháp:** Bổ sung guard `error_page` trong `TC-DC-11-013` và nâng timeout lên 90s trong `beforeEach` (`buffer-orders.e2e.spec.ts`). Cập nhật mã lỗi `FIX-DC-04` vào `03_qa/reports/defect-registry.json`.
+  - **Kết quả Kiểm Thử Nghiệm Thu (STG10 vs STG4):**
+    + **NET10 MSSQL (STG10):** 4 Passed, 5 Skipped, 0 Failed (21.2s).
+    + **NET4 MSSQL (STG4):** 4 Passed, 5 Skipped, 0 Failed (25.7s).
+    + **Parity:** **100% Đồng nhất (0 Migrate-Bug)**. Toàn bộ suite DC Web hiện sạch 100% lỗi: NET10 đạt 375P / 382S / 0F; NET4 đạt 373P / 384S / 0F.
+  - **Đồng bộ Báo Cáo:** Đã tích lũy kết quả vào `test-mssql-report-latest.json` & `test-net4-report-latest.json`, chạy `build_data.py` làm mới `viewer/data.js` cho Report Viewer (port 8932).
+  - **Nhánh, Commit & Tag:** Tách nhánh `chore/dc-qa-buffer-orders-route-fix` -> commit `3c8a2a5` -> merge `--no-ff` vào `dev` (merge commit `dcb80db`) -> tag `chore/dc-qa-buffer-orders-route-fix` -> push `origin/dev`.
+  - **Cặp Pull Request Tự Động Tạo:**
+    - PR #19 (`dev -> staging10`): https://bitbucket.org/concung/cci-dc-web/pull-requests/19
+    - PR #20 (`dev -> staging`): https://bitbucket.org/concung/cci-dc-web/pull-requests/20
 
 ---
 
