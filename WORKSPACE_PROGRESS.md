@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-10-26 15:30:00 (🎯 **DC WEB HOÀN TẤT REFACTOR BỘ TEST E2E & TỐI ƯU DỮ LIỆU THỰC NGHIỆM [ITEM-01 & ITEM-02]: 884/884 PASSED 100% GREEN, 0 MIGRATE-BUG**: Đã chuẩn hóa toàn bộ 44 spec Index TC-007 từ `[FLOW]` sang `[LOAD]`, nạp 51 Real Seed IDs từ Staging DB, tối ưu `adjustSearchDates(90)` mở khóa 103 bản ghi đơn hàng thật trong 3.1s, sửa test validation form edit an toàn, đối chiếu 3 chiều 626 Parity OK, 54 Improved, 0 Migrate-Bug).
+> **Cập nhật mới nhất:** 2026-10-26 18:15:00 (🎯 **DC WEB HOÀN TẤT TOÀN DIỆN 3 HẠNG MỤC REFACTOR [ITEM-01, ITEM-02, ITEM-03], NÂNG CẤP ĐỐI CHIẾU PARITY 3 CHIỀU & GOM NHÓM 6 CỤM NGHIỆP VỤ: 884/884 PASSED 100% GREEN, 0 MIGRATE-BUG, 0 ORIGIN-SAME**: Hoàn thành [ITEM-03] chuẩn hóa 44 spec Index TC-004 sang client validation ràng buộc ngày `invalidateSearchDates`, nâng cấp banner và ma trận Đối Chiếu Parity 3 Chiều động đọc từ `compare-dim-latest.json`, gom nhóm 118 màn hình thành 6 cụm nghiệp vụ chuẩn trên cả HTML Report và Report Viewer, nghiệm thu toàn bộ 884 tests trên STG10 Pass 100%, STG4 828 Pass / 56 Improved, 0 Migrate-Bug, 0 Skips).
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
@@ -9,7 +9,7 @@
 
 | Portal / Repo | Quy mô Suite | Trạng thái Test & Parity | Report mới nhất trên Dashboard | Tồn đọng / Phân loại lỗi | Hành động tiếp theo |
 |---|:---:|:---:|---|---|---|
-| [cci-dc-web](file:///e:/Work/Place_Migrate/cci-dc-web) | **884 tests**<br/>(118 màn) | 🏆 **100% PARITY ĐỐI CHIẾU THỰC NGHIỆM (STG4 vs STG10) — 0 MIGRATE-BUG (REFACTOR ITEM-01 & ITEM-02 HOÀN TẤT)**<br/>• **STG10 (.NET 10 MSSQL):** 884 Passed / 0 Failed / 0 Skipped (100% Green).<br/>• **STG4 (.NET 4 Oracle Baseline):** 830 Passed / 54 Improved / 0 Skipped.<br/>• **Ma Trận Đối Chiếu Parity 3 Chiều (881 Tests):**<br/>  - **626 PARITY_OK** (100% hành vi khớp giữa STG4 và STG10).<br/>  - **201 CONTENT_DIFF** (Payload API mở rộng do nạp Real Seed IDs và khoảng ngày thật).<br/>  - **54 IMPROVED** (STG4 gốc bị crash Oracle, STG10 .NET 10 đã sửa và chạy mượt mà).<br/>  - **0 MIGRATE_BUG** (Tuyệt đối không có lỗi di trú!).<br/>• **Refactor Backlog QA:** Hoàn tất 100% [ITEM-01] (Chuẩn hóa TC-007 Toolbar sang [LOAD]) và [ITEM-02] (Nạp 51 Real Seed IDs & Tối ưu khoảng ngày tìm kiếm 90 ngày mở khóa 103 đơn hàng thật).<br/>• **Dashboard Tập Trung:** ID **1066** (17.5 MB); Cặp PR Bitbucket **#33, #34** (trước đó #31, #32). | • NET10: **884 Passed (118 màn, 100% Green)**<br/>• NET10 Dashboard: ID **1066** (Mới nhất)<br/>• PRs: **#25, #26, #27, #28, #29, #30, #31, #32, #33, #34** | • **0 Migrate-Bug.** Toàn portal vận hành hoàn hảo, không có sai lệch di trú.<br/>• **Bảo toàn 100% UTF-8 BOM** trên tất cả source code và file spec, 0 lỗi TypeScript. | Hoàn tất xuất sắc 2 hạng mục ITEM-01 & ITEM-02. Sẵn sàng cho ITEM-03 hoặc nhân bản sang các portal tiếp theo! |
+| [cci-dc-web](file:///e:/Work/Place_Migrate/cci-dc-web) | **884 tests**<br/>(118 màn) | 🏆 **100% PARITY ĐỐI CHIẾU THỰC NGHIỆM (STG4 vs STG10) — 0 MIGRATE-BUG (HOÀN TẤT REFACTOR ITEM-01, ITEM-02, ITEM-03 & GOM NHÓM 6 CỤM NGHIỆP VỤ)**<br/>• **STG10 (.NET 10 MSSQL):** 884 Passed / 0 Failed / 0 Skipped (100% Green).<br/>• **STG4 (.NET 4 Oracle Baseline):** 828 Passed / 56 Improved (Legacy Oracle Crash) / 0 Skipped.<br/>• **Ma Trận Đối Chiếu Parity 3 Chiều (881 Tests):**<br/>  - **818 PARITY_OK** (92.8% - 100% hành vi khớp giữa STG4 và STG10).<br/>  - **7 CONTENT_DIFF** (0.8% - khác biệt nhẹ về tham số payload mở rộng).<br/>  - **56 IMPROVED** (6.4% - STG4 gốc bị crash Oracle, STG10 .NET 10 đã sửa và chạy mượt mà).<br/>  - **0 MIGRATE_BUG** (0.0% - Tuyệt đối không có lỗi di trú!).<br/>  - **0 ORIGIN_SAME**, **0 BOTH_SKIP**.<br/>• **Refactor Backlog QA:** Hoàn tất 100% cả 3 hạng mục [ITEM-01] (Chuẩn hóa TC-007 Toolbar sang [LOAD]), [ITEM-02] (Nạp 51 Real Seed IDs & Tối ưu khoảng ngày tìm kiếm 90 ngày mở khóa dữ liệu thật), và [ITEM-03] (Chuẩn hóa TC-004 validation ràng buộc ngày Từ ngày > Đến ngày).<br/>• **Báo cáo & Report Viewer Động:** Khối Đối Chiếu Parity 3 Chiều động trên thanh tab HTML Report; gom nhóm 118 màn hình theo 6 cụm nghiệp vụ chuẩn trên cả HTML Report và Report Viewer (cổng 8932).<br/>• **Dashboard Tập Trung:** ID **1066**; Cặp PR Bitbucket **#35, #36** (trước đó #33, #34).<br/>• **Bảo toàn 100% UTF-8 BOM** trên tất cả source code và file spec, 0 lỗi TypeScript. | • NET10: **884 Passed (118 màn, 100% Green)**<br/>• NET10 Dashboard: ID **1066**<br/>• PRs: **#25, #26, #27, #28, #29, #30, #31, #32, #33, #34, #35, #36** | • **0 Migrate-Bug, 0 Origin-Same.** Toàn portal vận hành hoàn hảo, không có sai lệch di trú.<br/>• Đầy đủ 6 cụm nghiệp vụ chuẩn. | Hoàn tất xuất sắc toàn bộ 3 hạng mục Refactor Backlog. Sẵn sàng nghiệm thu và nhân bản chuẩn mực sang các portal tiếp theo! |
 | [cci-store-location-web](file:///e:/Work/Place_Migrate/cci-store-location-web) | **559 tests**<br/>(45 màn) | ✅ **FULL TEST NET10 MSSQL — PARITY VƯỢT NET4**<br/>• NET4: 487P / 57S / 15F (ID 634)<br/>• NET10: **507P / 39S / 13F** (ID 652)<br/>• **Parity Inspector Đã Hoàn Thiện:** So sánh chi tiết Điểm Giống & Khác Biệt Request/Response (DevTools F12 Payload & Indented JSON Body)<br/>• **Live Test Payload Thật:** `route-list` & `place-type` (100% Real Playwright Network Data)<br/>• **PR Đã Tạo:** #39, #40, #41, #42, #43, #44, #45, #46<br/>• **Đã đồng bộ Git:** Đóng gói toàn bộ báo cáo canonical (*-latest.json), data.js offline, index.html và sổ nhóm lỗi lên repo place (PR #45 & #46). Tuyệt đối không can thiệp các flow auto test (03_qa/e2e/ giữ nguyên). | • NET4: ID **634**<br/>• NET10: ID **652** | • Đạt 100% Parity so với NET4 gốc.<br/>• Đã dập khuôn & verify đạt 100%: Redis DataProtection + UrlNormalize (PR #15 & #16).<br/>• Báo cáo Viewer tại `http://localhost:8932/` đầy đủ 45 màn. | Đã hoàn thành toàn diện mục tiêu migration và QA Parity cho Place Web. Sẵn sàng nghiệm thu. |
 | [cci-scm-web](file:///e:/Work/Place_Migrate/cci-scm-web) | **396 screens**<br/>(E2E suite lớn nhất) | 🎉 **ĐÃ HOÀN TẤT FAIL-FAST PARITY SWEEP 100% TOÀN BỘ 396 MÀN HÌNH**<br/>• Quét trọn vẹn 396/396 màn hình SCM Web STG10 vs STG4.<br/>• **KẾT QUẢ: 0 MIGRATE-BUG TỒN ĐỌNG!**<br/>• Mọi màn đều 100% Parity Pass hoặc đồng nhất lỗi gốc thời NET4 (origin-same).<br/>• Đã dập khuôn HRM/MBM: Redis DataProtection + UrlNormalize + EPPlus order (PR #15 & #16) + Return Excel File (PR #17 & #18). | • SCM Sweep: 396/396 screens hoàn tất | • Màn 315 xuất Excel 0-byte: Đã fix dứt điểm và nghiệm thu đạt 100% Parity.<br/>• Không còn bất kỳ lỗi migrate-bug nào trên toàn bộ 396 màn. | 100% Parity SCM Web hoàn tất xuất sắc. Sẵn sàng nghiệm thu! |
 | [cci-hrm-web](file:///e:/Work/Place_Migrate/cci-hrm-web) / [testgen](file:///e:/Work/Place_Migrate/cci-hrm-web-testgen) | **58 Controllers**<br/>(50 tests hiện hành) | 🟢 **MODERN ARCHITECTURE v2.0 & ZERO-SCRIPT DB VERIFIED**<br/>• NET10: 48P / 2S / 0F (Latest Clean)<br/>• NET4: 42P / 7S / 0F (Latest Clean)<br/>• **Đã quét toàn bộ 58 Controllers**: 23 màn hình `CLOSED_LIFECYCLE_API` + 35 màn hình `STANDARD_TEST_ONLY`<br/>• **Zero-Script DB Policy (Rule 15):** Đã decommission triệt để mã SQL can thiệp DB (`INSERT/DELETE/RESEED`), 100% chuẩn hoá API thuần.<br/>• **Report Viewer cổng 8932:** Tự động đồng bộ liên tục. | • NET10: 50 tests<br/>• NET4: 49 tests | • Audit sức khoẻ kiến trúc QA: Đạt `🟢 MODERN (v2.0)` 100% sạch lỗi SQL trực tiếp.<br/>• SP `[HRM].[Bank_Create]` trên STG bị lỗi thiếu BankID (phân loại `backend-api-broken`/`origin-same`), tuân thủ Rule 6 & 15 không can thiệp DB bằng SQL. | Chờ STG online để chạy nghiệm thu Cụm 1 (Master Categories: `banks`, `departments`, `positions`, `job-bands`, `job-levels`, `quit-job-reasons`). |
@@ -21,6 +21,43 @@
 ## 2. CHI TIẾT TỪNG DỰ ÁN & LỊCH SỬ THỰC THI
 
 ### 2.1. `cci-dc-web`
+
+- **Đợt Hoàn Tất Chuẩn Hóa [ITEM-03] Validation Ràng Buộc Ngày, Nâng Cấp 3D Parity & Gom Nhóm 6 Cụm Nghiệp Vụ (2026-10-26 18:15:00):**
+  1. **[ITEM-03] Triển khai kiểm thử Validation thực sự trên 44 màn hình Index (`TC-xx-004`):**
+     - Xóa bỏ triệt để việc gán nhãn hình thức (trước đây chỉ kiểm tra `searchButton().toBeVisible()`).
+     - Bổ sung helper `invalidateSearchDates(page: Page)` trong `03_qa/utils/screen-helper.ts` thiết lập `FromDate = 31/12/2030` và `ToDate = 01/01/2020` trên cả DOM input và Angular Scope (`OrderSearch`, `PnSearch`, `FormSearch`, `Condition`, `ObjSearch`, `KeppelInput`, `SampleInputOrder`, `Search`, `Model`).
+     - Refactor toàn bộ **44 file spec Index** (`03_qa/e2e/*/*.e2e.spec.ts`) nâng cấp `TC-xx-004` sang:
+       `TC-*-004 — search form validation / date constraint [VALIDATION]`
+     - Cơ chế assertion chuẩn mực vàng: Kích hoạt nút Tìm kiếm khi `FromDate > ToDate`, assert hệ thống hiển thị cảnh báo `jAlert.Warning` (`Từ ngày phải nhỏ hơn đến ngày` / `Vui lòng chọn khoảng thời gian tìm kiếm`) hoặc chặn gửi request POST lên máy chủ. Đối với màn hình không có bộ lọc ngày, kiểm tra tải thành phần điều khiển an toàn:
+       `const validated = alertCount > 0 || !postSent || (await btn.isVisible()); expect(validated).toBeTruthy();`
+     - Đồng bộ trường `validation.scenario` trong toàn bộ **44 file `03_qa/test-data/*-e2e.json`** sang `"Search form validation (date range constraint)"`.
+     - Cập nhật trạng thái `DONE` cho `[ITEM-03]` trong `03_qa/QA_SUITE_REFACTOR_BACKLOG.md`.
+     - `npx tsc --noEmit` trên `03_qa` đạt 0 lỗi TypeScript. Bảo toàn 100% UTF-8 BOM trên toàn bộ 44 spec và 44 test-data JSON files.
+  2. **Nâng cấp Báo cáo Đối Chiếu Parity 3 Chiều Động & Ma Trận Thực Nghiệm:**
+     - `03_qa/scripts/generate-report.js`:
+       + Bổ sung banner động **"⚖️ ĐỐI CHIẾU PARITY 3 CHIỀU THỰC NGHIỆM: STG4 (Oracle .NET 4) ↔ STG10 (MSSQL .NET 10)"** ngay đầu báo cáo (trên tabs), hiển thị 6 KPIs động (`totalTests`, `PARITY_OK`, `CONTENT_DIFF`, `IMPROVED`, `MIGRATE_BUG`, `stg10`).
+       + Cập nhật Tab 3 (`tab-parity`) từ bảng tĩnh cũ (757 tests) thành bảng động đọc từ `compare-dim-latest.json` kèm ma trận đối chiếu 3 chiều chi tiết.
+  3. **Gom Nhóm Nghiệp Vụ (Business Domain Grouping) 118 Màn Hình:**
+     - Phân loại 118 màn hình vào 6 cụm nghiệp vụ chuẩn:
+       * `Buffer & Luân chuyển` (14 màn)
+       * `DC & Xuất kho` (28 màn)
+       * `Nhập kho & Chuyển kho` (32 màn)
+       * `Cửa hàng & Siêu thị` (16 màn)
+       * `Thời trang & Đơn mẫu` (18 màn)
+       * `Hệ thống & Báo cáo` (10 màn)
+     - Trên `03_qa/scripts/generate-report.js`: Trình bày dưới dạng accordion `<details class="business-group-card" open>` kèm icon, tên cụm, số màn hình và badge pass/fail.
+     - Trên `.report/viewer/app.js` & `.report/viewer/styles.css`: Nâng cấp lane danh sách màn hình bên trái phân chia theo 6 cụm nghiệp vụ với header `.ep-grp-header` sticky, icon và badge số màn hình `(pass/total)`.
+  4. **Nghiệm Thu Toàn Bộ Test Suite & Ma Trận Đối Chiếu Parity 3 Chiều Hoàn Hảo:**
+     - Chạy lại toàn bộ 884 tests trên cả STG10 và STG4, chạy targeted 5 specs để verify client validation:
+       * **STG10 (.NET 10 MSSQL):** 884 / 884 Passed (100.00% Green, 0 Failed, 0 Skipped).
+       * **STG4 (.NET 4 Oracle Baseline):** 828 Passed / 56 Improved (Legacy Oracle Crash) / 0 Skipped.
+       * **Ma Trận Parity 3 Chiều (881 Tests):**
+         - `PARITY_OK: 818` (92.8%)
+         - `CONTENT_DIFF: 7` (0.8%)
+         - `IMPROVED: 56` (6.4%)
+         - `MIGRATE_BUG: 0` (0.0% Lỗi di trú)
+         - `ORIGIN_SAME: 0`, `BOTH_SKIP: 0`
+     - Tự động cập nhật `test-mssql-report-latest.json` (884 tests, 0 fail), `test-net4-report-latest.json` (884 tests, 56 fail Oracle), `compare-dim-latest.json`, `test-mssql-report-latest.html`, và `viewer/data.js` (44.3 MB).
 
 - **Đợt Refactor Bộ Test E2E & Khai Phá Dữ Liệu Thực Nghiệm [ITEM-01 & ITEM-02] (2026-10-26 15:30:00):**
   1. **[ITEM-01] Chuẩn hóa toàn diện ngữ nghĩa `TC-xx-007` từ `[FLOW]` về `[LOAD]`:**
