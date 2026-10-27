@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-10-27 08:05:00 (🔥 **HOÀN TẤT ĐỐI SOÁT KIẾN TRÚC & DẬP KHUÔN AN TOÀN TOÀN DIỆN CHO CẢ 3 PORTAL DC, PLACE, SCM — KHẮC PHỤC TRIỆT ĐỂ BẪY DEAD-CODE LINUX GDI+, OOM CPU SPIKE, LỖ HỔNG DOS FORM VÀ CRLF INJECTION HEADER**: Triển khai consensus giữa Subagent Architect & QA Auditor, xóa bỏ bẫy Dead-Code bằng cách wire-up hơn 370 Controller (.AutoFit sang ExcelExportCompat), chặn DoS bằng bounded limits 20k/100k, sanitize CRLF và chuẩn hóa Dual-Header RFC 5987. Đã merge dev, gắn tag và tự động tạo 3 cặp PR Bitbucket [#41, #42 cho DC; #49, #50 cho Place; #23, #24 cho SCM], 100% UTF-8 BOM và 0 lỗi build). (🎯 **DC WEB HOÀN TẤT TOÀN DIỆN 3 HẠNG MỤC REFACTOR [ITEM-01, ITEM-02, ITEM-03], NÂNG CẤP ĐỐI CHIẾU PARITY 3 CHIỀU & GOM NHÓM 6 CỤM NGHIỆP VỤ: 884/884 PASSED 100% GREEN, 0 MIGRATE-BUG, 0 ORIGIN-SAME**: Hoàn thành [ITEM-03] chuẩn hóa 44 spec Index TC-004 sang client validation ràng buộc ngày `invalidateSearchDates`, nâng cấp banner và ma trận Đối Chiếu Parity 3 Chiều động đọc từ `compare-dim-latest.json`, gom nhóm 118 màn hình thành 6 cụm nghiệp vụ chuẩn trên cả HTML Report và Report Viewer, nghiệm thu toàn bộ 884 tests trên STG10 Pass 100%, STG4 828 Pass / 56 Improved, 0 Migrate-Bug, 0 Skips)
+> **Cập nhật mới nhất:** 2026-10-27 10:01:49 (🔥 **HOÀN TẤT ĐỐI SOÁT KIẾN TRÚC & DẬP KHUÔN AN TOÀN TOÀN DIỆN CHO CẢ 3 PORTAL DC, PLACE, SCM — KHẮC PHỤC TRIỆT ĐỂ BẪY DEAD-CODE LINUX GDI+, OOM CPU SPIKE, LỖ HỔNG DOS FORM VÀ CRLF INJECTION HEADER**: Triển khai consensus giữa Subagent Architect & QA Auditor, xóa bỏ bẫy Dead-Code bằng cách wire-up hơn 370 Controller (.AutoFit sang ExcelExportCompat), chặn DoS bằng bounded limits 20k/100k, sanitize CRLF và chuẩn hóa Dual-Header RFC 5987. Đã merge dev, gắn tag và tự động tạo 3 cặp PR Bitbucket [#41, #42 cho DC; #49, #50 cho Place; #23, #24 cho SCM], 100% UTF-8 BOM và 0 lỗi build). (🎯 **DC WEB HOÀN TẤT TOÀN DIỆN 3 HẠNG MỤC REFACTOR [ITEM-01, ITEM-02, ITEM-03], NÂNG CẤP ĐỐI CHIẾU PARITY 3 CHIỀU & GOM NHÓM 6 CỤM NGHIỆP VỤ: 884/884 PASSED 100% GREEN, 0 MIGRATE-BUG, 0 ORIGIN-SAME**: Hoàn thành [ITEM-03] chuẩn hóa 44 spec Index TC-004 sang client validation ràng buộc ngày `invalidateSearchDates`, nâng cấp banner và ma trận Đối Chiếu Parity 3 Chiều động đọc từ `compare-dim-latest.json`, gom nhóm 118 màn hình thành 6 cụm nghiệp vụ chuẩn trên cả HTML Report và Report Viewer, nghiệm thu toàn bộ 884 tests trên STG10 Pass 100%, STG4 828 Pass / 56 Improved, 0 Migrate-Bug, 0 Skips)
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
@@ -849,14 +849,14 @@ ightarrow$ SQL Stored Procedure; xác định bảng tác động và phân lo�
 
 - **Đợt Phân Tích Chuyên Sâu & Khắc Phục Toàn Diện 4 Lỗi Thứ Cấp Cho Cả 3 Portal (DC, Place, SCM — 2026-10-27 08:05:00):**
   - **Bối cảnh & Tranh biện Kiến trúc giữa Subagents:** Sau khi trích xuất commit từ 6 repo tham chiếu (`cci-hrm-web`, `cci-mbm-web`, v.v.), Subagent *Architect & Systems Thinker* và *QA & Security Auditor* đã đối soát chuyên sâu và phát hiện 4 rủi ro hồi quy chí mạng:
-    1. **Bẫy Dead-Code AutoFit trên Linux:** `ExcelExportCompat` tồn tại nhưng 370+ controller vẫn gọi trực tiếp `worksheet.Column(x).AutoFit()` $ightarrow$ Trên Linux Kubernetes Pods, 100% chức năng xuất file sẽ sập lỗi HTTP 500 do `PlatformNotSupportedException` (thiếu GDI+).
+    1. **Bẫy Dead-Code AutoFit trên Linux:** `ExcelExportCompat` tồn tại nhưng 370+ controller vẫn gọi trực tiếp `worksheet.Column(x).AutoFit()` $
+ightarrow$ Trên Linux Kubernetes Pods, 100% chức năng xuất file sẽ sập lỗi HTTP 500 do `PlatformNotSupportedException` (thiếu GDI+).
     2. **Treo CPU Thread Pool & OOM trong EstimateWidth:** Việc quét qua toàn bộ 50,000 dòng bằng `.Text` gây GC pause kéo dài và nghẽn Worker Process. Đồng thời khối catch rỗng của `AutoFitColumns` khiến cột co rúm về 8.43 sinh lỗi `###`.
     3. **Lỗ hổng DoS (CWE-400) từ `int.MaxValue`:** Thiết lập `ValueCountLimit = int.MaxValue` và `MaxModelBindingCollectionSize = int.MaxValue` vô hiệu hóa phòng tuyến chống tấn công cạn kiệt bộ nhớ.
     4. **CRLF Injection & Header Mojibake:** Đẩy chuỗi tiếng Việt thô vào `Response.Headers["FileName"]` gây lỗi vỡ font trên trình duyệt (XHR đọc Latin-1) và sập Kestrel nếu có ký tự xuống dòng.
   - **Triển Khai Chuẩn Hóa Sản Xuất Trên Cả 3 Portal:**
     * **`ExcelExportCompat.cs`:** Bổ sung `OperatingSystem.IsWindows()` fast-path; giới hạn mẫu 50 dòng (`Math.Min(dimension.End.Row, startRow + 50)`); đọc trực tiếp `.Value`; đệm an toàn `+ 4` ký tự chống lỗi `###`; hệ số bold 1.15; trần 80 ký tự; loop range trên Linux.
-    * **Dual-Header Standard:** Hàm `SetSafeFileNameHeader` sanitize ``, `
-`, ` `, sinh header `FileName` dạng ASCII sạch (tương thích ngược 100% với `UtilJS.Files.DownloadWithXHR`) song song cùng RFC 5987 / RFC 6266 `Content-Disposition: attachment; filename="..."; filename*=UTF-8''...`.
+    * **Dual-Header Standard:** Hàm `SetSafeFileNameHeader` sanitize `\r`, `\r`, ` `, sinh header `FileName` dạng ASCII sạch (tương thích ngược 100% với `UtilJS.Files.DownloadWithXHR`) song song cùng RFC 5987 / RFC 6266 `Content-Disposition: attachment; filename="..."; filename*=UTF-8''...`.
     * **Ngưỡng Phòng Thủ DoS:** Đặt `ValueCountLimit = 20_000` & `MaxModelBindingCollectionSize = 20_000` cho `cci-store-location-web`; đặt ngưỡng `100_000` cho `cci-dc-web` và `cci-scm-web` (đồng bộ với `cci-hrm-web`).
     * **Wire-up Toàn Diện Controllers:** Quét và thay thế 100% lời gọi `.AutoFit()` và `Response.Headers["FileName"]` trên 54 files DC, 12 files Place, và 306 files SCM.
   - **Kết Quả Nghiệm Thu Build & PR Bitbucket:**
@@ -866,9 +866,9 @@ ightarrow$ SQL Stored Procedure; xác định bảng tác động và phân lo�
     * **Bảo toàn 100% UTF-8 BOM:** Không có bất kỳ file nào bị lỗi line 1 hay mất BOM.
 
 
-- **Lần chạy Commit Sync gần nhất:** 2026-10-27 07:40:57 — Đã kéo và quét commit của 6 repo tham chiếu. Toàn bộ 3 portal (DC, Place, SCM) đều đã đồng bộ đầy đủ các giải pháp kỹ thuật cốt lõi (Redis DataProtection, NormalizeUrl, EPPlus order).
+- **Lần chạy Commit Sync gần nhất:** 2026-10-27 10:01:49 — Đã kéo và quét commit của 6 repo tham chiếu. Toàn bộ 3 portal (DC, Place, SCM) đều đã đồng bộ đầy đủ các giải pháp kỹ thuật cốt lõi (Redis DataProtection, NormalizeUrl, EPPlus order).
 
-- **Lần chạy Daily Incremental Commit Sync 17:00:** 2026-10-27 07:40:57 (Hoàn tất thành công)
+- **Lần chạy Daily Incremental Commit Sync 17:00:** 2026-10-27 10:01:49 (Hoàn tất thành công)
   - Đã fetch & pull 6 repo tham chiếu (`cci-hrm-web`, `cci-mbm-web`, `cci-timekeeping-web`, `cci-supplier-web`, `cci-common-web`, `cci-hrm-api`).
   - Trích xuất 150 commit gần nhất, phân tích và gom nhóm 8 danh mục kỹ thuật.
   - Đối chiếu với 3 portal đang thao tác (DC, Place, SCM): Tất cả các giải pháp kỹ thuật trọng yếu (Redis DataProtection Keyring, NormalizeUrl, EPPlus DataValidation) đều đã được áp dụng đầy đủ và đồng bộ, không phát sinh giải pháp mới cần dập khuôn thêm.
