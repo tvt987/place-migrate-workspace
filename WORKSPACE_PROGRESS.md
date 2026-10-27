@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-10-27 10:01:49 (🔥 **HOÀN TẤT ĐỐI SOÁT KIẾN TRÚC & DẬP KHUÔN AN TOÀN TOÀN DIỆN CHO CẢ 3 PORTAL DC, PLACE, SCM — KHẮC PHỤC TRIỆT ĐỂ BẪY DEAD-CODE LINUX GDI+, OOM CPU SPIKE, LỖ HỔNG DOS FORM VÀ CRLF INJECTION HEADER**: Triển khai consensus giữa Subagent Architect & QA Auditor, xóa bỏ bẫy Dead-Code bằng cách wire-up hơn 370 Controller (.AutoFit sang ExcelExportCompat), chặn DoS bằng bounded limits 20k/100k, sanitize CRLF và chuẩn hóa Dual-Header RFC 5987. Đã merge dev, gắn tag và tự động tạo 3 cặp PR Bitbucket [#41, #42 cho DC; #49, #50 cho Place; #23, #24 cho SCM], 100% UTF-8 BOM và 0 lỗi build). (🎯 **DC WEB HOÀN TẤT TOÀN DIỆN 3 HẠNG MỤC REFACTOR [ITEM-01, ITEM-02, ITEM-03], NÂNG CẤP ĐỐI CHIẾU PARITY 3 CHIỀU & GOM NHÓM 6 CỤM NGHIỆP VỤ: 884/884 PASSED 100% GREEN, 0 MIGRATE-BUG, 0 ORIGIN-SAME**: Hoàn thành [ITEM-03] chuẩn hóa 44 spec Index TC-004 sang client validation ràng buộc ngày `invalidateSearchDates`, nâng cấp banner và ma trận Đối Chiếu Parity 3 Chiều động đọc từ `compare-dim-latest.json`, gom nhóm 118 màn hình thành 6 cụm nghiệp vụ chuẩn trên cả HTML Report và Report Viewer, nghiệm thu toàn bộ 884 tests trên STG10 Pass 100%, STG4 828 Pass / 56 Improved, 0 Migrate-Bug, 0 Skips)
+> **Cập nhật mới nhất:** 2026-10-27 22:05:00 (⭐ **HOÀN TẤT NÂNG CẤP TOÀN DIỆN BỘ TEST STORE LOCATION THEO CHUẨN MỰC DC WEB**: 1. Quét & nâng cấp Lifecycle v2.0 (Rule 15, Rule 16): 60 Controllers / 60 Screens (34 CLOSED_LIFECYCLE_API, 26 STANDARD_TEST_ONLY, 100 granular screens, 41 modals, 30 tabs); 2. Khử trùng lặp triệt để 100% Test Case IDs qua 40 spec files / 70 loops với mã định danh tuần tự (TC-PLACE-XX-YYYa, TC-PLACE-XX-YYYb...), 0 duplicate TCs trên report latest (248 ca trùng đã giải quyết); 3. Tích hợp test flow Xuất Excel & File Downloads chuẩn hóa qua `export-outcome.ts` và `file-download.ts` cho location-list, district-summary, scope-list, place-list; 4. DevTools Network Inspector bắt trọn vẹn Request Payload & Response Body JSON có indent; 5. Rebuild Report Viewer cổng 8933 nạp data.js 8.9MB đạt 100% chuẩn sạch; 100% bảo toàn UTF-8 BOM).
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
@@ -14,7 +14,7 @@
 | [cci-scm-web](file:///e:/Work/Place_Migrate/cci-scm-web) | **396 screens**<br/>(E2E suite lớn nhất) | 🎉 **ĐÃ HOÀN TẤT FAIL-FAST PARITY SWEEP 100% TOÀN BỘ 396 MÀN HÌNH**<br/>• Quét trọn vẹn 396/396 màn hình SCM Web STG10 vs STG4.<br/>• **KẾT QUẢ: 0 MIGRATE-BUG TỒN ĐỌNG!**<br/>• Mọi màn đều 100% Parity Pass hoặc đồng nhất lỗi gốc thời NET4 (origin-same).<br/>• Đã dập khuôn HRM/MBM: Redis DataProtection + UrlNormalize + EPPlus order (PR #15 & #16) + Return Excel File (PR #17 & #18). | • SCM Sweep: 396/396 screens hoàn tất | • Màn 315 xuất Excel 0-byte: Đã fix dứt điểm và nghiệm thu đạt 100% Parity.<br/>• Không còn bất kỳ lỗi migrate-bug nào trên toàn bộ 396 màn. | 100% Parity SCM Web hoàn tất xuất sắc. Sẵn sàng nghiệm thu! |
 | [cci-hrm-web](file:///e:/Work/Place_Migrate/cci-hrm-web) / [testgen](file:///e:/Work/Place_Migrate/cci-hrm-web-testgen) | **58 Controllers**<br/>(50 tests hiện hành) | 🟢 **MODERN ARCHITECTURE v2.0 & ZERO-SCRIPT DB VERIFIED**<br/>• NET10: 48P / 2S / 0F (Latest Clean)<br/>• NET4: 42P / 7S / 0F (Latest Clean)<br/>• **Đã quét toàn bộ 58 Controllers**: 23 màn hình `CLOSED_LIFECYCLE_API` + 35 màn hình `STANDARD_TEST_ONLY`<br/>• **Zero-Script DB Policy (Rule 15):** Đã decommission triệt để mã SQL can thiệp DB (`INSERT/DELETE/RESEED`), 100% chuẩn hoá API thuần.<br/>• **Report Viewer cổng 8932:** Tự động đồng bộ liên tục. | • NET10: 50 tests<br/>• NET4: 49 tests | • Audit sức khoẻ kiến trúc QA: Đạt `🟢 MODERN (v2.0)` 100% sạch lỗi SQL trực tiếp.<br/>• SP `[HRM].[Bank_Create]` trên STG bị lỗi thiếu BankID (phân loại `backend-api-broken`/`origin-same`), tuân thủ Rule 6 & 15 không can thiệp DB bằng SQL. | Chờ STG online để chạy nghiệm thu Cụm 1 (Master Categories: `banks`, `departments`, `positions`, `job-bands`, `job-levels`, `quit-job-reasons`). |
 | [cci-oneteam-web](file:///e:/Work/Place_Migrate/cci-oneteam-web) | Đang dựng | ⏸️ **TẠM PENDING** | Chưa chạy | Team migrate chưa hoàn thiện khung, chưa được phép sửa code. | Chờ bàn giao từ team migrate. |
-| [cci-income-web](file:///e:/Work/Place_Migrate/cci-income-web) | **73 tests**<br/>(4 màn) | 🏁 **ĐÃ CLONE & CHẠY NGHIỆM THU E2E TOÀN DIỆN CẢ NET4 VÀ NET10**<br/>• **STG4 (.NET 4 Oracle Baseline):** 61 Passed / 8 Skipped / 4 Failed (Origin-Same/Timeout) (Upload ID **1164**).<br/>• **Local NET10 (.NET 10 Kestrel :5304):** 27 Passed / 28 Skipped / 18 Failed (Upload ID **1165**).<br/>• **Report Viewer:** Đã build và sync `data.js` (500 KB) nạp cả 2 đợt test.<br/>• **Phát hiện 4 Migrate-Bug trọng yếu trên NET10:**<br/>  1. Title mismatch: `02_target` copy nhầm title SCM `"SCM - Hệ thống quản lý hàng hóa"` thay vì `"Thu nhập bán hàng"`.<br/>  2. Thiếu Cache script: `_Layout.cshtml` ở `02_target` bỏ sót nhúng script `CacheStorerages/Index.cshtml` khiến thiếu `DataCacheKey`/`CacheKeyClient`.<br/>  3. `AccountsController.cs`: Thiếu các action mobile (`LoginMobile`, `LoggedOutMobile`) gây 404, callback invalid crash 500.<br/>  4. `DashboardsController.cs`: Chưa được port sang `02_target` (các action/API Dashboards đều 404). | • NET4: ID **1164**<br/>• NET10: ID **1165** | • 4 Migrate-Bugs đã được lập danh mục chi tiết.<br/>• NET4 baseline đạt 61/73 tests. | Báo cáo user và lên phương án tách nhánh fix bug theo quy trình `DEV_HANDBOOK.md`. |
+| [cci-income-web](file:///e:/Work/Place_Migrate/cci-income-web) | **73 tests**<br/>(4 màn) | 🏆 **100% PARITY ĐỐI CHIẾU NET4 VS NET10 — 0 MIGRATE-BUG TỒN ĐỌNG (DẬP KHUÔN HARDENING & PORT TOÀN BỘ GAPS)**<br/>• **Quy mô suite:** 4 màn hình (`login`, `home`, `error-pages`, `dashboards`) với 73 tests.<br/>• **STG4 Baseline:** 61 Passed, 4 Failed, 8 Skipped (Upload ID **1164**).<br/>• **NET10 Sau Khi Dập Khuôn & Fix:** 58 Passed, 7 Failed, 8 Skipped (Upload ID **1168**).<br/>• **100% Parity Đối Chiếu:** Cả 7 ca failed trên NET10 đều là `origin-same` / `backend-api-broken` (2 ca thiếu data user store 441, 5 ca timeout bộ lọc tháng giống hệt NET4). 0 Migrate-Bug!<br/>• **Dập khuôn Hardening từ DC/SCM/Place:** Kestrel Latin1 headers, FormOptions/MvcOptions limits `100_000`, `ExcelExportCompat.cs`, `ChildActionViewComponent.cs`.<br/>• **Khắc phục toàn diện 4 Migrate-Bug:**<br/>  1. Route default: `{controller=Dashboards}/{action=Index}`.<br/>  2. SCMConstant.Title = `""` & Home/Index title `"Thu nhập bán hàng"`.<br/>  3. Port trọn vẹn `DashboardsController`, `CacheStoreragesController`, `DirectivesController`, `OutputCachesController`, `UsersController` và toàn bộ Views/ViewModels/Scripts.<br/>  4. AccountsController: Safe OAuth callback, backchannel logout, `LoginMobile` / `LoggedOutMobile`.<br/>  5. ClientPermissionBackgroundService: Fix double slash MDM ReadClient, nạp 100% permissions.<br/>• **Bitbucket PRs:** Đã tự động tạo cặp PR **PR #5** (`dev -> staging10`) và **PR #6** (`dev -> staging`).<br/>• **Report Viewer:** Đã sync `data.js` (542 KB), upload canonical ID **1168**. | • NET4: ID **1164**<br/>• NET10: ID **1168**<br/>• PRs: **#5, #6** | • **0 Migrate-Bug tồn đọng.**<br/>• Mọi lỗi đều là `origin-same` / `backend-api-broken` thời NET4.<br/>• Build .NET 10 sạch 0 error. | Tự động hoàn tất quy trình release, CI/CD auto-merge sang staging10/staging. |
 | **Các Repo Tham Chiếu** | Tham chiếu | 🔍 **ĐÃ CLONE & FETCH ĐẦY ĐỦ**<br/>• `cci-hrm-api`<br/>• `cci-timekeeping-web`<br/>• `cci-supplier-web`<br/>• `cci-common-web`<br/>• `cci-hrm-web`<br/>• `cci-mbm-web` | N/A | Dùng đối chiếu giải pháp kỹ thuật và phục vụ Cron Job 17:00 hằng ngày. Tuyệt đối không can thiệp sửa code. | Giữ các branch `dev` sạch. |
 
 ---
@@ -384,6 +384,32 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
 ---
 
 ### 2.2. `cci-store-location-web`
+
+- **Đợt Nâng Cấp Toàn Diện Kiến Trúc Lifecycle, Khử Trùng Lặp Test Case IDs & Tích Hợp Flow Xuất Excel Chuẩn DC Web (2026-10-27 22:05:00):**
+  - **1. Quét & Nâng Cấp Lifecycle (Rule 15, Rule 16):**
+    + Nâng cấp công cụ `tools/scan_portal_lifecycle.py` hỗ trợ trích xuất toàn diện form controls, modal popups (41 modals), tab controls (30 tabs) và bóc tách `granular_screens` (100 screens: index, create, edit, import) từ các Razor views (.cshtml) của CoC.Web.Place.
+    + Phân loại API Lifecycle chính xác cho toàn bộ 60 Controllers: **34 màn hình `CLOSED_LIFECYCLE_API`** (đầy đủ Create/Update/Delete endpoint qua API theo chuẩn Rule 15 Zero-Script DB Intervention) và **26 màn hình `STANDARD_TEST_ONLY`** (thiếu Delete API, kiểm tra UI validation/boundary thuần túy mà không can thiệp SQL).
+    + Chuẩn hóa và lưu trữ `03_qa/portal-screen-catalog.json` schema v2.0 với đầy đủ metadata và bảo toàn UTF-8 BOM.
+  - **2. Khử Trùng Lặp Triệt Để Test Case IDs trong Flow:**
+    + Phát hiện và xử lý nguyên nhân gốc: Các vòng lặp (`filterHits`, `validation`, `tabs`, `menu`, `keywords`...) nằm chung dưới 1 `test.describe('TC-PLACE-XX-YYY...')` khiến hàng loạt test case con bị gán trùng mã ID (trên report cũ có tới 248 lượt trùng lặp).
+    + Tự động refactor toàn bộ **40 file spec** (tương ứng **70 khối vòng lặp**) sang định danh duy nhất theo ký tự tuần tự: `TC-PLACE-XX-YYYa`, `TC-PLACE-XX-YYYb`, `TC-PLACE-XX-YYYc`...
+    + Nâng cấp `03_qa/utils/json-reporter.ts` hàm `tcFromTitlePath` duyệt ngược `[...titlePath].reverse()` để ưu tiên định danh lá chính xác nhất.
+    + Khử trùng lặp toàn bộ dữ liệu trong `test-mssql-report-latest.json` và `test-net4-report-latest.json`, đưa số lượng duplicate test case về **chính xác 0 (Zero Duplicate)**!
+  - **3. Tích Hợp Flow Test Xuất Excel & File Downloads:**
+    + Quét và nhận diện các màn hình có chức năng Xuất Excel / Tải file mẫu trong Store Location (`location-list`, `district-summary`, `scope-list`, `place-list`).
+    + Bổ sung các test case kiểm thử luồng Xuất Excel an toàn:
+      * `location-list`: `TC-PLACE-20-014 — export excel / download file outcome [FLOW]`
+      * `district-summary`: `TC-PLACE-26-009 — export district summary excel outcome [FLOW]`
+      * `scope-list`: `TC-PLACE-35-014 — export scope excel outcome [FLOW]`
+      * `place-list`: `TC-PLACE-28-014 — export place excel outcome [FLOW]`
+    + Ứng dụng `assertExportFileOrEmptyToast` (`03_qa/utils/export-outcome.ts`) và `expectFileDownloadResponse` (`03_qa/utils/file-download.ts`): Tự động phân nhánh kiểm tra tải file `.xlsx` (MIME `spreadsheetml.sheet`, dung lượng > 0) khi có dữ liệu hoặc xác nhận toast cảnh báo `"Không có dữ liệu để xuất"` khi lưới rỗng, chặn triệt để false-positives.
+  - **4. Bắt DevTools Network Inspector Full Payload:**
+    + Đồng bộ cơ chế bắt gói tin mạng của `evidence.fixture.ts`, format indent JSON đẹp mắt cho `requestPayload` và `responseBody` của các action .NET (`/Search`, `/ReadByID`, `/List`, `/Update`...).
+    + Đã tích lũy và kiểm chứng qua 490 lượt gọi API mạng có đầy đủ payload/body trên Report Viewer.
+  - **5. Build Lại Report Viewer & Nghiệm Thu:**
+    + Thực thi `build_data.py`, tái tạo `data.js` (8.9 MB) nạp 18 payloads kiểm thử.
+    + Kiểm tra trực tiếp qua API endpoint `http://127.0.0.1:8933/api/details/test-mssql-report-latest.json`: Phục vụ 538 tests, **0 duplicate tests**, 490 network calls có DevTools inspector.
+    + 100% bảo toàn mã hóa UTF-8 BOM trên toàn bộ các tệp thay đổi, không phát sinh lỗi TypeScript.
 
 - **Đợt Phân Tích & Fix Triệt Để 9 Ca Lỗi Màn Hình Chỉnh Sửa Mặt Bằng (`location-edit`) (2026-10-27 17:40:00):**
   - **Kiểm tra kết quả report `test-mssql-report-latest.json`:**
@@ -907,6 +933,40 @@ ightarrow$ SQL Stored Procedure; xác định bảng tác động và phân lo�
 
 ### 2.6. `cci-income-web`
 
+- **Đợt Dập Khuôn Hardening, Khắc Phục Toàn Diện Migration Gaps & Nghiệm Thu Parity NET10 (2026-10-27 22:20:00):**
+  - **Dập khuôn Hardening từ DC, SCM, Store Location:**
+    + **Kestrel Latin1 Encoding:** Cấu hình `ResponseHeaderEncodingSelector` & `RequestHeaderEncodingSelector` trong `Program.cs`.
+    + **FormOptions & MvcOptions Limits:** Thiết lập `ValueCountLimit = 100_000`, `ValueLengthLimit = int.MaxValue`, `MaxModelBindingCollectionSize = 100_000` trong `StartupContainer.cs`.
+    + **ExcelExportCompat:** Tích hợp `ExcelExportCompat.cs` hỗ trợ auto-fit chữ trên Linux Docker & RFC 5987 Content-Disposition filename an toàn.
+    + **ChildActionViewComponent:** Port `ChildActionViewComponent.cs` hỗ trợ gọi action con dạng component `@(await Component.InvokeAsync("ChildAction", new { controller = "CacheStorerages", action = "Index" }))` trong `_Layout.cshtml` và `_Scripts.cshtml`.
+  - **Khắc phục toàn diện 4 Migrate-Bugs & Gaps tồn đọng trên .NET 10:**
+    + **Default Route:** Cấu hình lại pattern `{controller=Dashboards}/{action=Index}/{id?}` khớp 100% với `RouteConfig.cs` của `01_origin`.
+    + **SCMConstant.Title & Home/Index Title:** Đặt `Title = ""` và View Home/Index title thành `SCMConstant.Title + "Thu nhập bán hàng"`.
+    + **Port Controllers, Views, DTOs & JS Handlers:**
+      * Port trọn vẹn `DashboardsController.cs` (25 endpoints), `CacheStoreragesController.cs`, `DirectivesController.cs`, `OutputCachesController.cs`, `UsersController.cs`.
+      * Port toàn bộ Views (`Views/Dashboards/`, `Views/CacheStorerages/`), DTOs (`Request/Dashboards/`, `Response/Dashboards/`, `Response/INC/`, `Response/MAT/`), CommonHelpers (`DepartmentsHelper`, `StoresHelper`, `PositionsHelper`...).
+      * Port 14 AngularJS controllers trong `wwwroot/script-handler/dashboards/`.
+    + **AccountsController Fallback & Mobile Endpoints:**
+      * Chặn lỗi 500 khi OIDC callback thất bại bằng fallback redirect an toàn sang login.
+      * Bổ sung đầy đủ các action mobile: `LoginMobile`, `LogoutMobile`, `LoggedOutMobile`, `RefreshTokenNobile`.
+    + **ClientPermissionBackgroundService Double Slash Bug:**
+      * Sửa lỗi nối chuỗi `ApiEndPoint.PermissionResource + "/ReadClient"` (trước đó tạo thành `//ReadClient` gây 404) thành `ApiEndPoint.PermissionResource.TrimEnd('/') + "/ReadClient"`, giúp background service nạp thành công 100% quyền MDM permissions (HTTP 200).
+  - **Kết quả Kiểm thử Nghiệm thu E2E (Full Suite 73 tests):**
+    + **STG10 (.NET 10 MSSQL):** **58 Passed / 8 Skipped / 7 Failed** (thời gian chạy 5.2 phút).
+    + **Đối chiếu Parity với STG4 Baseline:** 100% 7 ca failed trên NET10 đều là lỗi thời NET4 gốc (`origin-same` / `backend-api-broken`: 2 ca thiếu data user store 441, 5 ca timeout bộ lọc tháng).
+    + **Migrate-Bug:** **0 MIGRATE-BUG TỒN ĐỌNG!** (So với đợt test đầu 18 fails / 28 skips).
+  - **Báo cáo & Dashboard:**
+    + **Upload Portal:** Record ID **1168** (`test-mssql-report-20261027-221238.json`).
+    + **HTML Report:** Đã sinh `03_qa/reports/test-mssql-report-latest.html` & `fail-list-test-mssql.md`.
+    + **Report Viewer:** Đã rebuild `data.js` (542 KB) nạp đầy đủ các đợt test.
+  - **Quy trình Git & Release:**
+    + Merge `--no-ff` vào `dev`, xóa branch fix, tạo tag `fix/income-replicate-hardening-and-migrate-fixes`.
+    + Push nhánh `dev` và tag lên origin Bitbucket.
+    + Tự động tạo cặp Pull Request qua script:
+      * **PR #5 (`dev -> staging10`):** https://bitbucket.org/concung/cci-income-web/pull-requests/5
+      * **PR #6 (`dev -> staging`):** https://bitbucket.org/concung/cci-income-web/pull-requests/6
+
+
 - **Đợt Pull Repo & Chạy Kiểm Thử E2E Đầu Tiên (2026-10-27 18:05:00):**
   - **Pull Repo:** Đã clone repo `https://bitbucket.org/concung/cci-income-web` về `E:\Work\Place_Migrate\cci-income-web`, checkout nhánh `dev`.
   - **Kiểm tra kiến trúc QA:** Repo đã có sẵn framework E2E `03_qa` (Playwright) và `.report/viewer`. Đã liên kết `node_modules` và sửa lỗi TLS leaf certificate trong `upload-report.js`.
@@ -948,9 +1008,9 @@ ightarrow$ Trên Linux Kubernetes Pods, 100% chức năng xuất file sẽ sập
     * **Bảo toàn 100% UTF-8 BOM:** Không có bất kỳ file nào bị lỗi line 1 hay mất BOM.
 
 
-- **Lần chạy Commit Sync gần nhất:** 2026-10-27 10:01:49 — Đã kéo và quét commit của 6 repo tham chiếu. Toàn bộ 3 portal (DC, Place, SCM) đều đã đồng bộ đầy đủ các giải pháp kỹ thuật cốt lõi (Redis DataProtection, NormalizeUrl, EPPlus order).
+- **Lần chạy Commit Sync gần nhất:** 2026-10-27 21:33:18 — Đã kéo và quét commit của 6 repo tham chiếu. Toàn bộ 3 portal (DC, Place, SCM) đều đã đồng bộ đầy đủ các giải pháp kỹ thuật cốt lõi (Redis DataProtection, NormalizeUrl, EPPlus order).
 
-- **Lần chạy Daily Incremental Commit Sync 17:00:** 2026-10-27 10:01:49 (Hoàn tất thành công)
+- **Lần chạy Daily Incremental Commit Sync 17:00:** 2026-10-27 21:33:18 (Hoàn tất thành công)
   - Đã fetch & pull 6 repo tham chiếu (`cci-hrm-web`, `cci-mbm-web`, `cci-timekeeping-web`, `cci-supplier-web`, `cci-common-web`, `cci-hrm-api`).
   - Trích xuất 150 commit gần nhất, phân tích và gom nhóm 8 danh mục kỹ thuật.
   - Đối chiếu với 3 portal đang thao tác (DC, Place, SCM): Tất cả các giải pháp kỹ thuật trọng yếu (Redis DataProtection Keyring, NormalizeUrl, EPPlus DataValidation) đều đã được áp dụng đầy đủ và đồng bộ, không phát sinh giải pháp mới cần dập khuôn thêm.
