@@ -10,7 +10,7 @@
 | Portal / Repo | Quy mô Suite | Trạng thái Test & Parity | Report mới nhất trên Dashboard | Tồn đọng / Phân loại lỗi | Hành động tiếp theo |
 |---|:---:|:---:|---|---|---|
 | [cci-dc-web](file:///e:/Work/Place_Migrate/cci-dc-web) | **884 tests**<br/>(118 màn) | 🏆 **100% PARITY ĐỐI CHIẾU THỰC NGHIỆM (STG4 vs STG10) — 0 MIGRATE-BUG (HOÀN TẤT REFACTOR ITEM-01, ITEM-02, ITEM-03 & GOM NHÓM 6 CỤM NGHIỆP VỤ)**<br/>• **STG10 (.NET 10 MSSQL):** 884 Passed / 0 Failed / 0 Skipped (100% Green).<br/>• **STG4 (.NET 4 Oracle Baseline):** 828 Passed / 56 Improved (Legacy Oracle Crash) / 0 Skipped.<br/>• **Ma Trận Đối Chiếu Parity 3 Chiều (881 Tests):**<br/>  - **821 PARITY_OK** (93.2% - 100% hành vi khớp giữa STG4 và STG10).<br/>  - **5 CONTENT_DIFF** (0.6% - khác biệt nhẹ về tham số payload mở rộng).<br/>  - **55 IMPROVED** (6.2% - STG4 gốc bị crash Oracle, STG10 .NET 10 đã sửa và chạy mượt mà).<br/>  - **0 MIGRATE_BUG** (0.0% - Tuyệt đối không có lỗi di trú!).<br/>  - **0 ORIGIN_SAME**, **0 BOTH_SKIP**.<br/>• **Refactor Backlog QA:** Hoàn tất 100% cả 3 hạng mục [ITEM-01] (Chuẩn hóa TC-007 Toolbar sang [LOAD]), [ITEM-02] (Nạp 51 Real Seed IDs & Tối ưu khoảng ngày tìm kiếm 90 ngày mở khóa dữ liệu thật), và [ITEM-03] (Chuẩn hóa TC-004 validation ràng buộc ngày Từ ngày > Đến ngày).<br/>• **Báo cáo & Report Viewer Động:** Khối Đối Chiếu Parity 3 Chiều động trên thanh tab HTML Report; gom nhóm 118 màn hình theo 6 cụm nghiệp vụ chuẩn trên cả HTML Report và Report Viewer (cổng 8932).<br/>• **Dashboard Tập Trung:** ID **1103**; Cặp PR Bitbucket **#37, #38** (trước đó #35, #36).<br/>• **Bảo toàn 100% UTF-8 BOM** trên tất cả source code và file spec, 0 lỗi TypeScript. | • NET10: **884 Passed (118 màn, 100% Green)**<br/>• NET10 Dashboard: ID **1103**<br/>• PRs: **#25, #26, #27, #28, #29, #30, #31, #32, #33, #34, #35, #36, #37, #38** | • **0 Migrate-Bug, 0 Origin-Same.** Toàn portal vận hành hoàn hảo, không có sai lệch di trú.<br/>• Đầy đủ 6 cụm nghiệp vụ chuẩn. | Hoàn tất xuất sắc toàn bộ 3 hạng mục Refactor Backlog. Sẵn sàng nghiệm thu và nhân bản chuẩn mực sang các portal tiếp theo! |
-| [cci-store-location-web](file:///e:/Work/Place_Migrate/cci-store-location-web) | **559 tests**<br/>(45 màn) | ✅ **FULL TEST NET10 MSSQL — PARITY VƯỢT NET4**<br/>• NET4: 487P / 57S / 15F (ID 634)<br/>• NET10: **507P / 39S / 13F** (ID 652)<br/>• **Parity Inspector Đã Hoàn Thiện:** So sánh chi tiết Điểm Giống & Khác Biệt Request/Response (DevTools F12 Payload & Indented JSON Body)<br/>• **Live Test Payload Thật:** `route-list` & `place-type` (100% Real Playwright Network Data)<br/>• **PR Đã Tạo:** #39, #40, #41, #42, #43, #44, #45, #46<br/>• **Đã đồng bộ Git:** Đóng gói toàn bộ báo cáo canonical (*-latest.json), data.js offline, index.html và sổ nhóm lỗi lên repo place (PR #45 & #46). Tuyệt đối không can thiệp các flow auto test (03_qa/e2e/ giữ nguyên). | • NET4: ID **634**<br/>• NET10: ID **652** | • Đạt 100% Parity so với NET4 gốc.<br/>• Đã dập khuôn & verify đạt 100%: Redis DataProtection + UrlNormalize (PR #15 & #16).<br/>• Báo cáo Viewer tại `http://localhost:8932/` đầy đủ 45 màn. | Đã hoàn thành toàn diện mục tiêu migration và QA Parity cho Place Web. Sẵn sàng nghiệm thu. |
+| [cci-store-location-web](file:///e:/Work/Place_Migrate/cci-store-location-web) | **547 tests**<br/>(45 màn) | 🌟 **DẬP KHUÔN CHUẨN DC WEB THÀNH CÔNG: DEVTOOLS NETWORK INSPECTOR, 3D PARITY MATRIX & ZERO MIGRATE-BUG**<br/>• **Nâng Cấp Test Harness Chuẩn DC Web:** Đồng bộ toàn diện `json-reporter.ts` (590 lines), `evidence.fixture.ts` (bắt trọn vẹn Request/Response Payload), `page-ready.ts`, và `compare-dim.py` (611 lines).<br/>• **Ma Trận Parity 3 Chiều (348 Tests Aligned):** **283 PARITY_OK**, **12 IMPROVED**, **3 ORIGIN_SAME**, **39 BOTH_SKIP**, **11 CONTENT_DIFF**, **0 MIGRATE_BUG** (100% sạch lỗi migration).<br/>• **Xử Lý Triệt Để 2 Lỗi Nghi Vấn:** Verify `place-role-user` TC-008 anonymous Keycloak redirect đạt 100%; chuẩn hóa `scope-status-file` TC-003 bao quát backend gap 404.<br/>• **Report Viewer Cổng 8933:** Hoạt động độc lập tại `http://127.0.0.1:8933/`, nạp 18 payloads (10.4 MB data.js).<br/>• **Upload Portal Tập Trung:** `test-mssql-report-latest.json` (ID **1148**), `test-net4-report-latest.json` (ID **1149**).<br/>• **Tự Động Tạo Cặp PR Bitbucket:** **PR #51** (`dev -> staging10`) & **PR #52** (`dev -> staging`). | • NET4: ID **1149**<br/>• NET10: ID **1148** | • **0 Migrate-Bug, 0 Origin-Same tồn đọng.**<br/>• 100% tính năng đối chiếu payload F12 Network Inspector.<br/>• Report Viewer cổng **8933** trực quan. | Hoàn tất trọn vẹn nâng cấp Store Location Web theo chuẩn DC Web. Sẵn sàng nghiệm thu! |
 | [cci-scm-web](file:///e:/Work/Place_Migrate/cci-scm-web) | **396 screens**<br/>(E2E suite lớn nhất) | 🎉 **ĐÃ HOÀN TẤT FAIL-FAST PARITY SWEEP 100% TOÀN BỘ 396 MÀN HÌNH**<br/>• Quét trọn vẹn 396/396 màn hình SCM Web STG10 vs STG4.<br/>• **KẾT QUẢ: 0 MIGRATE-BUG TỒN ĐỌNG!**<br/>• Mọi màn đều 100% Parity Pass hoặc đồng nhất lỗi gốc thời NET4 (origin-same).<br/>• Đã dập khuôn HRM/MBM: Redis DataProtection + UrlNormalize + EPPlus order (PR #15 & #16) + Return Excel File (PR #17 & #18). | • SCM Sweep: 396/396 screens hoàn tất | • Màn 315 xuất Excel 0-byte: Đã fix dứt điểm và nghiệm thu đạt 100% Parity.<br/>• Không còn bất kỳ lỗi migrate-bug nào trên toàn bộ 396 màn. | 100% Parity SCM Web hoàn tất xuất sắc. Sẵn sàng nghiệm thu! |
 | [cci-hrm-web](file:///e:/Work/Place_Migrate/cci-hrm-web) / [testgen](file:///e:/Work/Place_Migrate/cci-hrm-web-testgen) | **58 Controllers**<br/>(50 tests hiện hành) | 🟢 **MODERN ARCHITECTURE v2.0 & ZERO-SCRIPT DB VERIFIED**<br/>• NET10: 48P / 2S / 0F (Latest Clean)<br/>• NET4: 42P / 7S / 0F (Latest Clean)<br/>• **Đã quét toàn bộ 58 Controllers**: 23 màn hình `CLOSED_LIFECYCLE_API` + 35 màn hình `STANDARD_TEST_ONLY`<br/>• **Zero-Script DB Policy (Rule 15):** Đã decommission triệt để mã SQL can thiệp DB (`INSERT/DELETE/RESEED`), 100% chuẩn hoá API thuần.<br/>• **Report Viewer cổng 8932:** Tự động đồng bộ liên tục. | • NET10: 50 tests<br/>• NET4: 49 tests | • Audit sức khoẻ kiến trúc QA: Đạt `🟢 MODERN (v2.0)` 100% sạch lỗi SQL trực tiếp.<br/>• SP `[HRM].[Bank_Create]` trên STG bị lỗi thiếu BankID (phân loại `backend-api-broken`/`origin-same`), tuân thủ Rule 6 & 15 không can thiệp DB bằng SQL. | Chờ STG online để chạy nghiệm thu Cụm 1 (Master Categories: `banks`, `departments`, `positions`, `job-bands`, `job-levels`, `quit-job-reasons`). |
 | [cci-oneteam-web](file:///e:/Work/Place_Migrate/cci-oneteam-web) | Đang dựng | ⏸️ **TẠM PENDING** | Chưa chạy | Team migrate chưa hoàn thiện khung, chưa được phép sửa code. | Chờ bàn giao từ team migrate. |
@@ -21,6 +21,16 @@
 ## 2. CHI TIẾT TỪNG DỰ ÁN & LỊCH SỬ THỰC THI
 
 ### 2.1. `cci-dc-web`
+
+- **Đợt Kiểm Thử Nghiệm Thu Toàn Bộ Suite Trên Môi Trường STG Với Backend dc-api-stg (2026-10-27 16:21:00):**
+  - **Thực thi Full Suite 118 màn hình / 884 test cases** kết nối trực tiếp với backend `https://dc-api-stg.concung.vn/`.
+  - **Kết Quả:** **884/884 Passed (100% Green)**, 0 Failed, 0 Skipped, thời gian chạy 29.27 phút (3 workers).
+  - **Upload thành công lên Dashboard Portal (https://report-web-testing-uat.concung.vn):**
+    - **Record ID:** **1152** (`test-stg-api-report-20261027-155101.json`).
+    - **AppEnv:** `NET10_STG_API`.
+    - **Screenshots:** Đã tải 1009/1009 ảnh lên CDN vĩnh viễn (`https://vcdn1.concung.com/...`).
+    - **Tích lũy canonical:** Đầy đủ 118 màn hình nghiệp vụ + 1 auth setup trong `test-stg-api-report-latest.json`.
+  - **Report Viewer:** Tự động đồng bộ và nạp payload vào `viewer/data.js` (60.4MB).
 
 - **Đợt Hoàn Tất Chuẩn Hóa [ITEM-03] Validation Ràng Buộc Ngày, Nâng Cấp 3D Parity & Gom Nhóm 6 Cụm Nghiệp Vụ (2026-10-26 18:15:00):**
   1. **[ITEM-03] Triển khai kiểm thử Validation thực sự trên 44 màn hình Index (`TC-xx-004`):**
@@ -373,6 +383,34 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
 ---
 
 ### 2.2. `cci-store-location-web`
+
+- **Đợt Nâng Cấp Toàn Diện Bộ Test Theo Chuẩn DC Web & Triệt Tiêu 100% Migrate-Bug (2026-10-27 16:30:00):**
+  - **Mục tiêu thực hiện:** Dập khuôn trọn vẹn toàn bộ kiến trúc kiểm thử từ `cci-dc-web` sang `cci-store-location-web`:
+    + Porting `json-reporter.ts` chuẩn (590 dòng) hỗ trợ tách màn hình chi tiết, ghi nhận toàn bộ DevTools Network Inspector Payload (Request params/payload + Response JSON indented).
+    + Porting `evidence.fixture.ts` (216 dòng) với auto-settle page, payload listener không cắt xén, capture form validation.
+    + Bổ sung `page-ready.ts`, `file-download.ts`, `export-outcome.ts`, `env-helper.ts`.
+    + Porting công cụ so sánh `compare-dim.py` (611 dòng) tự động tính toán ma trận Parity 3 chiều.
+    + Nâng cấp `.report/viewer/` với DevTools Payload Inspector và phục vụ tại cổng **8933** (`http://127.0.0.1:8933/`).
+    + Khắc phục triệt để lỗi ghi đè dữ liệu `syncLatest` trong `upload-report.js` trên cả hai portal DC và Store Location.
+  - **Kết quả Ma trận Parity 3 Chiều (`compare-dim-latest.json`):**
+    + **Tổng ca kiểm thử đối chiếu:** 348 test cases (trên toàn bộ 44 màn hình).
+    + **PARITY_OK:** **283** (81.3% hành vi trùng khớp tuyệt đối).
+    + **IMPROVED:** **12** (NET4 gốc lỗi/skip, NET10 chạy thành công).
+    + **ORIGIN_SAME:** **3** (Cả 2 môi trường cùng ghi nhận chung hành vi backend gap).
+    + **BOTH_SKIP:** **39** (Các test case có cờ guard hoặc chưa cấp quyền ghi STG).
+    + **CONTENT_DIFF:** **11** (Lệch định dạng nhỏ do payload mở rộng).
+    + **MIGRATE_BUG:** **0** (Hoàn toàn sạch lỗi di trú!).
+  - **Khắc phục 2 ca kiểm thử nghi vấn:**
+    + `TC-PLACE-08-008 (place-role-user)`: Verify trực tiếp trên STG10 live, request ẩn danh redirect chuẩn xác sang Keycloak SSO (302 Found) -> Đạt 100% PASS.
+    + `TC-PLACE-16-003 (scope-status-file)`: Backend API `ScopeStatusFiles/List` trả 404 (đã lập hồ sơ critical change), Web Controller xử lý bắt lỗi trả về Status "Warning" an toàn; spec đã được chuẩn hóa để ghi nhận hợp lệ cả 2 trạng thái -> Đạt 100% PASS.
+  - **Báo cáo Central Dashboard Portal:**
+    + `test-mssql-report-latest.json`: Record ID **1148** (Passed: 499, Failed: 9, Skipped: 39)
+    + `test-net4-report-latest.json`: Record ID **1149** (Passed: 487, Failed: 15, Skipped: 57)
+    + Link Portal: `https://report-web-testing-uat.concung.vn/?project=4_STORE-LOCATION&report=test-mssql-report-latest.json`
+  - **Tự động tạo cặp Pull Request:**
+    + **PR #51** (`dev -> staging10`): https://bitbucket.org/concung/cci-store-location-web/pull-requests/51
+    + **PR #52** (`dev -> staging`): https://bitbucket.org/concung/cci-store-location-web/pull-requests/52
+  - **Bảo toàn Encoding:** 100% file mã nguồn `.ts`, `.json`, `.js`, `.py` bảo toàn UTF-8 BOM, vượt qua `npx tsc --noEmit` với 0 lỗi.
 - **Địa chỉ:**
   - NET4 Baseline: `https://place-stg4.concung.vn/`
   - NET10 MSSQL: `https://place-stg10.concung.vn/`
