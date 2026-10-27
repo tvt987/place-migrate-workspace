@@ -14,6 +14,7 @@
 | [cci-scm-web](file:///e:/Work/Place_Migrate/cci-scm-web) | **396 screens**<br/>(E2E suite lớn nhất) | 🎉 **ĐÃ HOÀN TẤT FAIL-FAST PARITY SWEEP 100% TOÀN BỘ 396 MÀN HÌNH**<br/>• Quét trọn vẹn 396/396 màn hình SCM Web STG10 vs STG4.<br/>• **KẾT QUẢ: 0 MIGRATE-BUG TỒN ĐỌNG!**<br/>• Mọi màn đều 100% Parity Pass hoặc đồng nhất lỗi gốc thời NET4 (origin-same).<br/>• Đã dập khuôn HRM/MBM: Redis DataProtection + UrlNormalize + EPPlus order (PR #15 & #16) + Return Excel File (PR #17 & #18). | • SCM Sweep: 396/396 screens hoàn tất | • Màn 315 xuất Excel 0-byte: Đã fix dứt điểm và nghiệm thu đạt 100% Parity.<br/>• Không còn bất kỳ lỗi migrate-bug nào trên toàn bộ 396 màn. | 100% Parity SCM Web hoàn tất xuất sắc. Sẵn sàng nghiệm thu! |
 | [cci-hrm-web](file:///e:/Work/Place_Migrate/cci-hrm-web) / [testgen](file:///e:/Work/Place_Migrate/cci-hrm-web-testgen) | **58 Controllers**<br/>(50 tests hiện hành) | 🟢 **MODERN ARCHITECTURE v2.0 & ZERO-SCRIPT DB VERIFIED**<br/>• NET10: 48P / 2S / 0F (Latest Clean)<br/>• NET4: 42P / 7S / 0F (Latest Clean)<br/>• **Đã quét toàn bộ 58 Controllers**: 23 màn hình `CLOSED_LIFECYCLE_API` + 35 màn hình `STANDARD_TEST_ONLY`<br/>• **Zero-Script DB Policy (Rule 15):** Đã decommission triệt để mã SQL can thiệp DB (`INSERT/DELETE/RESEED`), 100% chuẩn hoá API thuần.<br/>• **Report Viewer cổng 8932:** Tự động đồng bộ liên tục. | • NET10: 50 tests<br/>• NET4: 49 tests | • Audit sức khoẻ kiến trúc QA: Đạt `🟢 MODERN (v2.0)` 100% sạch lỗi SQL trực tiếp.<br/>• SP `[HRM].[Bank_Create]` trên STG bị lỗi thiếu BankID (phân loại `backend-api-broken`/`origin-same`), tuân thủ Rule 6 & 15 không can thiệp DB bằng SQL. | Chờ STG online để chạy nghiệm thu Cụm 1 (Master Categories: `banks`, `departments`, `positions`, `job-bands`, `job-levels`, `quit-job-reasons`). |
 | [cci-oneteam-web](file:///e:/Work/Place_Migrate/cci-oneteam-web) | Đang dựng | ⏸️ **TẠM PENDING** | Chưa chạy | Team migrate chưa hoàn thiện khung, chưa được phép sửa code. | Chờ bàn giao từ team migrate. |
+| [cci-income-web](file:///e:/Work/Place_Migrate/cci-income-web) | **73 tests**<br/>(4 màn) | 🏁 **ĐÃ CLONE & CHẠY NGHIỆM THU E2E TOÀN DIỆN CẢ NET4 VÀ NET10**<br/>• **STG4 (.NET 4 Oracle Baseline):** 61 Passed / 8 Skipped / 4 Failed (Origin-Same/Timeout) (Upload ID **1164**).<br/>• **Local NET10 (.NET 10 Kestrel :5304):** 27 Passed / 28 Skipped / 18 Failed (Upload ID **1165**).<br/>• **Report Viewer:** Đã build và sync `data.js` (500 KB) nạp cả 2 đợt test.<br/>• **Phát hiện 4 Migrate-Bug trọng yếu trên NET10:**<br/>  1. Title mismatch: `02_target` copy nhầm title SCM `"SCM - Hệ thống quản lý hàng hóa"` thay vì `"Thu nhập bán hàng"`.<br/>  2. Thiếu Cache script: `_Layout.cshtml` ở `02_target` bỏ sót nhúng script `CacheStorerages/Index.cshtml` khiến thiếu `DataCacheKey`/`CacheKeyClient`.<br/>  3. `AccountsController.cs`: Thiếu các action mobile (`LoginMobile`, `LoggedOutMobile`) gây 404, callback invalid crash 500.<br/>  4. `DashboardsController.cs`: Chưa được port sang `02_target` (các action/API Dashboards đều 404). | • NET4: ID **1164**<br/>• NET10: ID **1165** | • 4 Migrate-Bugs đã được lập danh mục chi tiết.<br/>• NET4 baseline đạt 61/73 tests. | Báo cáo user và lên phương án tách nhánh fix bug theo quy trình `DEV_HANDBOOK.md`. |
 | **Các Repo Tham Chiếu** | Tham chiếu | 🔍 **ĐÃ CLONE & FETCH ĐẦY ĐỦ**<br/>• `cci-hrm-api`<br/>• `cci-timekeeping-web`<br/>• `cci-supplier-web`<br/>• `cci-common-web`<br/>• `cci-hrm-web`<br/>• `cci-mbm-web` | N/A | Dùng đối chiếu giải pháp kỹ thuật và phục vụ Cron Job 17:00 hằng ngày. Tuyệt đối không can thiệp sửa code. | Giữ các branch `dev` sạch. |
 
 ---
@@ -901,6 +902,28 @@ ightarrow$ SQL Stored Procedure; xác định bảng tác động và phân lo�
   - **Đồng bộ Report Viewer & Tự Động Hóa Toàn Diện:**
     * Đã tách riêng màn hình Tạo mới thành key độc lập `employees/create` (5 tests) song song cùng màn danh sách `employees` (13 tests) trên Report Viewer.
     * Đã thiết lập Rule 5 trong AGENTS.md và tích hợp tự động vào `run-e2e.win.ps1`: Tự động nhận diện prefix môi trường (test-mssql / test-net4), tự động merge thông minh theo test case, và tự động gọi `build_data.py` làm mới `viewer/data.js` ngay sau mọi đợt chạy test.
+
+---
+
+### 2.6. `cci-income-web`
+
+- **Đợt Pull Repo & Chạy Kiểm Thử E2E Đầu Tiên (2026-10-27 18:05:00):**
+  - **Pull Repo:** Đã clone repo `https://bitbucket.org/concung/cci-income-web` về `E:\Work\Place_Migrate\cci-income-web`, checkout nhánh `dev`.
+  - **Kiểm tra kiến trúc QA:** Repo đã có sẵn framework E2E `03_qa` (Playwright) và `.report/viewer`. Đã liên kết `node_modules` và sửa lỗi TLS leaf certificate trong `upload-report.js`.
+  - **Quy mô suite:** 4 màn hình (`login`, `home`, `error-pages`, `dashboards`) với 73 test cases E2E.
+  - **Kết quả chạy NET4 Baseline (`https://income-stg4.concung.vn/`):**
+    - **61 Passed / 8 Skipped / 4 Failed** (thời gian 3.4 phút).
+    - Lỗi trên NET4 là `origin-same` (tiêu đề trang trống `<title></title>`, timeout truy vấn tháng).
+    - **Upload Dashboard Portal:** Record ID **1164** (`test-net4-report-20261027-175930.json`).
+  - **Kết quả chạy NET10 Local Kestrel :5304 (`http://localhost:5304/`):**
+    - **27 Passed / 28 Skipped / 18 Failed** (thời gian 1.3 phút).
+    - **Upload Dashboard Portal:** Record ID **1165** (`test-mssql-report-20261027-180323.json`).
+    - **Report Viewer:** Đã sinh `data.js` (500 KB) tích hợp cả 2 nguồn NET4 và NET10.
+  - **Phân loại lỗi Migration (`migrate-bug`):**
+    1. **Title mismatch (`Home/Index`):** File `02_target/CoC.Web.INC/Views/Home/Index.cshtml` bị copy nhầm từ SCM: `"SCM - Hệ thống quản lý hàng hóa"` thay vì `"Thu nhập bán hàng"` (`01_origin`).
+    2. **Thiếu script CacheStorerages (`_Layout`):** `_Layout.cshtml` ở `02_target` bỏ sót nhúng script `CacheStorerages/Index.cshtml`, làm thiếu các biến `DataCacheKey` và `CacheKeyClient` trên client.
+    3. **AccountsController Mobile & Callback:** Thiếu các action mobile (`LoginMobile`, `LoggedOutMobile`) gây 404; callback invalid thiếu guard xử lý an toàn gây lỗi 500.
+    4. **Thiếu DashboardsController:** Controller chính `DashboardsController.cs` chưa được port sang `02_target`, khiến tất cả các route/API thuộc Dashboards trả về 404 trên NET10.
 
 ---
 
