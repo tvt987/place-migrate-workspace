@@ -1,59 +1,59 @@
 {
-  "timestamp": "2026-10-19 17:02:14",
+  "timestamp": "2026-10-27 07:40:57",
   "repo_status": {
     "cci-hrm-web": {
       "status": "synced",
-      "latest_commit": "e34ff3c - tringuyen-spec, 18 hours ago : fix: enhance test stability and reliability for StoreCVSLs and WorkShiftSupportPolicies"
+      "latest_commit": "e39a6d4 - tringuyen-spec, 14 hours ago : refactor: clean up and optimize employee import and document handling modules"
     },
     "cci-mbm-web": {
       "status": "synced",
-      "latest_commit": "2312f0f - Long Phan, 27 hours ago : chore: them CLAUDE.md pointer (@AGENTS.md) con thieu theo init-deep"
+      "latest_commit": "fefdd61 - Long Phan, 11 hours ago : fix(38-openxml-writer-duplicate-row-calcpr-order): OpenXML writer: moi hang mot <row> dung thu tu, calcPr sau sheets (Excel xuat ra khong mo duoc)"
     },
     "cci-timekeeping-web": {
       "status": "synced",
-      "latest_commit": "47e5500 - tringuyen-spec, 18 hours ago : feat: Implement page readiness utilities and response assertions for E2E testing"
+      "latest_commit": "2406989 - Long Phan, 2 days ago : fix(qa): uploader tu ap rule report_skips roi ghi thang qua SP moi (test_report_upsert_raw)"
     },
     "cci-supplier-web": {
       "status": "synced",
-      "latest_commit": "f503ba3 - nqdthuancc, 71 minutes ago : Merge branch 'qa/gen-testcase' into dev"
+      "latest_commit": "9cf34bb - Long Phan, 2 days ago : fix(qa): web khong ap rule report_skips, ghi thang so tho bang test_report_upsert_raw"
     },
     "cci-common-web": {
       "status": "synced",
-      "latest_commit": "c912bd9 - Long Phan, 27 hours ago : chore: them newline cuoi file CLAUDE.md"
+      "latest_commit": "481a5e6 - Long Phan, 2 days ago : fix(qa): web khong ap rule report_skips, ghi thang so tho bang test_report_upsert_raw"
     },
     "cci-hrm-api": {
       "status": "synced",
-      "latest_commit": "e7bf1abe - Long Phan, 3 hours ago : Merge remote-tracking branch 'origin/dev' into dev"
+      "latest_commit": "4bafdc66 - Long Phan, 23 hours ago : qa: cap nhat test-data 2026-09-25 (dof/hrm/tkp) + calibrate-latest"
     }
   },
   "categories_summary": {
-    "Redis & DataProtection / Session": 23,
-    "API Client & Endpoint Normalization": 17,
-    "Excel Export & EPPlus / ClosedXML": 4,
-    "Authentication / Keycloak / SSO / Cookie": 57,
-    "Database / MSSQL / PostgreSQL / Dapper / EF": 6,
+    "Redis & DataProtection / Session": 7,
+    "API Client & Endpoint Normalization": 15,
+    "Excel Export & EPPlus / ClosedXML": 27,
+    "Authentication / Keycloak / SSO / Cookie": 59,
+    "Database / MSSQL / PostgreSQL / Dapper / EF": 3,
     "Razor Views / Bundles / Partial Views": 2,
-    "E2E QA Testing & Stability Utilities": 14,
-    "Other Fixes / Migration Build": 27
+    "E2E QA Testing & Stability Utilities": 9,
+    "Other Fixes / Migration Build": 28
   },
   "check_results": {
     "cci-dc-web": {
       "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
       "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
       "EPPlus DataValidation": "KHÔNG SỬ DỤNG (N/A)",
-      "Git dev HEAD": "[dev] fb7a4ce Merge branch 'fix/replicate-redis-dataprotection-and-url-normalize' into dev"
+      "Git dev HEAD": "[dev] e022cd7 Merge branch 'fix/dc-kestrel-utf8-and-linux-excel-compat' into dev"
     },
     "cci-store-location-web": {
       "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
       "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
       "EPPlus DataValidation": "ĐÃ FIX THỨ TỰ (RenderSheetMasterDataHelper.cs)",
-      "Git dev HEAD": "[dev] 16c821d Merge branch 'feat/parity-compare-3d-matrix-viewer' into dev"
+      "Git dev HEAD": "[dev] 6dbb83f Merge branch 'fix/place-kestrel-utf8-and-model-binding-limits' into dev"
     },
     "cci-scm-web": {
       "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
       "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
       "EPPlus DataValidation": "ĐÃ FIX THỨ TỰ (AccountingProcessDepartmentsController.cs)",
-      "Git dev HEAD": "[dev] 6db328b8 Merge branch 'fix/replicate-redis-dataprotection-url-normalize-and-epplus-validation' into dev"
+      "Git dev HEAD": "[dev] ce7b8340 Merge branch 'fix/scm-kestrel-utf8-and-model-binding-limits' into dev"
     }
   }
 }
