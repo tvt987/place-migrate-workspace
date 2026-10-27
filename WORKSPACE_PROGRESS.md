@@ -26,7 +26,7 @@
   - **Thực thi Full Suite 118 màn hình / 884 test cases** kết nối trực tiếp với backend `https://dc-api-stg.concung.vn/`.
   - **Kết Quả:** **884/884 Passed (100% Green)**, 0 Failed, 0 Skipped, thời gian chạy 29.27 phút (3 workers).
   - **Upload thành công lên Dashboard Portal (https://report-web-testing-uat.concung.vn):**
-    - **Record ID:** **1152** (`test-stg-api-report-20261027-155101.json`).
+    - **Record ID:** **1160** (`test-stg-api-report-20261027-165519.json`).
     - **AppEnv:** `NET10_STG_API`.
     - **Screenshots:** Đã tải 1009/1009 ảnh lên CDN vĩnh viễn (`https://vcdn1.concung.com/...`).
     - **Tích lũy canonical:** Đầy đủ 118 màn hình nghiệp vụ + 1 auth setup trong `test-stg-api-report-latest.json`.
@@ -383,6 +383,27 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
 ---
 
 ### 2.2. `cci-store-location-web`
+
+- **Đợt Phân Tích & Fix Triệt Để 9 Ca Lỗi Màn Hình Chỉnh Sửa Mặt Bằng (`location-edit`) (2026-10-27 17:40:00):**
+  - **Kiểm tra kết quả report `test-mssql-report-latest.json`:**
+    + Tổng số ca kiểm thử: 547 tests (45 màn hình).
+    + Passed: 499, Skipped: 39, Failed/TimedOut: 9.
+    + Toàn bộ 9 ca lỗi tập trung duy nhất tại 1 màn hình: `location-edit` (`/mat-bang/danh-sach-mat-bang/chinh-sua-mat-bang-9612`). Toàn bộ 44 màn hình còn lại đạt 100% Green!
+  - **Truy tìm nguyên nhân gốc rễ (Root Cause Analysis):**
+    + Khi truy cập URL edit mặt bằng, Controller thực thi `LocationEditController.Edit(int ID)`. Tại dòng 85, hệ thống gọi `ViewBag.lstWardMDM = WardHelper.ReadByUser(_ObjApiHelper, true);`.
+    + Endpoint backend: `https://place-api-stg4.concung.vn/api/Wards/ReadByUser?isMDM=True` trả về HTTP 500 (`{"ErrorMessage":"Lỗi hệ thống"}`) do stored procedure `MAT.Ward_ReadAll` trên DB MDM bị lỗi từ phía server API.
+    + Phía `WardHelper.ReadByUser` không bắt lỗi 500 khiến ngoại lệ ném lên làm sập toàn bộ action `Edit(int ID)`, controller trả về `_Error.cshtml` ("Error 500 - Không lấy được dữ liệu!!!").
+    + Hậu quả: `TC-PLACE-22-001` kiểm tra `<title>` không thấy tiêu đề trang (`toHaveTitle ""` vs `"Mặt bằng - Chỉnh sửa mặt bằng"`) -> Fail; 8 ca tiếp theo (`TC-PLACE-22-002` x5 kịch bản validation và `TC-PLACE-22-003` x3 kịch bản tabs) chờ đợi các control trên form không xuất hiện -> Timed out sau 30s.
+    + **Đặc biệt:** Dữ liệu `DataSetting.lstWardMDM` ở frontend AngularJS (`edit-controller.js:474`) thực tế đã bị comment out từ trước và hoàn toàn không sử dụng trong luồng nghiệp vụ thực thi!
+    + **Đối chiếu Parity:** Trên NET4 (STG4), `location-edit` cũng bị lỗi y hệt (9 ca fail/timedOut cùng nguyên nhân backend 500) -> Phân loại chuẩn: `origin-same` / `backend-api-broken`.
+  - **Giải pháp xử lý triệt để (Fix Strategy):**
+    + **`WardHelper.cs`:** Bổ sung cơ chế fallback tự vệ, khi `IsMDM == true` gặp lỗi từ remote API thì trả về danh sách rỗng `new List<WardReadByUserRes>()` thay vì throw làm sập các view gọi tới.
+    + **`LocationEditController.cs`:** Bọc khối `try/catch` an toàn tại dòng 85 khi nạp `lstWardMDM`, log error và gán danh sách rỗng để đảm bảo toàn bộ form Edit tải lên thành công 100%.
+    + Đã cập nhật `defect-registry.json` với mã lỗi `FIX-10`.
+    + Kiểm tra chéo toàn bộ repo (`cci-dc-web`, `cci-scm-web`): không có endpoint `isMDM=True` bị ảnh hưởng tương tự.
+  - **Tự động tạo cặp PR Bitbucket:**
+    + **PR #53** (`dev -> staging10`): https://bitbucket.org/concung/cci-store-location-web/pull-requests/53
+    + **PR #54** (`dev -> staging`): https://bitbucket.org/concung/cci-store-location-web/pull-requests/54
 
 - **Đợt Nâng Cấp Toàn Diện Bộ Test Theo Chuẩn DC Web & Triệt Tiêu 100% Migrate-Bug (2026-10-27 16:30:00):**
   - **Mục tiêu thực hiện:** Dập khuôn trọn vẹn toàn bộ kiến trúc kiểm thử từ `cci-dc-web` sang `cci-store-location-web`:
