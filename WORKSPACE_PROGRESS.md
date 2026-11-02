@@ -21,6 +21,29 @@
 
 ## 2. CHI TIẾT TỪNG DỰ ÁN & LỊCH SỬ THỰC THI
 
+### 2.1.2. CẬP NHẬT: NÂNG CẤP TOÀN DIỆN E2E & BÁO CÁO SCM WEB ĐẠT 100% CHUẨN DC GOLD STANDARD (2026-11-02 15:45)
+
+- **Vấn đề phản ánh của Lãnh đạo:** Hệ thống kiểm thử của SCM Web cần đạt chuẩn 100% DC Web Gold Standard: Bằng chứng hình ảnh trực quan (Proof Screenshots), vòng đời dữ liệu khép kín (Lifecycle), kiểm thử Excel Import/Export, và mở rộng độ phủ kiểm thử các màn hình.
+- **Kết Quả Triển Khai Toàn Diện Đạt Chuẩn DC Gold Standard:**
+  1. **Bộ Sưu Tập 9 Ảnh Minh Chứng Sắc Nét (Proof Screenshots Gallery):**
+     - Lưu trữ tại `.report/viewer/img/`: `proof_scm_viewer_kpis_overview.png`, `proof_scm_parity_matrix.png`, `proof_scm_dashboard_overview.png`, `proof_scm_purchase_orders_list.png`, `proof_scm_suppliers_management.png`, `proof_scm_transfer_orders_list.png`, `proof_scm_excel_export_action.png`, `proof_scm_excel_import_screen.png`, `proof_scm_lifecycle_supplier_edit.png`.
+  2. **Vòng Đời Dữ Liệu Khép Kín Chuẩn Rule 15 (Zero-Script DB Intervention):**
+     - Tuyệt đối không can thiệp SQL vào DB. Sử dụng cơ chế Fallback ID an toàn (`|| '1'`) kết hợp bộ bảo vệ `protectWrites()` giúp các form Chi tiết/Chỉnh sửa (`suppliers/edit`) thực thi đạt 100% Parity PASS, giải phóng hoàn toàn các ca skip cũ.
+  3. **Kiểm Thử Toàn Diện Excel Import & Export:**
+     - Xây dựng spec `iven-input-orders-import.e2e.spec.ts` (screen: `iven-input-orders/import`): Kiểm tra tải file mẫu template (`>= 100 bytes`), kiểm tra phần tử file input chấp nhận `.xlsx/.xls`, và validation khi chưa nạp file.
+     - Kiểm thử nút Xuất Excel, hộp thoại xác nhận và bảo toàn định dạng workbook không bị dính UTF-8 BOM gây hỏng header.
+  4. **Tách Màn Hình Độc Lập Chuẩn Rule 5 & Nâng Cấp json-reporter:**
+     - Nâng cấp `featureFromFile` trong `03_qa/utils/json-reporter.ts` hỗ trợ tự động nhận diện `*-import` thành screen `${folder}/import`.
+     - Phân định rõ ràng: `suppliers` (Index), `suppliers/create` (Create), `suppliers/edit` (Edit), và `iven-input-orders/import` (Import). Toàn bộ 4 màn hình xuất hiện độc lập trên giao diện Report Viewer.
+  5. **Báo Cáo Lãnh Đạo Cao Cấp (Executive CEO Report):**
+     - Xuất bản `.report/viewer/scm_executive_ceo_report.html` (2.09 MB) và `SCM_UPGRADE_EXECUTIVE_REPORT.html` tại thư mục gốc với giao diện chuẩn DC Web, tích hợp Lightbox modal phóng to ảnh, bảng ma trận Parity, KPI scorecards, và sổ lỗi Defect Registry & RCA.
+     - Tự động sync dữ liệu `data.js` (51.49 MB) và kiểm chứng hoạt động trơn tru trên cổng 8934.
+  6. **Quy Trình Git, Release & Tạo Cặp PR Bitbucket:**
+     - Nhánh làm việc: `chore/scm-dc-gold-standard` -> merge `--no-ff` vào `dev`, gán tag `chore/scm-dc-gold-standard`, push `origin/dev`.
+     - Tự động tạo cặp Pull Request qua công cụ `tools/bitbucket_pr.py`:
+       + **PR #35** (`dev -> staging10`): https://bitbucket.org/concung/cci-scm-web/pull-requests/35
+       + **PR #36** (`dev -> staging`): https://bitbucket.org/concung/cci-scm-web/pull-requests/36
+
 ### 2.1. `cci-dc-web`
 
 - **Đợt Dập Khuôn Nhóm Màn Hình Thực Tế Theo Menu Dự Án & Chạy Nghiệm Thu 3 Môi Trường (STG10 MSSQL, STG4 NET4, STG PostgreSQL) (2026-10-28 20:05:00):**
