@@ -438,6 +438,41 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
 
 ---
 
+### 2.1.3. CẬP NHẬT: KÍCH HOẠT FULL SCREENSHOT EVIDENCE & KHẮC PHỤC TRIỆT ĐỂ LỖI TIMEOUT SCM (2026-11-02 17:10)
+
+- **Vấn đề phản ánh của Lãnh đạo & QA:**
+  1. Trên Report Viewer (`http://127.0.0.1:8934/`), các ca kiểm thử đạt (`passed`) bị thiếu khối ảnh minh chứng `📸 Hình ảnh minh chứng kết quả (Passed)`.
+  2. Màn hình `popup-action-banners` (Quản lý banner popup) bị treo timeout hàng loạt 90 giây ở 8/13 ca test (`TC-SCM-149-002`, `008`, `010`, `011`,...).
+  3. Lỗi invalid Playwright selector `.filter({ visible: true })` lan rộng trên các trang khiến selector không lọc được visibility và click vào element ẩn.
+- **Nguyên Nhân Gốc Rễ (Root Cause Analysis - RCA):**
+  1. `03_qa/playwright.config.ts` để `screenshot: 'only-on-failure'` $\rightarrow$ Playwright không chụp ảnh cho các ca Passed. Cần chuyển thành `screenshot: 'on'`.
+  2. `ShellPage.alertText()` và `alertWarning()` bao gồm standalone `#divSmallBoxes`, vốn luôn tồn tại rỗng trong DOM SmartAdmin Concung $\rightarrow$ `.first()` bắt trúng container rỗng, làm sai lệch nhận diện cảnh báo.
+  3. Form `popup-action-banners` có các ô input ẩn của Select2 và Datepicker; hàm search gọi `kw.fill()` vào ô input Select2 ẩn làm kích hoạt dropdown và sinh ra `.select2-drop-mask:visible` phủ toàn màn hình, chặn sự kiện click vào nút Tìm kiếm và gây treo 90 giây.
+  4. Playwright không hỗ trợ option `{ visible: true }` trong `locator.filter()` $\rightarrow$ trở thành no-op. Phải sử dụng pseudo-class `:visible` trong chuỗi selector.
+  5. Regex trong `json-reporter.ts` (`/\bTC-[A-Z0-9]+-\d+[A-Za-z0-9/-]*/`) chỉ khớp số sau dấu gạch thứ hai, khiến các mã ca test dạng chữ như `TC-SCM-SUP-CRT-001` bị parse thành `null`.
+- **Kết Quả Triển Khai & Khắc Phục:**
+  1. **Bật Chế Độ Full Screenshot Evidence:** Đổi sang `screenshot: 'on'` trong `playwright.config.ts`, đảm bảo 100% ca test (Passed, Failed, Skipped) đều có snapshot minh chứng đính kèm.
+  2. **Chuẩn Hóa Selector & Cơ Chế Tìm Kiếm Tối Ưu:**
+     - Thay thế toàn bộ `.filter({ visible: true })` bằng `:visible` trên `popup-action-banners`, `output-voucher`, `output-uses`, `all-output-vouchers`.
+     - Lọc bỏ input Select2/datepicker khỏi `keyword()`.
+     - Thêm xử lý dọn dẹp `.select2-drop-mask` bằng phím Escape.
+     - Sử dụng `Promise.race` giữa POST Search và Alert notification $\rightarrow$ giảm thời gian phản hồi từ 15-90s xuống còn < 1s.
+     - Tự động chọn tiêu chí vùng miền/popup qua AngularJS scope để kích hoạt tìm kiếm dữ liệu thành công.
+  3. **Nâng Cấp `json-reporter.ts`:**
+     - Sửa regex thành `/\bTC-[A-Z0-9]+-[A-Za-z0-9/-]+/` $\rightarrow$ nhận diện chuẩn xác 100% mã test case alphanumeric (`TC-SCM-SUP-CRT-*`).
+     - Bảo toàn tuyệt đối UTF-8 BOM (`0xEF, 0xBB, 0xBF`).
+  4. **Nghiệm Thu Thực Tế:**
+     - `popup-action-banners.e2e.spec.ts`: **14 tests: 9 passed, 5 skipped, 0 TIMEOUT, 0 FAILED** (thời gian chạy giảm từ treo hàng chục phút xuống 2.4 phút).
+     - `suppliers-create.e2e.spec.ts`: **5 passed**, 100% có mã TC và ảnh minh chứng.
+     - Rebuild dữ liệu Viewer `python cci-scm-web/.report/viewer/tools/build_data.py` (51.9 MB) $\rightarrow$ Report Viewer `http://127.0.0.1:8934/` hiển thị đầy đủ khối `📸 Hình ảnh minh chứng kết quả (Passed)` kèm ảnh sắc nét.
+  5. **Quy Trình Git & Pull Request:**
+     - Nhánh làm việc: `fix/scm-full-evidence-and-timeouts` -> merge `--no-ff` vào `dev` (commit `68f6e97e`), gắn tag `fix/scm-full-evidence-and-timeouts`, push `origin/dev`.
+     - Tự động tạo cặp Pull Request qua `tools/bitbucket_pr.py`:
+       + **PR #37** (`dev -> staging10`): https://bitbucket.org/concung/cci-scm-web/pull-requests/37
+       + **PR #38** (`dev -> staging`): https://bitbucket.org/concung/cci-scm-web/pull-requests/38
+
+---
+
 ### 2.2. `cci-store-location-web`
 
 - **Đợt Nâng Cấp Toàn Diện Kiến Trúc Lifecycle, Khử Trùng Lặp Test Case IDs & Tích Hợp Flow Xuất Excel Chuẩn DC Web (2026-10-27 22:05:00):**
