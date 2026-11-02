@@ -60,16 +60,16 @@ DEV_GUIDE V6 (mục 0, 4.2, A7) ghi "dev tự merge vào staging rồi bấm Bui
 - Mỗi lần pull code mới về, **kiểm tra `03_qa/.env`** của project để có credential upload report. Report được đẩy lên khi chạy các lệnh `make test-*` (xem Makefile trong `03_qa/`).
 - Không commit `.env`. Hồ sơ bug phải ghi link report + SHA (DEV_GUIDE mục 3, 5.6).
 
-## 5. Quét chéo 3 project web khi fix bug
+## 5. Quét chéo 4 project web khi fix bug
 
-Ba project web: **`cci-scm-web`**, **`cci-dc-web`**, **`cci-store-location-web`** (Place web).
+Bốn project web: **`cci-scm-web`**, **`cci-dc-web`**, **`cci-store-location-web`** (Place web), **`cci-income-web`** (Income web).
 
 Mỗi lần fix một bug ở **một** trong ba project này, bắt buộc:
 
 1. Từ nguyên nhân gốc, rút ra mẫu lỗi (pattern: lớp/hàm/đoạn razor/JS, kiểu serialize, cấu hình, case-sensitivity…).
-2. Quét **cả 3 project** (`02_target/` và test liên quan) xem có lỗi tương tự không: `tools\git-sync.ps1 -Action scan -Pattern "<regex>"` (liệt kê kết quả ở cả 3).
+2. Quét **cả 4 project** (`02_target/` và test liên quan) xem có lỗi tương tự không: `tools\git-sync.ps1 -Action scan -Pattern "<regex>"` (liệt kê kết quả ở cả 4).
 3. Có chỗ giống thì **fix luôn** ở project đó, mỗi project một commit/hồ sơ/tag theo quy ước riêng của nó, và **push cùng đợt** (mode 1), rồi PR theo mục 2.
-4. Trong hồ sơ bug ghi rõ: đã quét cả 3 project, kết quả (có/không có chỗ tương tự, file nào).
+4. Trong hồ sơ bug ghi rõ: đã quét cả 4 project, kết quả (có/không có chỗ tương tự, file nào).
 5. Không có chỗ tương tự vẫn phải ghi "đã quét, không có".
 
 ## 6. Áp dụng ở local và trên git
@@ -92,10 +92,13 @@ Mỗi lần fix một bug ở **một** trong ba project này, bắt buộc:
 
 1. Test ngầm tuần tự các portal (Fail-Fast `--max-failures=1`).
 2. Phát hiện `migrate-bug` $\rightarrow$ dừng ngay, phân tích nguyên nhân gốc giữa `01_origin` và `02_target`.
-3. Nếu tự fix được: Tách nhánh `fix/*` $\rightarrow$ Sửa `02_target/` $\rightarrow$ Quét chéo 3 portal $\rightarrow$ Verify $\rightarrow$ Merge `dev` $\rightarrow$ Tự động tạo PR Bitbucket $\rightarrow$ Chờ 15 phút K8s rollout $\rightarrow$ Test lại nghiệm thu $\rightarrow$ Tiếp tục quét các màn kế tiếp cho đến khi 100% Parity.
+3. Nếu tự fix được: Tách nhánh `fix/*` $\rightarrow$ Sửa `02_target/` $\rightarrow$ Quét chéo 4 portal (`dc`, `store-location`, `scm`, `income`) $\rightarrow$ Verify $\rightarrow$ Merge `dev` $\rightarrow$ Tự động tạo PR Bitbucket $\rightarrow$ Chờ 15 phút K8s rollout $\rightarrow$ Test lại nghiệm thu $\rightarrow$ Tiếp tục quét các màn kế tiếp cho đến khi 100% Parity.
 
 ## 10. Job Đồng Bộ & Dập Khuôn Kỹ Thuật Định Kỳ 17:00 Hằng Ngày
 
-- Hằng ngày vào lúc 17:00, cron job tự động fetch/pull nhánh `dev` của `cci-hrm-web` và `cci-mbm-web`.
-- Lập danh sách commit fix bug/migration mới, gom nhóm phân loại, đối chiếu chéo xem 3 project (`dc`, `store-location`, `scm`) có bị vấn đề tương tự không.
-- Tiến hành dập khuôn các giải pháp chuẩn mực (Redis DataProtection keyring, xử lý file Excel nhị phân không BOM, ApiHelper 204 guard, v.v.), commit và mở PR theo đúng quy trình.
+- Hằng ngày vào lúc 17:00, cron job tự động fetch/pull nhánh `dev` của 6 repo tham chiếu (`cci-hrm-web`, `cci-mbm-web`, `cci-timekeeping-web`, `cci-supplier-web`, `cci-common-web`, `cci-hrm-api`).
+- Lập danh sách commit fix bug/migration mới, gom nhóm phân loại, đối chiếu chéo xem 4 project đang thao tác (`cci-dc-web`, `cci-store-location-web`, `cci-scm-web`, `cci-income-web`) có bị vấn đề tương tự không.
+- **Nguyên tắc phân tích trước khi dập khuôn (Tuyệt đối không dập khuôn mù quáng):**
+  + **Phân tích nguyên nhân gốc rễ (Root Cause Analysis - RCA):** Bắt buộc phải mổ xẻ và tìm hiểu bản chất kỹ thuật của vấn đề trước khi áp dụng bất kỳ giải pháp nào. Vấn đề đó có thực sự phát sinh trên portal đang làm hay không?
+  + **Nghi ngờ tính đúng đắn của bản fix tham chiếu:** Chưa chắc bản fix trong các repo tham chiếu kéo về đã là hoàn toàn đúng đắn, tối ưu hoặc an toàn (có thể chỉ là fix tạm bợ, fix ngọn, fix che triệu chứng hoặc gây side-effects nghiêm trọng cho hạ tầng Kubernetes/cluster).
+  + **Kiểm tra, thẩm định & thử nghiệm độc lập:** Đánh giá mức độ tương thích và rủi ro hồi quy. Chỉ khi giải pháp được kiểm chứng là chuẩn mực, an toàn và triệt để thì mới tiến hành dập khuôn, commit và mở PR theo đúng quy trình.

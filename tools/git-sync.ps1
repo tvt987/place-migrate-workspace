@@ -17,7 +17,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $Root = (Resolve-Path "$PSScriptRoot\..").Path
 $Protected = 'staging','staging10','staging4','master','main'
-$WebTrio = 'cci-scm-web','cci-dc-web','cci-store-location-web'
+$WebTrio = 'cci-scm-web','cci-dc-web','cci-store-location-web','cci-income-web'
 $ContextDocs = @(
   "$Root\GIT_RULES.md",
   "$Root\cci-dc-web\DEV_GUIDE.md",
@@ -119,7 +119,7 @@ function Mode2 {
 
 function Scan {
   if(-not $Pattern){ throw 'Can -Pattern <regex>' }
-  Write-Host "`n##### QUET CHEO 3 WEB: $Pattern #####" -ForegroundColor Cyan
+  Write-Host "`n##### QUET CHEO 4 WEB: $Pattern #####" -ForegroundColor Cyan
   foreach($n in $WebTrio){
     Write-Host "`n[$n]" -ForegroundColor Green
     $dirs=@("$Root\$n\02_target","$Root\$n\03_qa") | Where-Object { Test-Path $_ }
