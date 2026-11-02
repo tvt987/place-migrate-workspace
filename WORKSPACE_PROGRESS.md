@@ -469,7 +469,9 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
      - Nhánh làm việc: `fix/scm-full-evidence-and-timeouts` -> merge `--no-ff` vào `dev` (commit `68f6e97e`), gắn tag `fix/scm-full-evidence-and-timeouts`, push `origin/dev`.
      - Tự động tạo cặp Pull Request qua `tools/bitbucket_pr.py`:
        + **PR #37** (`dev -> staging10`): https://bitbucket.org/concung/cci-scm-web/pull-requests/37
-       + **PR #38** (`dev -> staging`): https://bitbucket.org/concung/cci-scm-web/pull-requests/38
+       + **PR #38** (`dev -> staging`): https://bitbucket.org/concung/cci-scm-web/pull-requests/38 (Merged)
+       + **PR #39** (dev -> staging10): https://bitbucket.org/concung/cci-scm-web/pull-requests/39 (SSO STG10 alignment & persistent screenshots)
+       + **PR #40** (dev -> staging): https://bitbucket.org/concung/cci-scm-web/pull-requests/40
 
 ---
 
