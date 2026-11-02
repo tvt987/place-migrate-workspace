@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-10-28 20:10:00 (⭐ **DẬP KHUÔN NHÓM MÀN HÌNH THEO MENU THỰC TẾ DỰ ÁN DC WEB & HOÀN THÀNH TEST FULL SUITE 3 MÔI TRƯỜNG STG10, STG4, STG POSTGRESQL**: 1. Đồng bộ cấu trúc 8 Menu chính từ xmlMenuDC.xml (119 màn hình, 169 tiêu đề); 2. Tự động hóa pipeline Report Viewer & dynamic menu resolution; 3. Chạy test trọn vẹn cả 3 môi trường STG10 MSSQL [835 Pass / 49 Timeouts 504], STG4 NET4 [829 Pass / 55 Fail], STG PostgreSQL [478 Pass / 406 Fail]; 4. Đối chiếu Parity 3D thực nghiệm 755 PARITY_OK, 53 IMPROVED, 24 CONTENT_DIFF, 0 Migrate-Bug; 5. Upload thành công portal report ID 1213, 1214, 1215; Mở PR Bitbucket #47 & #48; Bảo toàn 100% UTF-8 BOM).
+> **Cập nhật mới nhất:** 2026-11-02 11:16:54 (⭐ **DẬP KHUÔN NHÓM MÀN HÌNH THEO MENU THỰC TẾ DỰ ÁN DC WEB & HOÀN THÀNH TEST FULL SUITE 3 MÔI TRƯỜNG STG10, STG4, STG POSTGRESQL**: 1. Đồng bộ cấu trúc 8 Menu chính từ xmlMenuDC.xml (119 màn hình, 169 tiêu đề); 2. Tự động hóa pipeline Report Viewer & dynamic menu resolution; 3. Chạy test trọn vẹn cả 3 môi trường STG10 MSSQL [835 Pass / 49 Timeouts 504], STG4 NET4 [829 Pass / 55 Fail], STG PostgreSQL [478 Pass / 406 Fail]; 4. Đối chiếu Parity 3D thực nghiệm 755 PARITY_OK, 53 IMPROVED, 24 CONTENT_DIFF, 0 Migrate-Bug; 5. Upload thành công portal report ID 1213, 1214, 1215; Mở PR Bitbucket #47 & #48; Bảo toàn 100% UTF-8 BOM)
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
@@ -1040,12 +1040,12 @@ ightarrow$ Trên Linux Kubernetes Pods, 100% chức năng xuất file sẽ sập
     * **Bảo toàn 100% UTF-8 BOM:** Không có bất kỳ file nào bị lỗi line 1 hay mất BOM.
 
 
-- **Lần chạy Commit Sync gần nhất:** 2026-10-27 21:33:18 — Đã kéo và quét commit của 6 repo tham chiếu. Toàn bộ 3 portal (DC, Place, SCM) đều đã đồng bộ đầy đủ các giải pháp kỹ thuật cốt lõi (Redis DataProtection, NormalizeUrl, EPPlus order).
+- **Lần chạy Commit Sync gần nhất:** 2026-11-02 11:16:54 — Đã kéo và quét commit của 6 repo tham chiếu. Toàn bộ 4 portal (DC, Place, SCM, Income) đều đã đồng bộ đầy đủ các giải pháp kỹ thuật cốt lõi (Redis DataProtection, NormalizeUrl, EPPlus order).
 
-- **Lần chạy Daily Incremental Commit Sync 17:00:** 2026-10-27 21:33:18 (Hoàn tất thành công)
+- **Lần chạy Daily Incremental Commit Sync 17:00 (Bù các ngày 29/10 - 02/11):** 2026-11-02 11:16:54 (Hoàn tất thành công)
   - Đã fetch & pull 6 repo tham chiếu (`cci-hrm-web`, `cci-mbm-web`, `cci-timekeeping-web`, `cci-supplier-web`, `cci-common-web`, `cci-hrm-api`).
-  - Trích xuất 150 commit gần nhất, phân tích và gom nhóm 8 danh mục kỹ thuật.
-  - Đối chiếu với 3 portal đang thao tác (DC, Place, SCM): Tất cả các giải pháp kỹ thuật trọng yếu (Redis DataProtection Keyring, NormalizeUrl, EPPlus DataValidation) đều đã được áp dụng đầy đủ và đồng bộ, không phát sinh giải pháp mới cần dập khuôn thêm.
+  - Trích xuất toàn bộ commit gần nhất từ ngày 28/10 đến nay, phân tích và gom nhóm 8 danh mục kỹ thuật.
+  - Đối chiếu với 4 portal đang thao tác (`cci-dc-web`, `cci-store-location-web`, `cci-scm-web`, `cci-income-web`): Tất cả các giải pháp kỹ thuật trọng yếu (Redis DataProtection Keyring, NormalizeUrl, EPPlus DataValidation) đều đã được áp dụng đầy đủ và đồng bộ, không phát sinh giải pháp mới cần dập khuôn thêm.
 - **Job 2 (Continuous Auto-Healing Sweep - task-3316):** Chạy ngầm test đối chiếu Parity (Fail-Fast `--max-failures=1`). Khi phát hiện `migrate-bug`, tự động dừng, phân loại, tách nhánh `fix/*`, sửa code, quét chéo, merge `dev`, tạo PR Bitbucket, chờ 15 phút K8s rollout và re-test verify.
 - **Job 3 (Targeted Regression Verification - Rule 13):** Sau mỗi lần dập khuôn và push code, kích hoạt ngay test case của module bị ảnh hưởng trực tiếp (Targeted Test) để nghiệm thu nhanh chóng mà không cần chạy lại toàn bộ suite từ đầu.
 - **Job 4 (Local Defect Matrix & Code Comparison Report - Rule 14):** Tích hợp sổ theo dõi lỗi (`defect-registry.json`) vào báo cáo local HTML/Markdown, phân loại nhóm lỗi, hiển thị code diff cũ vs mới, liên kết 2 chiều giữa test cases và mã bug fix.

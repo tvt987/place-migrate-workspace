@@ -1,59 +1,65 @@
 {
-  "timestamp": "2026-10-27 07:40:57",
+  "timestamp": "2026-11-02 11:16:54",
   "repo_status": {
     "cci-hrm-web": {
       "status": "synced",
-      "latest_commit": "e39a6d4 - tringuyen-spec, 14 hours ago : refactor: clean up and optimize employee import and document handling modules"
+      "latest_commit": "9502b63 - tringuyen-spec, 5 days ago : add qa reporting tools, analysis scripts, and sample fixture data for employee bank imports"
     },
     "cci-mbm-web": {
       "status": "synced",
-      "latest_commit": "fefdd61 - Long Phan, 11 hours ago : fix(38-openxml-writer-duplicate-row-calcpr-order): OpenXML writer: moi hang mot <row> dung thu tu, calcPr sau sheets (Excel xuat ra khong mo duoc)"
+      "latest_commit": "c9ca460 - Long Phan, 5 days ago : Merge branch 'master' into dev"
     },
     "cci-timekeeping-web": {
       "status": "synced",
-      "latest_commit": "2406989 - Long Phan, 2 days ago : fix(qa): uploader tu ap rule report_skips roi ghi thang qua SP moi (test_report_upsert_raw)"
+      "latest_commit": "2406989 - Long Phan, 8 days ago : fix(qa): uploader tu ap rule report_skips roi ghi thang qua SP moi (test_report_upsert_raw)"
     },
     "cci-supplier-web": {
       "status": "synced",
-      "latest_commit": "9cf34bb - Long Phan, 2 days ago : fix(qa): web khong ap rule report_skips, ghi thang so tho bang test_report_upsert_raw"
+      "latest_commit": "20725ce - nqdthuancc, 6 days ago : Merge branch 'fix/all' into dev"
     },
     "cci-common-web": {
       "status": "synced",
-      "latest_commit": "481a5e6 - Long Phan, 2 days ago : fix(qa): web khong ap rule report_skips, ghi thang so tho bang test_report_upsert_raw"
+      "latest_commit": "cacfb0f - ToanHuynhIT, 5 days ago : fix(qa): fix test errors for group 2, group 3, group 4 (promotion customer count, stores, delivery fee, warmup gateway)"
     },
     "cci-hrm-api": {
       "status": "synced",
-      "latest_commit": "4bafdc66 - Long Phan, 23 hours ago : qa: cap nhat test-data 2026-09-25 (dof/hrm/tkp) + calibrate-latest"
+      "latest_commit": "6d098126 - Tran Duy, 5 days ago : no message"
     }
   },
   "categories_summary": {
-    "Redis & DataProtection / Session": 7,
-    "API Client & Endpoint Normalization": 15,
-    "Excel Export & EPPlus / ClosedXML": 27,
-    "Authentication / Keycloak / SSO / Cookie": 59,
-    "Database / MSSQL / PostgreSQL / Dapper / EF": 3,
+    "Redis & DataProtection / Session": 11,
+    "API Client & Endpoint Normalization": 16,
+    "Excel Export & EPPlus / ClosedXML": 31,
+    "Authentication / Keycloak / SSO / Cookie": 44,
+    "Database / MSSQL / PostgreSQL / Dapper / EF": 4,
     "Razor Views / Bundles / Partial Views": 2,
-    "E2E QA Testing & Stability Utilities": 9,
-    "Other Fixes / Migration Build": 28
+    "E2E QA Testing & Stability Utilities": 15,
+    "Other Fixes / Migration Build": 27
   },
   "check_results": {
     "cci-dc-web": {
       "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
       "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
       "EPPlus DataValidation": "KHÔNG SỬ DỤNG (N/A)",
-      "Git dev HEAD": "[dev] e022cd7 Merge branch 'fix/dc-kestrel-utf8-and-linux-excel-compat' into dev"
+      "Git dev HEAD": "[dev] ead4ca3 merge: chore/dc-menu-grouping-report-viewer into dev"
     },
     "cci-store-location-web": {
       "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
       "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
       "EPPlus DataValidation": "ĐÃ FIX THỨ TỰ (RenderSheetMasterDataHelper.cs)",
-      "Git dev HEAD": "[dev] 6dbb83f Merge branch 'fix/place-kestrel-utf8-and-model-binding-limits' into dev"
+      "Git dev HEAD": "[dev] 62b38ca merge: fix/place-apihelper-raw-content-fallback into dev"
     },
     "cci-scm-web": {
       "Redis DataProtection Keyring": "ĐÃ ÁP DỤNG (Pass)",
       "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
       "EPPlus DataValidation": "ĐÃ FIX THỨ TỰ (AccountingProcessDepartmentsController.cs)",
-      "Git dev HEAD": "[dev] ce7b8340 Merge branch 'fix/scm-kestrel-utf8-and-model-binding-limits' into dev"
+      "Git dev HEAD": "[dev] 15bda7ea Merge branch 'fix/scm-migrate-bugs-fail-fast' into dev"
+    },
+    "cci-income-web": {
+      "Redis DataProtection Keyring": "CHƯA CÓ",
+      "NormalizeUrl in API Client": "ĐÃ ÁP DỤNG (Pass)",
+      "EPPlus DataValidation": "KHÔNG SỬ DỤNG (N/A)",
+      "Git dev HEAD": "[dev] 0dc34a1 fix(income-dashboards): restore missing kendo, highcharts and UtilFactory date methods"
     }
   }
 }
