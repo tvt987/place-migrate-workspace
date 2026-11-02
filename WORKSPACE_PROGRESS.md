@@ -628,7 +628,11 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
   1. **Trích xuất XML Menu thực tế:** Phát triển công cụ tự động `tools/generate_portal_menus.py` phân tích `xmlMenuFiles.xml`, trích xuất 80 màn hình và tiêu đề tiếng Việt chuẩn xác vào `03_qa/config/screen-menu.json` và `screen-titles.json` thuộc 6 cụm nghiệp vụ (`mat-bang`, `danh-gia`, `phan-quyen`, `phan-cong`, `tien-ich`, `dia-danh`, `he-thong`).
   2. **Tự động hoá Rebuild Report Viewer (Zero-Manual Sync):** Tích hợp `loadScreenMenuMap()` và hook `execSync('python ... build_data.py')` trong `03_qa/utils/json-reporter.ts`. Mọi lượt chạy Playwright test đều tự động tái tạo `viewer/data.js` ngay lập tức mà không cần can thiệp thủ công.
   3. **Nâng cấp Accordion UI trên Report Viewer:** Áp dụng hệ thống CSS `menu-group-card`, `menu-badge`, `menu-header`, `accordion-toggle` và JS điều hướng phân cấp trên `.report/viewer/app.js` và `styles.css`.
-  4. **Quy trình Release Git & Bitbucket PR:**
+    4. **Thẩm định & Khắc phục chuyên sâu (Deep RCA Audit):**
+     - Phát hiện 29 màn hình bị gom nhầm vào 'he-thong' do tiền tố 'place-*' không khớp quy tắc 'location-*' ban đầu.
+     - Tái cấu trúc chuẩn xác: 22 Mặt bằng, 6 Đánh giá, 5 Phân công, 3 Tuyến đường, 3 Phân quyền, 2 Tiện ích, và chỉ 3 màn Hệ thống thực sự. 100% tiêu đề tiếng Việt chuẩn mực.
+     - Tag release: ix/place-menu-grouping-screen-coverage (Commit 452e2ef).
+  5. **Quy trình Release Git & Bitbucket PR:**
      - Tách nhánh: `chore/place-menu-grouping-report-viewer-gold-align` từ `dev`.
      - Commit sạch chuẩn Conventional Commits (không AI watermark), merge `--no-ff` vào `dev` (`9753beb`), gắn tag `chore/place-menu-grouping-report-viewer-gold-align`.
      - Tự động tạo cặp Pull Request: **PR #69** (`dev -> staging10`) & **PR #70** (`dev -> staging`).
@@ -738,7 +742,11 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
      - `he-thong` (Hệ thống & Cấu hình)
   2. **Tự động hoá Rebuild Report Viewer (Zero-Manual Sync):** Tích hợp hook tự động kích hoạt `build_data.py` trong `03_qa/utils/json-reporter.ts` sau mỗi lần xuất báo cáo JSON.
   3. **Nâng cấp Accordion UI trên Report Viewer:** Áp dụng giao diện Accordion phân nhóm menu mượt mà, giúp theo dõi 399 specs một cách trực quan, khoa học thay vì danh sách phẳng 400 dòng.
-  4. **Quy trình Release Git & Bitbucket PR:**
+    4. **Thẩm định & Khắc phục chuyên sâu (Deep RCA Audit):**
+     - Khắc phục 3 màn hình unmapped ('activities-create', 'output-orders-create-multi', 'output-orders-create-return-supplier') và loại bỏ 2 nhóm orphan ('chi-tiet', 'yeu-cau-ho-tro-ban-hang').
+     - Chuẩn hóa toàn bộ 400 màn hình vào 8 nhóm chuẩn mực: 140 Khuyến mại, 93 Tiện ích, 44 Dòng tiền, 44 Chuyển kho, 43 Xuất hàng, 18 Nhập hàng, 12 YCTT, 6 Hệ thống. 100% tiêu đề tiếng Việt.
+     - Tag release: ix/scm-menu-grouping-screen-coverage (Commit efb0015).
+  5. **Quy trình Release Git & Bitbucket PR:**
      - Tách nhánh: `chore/scm-menu-grouping-report-viewer-gold-align` từ `dev`.
      - Commit chuẩn mực, merge `--no-ff` vào `dev` (`36d019dd`), gắn tag `chore/scm-menu-grouping-report-viewer-gold-align`.
      - Tự động tạo cặp Pull Request: **PR #31** (`dev -> staging10`) & **PR #32** (`dev -> staging`).
