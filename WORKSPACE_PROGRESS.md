@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-11-03 14:25:00 (🚀 **CẬP NHẬT CONFIG STG10 CHO INCOME & STORE LOCATION WEB**: 1. Income Web: Đã chuẩn hoá ClientUrl + ApisUrl + SOM/SCA/SCM sang stg10, build Release 0 error, push dev (830cab8), tạo cặp PR #18 & #19 sạch không conflict; 2. Store Location Web: Đã chuyển ApisUrl + HRMApisUrl sang stg10 để test MSSQL, giữ nguyên cấu hình PostgreSQL; build Release 0 error, push dev (8345d8c), tạo cặp PR #75 & #76 sạch không conflict!)
+> **Cập nhật mới nhất:** 2026-11-03 15:48:00 (🚀 **FIX DI REGISTRATION FOR INCOME WEB & GITLAB GITOPS PIPELINE RESOLVED**: 1. Khắc phục lỗi duplicate key case-insensitive (versionFont vs VersionFont) trên vaults-gitops stg, pipeline #753 đã PASS 100%, nạp Vault version 8 và update apps-gitops commit 6df4b8ab; 2. Sửa lỗi 500 "Unable to resolve service for type IApiHelper while attempting to activate AccountsController": Đã đăng ký IApiHelper, IAPIClient, ILogger trong Startup.cs ConfigureServices và ConfigureContainer (Autofac), đồng thời khởi tạo Engine.ContainerManager trong Program.cs. Build Release 0 error, test local /Accounts/Login trả về HTTP 200 OK. Đã merge dev (0778bee), gán tag fix/income-di-apihelper-registration, push origin dev và tự động tạo cặp PR #20 & #21, cả 2 PR đã AUTO-MERGE vào staging10 và staging!)
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
@@ -691,7 +691,8 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
     4. **Thẩm định & Khắc phục chuyên sâu (Deep RCA Audit):**
      - Phát hiện 29 màn hình bị gom nhầm vào 'he-thong' do tiền tố 'place-*' không khớp quy tắc 'location-*' ban đầu.
      - Tái cấu trúc chuẩn xác: 22 Mặt bằng, 6 Đánh giá, 5 Phân công, 3 Tuyến đường, 3 Phân quyền, 2 Tiện ích, và chỉ 3 màn Hệ thống thực sự. 100% tiêu đề tiếng Việt chuẩn mực.
-     - Tag release: ix/place-menu-grouping-screen-coverage (Commit 452e2ef).
+     - Tag release: 
+ix/place-menu-grouping-screen-coverage (Commit 452e2ef).
   5. **Quy trình Release Git & Bitbucket PR:**
      - Tách nhánh: `chore/place-menu-grouping-report-viewer-gold-align` từ `dev`.
      - Commit sạch chuẩn Conventional Commits (không AI watermark), merge `--no-ff` vào `dev` (`9753beb`), gắn tag `chore/place-menu-grouping-report-viewer-gold-align`.
@@ -805,7 +806,8 @@ ightarrow$ **Đã Auto-Merged thành công** (Commit `197cf23`).
     4. **Thẩm định & Khắc phục chuyên sâu (Deep RCA Audit):**
      - Khắc phục 3 màn hình unmapped ('activities-create', 'output-orders-create-multi', 'output-orders-create-return-supplier') và loại bỏ 2 nhóm orphan ('chi-tiet', 'yeu-cau-ho-tro-ban-hang').
      - Chuẩn hóa toàn bộ 400 màn hình vào 8 nhóm chuẩn mực: 140 Khuyến mại, 93 Tiện ích, 44 Dòng tiền, 44 Chuyển kho, 43 Xuất hàng, 18 Nhập hàng, 12 YCTT, 6 Hệ thống. 100% tiêu đề tiếng Việt.
-     - Tag release: ix/scm-menu-grouping-screen-coverage (Commit efb0015).
+     - Tag release: 
+ix/scm-menu-grouping-screen-coverage (Commit efb0015).
   5. **Quy trình Release Git & Bitbucket PR:**
      - Tách nhánh: `chore/scm-menu-grouping-report-viewer-gold-align` từ `dev`.
      - Commit chuẩn mực, merge `--no-ff` vào `dev` (`36d019dd`), gắn tag `chore/scm-menu-grouping-report-viewer-gold-align`.
