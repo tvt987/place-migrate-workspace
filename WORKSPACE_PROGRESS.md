@@ -1,6 +1,6 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-11-03 14:15:00 (🖼️ **HOÀN THÀNH 100% EVIDENCE TOÀN BỘ 4 PORTAL & FIX TRIỆT ĐỂ LỖ HỔNG HÌNH ẢNH**: 1. SCM Web (cổng 8934) đạt 100% bằng chứng: 404/404 screens MSSQL, 396/396 screens NET4, 417 screenshots vật lý; 2. DC Web (cổng 8935) đạt 100%: 118/118 screens MSSQL, 119/119 screens NET4; 3. Store Location (cổng 8933) & Income (cổng 8936) đạt 100% cả MSSQL lẫn NET4; 4. Khởi động và kiểm chứng liveness HTTP 200 cả 4 cổng Viewer; 5. Bổ sung Rule 18 & phân tích 5 lỗ hổng tư duy vào bộ nhớ vĩnh viễn!)
+> **Cập nhật mới nhất:** 2026-11-03 14:25:00 (🚀 **CẬP NHẬT CONFIG STG10 CHO INCOME & STORE LOCATION WEB**: 1. Income Web: Đã chuẩn hoá ClientUrl + ApisUrl + SOM/SCA/SCM sang stg10, build Release 0 error, push dev (830cab8), tạo cặp PR #18 & #19 sạch không conflict; 2. Store Location Web: Đã chuyển ApisUrl + HRMApisUrl sang stg10 để test MSSQL, giữ nguyên cấu hình PostgreSQL; build Release 0 error, push dev (8345d8c), tạo cặp PR #75 & #76 sạch không conflict!)
 > **Mục đích:** File duy nhất lưu giữ toàn bộ tiến độ, kết quả test, báo cáo portal, đối chiếu parity và tồn đọng của mọi project trong workspace. Cập nhật trực tiếp đè lên file này mỗi khi có thay đổi mới.
 
 ---
