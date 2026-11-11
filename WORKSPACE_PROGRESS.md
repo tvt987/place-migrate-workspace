@@ -1,6 +1,24 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-11-11 11:05:00 (🔥 **CCI-ACCOUNTING-API: PHÂN TÍCH ROOT CAUSE LỖI REPORT PORTAL & TỐI ƯU HÓA TEST SUITE — ĐẨY BÁO CÁO MỚI REPORT ID 1541**):
+> **Cập nhật mới nhất:** 2026-11-11 11:45:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC LỖI DI TRÚ 406 NOTACCEPTABLE CONTENT-TYPE TEXT/PLAIN — CHỨNG MINH THỰC NGHIỆM PLAYWRIGHT ĐẠT 100% PARITY**):
+> 1. **Phát Hiện Điểm Migrate Sai (RCA)**:
+>    - Khi di trú từ Web API 2 sang ASP.NET Core, mã port cũ tại `ApiControllerBase.cs` đã chuyển đổi nhầm lệnh `base.Content(HttpStatusCode.NotAcceptable, result.ErrorMessage)` thành `new ContentResult { Content = content?.ToString() ?? "", ContentType = "text/plain", StatusCode = 406 }`.
+>    - Hậu quả: Toàn bộ phản hồi 406 NotAcceptable bị ép kiểu trả về `text/plain` thay vì `application/json; charset=utf-8`, chuỗi thông báo lỗi không được quote JSON (`"Dữ liệu truyền vào không hợp lệ"`), làm vỡ các client (Web frontend, Axios, fetch, Angular/Vue) khi cố parse JSON.
+> 2. **Chứng Minh Thực Nghiệm Nó Sai (Playwright Before-Fix Proof)**:
+>    - Viết test suite `03_qa/api/content-negotiation-406-parity.spec.ts` kiểm thử 5 endpoints đại diện: `AccObjects`, `BankAccounts`, `Accounts`, `AccountingPaymentTypes`, `InvoiceTypes` với ID=0.
+>    - Kết quả chạy trước khi sửa: **100% (5/5) test FAILED** với lỗi `Expected substring: "application/json", Received string: "text/plain"`.
+> 3. **Thực Hiện Sửa Chữa Chuẩn Kiến Trúc**:
+>    - Sửa `ApiControllerBase.cs`: Khôi phục `StatusCode((int)HttpStatusCode.NotAcceptable, content)` và `StatusCode((int)HttpStatusCode.ResetContent, content)` trả về `ObjectResult` chuẩn ASP.NET Core. Bảo toàn UTF-8 BOM (`0xEF 0xBB 0xBF`).
+>    - Cấu hình `Startup.cs`: Loại bỏ `StringOutputFormatter` (`options.OutputFormatters.RemoveType<StringOutputFormatter>()`), đảm bảo toàn bộ API kế toán là Pure JSON API, serializes chuỗi thành chuỗi JSON chuẩn.
+> 4. **Chứng Minh Thực Nghiệm Nó Đúng (Playwright After-Fix Proof)**:
+>    - Build và restart Kestrel API daemon trên cổng 5213.
+>    - Chạy lại Playwright test: **100% (6/6) ca test PASSED**. Cả NET4 STG4 và NET10 Local đều trả về `HTTP 406`, `Content-Type: application/json; charset=utf-8`, và `JSON.parse` thành công chuỗi `"Dữ liệu truyền vào không hợp lệ"`.
+>    - Chụp ảnh minh chứng thực nghiệm dashboard: [`proof_playwright_content_negotiation_406_parity.png`](file:///C:/Users/25303_TruongVanTinh/.gemini/antigravity/brain/76ec705a-24f1-41c9-a5c4-008ce05006e6/proof_playwright_content_negotiation_406_parity.png).
+> 5. **Commit & Push Repo `cci-accounting-api`**: Commit `39b6f8c` trên nhánh `feat/net10-postgresql` đẩy lên Bitbucket.
+>
+> ---
+>
+> **Lịch sử cập nhật trước đó:** 2026-11-11 11:05:00 (🔥 **CCI-ACCOUNTING-API: PHÂN TÍCH ROOT CAUSE LỖI REPORT PORTAL & TỐI ƯU HÓA TEST SUITE — ĐẨY BÁO CÁO MỚI REPORT ID 1541**):
 > 1. **Phân Tích Root Cause 47 Route "Chưa Có Test"**: Xác định 100% là nợ catalog trên Portal Web (`projects.js`): gồm 41 route `POST /api/rpts/*` (controller Rpts đã decommissioned/tombstone ở cả origin lẫn NET10) và 6 route ghép đôi đường dẫn `/api/uploadfiles/downloadfile/api/uploadfiles/...` từ Swagger cũ (các route chuẩn thật đã test 100% pass).
 > 2. **Khắc Phục 100% Lỗi Test & Cân Bằng Môi Trường (Report ID 1541)**:
 >    - **Fix 1:** Sửa `unauthorized-401.spec.ts` (`POST /sys/decryptprotobuf`): NET10 có `[ApiAuthorize]` nên trả 401 thay vì 404 -> Pass 100% (174/174 route).
