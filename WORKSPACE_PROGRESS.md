@@ -1,6 +1,24 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-11-11 12:15:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC STUB RỖNG `ConvertExcelToList` (`CoreHelperStub.cs`) + EPPlus LICENSE CONTEXT — CHỨNG MINH PLAYWRIGHT PARITY 4/4 & UNIT TESTS 77/77 PASS**):
+> **Cập nhật mới nhất:** 2026-11-11 13:55:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC LỖI POSTGRESQL `IN @Batch` (`PostgresException 42601`) TẠI `InvoiceBizziService.GetPoNumbersAlreadyMatchedAsync` — CHỨNG MINH THỰC NGHIỆM PLAYWRIGHT + INTEGRATION PARITY 100% PASS**):
+> 1. **Phát Hiện Điểm Migrate Sai (RCA)**:
+>    - Khi di trú nhánh PostgreSQL tại [`InvoiceBizziService.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/CoC.Business.Service.ACC/Implement/ACC/Bizzi/InvoiceBizziService.cs#L5970-L5973) (`GetPoNumbersAlreadyMatchedAsync`), khối PG viết nhầm comment `IN @Batch của Dapper giữ nguyên` và giữ truy vấn `WHERE "PoNumbers" IN @Batch` khi truyền `string[] Batch`.
+>    - Hậu quả: Npgsql bind `string[]` thành một tham số mảng `text[]` (`$1`), Dapper không mở rộng danh sách thành `IN (@Batch1, ...)` như MSSQL, khiến PostgreSQL (`.223`) ném `Npgsql.PostgresException: 42601: syntax error at or near "$1"` (`POSITION: 76`), làm gãy toàn bộ luồng `AutoConfirmInvoiceMatching` ngay khi có hóa đơn qua bước điều kiện A. Trong khi 3 điểm trong `InvoicePurchaseService.cs` (`1151, 1602, 2029`) đã chuyển sang `= ANY(...)`.
+> 2. **Chứng Minh Thực Nghiệm Nó Sai (Before-Fix Proof)**:
+>    - Xây dựng Integration Test [`PostgreSqlInvoiceBizziIntegrationTests.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/tests/Integration/CoC.API.ACC.Integration.Tests/PostgreSqlInvoiceBizziIntegrationTests.cs) gọi trực tiếp `InvoiceBizziService.GetPoNumbersAlreadyMatchedAsync` trên **MSSQL `.135`** và **PostgreSQL `.223`** với các PO thật (`675SO25121963889814`, `1033SO26051912310723`, `1033SO25112532172034`), điều phối cùng kịch bản Playwright [`03_qa/api/invoice-bizzi-pg-in-batch-parity-proof.spec.ts`](file:///E:/Work/Place_Migrate/cci-accounting-api/03_qa/api/invoice-bizzi-pg-in-batch-parity-proof.spec.ts).
+>    - Kết quả trước fix: MSSQL `.135` PASS trả đủ 3/3 PO, trong khi 2 test trên PostgreSQL `.223` (`PostgreSql_GetPoNumbersAlreadyMatchedAsync_MatchesMssqlResult` và `PostgreSql_GetPoNumbersAlreadyMatchedAsync_HandlesNullEmptyAndDuplicates`) **FAIL ngay với `42601: syntax error at or near "$1"`**. Ảnh bằng chứng: `proof_playwright_pg_in_batch_before_fix.png`.
+> 3. **Khắc Phục & Mở Rộng Test Suite**:
+>    - Chuyển truy vấn PG tại `InvoiceBizziService.cs:5972` sang `"PoNumbers" = ANY(@Batch)` (giữ nguyên UTF-8 BOM `0xEF 0xBB 0xBF` và span `//AI[PG_START] ... //AI[PG_END]`).
+>    - Bổ sung Unit Test [`InvoiceBizziPgSqlParityTests.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/tests/Unit/CoC.API.ACC.Unit.Tests/Services/InvoiceBizziPgSqlParityTests.cs) kiểm tra short-circuit null/empty và tách lô `>1000` PO (`1005` phần tử -> `2` batch) + `OrdinalIgnoreCase`.
+> 4. **Chứng Minh Thực Nghiệm Nó Đúng (After-Fix Proof)**:
+>    - `CoC.API.ACC.Unit.Tests`: **79 / 79 Passed** (`0` Failed, `0` Skipped).
+>    - `CoC.API.ACC.Integration.Tests` (`PostgreSqlInvoiceBizziIntegrationTests` + `PostgreSqlConnectionTests` + `PostgreSqlStoredProcTests`): **10 / 10 Passed** (PG `.223` khớp 100% 3/3 PO với MSSQL `.135`, xử lý an toàn phần tử `null`/rỗng/trùng lặp).
+>    - Playwright Parity Suite (`npx playwright test ... --project=api-tests-local`): **6 / 6 Passed** (`4/4` kịch bản trong `invoice-bizzi-pg-in-batch-parity-proof.spec.ts` + 4 suite parity hồi quy + `setup`). Ảnh bằng chứng: `proof_playwright_pg_in_batch_after_fix.png`.
+> 5. **Commit & Push Repo `cci-accounting-api`**: Commit `915db3b` trên nhánh `feat/net10-postgresql` đẩy lên Bitbucket.
+>
+> ---
+>
+> **Lịch sử cập nhật trước đó:** 2026-11-11 12:15:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC STUB RỖNG `ConvertExcelToList` (`CoreHelperStub.cs`) + EPPlus LICENSE CONTEXT — CHỨNG MINH PLAYWRIGHT PARITY 4/4 & UNIT TESTS 77/77 PASS**):
 > 1. **Phát Hiện Điểm Migrate Sai (RCA)**:
 >    - Khi port từ NET4 (`01_origin/DLL.API/Core.Helper.dll`) sang ASP.NET Core, file `CoC.Business.Service.ACC/Stubs/CoreHelperStub.cs` đã stub hàm `ExtensionsMethod.ConvertExcelToList<T>` thành no-op trả về danh sách rỗng (`new List<T>()`, `Status = true`), bỏ qua hoàn toàn nội dung file Excel tải lên.
 >    - Hậu quả: Toàn bộ **8 điểm nghiệp vụ Import Excel** trên 4 service (`InvoicePurchaseService`, `InvoiceBizziService`, `InvoiceGiftService`, `InvoiceSeriesTypeService`) đều thất bại hàng loạt với HTTP `406 "File excel không đúng format"` ngay cả với file Excel hợp lệ 100%.
