@@ -1,6 +1,26 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-11-11 14:15:00 (🔥 **CCI-ACCOUNTING-API: ĐỒNG BỘ & DẬP KHUÔN CÓ CHỌN LỌC (RCA) CÁC BẢN FIX MỚI TỪ `cci-hrm-api` (`f899320e`, `204b3c0d`) — SỬA NULL-GUARD VALIDATOR 500, `OrderService.GetOrders_4AutoConfirmInvoiceMatching`, VÀ BỔ SUNG 11 RULE POSTGRESQL CHO QA ERROR DETECT / TRIAGE / VIEWER — 100% PASS**):
+> **Cập nhật mới nhất:** 2026-11-11 15:37:40 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC 2 LỖI MIGRATE NGHIÊM TRỌNG DO `SystemWebStub` (`HttpContext.Current` rỗng & `HostingEnvironment.QueueBackgroundWorkItem` no-op) — CHỨNG MINH THỰC NGHIỆM BEFORE/AFTER PLAYWRIGHT 9/9 PARITY PASS**):
+> 1. **Phát Hiện 2 Điểm Migrate Sai Trong `cci-accounting-api` (`02_target/net10_postgresql`)**:
+>    - **`BizziApiHelper` Auth Header Forwarding ([`BizziApiHelper.cs:46`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/CoC.Business.Service.ACC/Helper/Implement/BizziApiHelper.cs#L43-L51), [`AutoFacModule.cs:231-235`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/Coc.API.ACC/Configs/AutoFacModule.cs#L230-L235)):** Dùng `SystemWebStub.HttpContext.Current.Request.Headers["Authorization"]` (luôn `null` trên .NET 10), làm `HttpClient.DefaultRequestHeaders.Add("Authorization", null)` văng **`FormatException: "The format of value '<null>' is invalid."`** cục bộ mà không hề gọi ra `api-uat.bizzibots.com` (làm gãy `PUT /api/invoices/{guid}/ref_code`, `GCSHelper`, `UpdateRefCodeForBizzi`). Đã inject `IHttpContextAccessor`, đọc header trước vòng retry và gán bằng `TryAddWithoutValidation` khi không rỗng.
+>    - **`HostingEnvironment.QueueBackgroundWorkItem` No-Op Drop trên toàn bộ 5 method / 6 call site ([`SystemWebStub.cs:64-72`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/Coc.API.ACC/Stubs/SystemWebStub.cs)):**
+>      - [`StoreService.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/CoC.Business.Service.ACC/Implement/MAT/StoreService.cs) (`ReadAll`, `ReadByStoreIDs` -> gom vào helper `WarmStoreMemoryCacheInBackground()`): Không bao giờ làm ấm `memorycache` `Key_Store`.
+>      - [`ProductCategoryService.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/CoC.Business.Service.ACC/Implement/PRO/ProductCategoryService.cs) (`ReadByCategoryIDs`): Không bao giờ làm ấm `memorycache` `Key_ProductCategory`.
+>      - [`InvoicePurchaseService.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/CoC.Business.Service.ACC/Implement/ACC/InvoicePurchaseService.cs) (`SyncData`, `SyncDataByDetail` -> gom helper `QueueSyncDataByInvoiceBizzi`) & [`InvoiceBizziService.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/CoC.Business.Service.ACC/Implement/ACC/Bizzi/InvoiceBizziService.cs) (`UpdateRefCodeForBizzi`): Nuốt im lặng toàn bộ background sync & update ref code. Chuyển sang `Task.Run` với **child Autofac lifetime scope mới** (`Engine.ContainerManager.Container.BeginLifetimeScope()`) để không dùng service/repository đã dispose sau khi HTTP request kết thúc.
+> 2. **Chứng Minh Thực Nghiệm Trước Fix & Sau Fix**:
+>    - **Trước fix (`proof_playwright_systemweb_stubs_before_fix.png` — `0 / 9 CHECKS FAILED`):**
+>      - `PUT /api/invoices/{guid}/ref_code`: NET4 STG4 trả `HTTP 406 "Unauthorized"` vs NET10 `:5213` crash `HTTP 406 "The format of value '<null>' is invalid."`.
+>      - `GET /api/InvoiceBizzis/ReadByStoreIDs?storeIDs=1` (4 lần sau warm-up): `[352ms, 226ms, 600ms, 231ms]` (`max=600ms`) do hụt L1 `memorycache`.
+>      - `SystemWebStubParityTests`: **7 / 7 FAIL**.
+>    - **Sau fix (`proof_playwright_systemweb_stubs_after_fix.png` — `9 / 9 CHECKS PASSED`):**
+>      - `PUT /api/invoices/{guid}/ref_code`: NET10 `:5213` trả `HTTP 406 "Unauthorized"` **khớp 1:1 với NET4 STG4**.
+>      - `GET /api/InvoiceBizzis/ReadByStoreIDs?storeIDs=1`: `[32ms, 7ms, 10ms, 7ms]` (`max=32ms`, phục vụ từ L1 `memorycache`).
+>      - `CoC.API.ACC.Unit.Tests` (gồm [`SystemWebStubParityTests.cs`](file:///E:/Work/Place_Migrate/cci-accounting-api/02_target/net10_postgresql/tests/Unit/CoC.API.ACC.Unit.Tests/Services/SystemWebStubParityTests.cs)): **92 / 92 Pass** (`0 Failed, 0 Skipped`); `CoC.API.ACC.Integration.Tests`: **17 / 17 Pass** (`0 Failed, 0 Skipped`); Playwright (`api/systemweb-stub-parity-proof.spec.ts`): **2 / 2 Pass (`9 / 9 CHECKS PASSED`)**.
+>    - Commit `9789e65` trên `feat/net10-postgresql` đã push lên `origin/feat/net10-postgresql` (bảo toàn UTF-8 BOM + CRLF).
+>
+> ---
+>
+> **Lịch sử cập nhật trước đó:** 2026-11-11 14:15:00 (🔥 **CCI-ACCOUNTING-API: ĐỒNG BỘ & DẬP KHUÔN CÓ CHỌN LỌC (RCA) CÁC BẢN FIX MỚI TỪ `cci-hrm-api` (`f899320e`, `204b3c0d`) — SỬA NULL-GUARD VALIDATOR 500, `OrderService.GetOrders_4AutoConfirmInvoiceMatching`, VÀ BỔ SUNG 11 RULE POSTGRESQL CHO QA ERROR DETECT / TRIAGE / VIEWER — 100% PASS**):
 > 1. **Rà soát Commit Đa Repo API (`2026-11-09` → `2026-11-11`)**:
 >    - Quét toàn bộ 5 repo API tham chiếu sau `git fetch --all --prune`: `cci-dc-api` (`ddccc0d`, 05/11), `cci-income-api` (`e9bba6c`, 04/11), `cci-scm-api` (`3507f9b`, 07/11), `cci-store-location-api` (`7c25aef`, 04/11) đều không có commit mới từ 09/11; **chỉ có `cci-hrm-api`** có 5 commit mới (`f899320e`, `204b3c0d`, `12716b92`/`c5a22573`, `748f26f2`/`00416c29`/`c7784b0d`, `83dadbf1`).
 > 2. **Kết quả Phân tích RCA — Dập khuôn những điểm thực sự lỗi tại `cci-accounting-api`**:
