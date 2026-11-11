@@ -1,6 +1,24 @@
 ﻿# BẢNG THEO DÕI TIẾN ĐỘ TOÀN DIỆN WORKSPACE (MIGRATION & QA PARITY)
 
-> **Cập nhật mới nhất:** 2026-11-11 11:45:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC LỖI DI TRÚ 406 NOTACCEPTABLE CONTENT-TYPE TEXT/PLAIN — CHỨNG MINH THỰC NGHIỆM PLAYWRIGHT ĐẠT 100% PARITY**):
+> **Cập nhật mới nhất:** 2026-11-11 12:15:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC STUB RỖNG `ConvertExcelToList` (`CoreHelperStub.cs`) + EPPlus LICENSE CONTEXT — CHỨNG MINH PLAYWRIGHT PARITY 4/4 & UNIT TESTS 77/77 PASS**):
+> 1. **Phát Hiện Điểm Migrate Sai (RCA)**:
+>    - Khi port từ NET4 (`01_origin/DLL.API/Core.Helper.dll`) sang ASP.NET Core, file `CoC.Business.Service.ACC/Stubs/CoreHelperStub.cs` đã stub hàm `ExtensionsMethod.ConvertExcelToList<T>` thành no-op trả về danh sách rỗng (`new List<T>()`, `Status = true`), bỏ qua hoàn toàn nội dung file Excel tải lên.
+>    - Hậu quả: Toàn bộ **8 điểm nghiệp vụ Import Excel** trên 4 service (`InvoicePurchaseService`, `InvoiceBizziService`, `InvoiceGiftService`, `InvoiceSeriesTypeService`) đều thất bại hàng loạt với HTTP `406 "File excel không đúng format"` ngay cả với file Excel hợp lệ 100%.
+>    - Đồng thời `ConvertHelper.cs` gọi `new ExcelPackage()` (EPPlus 7.2.2) nhưng chưa khởi tạo `ExcelPackage.LicenseContext = LicenseContext.NonCommercial`.
+> 2. **Chứng Minh Thực Nghiệm Nó Sai (Playwright Before-Fix Proof)**:
+>    - Xây dựng test suite [`03_qa/api/excel-import-parity-proof.spec.ts`](file:///E:/Work/Place_Migrate/cci-accounting-api/03_qa/api/excel-import-parity-proof.spec.ts) upload `.xlsx` 2 sheet (`Values` + `Data`) thật qua `POST /api/UploadFiles/UploadFile` và đối chiếu 1:1 giữa NET4 STG4 và NET10 Local (4 kịch bản: Happy Path `Import4Create` PID `0000050000001`, Row Validation `Quantity=0`, Setter `DataException` `CheckCreateOrderByExcel`, và Voucher Preview `OID=790587`).
+>    - Kết quả trước fix: **0 / 4 PASS (100% MISMATCH)** — NET4 STG4 trả `200 OK` (PID `16571`, `PriceVAT=108000`) / đúng câu báo lỗi nghiệp vụ chi tiết, trong khi NET10 Local đều trả `"File excel không đúng format"`. Ảnh bằng chứng: `proof_playwright_excel_import_before_fix.png`.
+> 3. **Khắc Phục Chuẩn Kiến Trúc & Nâng Cấp Test Suite**:
+>    - Hiện thực đầy đủ `ConvertExcelToList<T>` trên `CoreHelperStub.cs` bằng `EPPlus 7.2.2` thuần C# cross-platform: hỗ trợ chuẩn 2-sheet `Values` (`Title`/`Name`/`IsNull`) + `*Data*`, fallback 1-sheet, kiểm `checkCol`, chuẩn hóa path Windows/Linux (`\` / `/`), bỏ dòng trống cuối sheet, và bảo toàn lan truyền `DataException` từ setter sang `InnerErrorMessage` khớp `Core.Helper.dll` gốc.
+>    - Khởi tạo `ExcelPackage.LicenseContext = LicenseContext.NonCommercial` trong `ConvertHelper` static ctor (bảo toàn UTF-8 BOM `0xEF 0xBB 0xBF`).
+>    - Bổ sung 5 unit test mới tại `CoreHelperExcelImportTests.cs` và đồng bộ 5 unit test controller (`ContentResult` -> `ObjectResult` khớp fix 406 JSON trước đó): **77 / 77 Unit Tests PASS**.
+> 4. **Chứng Minh Thực Nghiệm Nó Đúng (Playwright After-Fix Proof)**:
+>    - Chạy lại Playwright Parity Suite sau sửa code: **6 / 6 spec PASS (4 / 4 kịch bản Excel Import khớp 100% từng ký tự với NET4 STG4)** cùng các suite hồi quy (`content-negotiation-406`, `update-action-selection`, `invoice-purchases-action-selection`, `unauthorized-401`). Ảnh bằng chứng: `proof_playwright_excel_import_after_fix.png`.
+> 5. **Commit & Push Repo `cci-accounting-api`**: Commit `9bc6590` trên nhánh `feat/net10-postgresql` đẩy lên Bitbucket.
+>
+> ---
+>
+> **Lịch sử cập nhật trước đó:** 2026-11-11 11:45:00 (🔥 **CCI-ACCOUNTING-API: PHÁT HIỆN & KHẮC PHỤC LỖI DI TRÚ 406 NOTACCEPTABLE CONTENT-TYPE TEXT/PLAIN — CHỨNG MINH THỰC NGHIỆM PLAYWRIGHT ĐẠT 100% PARITY**):
 > 1. **Phát Hiện Điểm Migrate Sai (RCA)**:
 >    - Khi di trú từ Web API 2 sang ASP.NET Core, mã port cũ tại `ApiControllerBase.cs` đã chuyển đổi nhầm lệnh `base.Content(HttpStatusCode.NotAcceptable, result.ErrorMessage)` thành `new ContentResult { Content = content?.ToString() ?? "", ContentType = "text/plain", StatusCode = 406 }`.
 >    - Hậu quả: Toàn bộ phản hồi 406 NotAcceptable bị ép kiểu trả về `text/plain` thay vì `application/json; charset=utf-8`, chuỗi thông báo lỗi không được quote JSON (`"Dữ liệu truyền vào không hợp lệ"`), làm vỡ các client (Web frontend, Axios, fetch, Angular/Vue) khi cố parse JSON.
